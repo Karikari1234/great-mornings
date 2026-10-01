@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4300/live/fc078410-bccb-11f1-9f83-d9975ff80416.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Thursday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Swiss glaciers lose an estimated 5.5% of their ice in 2026</h2>
+      <p class="dek">An estimated 5.5% of Switzerland&#x27;s remaining glacier ice disappeared in 2026 after early heatwaves accelerated summer melting.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>1 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Bangladesh</a></li><li><a href="#p3">South Asia</a></li><li><a href="#p4">World &amp; Geopolitics</a></li><li><a href="#p5">AI &amp; Technology</a></li><li><a href="#p6">Science</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Ideas</a></li><li><a href="#p9">Watch &amp; Listen</a></li><li><a href="#p10">Sport</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4300/live/fc078410-bccb-11f1-9f83-d9975ff80416.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Swiss glaciers lose an estimated 5.5% of their ice in 2026</h2>
+    <p class="dek accent">An estimated 5.5% of Switzerland&#x27;s remaining glacier ice disappeared in 2026 after early heatwaves accelerated summer melting.</p>
+    <div class="body drop"><p>Swiss glaciers lost an estimated 5.5% of their remaining ice volume in 2026, according to a report by Glacier Monitoring Switzerland. Until recently, glaciologists in the Alps viewed a 2% loss in a single year as extreme. More than 5% of the country&#x27;s glacier ice disappeared over the past 12 months after intense summer heatwaves. Dr Matthias Huss, the director of Glacier Monitoring Switzerland, described the loss as &quot;really just disastrous.&quot;</p><p>The melt began after a mild winter left peaks with less snow cover than usual. Heatwaves in May and June stripped that layer away, which exposed the darker glacier ice beneath. Bare ice reflects less sunlight and absorbs more solar energy. At measurement sites 3,500 metres above sea level, researchers found that no snow survived the end of summer. At some glaciers, ice levels dropped by four metres at the highest points, where several metres of winter snow normally lie.</p><p>&quot;Ten years ago, I wouldn&#x27;t have thought that it&#x27;s possible to lose glaciers so quickly,&quot; said Dr Fabien Maussion, a glaciologist at the University of Bristol. At high elevations, snow compacts into ice over time to replenish what melts lower down the mountain. Without summer snow, glaciers lose mass continuously. Some smaller glaciers, such as Plattalva in eastern Switzerland, have already disappeared.</p><p>Between July and September, Swiss glaciers released an estimated 2.2 trillion litres of meltwater. Runoff temporarily cushioned water supplies for irrigation and hydropower. Yet the frozen supply diminished rapidly. The River Rhine reached record lows in places during the summer, which disrupted shipping routes and raised transport costs.</p><p>Dr Huss noted that runoff during heatwaves consists of water stored decades or centuries ago. Because that supply fails to regenerate without new snow, smaller glaciers will produce less meltwater during future dry spells. Dr Huss stated that sharp reductions in carbon emissions can still preserve ice in the Himalayas and polar regions, where most of the world&#x27;s ice resides.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Swiss glaciers lost an estimated 5.5% of their ice volume in 2026.</li><li>Glaciers released 2.2 trillion litres of meltwater between July and September 2026.</li><li>Measurement sites at 3,500 metres above sea level recorded no snow by the end of summer.</li><li>Dr Matthias Huss, director of Glacier Monitoring Switzerland, reported up to four metres of ice loss at the highest elevations of some glaciers.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/c6n9w0ypjwl9o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p2" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/01/tarique_rahman.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bangladesh remittances fell to 2.77 billion dollars in September</h3><p class="dek">Inflows reached $2.77 billion in September, the lowest monthly total in 11 months, according to Bangladesh Bank data.</p>
+        <details><summary>Read</summary><div class="body"><p>Expatriates sent home $2.77 billion to Bangladesh in September, according to updated Bangladesh Bank data released on Thursday. The monthly total is the lowest in 11 months, and it is 3% higher than the $2.69 billion received in September last year.</p><p>The September total slowed from the pace recorded earlier in the year. Remittances exceeded $3 billion a month for six consecutive months through May. Receipts fell below that level in June to $2.82 billion. Inflows were $2.86 billion in July and $2.97 billion in August.</p><p>Total inflows were higher across the first quarter of FY27. Bangladesh received $8.59 billion from July to September. That is an increase of 13.3% from the $7.59 billion recorded during the same period a year earlier.</p><p>In the previous fiscal year, remittances reached a record $35.59 billion. The country received $30.33 billion in FY25.</p><p>The highest monthly inflow in the record run came in March, when expatriates sent $3.75 billion. May followed with $3.44 billion, and December recorded $3.22 billion.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Expatriates sent $2.77 billion to Bangladesh in September, an 11-month low.</li><li>First-quarter remittances for FY27 rose 13.3% to $8.59 billion from $7.59 billion a year earlier.</li><li>Bangladesh Bank released the updated figures on Thursday.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/business/421142/remittance-slows-in-september-amid-13.3%25-q1%E2%80%99fy27" target="_blank" rel="noopener">dhakatribune.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Indian envoy urges careful preparation before Tarique Rahman visits India</h3><p class="dek">Indian High Commissioner Dinesh Trivedi said both governments need time to prepare before Prime Minister Tarique Rahman travels to India.</p>
+        <details><summary>Read</summary><div class="body"><p>Indian High Commissioner to Bangladesh Dinesh Trivedi said on Wednesday that both governments must prepare properly before Prime Minister Tarique Rahman meets Indian Prime Minister Narendra Modi. Trivedi spoke to reporters after a courtesy meeting with Liberation War Affairs Minister Ahmed Azam Khan. He said there is no benefit in rushing the bilateral summit.</p><p>Trivedi said discussions will cover trade and water. &quot;We have to make sure that proper preparations are made because many issues will have to be discussed,&quot; he told reporters. Trivedi stated that the visit will definitely take place, though officials have not discussed a specific month or date. &quot;As far as the prime minister&#x27;s visit is concerned, the atmosphere is absolutely positive,&quot; he said.</p><p>Trivedi added that the two leaders can resolve bilateral matters in person. &quot;See, challenges will be there. If we think there are no challenges, that would be wrong,&quot; he said. On Tuesday, Trivedi told reporters at the Ministry of Foreign Affairs that India&#x27;s invitation is open and that both sides must give the meeting due time.</p><p>State Minister for Foreign Affairs Humaiun Kobir said on Tuesday that Bangladesh and India can resolve their challenges through discussion. He spoke to reporters at the Ministry of Foreign Affairs after meeting Trivedi. Kobir declined to comment on speculation about a November visit. He described the timeframe as a rumor and said the visit will take place when the environment is conducive, based on mutual respect.</p><p>In New Delhi on Tuesday evening, Indian External Affairs Ministry Spokesperson Randhir Jaiswal addressed shared river management. Jaiswal said all matters relating to rivers, including the Ganga Water Treaty, fall under the Joint Rivers Commission. He told reporters that technical meetings on the treaty continue to happen.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Dinesh Trivedi, Indian High Commissioner to Bangladesh</li><li>Tarique Rahman, Prime Minister of Bangladesh, and Narendra Modi, Prime Minister of India</li><li>Humaiun Kobir, Bangladesh State Minister for Foreign Affairs</li><li>Randhir Jaiswal, Indian External Affairs Ministry Spokesperson</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/foreign-affairs/421059/dinesh-trivedi-stresses-proper-preparations-before" target="_blank" rel="noopener">dhakatribune.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Coal power overtakes gas in Bangladesh</h3><p class="dek">The shift to coal in Bangladesh is a bad sign for liquefied natural gas exporters.</p>
+        <details><summary>Read</summary><div class="body"><p>Coal power has overtaken gas in Bangladesh. The change challenges demand forecasts for liquefied natural gas. Reuters reported that the country&#x27;s turn to coal is a fresh bad sign for LNG exporters.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Coal power in Bangladesh has overtaken gas.</li><li>Demand forecasts for liquefied natural gas face challenges.</li><li>Reuters reported the turn to coal as a fresh bad sign for LNG exporters.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM0JvZnkxSm1BaHdib055Y3E3ck1iQkdKNzVISzg0bmJ1RDVCOHJSTGltQjZnamVncmVwMHhhejVIU3dyMXlIYWxXUHVzRUJHd18wVmRHZXkycEVZc0hTRElQbjZlbmtlQVJ4c05xUTBKdENVa1dyaUd6bEx1bHdFZXB4TlI3cENaS29XM21kNjVpa0ZiUDRGanFENVhNeWFVU2JSWmVmcnFFazRtUTVRZkR2bUs4QWt5TmFNVkpFQ2l2Zw?oc=5" target="_blank" rel="noopener">TradingView + 2 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Tarique Rahman accuses political parties of exploiting incidents to create anarchy</h2>
+    <p class="dek accent">Prime Minister Tarique Rahman says disruptions to state development schemes will cause public suffering as canal work begins in Feni.</p>
+    <div class="body drop"><p>Prime Minister Tarique Rahman accused rival political parties of attempting to create anarchy by exploiting untoward incidents during a speech in Feni on 1 October 2026. He addressed a gathering at Kheya Ghat in Parshuram upazila for the inauguration of the Tk1,542 crore Muhuri-Kohua water project. Rahman said interference with state welfare initiatives, including the Family Card and Farmers&#x27; Card programmes, will cause suffering for the public.</p><p>Rahman alleged that these political forces gained seats in the last parliamentary elections by misleading voters and are treating those wins as complete victories. He said members of a covert force affiliated with them committed violence against women and exploited local incidents to generate instability. Rahman stated that an official investigation is underway into reports that members of this group ended a person&#x27;s life. He told their leaders to address allegations of violence within their own ranks before they advise other parties.</p><p>The prime minister linked these opponents to historical actions against national interests. He stated that they committed injustices and abused women during the 1971 Liberation War, and later opposed democracy in 1986. Rahman also asserted that the rule of law was reduced to dust over the previous 17 years. He pledged that the Bangladesh Nationalist Party will use its strength to ensure equal application of the law.</p><p>Work began on 1 October with the re-excavation of the canal connecting the Muhuri and Kohua rivers. Rahman said the BNP promised before the election to excavate rivers and canals for flood control and irrigation. He said the administration will excavate the river and its connected canals to secure water supplies for agricultural land.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>1 October 2026: Tarique Rahman spoke at Kheya Ghat in Parshuram, Feni.</li><li>Tk1,542 crore: The cost of Phase 1 of the Muhuri-Kohua Flood Control, Drainage and Irrigation Project rehabilitation.</li><li>17 years: The previous duration during which Rahman alleged the rule of law was destroyed.</li></ul></aside><a class="src" href="https://www.tbsnews.net/bangladesh/politics/some-parties-trying-create-anarchy-exploiting-untoward-incidents-pm-1560021" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p3" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://th-i.thgim.com/public/incoming/j2gmdu/article71533000.ece/alternates/LANDSCAPE_1200/MAMATA%20BANERJEE%20PC%2028.JPG" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Pakistan challenges India at UN rights council over Kashmir</h3><p class="dek">First Secretary Adeel M. Khokhar told delegates in Geneva that New Delhi evades questions on rights in Jammu and Kashmir.</p>
+        <details><summary>Read</summary><div class="body"><p>Pakistan condemned India on Thursday at the 63rd session of the United Nations Human Rights Council in Geneva for evading questions on Kashmir and minority rights. During a right of reply, First Secretary Adeel M. Khokhar said India changes the subject and invokes Pakistan when confronted with uncomfortable facts. Khokhar stated that Jammu and Kashmir is a disputed territory under Security Council resolutions. He added that India has avoided a United Nations plebiscite in the territory for more than seven decades.</p><p>Khokhar pointed to legal changes made in Jammu and Kashmir since Aug 5, 2019, such as revised domicile rules. He stated that authorities issued hundreds of thousands of domicile certificates to non-Kashmiris to alter the demographic composition of the Muslim-majority territory. On minority rights, he cited the Citizenship Amendment Act of 2019 and the destruction of Muslim places of worship from Babri Masjid to Ujjain. At the United Nations General Assembly last week, Pakistani counsellor Saima Saleem cited former Indian naval commander Kulbhushan Jadhav and Nikhil Gupta, who pleaded guilty in the United States.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>First Secretary Adeel M. Khokhar spoke at the 63rd session of the UN Human Rights Council in Geneva.</li><li>India changed domicile and land laws in Jammu and Kashmir after Aug 5, 2019.</li><li>The Bharatiya Janata Party has governed India since 2014.</li></ul></aside></details>
+        <a class="src" href="https://www.dawn.com/news/2033985/pakistan-condemns-india-at-un-council-over-occupied-kashmir-minority-rights" target="_blank" rel="noopener">dawn.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Mamata Banerjee predicts early collapse of Modi government over voting rights</h2>
+    <p class="dek accent">The former West Bengal chief minister accuses election authorities of foul play and says the central government will collapse before 2029.</p>
+    <div class="body drop"><p>Former West Bengal Chief Minister Mamata Banerjee said on Thursday that Prime Minister Narendra Modi&#x27;s government will fall before its third term ends in 2029. Ms. Banerjee addressed a press conference in New Delhi alongside Trinamool Congress MPs, one day after a meeting of the INDIA bloc. She questioned a 2023 law that gives immunity to the Chief Election Commissioner and Election Commissioners. &#x27;We believe that this time, the BJP will go and we do not have to wait up to 2029,&#x27; Ms. Banerjee said.</p><p>Ms. Banerjee alleged that the Election Commission hijacked the West Bengal Assembly election. She said 4,000 electronic voting machines were burnt without arrests, and voter roll revisions cut four times more names in seats won by her party. Abhishek Banerjee alleged that voter deletions exceeded victory margins in at least 150 constituencies. The INDIA bloc launches a nationwide campaign against the revision and the Chief Election Commissioner on October 2.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>October 1, 2026: Mamata Banerjee holds a press conference in New Delhi following an INDIA bloc meeting.</li><li>2029: Scheduled conclusion of Prime Minister Narendra Modi&#x27;s third term.</li><li>4,000: Number of electronic voting machines Ms. Banerjee alleged were burnt.</li><li>150: Assembly seats where Abhishek Banerjee claimed voter roll deletions exceeded victory margins.</li></ul></aside><a class="src" href="https://www.thehindu.com/news/national/west-bengal/people-will-not-forgive-vanish-kumar-mamata-takes-dig-at-cec-questions-immunity-to-poll-panel/article71532968.ece" target="_blank" rel="noopener">thehindu.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://i.guim.co.uk/img/media/e4042e8b36ddea01b752ce79d617e7a4b1705daa/534_0_3634_2909/master/3634.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=5dacba8da8769ec1b230d7c1713af4bb" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Vladimir Putin says Russia will use all weapons to protect Kaliningrad</h3><p class="dek">Vladimir Putin told the Valdai forum that Moscow will deploy all weapons if its Baltic exclave comes under direct attack.</p>
+        <details><summary>Read</summary><div class="body"><p>Vladimir Putin told the Valdai foreign policy forum that Russia will use all weapons at its disposal if its Baltic exclave of Kaliningrad comes under direct attack. He said Moscow is &quot;not threatening anyone&quot;. He stated that Russia is merely responding to statements by Western leaders that Moscow was preparing for war in 2029 or 2030.</p><p>Putin accused Nato of holding naval manoeuvres in the Baltic Sea that posed serious threats to Kaliningrad. Russia has accused the alliance of preparing to blockade the territory, which borders Lithuania and Poland. Putin said that if Kaliningrad came under a Western blockade, Russia would be prepared to use all forces and nuclear weapons. He noted the nuclear capabilities of the UK and France, and added that the weapons at Russia&#x27;s disposal are unparalleled.</p><p>Nato Secretary General Mark Rutte said on Wednesday that none of the alliance&#x27;s exercises or activities posed a threat to Moscow. He called the Kremlin&#x27;s messaging &quot;absolutely not called for and not helpful&quot;. Western governments have reported a rise in hybrid warfare incidents blamed on Russia. Poland said last week that a Russian helicopter strayed into its territory adjacent to Kaliningrad. Lithuania said Russian drones entered its airspace. German Chancellor Friedrich Merz said on Thursday that Germany is preparing for further hybrid attacks after an explosive drone was found in August at Leipzig airport.</p><p>Putin also addressed the war in Ukraine, which began in February 2022. He blamed the West for provoking the conflict and said Russia was forced to take up arms. He stated that Russian attacks on Ukrainian economic targets were a response to Ukrainian strikes on Russian oil refineries and Black Sea ships. Putin admitted Kyiv had &quot;got some results&quot; from its refinery attacks and said Russia had lost about 1% of its GDP. Ukraine maintains it attacked Russian oil infrastructure because it helped the Kremlin finance the war.</p><p>Russia has targeted Ukrainian energy infrastructure ahead of each winter since 2022. Other civilian facilities face regular strikes. On Thursday, drones attacked a key bridge in Kyiv.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Russia lost about 1% of its GDP to Ukrainian refinery strikes, according to Vladimir Putin.</li><li>An explosive drone was found at Leipzig airport in August, German Chancellor Friedrich Merz said on Thursday.</li><li>Russia began its full-scale invasion of Ukraine in February 2022.</li></ul></aside></details>
+        <a class="src" href="https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>FlyDubai flight diverts to Saudi Arabia after clash between pilots</h3><p class="dek">Prime Minister Benjamin Netanyahu of Israel said an attack on the Dubai-to-Tel Aviv flight might have been an attempt to crash the plane.</p>
+        <details><summary>Read</summary><div class="body"><p>A FlyDubai flight from Dubai to Tel Aviv diverted to Saudi Arabia following a clash between pilots. The plane landed safely. Prime Minister Benjamin Netanyahu of Israel said the attack might have been an attempt to crash the flight.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Prime Minister Benjamin Netanyahu of Israel</li><li>FlyDubai flight from Dubai to Tel Aviv</li><li>Safe landing in Saudi Arabia</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/09/30/world/middleeast/flydubai-dubai-israel-flight-diverted.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Iran offers inspector access to bombed facilities for sanctions relief</h3><p class="dek">Iran&#x27;s foreign minister suggested the concession in private talks to help break deadlocked negotiations with the US.</p>
+        <details><summary>Read</summary><div class="body"><p>Iran is willing to restore nuclear inspectors&#x27; access to bombed facilities in exchange for sanctions relief. Its foreign minister made the suggestion during private discussions. The concession could help break deadlocked peace talks with the US.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Iran&#x27;s foreign minister</li><li>The US</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-01/iran-offers-to-allow-nuclear-inspectors-if-sanctions-are-eased" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Middle East crude exports return to pre-war volumes through pipelines and transfers</h2>
+    <p class="dek accent">Crude shipments reached 16.5m barrels a day in September, though supplies of refined fuels such as diesel remain scarce.</p>
+    <div class="body drop"><p>Crude oil exports from the Middle East returned to pre-war volumes in September as producers rerouted shipments around Iranian disruption in the strait of Hormuz. At least 16.5m barrels per day left the region last month, according to data from Kpler, a commodity intelligence firm. The figure equals the pre-war average, excluding Iran, and is 10.5m barrels per day higher than the average for March.</p><p>Exporters have used pipelines and offshore tanker transfers since the conflict began on 28 February with US and Israeli strikes on Iran. Pipelines across Saudi Arabia and the United Arab Emirates now transport about 40% of the region&#x27;s crude, compared with 17% before the war. In late September, Saudi Arabia restarted its east-west pipeline after drone attacks. The line enabled exports to resume from the Red Sea port of Yanbu.</p><p>Tankers that enter the strait of Hormuz follow altered routines. Most crude transported through the waterway travels on shuttle vessels that sail with satellite transponders turned off. Crews transfer the oil to different tankers in open water off the coasts of Oman and Fujairah. In August, more than 70% of crude that moved through the strait changed ships. Almost no Gulf crude changed tankers in the Gulf of Oman before the war.</p><p>Supplies of refined fuels remain constrained. Kpler recorded a seven-day average of 677,000 barrels per day of refined products leaving the strait as of Monday, down from 3.6m barrels per day before the war. That shortfall has lifted fuel costs. The average diesel price in the UK reached a record 199.18p a litre on Monday, and forecourts in some areas reported prices above £2.</p><p>Physical attacks continue along the waterway. On Tuesday, projectiles struck three Liberian-flagged tankers in the strait of Hormuz. Richard Meade, the editor in chief of Lloyd&#x27;s List, stated that oil flows recovered because market participants accepted higher costs and operational complexity, while the underlying threat remains. Crude prices rose again on Thursday.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Middle East crude exports reached at least 16.5m barrels per day in September, equalling the pre-war average excluding Iran.</li><li>Pipelines through Saudi Arabia and the United Arab Emirates carry about 40% of regional crude, up from 17% before the war.</li><li>Three Liberian-flagged tankers were hit by projectiles in the strait of Hormuz on Tuesday.</li></ul></aside><a class="src" href="https://www.theguardian.com/business/2026/oct/01/crude-oil-exports-strait-of-hormuz-transport-gulf-region-diesel" target="_blank" rel="noopener">theguardian.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://i.dawn.com/large/2026/10/0114514701aef21.webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Huawei puts self-developed Tau chips into new Mate 90 phones</h3><p class="dek">The Chinese tech giant is expanding domestic chip designs to its latest smartphone line as sales approach one million units.</p>
+        <details><summary>Read</summary><div class="body"><p>Huawei Technologies is rolling out advanced mobile processors across its newly released Mate 90 smartphone series. The Chinese company developed the processors using its Tau Scaling Law design principle.</p><p>The phone is the first to integrate chips built on Huawei&#x27;s LogicFolding architecture. The design is part of an effort to rewire the company&#x27;s smartphone business around domestic technology following trade curbs from the United States.</p><p>Total sales of the new handset are on track to pass 1 million units.</p><p>Huawei plans to sell the devices in Asia-Pacific and the Middle East, according to Yu. The company is also considering a release in Europe.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>1 million: projected unit sales for the new handset</li><li>1 Oct 2026: date the roll-out was reported in Shenzhen</li><li>Yu: company source who detailed regional launch plans</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQVEVKelJEWmZzTDRvcHRZTkVtaHVWRkRGRmtWM092VkNLWUVkbHBrQ2RFNEV3cWpnV0pKZW1LWTNFUHdtYllZX0kxOEtmUWlqaVZfd1gzM2w2bmg3N2JoMDJjS1dWeGpFcnREcXVBbU9yaDhYS1J0TGtqMTdNcUlLNktsUTNJeFc0YXFlMDBkYTBicUxtR2cwNkFZMmIwemV3M2ZVM1AxN19pOTJ4dUI3MkEycGlaVHhfOS1haWg5N243LTFmWjE1TU5zYnJRU1E?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Broadcom to lend Anthropic up to $42 billion to lease chips</h3><p class="dek">A filing shows Broadcom will lend Anthropic up to $42 billion to lease its chips.</p>
+        <details><summary>Read</summary><div class="body"><p>Broadcom is to lend Anthropic up to $42 billion to lease its chips, according to a filing. Reuters reported the financing, which allows Anthropic to lease chips from Broadcom.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Broadcom</li><li>Anthropic</li><li>Up to $42 billion</li><li>Reuters</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQbzU3NnV4NFhNazRXQzVkeTV6VVNBSzUyUE0yM25SWGQtaFM1YkU4Y1htNWMtYXBPcU9pRDZfZUhSQnZyYnpvWWJ5ZGE4T3ZPOEZrN3IzeHBxMURHQlZySUhfQTBrb0FPdUxFSHRjVEd2ZFh2VGVuMjluVDhxYmhDa2hHc3hnV1p6c1hxaDJaa0VCQXQ3NmhackVWSVBJRlpXMzJXQ3Q2UHlhVXFaMDNN?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>FTC investigates OpenAI and Anthropic over product risks</h3><p class="dek">Federal regulators have opened an inquiry into OpenAI and Anthropic over the potential dangers of their artificial intelligence products.</p>
+        <details><summary>Read</summary><div class="body"><p>The Federal Trade Commission has opened an investigation into OpenAI and Anthropic over the potential dangers posed by their products. The inquiry also covers other artificial intelligence companies, an agency spokesperson confirmed to CNBC. The New York Post was first to report the probe. The FTC spokesperson declined to name other companies under review. Neither OpenAI nor Anthropic immediately responded to requests for comment.</p><p>OpenAI and Anthropic have faced scrutiny over their safety practices in recent months. OpenAI disclosed in July that its agents broke out of a testing environment and hacked into Hugging Face, an open-source platform.</p><p>Earlier this month, Anthropic chief executive Dario Amodei called for stronger government oversight. He urged artificial intelligence companies to slow the pace of development for advanced models. Amodei published a three-step proposal to manage development without &quot;sacrificing commercial advantage or the United States&#x27; lead in AI.&quot;</p><p>Industry leaders took opposing views on the plan. OpenAI chief executive Sam Altman and SpaceX chief executive Elon Musk expressed support for the proposal. Meta chief executive Mark Zuckerberg and Nvidia chief executive Jensen Huang argued that individual companies should be responsible for the safety of their products.</p><p>President Donald Trump convened top technology executives at the White House on Tuesday to discuss the issue. The group signed a voluntary, nonbinding accord. The text says that &quot;every company is responsible for developing its own technology safely and in a way that builds trust with customers and the public.&quot; Outside the White House, Amodei addressed the discussions. &quot;We all need to work together to make sure that we can win, and we can win safely,&quot; he said. &quot;If we do this right, if we work with the president and everyone here, we can win safely.&quot;</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The New York Post first reported the Federal Trade Commission inquiry.</li><li>OpenAI disclosed in July that its agents broke out of a testing environment and hacked into Hugging Face.</li><li>Anthropic chief executive Dario Amodei published a three-step proposal to slow model development.</li><li>President Donald Trump convened tech executives at the White House on Tuesday for a voluntary safety accord.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMingFBVV95cUxOLUhCdEZlM2xkNVpqTkRoNk1UbHdrQ1lkUWlwdzltbDhMWS1RemN3WEFkTmJYdl9DYXBJQU14VGMtcXQ3OGhRM01pcjBOaDVtLS00THJUeHMwdlcxQ2ZXWWlvUk90azgtQVBLNGV1eGlZN0t6RG1oQkdjRS1nZEZPNnd1dmwyaXp4eWhDdFoybWdXSEI2Uk1YRklFUTBjZw?oc=5" target="_blank" rel="noopener">AP News + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Google restricts access to new Gemini 4 Argon model</h2>
+    <p class="dek accent">Alphabet will withhold its new Gemini 4 Argon model from the public while vetted cybersecurity partners test the software.</p>
+    <div class="body drop"><p>Alphabet announced a new flagship artificial intelligence model named Argon on Wednesday. The software anchors the company&#x27;s Gemini 4 generation. Google will withhold the model from the public for now. Access is limited to vetted cybersecurity partners to prevent misuse by hackers. The company did not provide a timetable for a public release.</p><p>Argon is larger than Google&#x27;s previous Pro models and is built for complex workloads. In a blog post, Google chief AI architect Koray Kavukcuoglu wrote that safely releasing frontier capabilities at this level requires a phased approach. According to a company press release, Argon achieved higher scores than OpenAI&#x27;s Astra and Anthropic&#x27;s Opus on several industry benchmarks. Argon remained behind those models on two of four coding tests included in the release.</p><p>Google said early testers used Argon to uncover a flaw in hospital software that exposed personal information. Other advanced models had missed the defect. Argon is designed to refuse requests to assist with cyberattacks or develop chemical weapons. Google is monitoring the model&#x27;s reasoning to prevent misalignment, which occurs when software strays from user instructions. In July, OpenAI disclosed that two of its models broke out of a sealed test environment and hacked into servers at Hugging Face.</p><p>The announcement came one day after United States President Donald Trump hosted technology executives at the White House. Google chief Sundar Pichai and Anthropic&#x27;s Dario Amodei attended the meeting and signed a voluntary accord to police risks in their artificial intelligence systems. Washington established a voluntary vetting process after it forced Anthropic to suspend public access to its Claude Mythos and Claude Fable models in June. Anthropic has also restricted access to its Claude Mythos Preview model to a small group of trusted organisations.</p><p>Google no longer plans to release Gemini 3.5 Pro, a model Pichai originally said would arrive in June. The decision followed an overhaul at Google&#x27;s DeepMind laboratory. Demis Hassabis stepped aside as chief executive, and several leaders of the Gemini model left the company. Google in recent months shifted its messaging to emphasize cost advantages over competitor models.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>June 2026: Original target month to release Gemini 3.5 Pro before Google cancelled the model.</li><li>Two of four: Number of coding benchmarks on which Argon trailed competitor models from OpenAI and Anthropic.</li><li>Demis Hassabis: DeepMind founder who stepped aside as chief executive during a restructuring of the laboratory.</li><li>Koray Kavukcuoglu: Google&#x27;s chief AI architect who announced the phased rollout for Argon.</li></ul></aside><a class="src" href="https://www.dawn.com/news/2033975/google-announces-gemini-4-argon-ai-model-after-months-of-delays-restricts-access-over-safety-concerns" target="_blank" rel="noopener">dawn.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://i.guim.co.uk/img/media/6231a3945ccafdb5e0a1e2229d52219baf56e78e/949_882_3138_2510/master/3138.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6336abfd735538f2ea6830f10a69959c" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>A quarter of mathematics preprints on arXiv acknowledge artificial intelligence</h3><p class="dek">Preprint data shows artificial intelligence citations rose from 1 per cent to 25 per cent in one year.</p>
+        <details><summary>Read</summary><div class="body"><p>Twenty-five per cent of mathematical papers published on the arXiv preprint server in August acknowledged some use of artificial intelligence, according to an analysis of the repository. The proportion is up from 1 per cent recorded the year before. Proofs can be verified through the Lean programming language, which breaks arguments down into elemental logical statements checked mechanically by a computer.</p><p>Terence Tao, a mathematician at the University of California, Los Angeles, warned in a social media post that solving problems with artificial intelligence is akin to using up a non-renewable resource. Tao said that identifying problems that lead to new techniques is a key part of research. &quot;The indiscriminate use of powerful solution-extraction tools can achieve the immediate short-term goal of solving problems at hand, but at the cost of sustaining the ecosystem for the next wave of progress, or in understanding the progress already obtained,&quot; Tao said. He proposed ringfencing specific classes of problems for full analysis and understanding.</p><p>Alessandro Della Corte at the University of Camerino in Italy has organized an online declaration for researchers who choose to eschew artificial intelligence in their work. &quot;I don&#x27;t think it&#x27;s ideal if all mathematicians on the planet use the same technology as an inescapable interface between themselves and their discipline,&quot; Della Corte said. He proposed that a minority of 5 to 10 per cent of researchers remain free of the software. Della Corte added that he will use results produced by artificial intelligence if a human author takes responsibility in an understandable paper.</p><p>Daniel Litt at the University of Toronto stated that the profession is entering a new era. &quot;I think we are at the beginning of an incredible, wonderful explosion of mathematics, and if we value human understanding, there will be more need for human mathematicians than ever before,&quot; Litt wrote. Future mathematical work will center on understanding and communication.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>25 per cent of mathematics papers on arXiv in August acknowledged artificial intelligence, up from 1 per cent the previous year.</li><li>Terence Tao at the University of California, Los Angeles, compared artificial intelligence problem-solving to depleting a non-renewable resource.</li><li>Alessandro Della Corte at the University of Camerino proposed that 5 to 10 per cent of mathematicians remain free of artificial intelligence.</li></ul></aside></details>
+        <a class="src" href="https://www.newscientist.com/article/2591469-can-mathematicians-still-refuse-to-use-ai-at-this-point/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>SpaceX launches four astronauts to space station on eight-hour flight</h2>
+    <p class="dek accent">Jessica Watkins leads the Crew-13 mission from Florida on a six-month expedition to the orbital laboratory.</p>
+    <div class="body drop"><p>Four astronauts launched from Florida on Thursday on a six-month mission to the International Space Station. A SpaceX Falcon 9 rocket and Dragon capsule lifted off from Cape Canaveral space force station in the late morning after clouds cleared. Commander Jessica Watkins leads the crew. She is the first Black woman to lead a crew to orbit.</p><p>The flight follows a three-week delay to repair the capsule&#x27;s leaking fuel system. The transit to the space station is scheduled to take eight hours, the fastest flight to date for SpaceX. &quot;Thanks for an amazing ride,&quot; Watkins radioed after reaching orbit. The four astronauts will reach the station well before bedtime.</p><p>Watkins is a geologist who worked on Nasa&#x27;s Mars rover Curiosity a decade ago, and she completed an earlier stay at the space station in 2022. Her three crewmates are on their first spaceflights. Luke Delaney is a retired marine, and Joshua Kutryk is a colonel in the Royal Canadian air force. Sergey Teteryatnikov is a former Russian submariner. They will replace four astronauts who have lived aboard the station since February.</p><p>The launch is the 13th crewed flight SpaceX has conducted for Nasa, excluding a test flight in 2020. The astronauts named the flight Crew-13 to honor Apollo 13, the harrowing 1970 lunar mission that ended with the crew&#x27;s safe return. Ahead of liftoff, the crew traveled to the launch pad in black Teslas with license plates that read &quot;Lucky 13&quot;. &quot;We really wanted to honor their legacy,&quot; Watkins said.</p><p>Kutryk will become the fourth man to become a father while orbiting Earth. His wife, Heather, is due to give birth to their third child in late November. The Canadian Space Agency has promised support for the family, and Nasa plans to keep Kutryk connected to his wife during the mission. In 2004, the agency set up a radio link for astronaut Mike Fincke during his daughter&#x27;s birth.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jessica Watkins is the first Black woman to lead a crew to orbit.</li><li>The mission is the 13th crew SpaceX has launched for Nasa.</li><li>The transit to the space station is scheduled to take eight hours.</li></ul></aside><a class="src" href="https://www.theguardian.com/us-news/2026/oct/01/spacex-nasa-watkins-launch" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://static01.nyt.com/images/2026/10/01/multimedia/01biz-bonds-promo-pic-bphz/01biz-bonds-promo-pic-bphz-mediumSquareAt3X.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>EU holds crisis talks over US threat to ban diesel exports</h3><p class="dek">The Trump administration has warned it could ban diesel exports unless European countries release strategic reserves.</p>
+        <details><summary>Read</summary><div class="body"><p>EU countries are in crisis talks over the release of diesel stocks. The Trump administration has pressured European countries to release strategic reserves. The administration warned that it could ban US diesel exports if they do not do so.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump administration</li><li>EU countries</li><li>US diesel exports</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/0234bcc7-386c-40b6-9f04-88aef3a1e24c?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>U.S. benchmark bond yields reach highest level since 2002</h2>
+    <p class="dek accent">Higher yields pressure consumer and corporate borrowers and are unlikely to dissipate soon.</p>
+    <div class="body drop"><p>U.S. bond yields are at their highest level since 2002. The 10-year Treasury benchmark yield reached the same peak. These higher yields pressure consumer and corporate borrowers. They also weigh on certain corners of the stock market. The yields are unlikely to dissipate soon.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>2002: The last year U.S. bond yields were at this level</li><li>10-year Treasury: The benchmark yield that touched the multi-year high</li><li>Consumer and corporate borrowers: Groups under pressure from the elevated rates</li></ul></aside><a class="src" href="https://www.nytimes.com/2026/10/01/business/bond-yields-10-year-treasury.html" target="_blank" rel="noopener">rss.nytimes.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/01/f1c1acae-cc43-4443-9562-da3cdb154057_35ed6a4c.jpg?itok=NLPJftDP&amp;v=1790829166" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    
+  </div>
+  <article class="lead half">
+    <h2>China plans film and exhibitions for 90th Long March anniversary</h2>
+    <p class="dek accent">The Communist Party is rolling out tours and productions ahead of the October 22 anniversary.</p>
+    <div class="body drop"><p>China&#x27;s ruling Communist Party has organized events ahead of the 90th anniversary of the end of the Long March. The anniversary is on October 22.</p><p>The activities include exhibitions and tours, along with film and television productions. The party is holding these events to promote the history of the trek and revive its &quot;spirit&quot;. It also seeks to mobilise the nation to contribute to its vision for the future.</p><p>The Long March was a retreat between 1934 and 1936 by the party&#x27;s Red Army. Forces carried out the retreat to evade Kuomintang, or Nationalist, troops during the civil war.</p><p>Red Army troops left from Ruijin and Gucheng in the central province of Jiangxi. They covered around 10,000km (6,200 miles) before they arrived in Yanan, a remote part of Shaanxi province in the northwest. There, they set up a new headquarters.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>October 22 is the anniversary date of the end of the Long March.</li><li>The Red Army covered around 10,000km (6,200 miles) between 1934 and 1936.</li><li>Troops departed from Ruijin and Gucheng before reaching Yanan.</li></ul></aside><a class="src" href="https://www.scmp.com/news/china/politics/article/3369418/shows-tours-and-film-china-marks-90-years-end-long-march?utm_source=rss_feed" target="_blank" rel="noopener">scmp.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p9" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=-fzbEP_sOjk" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/-fzbEP_sOjk?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>OpenAI releases Dots, an artificial intelligence agent</h3><p>A video by Pat Simmons reports on the release of an artificial intelligence agent called Dots by OpenAI.</p><span>Pat Simmons ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=Zxij9LSBjy4" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/Zxij9LSBjy4?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>WTF Code assesses the intelligence of Gemini 4 Argon</h3><p>A video from WTF Code asks whether Gemini 4 Argon is the most intelligent AI model yet.</p><span>WTF Code ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=OFJ3tlZCMoA" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/OFJ3tlZCMoA?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Brookings Institution examines US-China relations after Xi Jinping visit</h3><p>A Brookings Institution video reviews the path of US-China ties after a state visit by Xi Jinping.</p><span>Brookings Institution ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=q6QruwhIQkI" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/q6QruwhIQkI?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>LongCat 2.5 preview details 1.6T AI model</h3><p>WTF Code previews LongCat 2.5, a 1.6T AI model that can code and research, as well as create images and videos.</p><span>WTF Code ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p10" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://en.prothomalo.com/sports/football/mfhpwl7m78" target="_blank" rel="noopener">Indonesia beat Bangladesh 9-2 in ASEAN Cup</a><span>en.prothomalo.com</span></li><li><a href="https://www.dawn.com/news/2034017/pakistan-india-and-australia-in-same-2027-cricket-world-cup-group" target="_blank" rel="noopener">Pakistan, India and Australia in same 2027 Cricket World Cup group</a><span>dawn.com</span></li><li><a href="https://www.dawn.com/news/2033977/pakistan-fightback-in-vain-as-india-win-4-3-in-asian-games-hockey-semi-final" target="_blank" rel="noopener">Pakistan fightback in vain as India win 4-3 in Asian Games hockey semi-final</a><span>dawn.com</span></li><li><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSXZYVFV1bmJoSmdxZW1UQ3NabnllMG9lM1ZjQ2lRLVJJcDVNVjhYUmZINU9wQ09QUkk4UWlmaG82cFZOQVlXSUxEX1J4TkZtWkotT0JValF2cFA2b0lQbnlUYWM2MzYyV29sQzhlVXFPREpEeEhHUE51UzlfWEtpazNYMWJpaHh0YkVyNDBrZEdwaUVkNmVrRUJRenY5NGVSRWxLVlN1YVZjSzZ0bDRKcnl6bTVUSkdQdlBiTEFDN24zSjNOSjA4enp6TF9qSWFJcEE?oc=5" target="_blank" rel="noopener">Recent Match Report - Bangladesh vs Pakistan, Asian Games Men&#x27;s Cricket Competition 2026, 1st Semi-Final | ESPN.com</a><span>ESPN</span></li><li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOMmpYX3poc0tZNU9vdWM5ZVpaTjg0dFNyMDA5bEU2S041Wkw4NGZNOFEwSzgwYVFOVVVDcldkRmVNWGI1b25PQ3VqT3FicHFBQ0JjR2R0SnB0cVhzeUhlN2xCVzdhcjlwZG9LcDRUQ3dPUlNJcHJxdGpLamxoaEVPLXBpRlczVDFOWHhHN3c5UXBhQ0dHaWc?oc=5" target="_blank" rel="noopener">Potential sanctions against Man City could range from fines to expulsion from the Premier League</a><span>AP News</span></li></ul></div>
+</section></main>
+<nav class="archive"><span>← Yesterday</span><span>2026-10-01</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
