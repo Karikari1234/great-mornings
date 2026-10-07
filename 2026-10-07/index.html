@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5276x3522+0+0/resize/5276x3522!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F68%2F60%2Fb88a79434709af3e60e9407e2d96%2Fap26276547774483.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Wednesday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Francis Halzen wins Nobel Prize in physics for work on high-energy neutrinos from space</h2>
+      <p class="dek">The 82-year-old scientist, originally from Belgium, is affiliated with the University of Wisconsin–Madison. His research into capturing neutrinos at the South Pole dates back to the 1980s.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>7 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5276x3522+0+0/resize/5276x3522!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F68%2F60%2Fb88a79434709af3e60e9407e2d96%2Fap26276547774483.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Francis Halzen wins Nobel Prize in physics for work on high-energy neutrinos from space</h2>
+    <p class="dek accent">The 82-year-old scientist, originally from Belgium, is affiliated with the University of Wisconsin–Madison. His research into capturing neutrinos at the South Pole dates back to the 1980s.</p>
+    <div class="body drop"><p>The 82-year-old scientist, originally from Belgium, is affiliated with the University of Wisconsin–Madison. His research into capturing neutrinos at the South Pole dates back to the 1980s.</p></div><a class="src" href="https://www.npr.org/2026/10/06/g-s1-146622/nobel-prize-physics" target="_blank" rel="noopener">feeds.npr.org + 4 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>CNN, CBS News now under one roof as Paramount-Warner Bros merger closes</h3><div class="body"><p>The newly combined company is called Skydance and began trading on Wall Street on Tuesday.</p></div><a class="src" href="https://www.aljazeera.com/economy/2026/10/6/cnn-cbs-news-now-under-one-roof-as-paramount-warner-bros-merger-closes?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 5 more ↗</a></li>
+    <li><h3>How a Russian contract dispute brought down Bangladesh&#x27;s digital payment</h3><div class="body"><p>The crisis stems from a row over a software migration between local payment processor Information Technology Consultants Ltd (ITCL), operator of the Q-Cash network, and Russian vendor Compass Plus.</p></div><a class="src" href="https://www.tbsnews.net/economy/banking/how-russian-contract-dispute-brought-down-bangladeshs-digital-payment-1564861" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a></li>
+    <li><h3>South Korea captain apologises for gloating over military service exemption</h3><div class="body"><p>Lee Gi-hyuk apologises for gloating about avoiding South Korea&#x27;s mandatory military service.</p></div><a class="src" href="https://www.bbc.co.uk/sport/football/articles/c6wy4xd80xyvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 2 more ↗</a></li>
+    <li><h3>How digital breakdowns affect supply chains — and endanger the global economy</h3><div class="body"><p>Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03105-z When supply chains fail, it’s often because of energy, computer or data-network failures. Addressing these requires a way to m</p></div><a class="src" href="https://www.nature.com/articles/d41586-026-03105-z" target="_blank" rel="noopener">nature.com + 2 more ↗</a></li>
+    <li><h3>Oman evacuates injured crew from attacked tanker in Strait of Hormuz</h3><div class="body"><p>India&#x27;s Foreign Ministry says 11 out of 12 injured crew members on board the On Peace are Indian nationals.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a></li>
+    <li><h3>Oil prices rise as storms and air strikes threaten supply</h3><div class="body"><p>Oil prices rise as storms and air strikes threaten supply Reuters</p></div><a class="src" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPSHYwa2g1N1NQR1ZHcFR2eVJ3cjJySlZLVlA1UjBQeU9yNl81Z2tGYTk3TVk4V3JMcXh1LVpscTVDdTdrZGFOZjd4VWNzeXNEM1lHYmV5bDFzV2ZrN3NuQUE4VXV6cE16enQzSi1ZU3l1aXVPa00yVDkxeDRYbFI5WjhOVGR0VHFUMWNkWFMtNmxDSW9YRUtHY2pKWTlxTFRPclRzTA?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a></li>
+    <li><h3>Emmy Awards to leave broadcast TV for Amazon&#x27;s Prime Video in 2027</h3><div class="body"><p>Emmy Awards to leave broadcast TV for Amazon&#x27;s Prime Video in 2027 Reuters</p></div><a class="src" href="https://news.google.com/rss/articles/CBMivAFBVV95cUxONUh5M1dMVmlkdXhUVm1UZ2dsZVlQRTFrNTVLaW1oWFg2bFg5QnM1U3duRjZpWmt2OUFmdjZjeFc4WVpPZnV6T0puaVlZNDExaDRCWkZhcTY0cnJqbFpfZTh0M3MxRlVDX2hpM2RhaW9MMkRaNmpGbkpSSlJqT2xvWUpNeWJQMTRVNXhqUjAxemxJV2VJd2FiZTJCU1dFYXY2cWQ3VU52QTNLZmxYYUpwNUNUakhEbm5tWDVfeA?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a></li>
+    <li><h3>Taiwan Dethrones Korea Atop Global Markets</h3><div class="body"><p>Taiwan is emerging as the stronger bet for equity investors due to its deeper linkages across the AI supply chain and a more upbeat earnings outlook. Bloomberg&#x27;s Winnie Hsu breaks down the news. (Sour</p></div><a class="src" href="https://www.bloomberg.com/news/videos/2026-10-07/taiwan-dethrones-korea-atop-global-markets-video" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a></li>
+    <li><h3>Mary Ng: Asian Trade Growth Can Boost Canadian Exports</h3><div class="body"><p>Former Canadian Minister of International Trade and Milken Institute Senior Fellow Mary Ng outlines Canada&#x27;s expanding trade push across Asia and the Indo-Pacific, emphasizing that deeper market acces</p></div><a class="src" href="https://www.bloomberg.com/news/videos/2026-10-07/mary-ng-asian-trade-growth-can-boost-canadian-exports-video" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a></li>
+    <li><h3>Govt mulls wage increase for RMG workers</h3><div class="body"><p>New wage board by October, minister says</p></div><a class="src" href="https://www.tbsnews.net/bangladesh/govt-mulls-wage-increase-rmg-workers-1564961" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/07/08_panorama_copy.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    
+  </div>
+  <article class="lead half">
+    <h2>Even death costs dearly in Dhaka</h2>
+    <p class="dek accent">For families in Dhaka, the grief of losing a loved one is increasingly being compounded by the financial burden that follows. From transporting the body to arranging funeral meals, the costs can add u</p>
+    <div class="body drop"><p>For families in Dhaka, the grief of losing a loved one is increasingly being compounded by the financial burden that follows. From transporting the body to arranging funeral meals, the costs can add u</p></div><a class="src" href="https://www.tbsnews.net/features/panorama/even-death-costs-dearly-dhaka-1564931" target="_blank" rel="noopener">tbsnews.net ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://th-i.thgim.com/public/incoming/go42p7/article71552986.ece/alternates/LANDSCAPE_1200/RAHUL%20GANDHI%20CEC%2060.JPG" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Twenty-five years of leadership, an India transformed</h3><p class="dek">Prime Minister Narendra Modi’s 25 years in leadership reflect India’s transformation and its rising national ambitions</p>
+        <details><summary>Read</summary><div class="body"><p>Prime Minister Narendra Modi’s 25 years in leadership reflect India’s transformation and its rising national ambitions</p></div></details>
+        <a class="src" href="https://www.thehindu.com/opinion/lead/twenty-five-years-of-leadership-an-india-transformed/article71552707.ece" target="_blank" rel="noopener">thehindu.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>The Scam Industry Is Becoming a Big Problem in India</h3><p class="dek">According to the FBI, American nationals lost around $50 million to one network of online scammers based in India.</p>
+        <details><summary>Read</summary><div class="body"><p>According to the FBI, American nationals lost around $50 million to one network of online scammers based in India.</p></div></details>
+        <a class="src" href="https://thediplomat.com/2026/10/the-scam-industry-is-becoming-a-big-problem-in-india/" target="_blank" rel="noopener">thediplomat.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>ECI says Opposition MPs’ Parliament Annexe meet demand ‘could not be accepted’</h2>
+    <p class="dek accent">Poll panel says protocol requires meetings with political delegations to be held at its premises; offers to receive memorandum through senior-most officer on duty</p>
+    <div class="body drop"><p>Poll panel says protocol requires meetings with political delegations to be held at its premises; offers to receive memorandum through senior-most officer on duty</p></div><a class="src" href="https://www.thehindu.com/news/national/eci-says-opposition-mps-parliament-annexe-meet-demand-could-not-be-accepted/article71552779.ece" target="_blank" rel="noopener">thehindu.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791338318.jpg?resize=1918%2C1080&amp;quality=80" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Politicians slam Trump’s suggestion that Iran ‘take’ San Diego, Los Angeles</h3><p class="dek">Both Democrats and Republicans have expressed outrage at Trump&#x27;s remarks that cities could be sacrificed in Iran war.</p>
+        <details><summary>Read</summary><div class="body"><p>Both Democrats and Republicans have expressed outrage at Trump&#x27;s remarks that cities could be sacrificed in Iran war.</p></div></details>
+        <a class="src" href="https://www.aljazeera.com/news/2026/10/7/politicians-slam-trumps-suggestion-that-iran-take-san-diego-los-angeles?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>QatarEnergy Secures $3 Billion Loan From Four Chinese Banks</h3><p class="dek">State-owned QatarEnergy has secured a $3 billion loan from Chinese banks, according to people familiar with the matter, another sign that financial firms are still willing to lend to certain Gulf borr</p>
+        <details><summary>Read</summary><div class="body"><p>State-owned QatarEnergy has secured a $3 billion loan from Chinese banks, according to people familiar with the matter, another sign that financial firms are still willing to lend to certain Gulf borr</p></div></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-07/qatarenergy-secures-3-billion-loan-from-four-chinese-banks" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Gold Edges Lower as Oil Rises on Iran Stepping Up Hormuz Attacks</h3><p class="dek">Gold edged lower as oil rose in response to Iran stepping up attacks in the Strait of Hormuz, even as energy flows through the critical waterway were recovering.</p>
+        <details><summary>Read</summary><div class="body"><p>Gold edged lower as oil rose in response to Iran stepping up attacks in the Strait of Hormuz, even as energy flows through the critical waterway were recovering.</p></div></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-06/gold-steady-as-more-oil-and-falling-yields-ease-rate-hike-bets" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Trump set to talk to Russia&#x27;s Putin &#x27;very soon&#x27; about plague-related death in Siberia</h3><p class="dek">Trump says he will speak with Putin “very soon” over a plague incident in Russia as CDC monitor the situation.</p>
+        <details><summary>Read</summary><div class="body"><p>Trump says he will speak with Putin “very soon” over a plague incident in Russia as CDC monitor the situation.</p></div></details>
+        <a class="src" href="https://www.cnbc.com/2026/10/07/trump-putin-russian-plague-death-cdc-pneumonic-.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Kuwaiti man jailed for life after planning knife attack on Israeli Embassy in London</h3><p class="dek">A Kuwaiti man who attempted to storm the Israeli Embassy in London armed with two knives has been jailed for life after a court heard he planned the attack as an act of revenge over Israel’s genocidal</p>
+        <details><summary>Read</summary><div class="body"><p>A Kuwaiti man who attempted to storm the Israeli Embassy in London armed with two knives has been jailed for life after a court heard he planned the attack as an act of revenge over Israel’s genocidal</p></div></details>
+        <a class="src" href="https://5pillarsuk.com/2026/10/06/kuwaiti-man-jailed-for-life-after-planning-knife-attack-on-israeli-embassy-in-london/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kuwaiti-man-jailed-for-life-after-planning-knife-attack-on-israeli-embassy-in-london&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kuwaiti-man-jailed-for-life-after-planning-knife-attack-on-israeli-embassy-in-london" target="_blank" rel="noopener">5pillarsuk.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Two Houthi missiles target Yemen’s Aden International Airport</h2>
+    <p class="dek accent">Explosions near Aden International Airport after Yemen’s Saudi-backed gov&#x27;t said two missiles were fired by the Houthis.</p>
+    <div class="body drop"><p>Explosions near Aden International Airport after Yemen’s Saudi-backed gov&#x27;t said two missiles were fired by the Houthis.</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/10/7/two-houthi-missiles-target-yemens-aden-international-airport?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agentic-hacking-1152x648.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Citigroup bets on Meta&#x27;s Muse as AI&#x27;s &#x27;front door to the internet&#x27;</h3><p class="dek">Citigroup bets on Meta&#x27;s Muse as AI&#x27;s &#x27;front door to the internet&#x27; Reuters</p>
+        <details><summary>Read</summary><div class="body"><p>Citigroup bets on Meta&#x27;s Muse as AI&#x27;s &#x27;front door to the internet&#x27; Reuters</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTEtTzZyUDMwaXNvY2QtYy1YTHNmY2xONUdQV3pVUTBhY3ZoZnJ4T1pGQVg3OGVGTm45Y1pNaGRPTUhuM2VsbFpSdUJJYmFjal9RN3dMR2czdG85V0M2Mm5HZ3NjNjlZTzNqRTI1aWVUTXZwUTN3amNicy1taDE4NTNBWmt6cUJPTUpMNTREZ2l2TGdwdXhjYzNB?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>llm-openai-decisions 0.1a0</h3><p class="dek">Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week&#x27;s DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I</p>
+        <details><summary>Read</summary><div class="body"><p>Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week&#x27;s DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I</p></div></details>
+        <a class="src" href="https://simonwillison.net/2026/Oct/6/llm-openai-decisions/" target="_blank" rel="noopener">simonwillison.net ↗</a>
+      </article>
+      <article class="more">
+        <h3>Anthropic expands Claude Startups program in bid to snag founders and fast-growing companies</h3><p class="dek">The expansion marks the AI company&#x27;s latest push to deepen its ties to founders and fast-growing companies.</p>
+        <details><summary>Read</summary><div class="body"><p>The expansion marks the AI company&#x27;s latest push to deepen its ties to founders and fast-growing companies.</p></div></details>
+        <a class="src" href="https://www.cnbc.com/2026/10/06/anthropic-claude-startups-program.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Meta joins with group of companies to tame ‘chaos’ of doing business with AI bots</h3><p class="dek">Meta and OpenAI Chairman Bret Taylor’s startup Sierra are building a set of tech standards to make it easier to do business with AI bots.</p>
+        <details><summary>Read</summary><div class="body"><p>Meta and OpenAI Chairman Bret Taylor’s startup Sierra are building a set of tech standards to make it easier to do business with AI bots.</p></div></details>
+        <a class="src" href="https://www.cnbc.com/2026/10/06/meta-joins-companies-to-tame-chaos-of-doing-business-with-ai-bots.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Copper Stable as AI-Driven Tech Stock Rally Holds Near Record</h3><p class="dek">Copper steadied as a rally in tech-related stocks held near record highs on optimism about the artificial intelligence boom.</p>
+        <details><summary>Read</summary><div class="body"><p>Copper steadied as a rally in tech-related stocks held near record highs on optimism about the artificial intelligence boom.</p></div></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-07/copper-stable-as-ai-driven-tech-stock-rally-holds-near-record" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>OpenAI “rogue” agent activities found on Wikimedia projects</h2>
+    <p class="dek accent">OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it&#x27;s not a huge surprise that Wikipedia found evidence of that activity once t</p>
+    <div class="body drop"><p>OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it&#x27;s not a huge surprise that Wikipedia found evidence of that activity once t</p></div><a class="src" href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/" target="_blank" rel="noopener">simonwillison.net + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108373228-1791290584757-gettyimages-1813801150-BC_2023StudioAI_4807.jpeg?v=1791290675&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>South Asia growth holds firm, but energy shock, weather pose risks, says World Bank economist</h3><p class="dek">South Asia growth holds firm, but energy shock, weather pose risks, says World Bank economist Reuters</p>
+        <details><summary>Read</summary><div class="body"><p>South Asia growth holds firm, but energy shock, weather pose risks, says World Bank economist Reuters</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPWEtFY3hhRWFpbUowaVlMbDdVb3MzaXo4bElPcS1JUF9wOXJnaFkybFc5ZVVHRjNOUFR3ZUtDM3Nnem5ocXBxdlhuWVZUQnI4Sjg0ODFMWVQzVVdvanQtWHpMazF1S2x3MkhHbmZaT0ZHQ1hLclVBWjBpUjB3NWJPLWFlOEZUQXNVZkY1VlFTU0ZXSkRIOUwwYXBlZGxuX19QQnNPdWZWNUw0VEppS1dUWnNkYWJpVVJBb0F2ajVn?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Aramco weighs its options for Saudi Arabia’s growing gas surplus</h3><p class="dek">State-owned group explores exports and ways to raise finance as it assesses how to use gas from giant Jafurah field</p>
+        <details><summary>Read</summary><div class="body"><p>State-owned group explores exports and ways to raise finance as it assesses how to use gas from giant Jafurah field</p></div></details>
+        <a class="src" href="https://www.ft.com/content/7d14f690-e980-4dd2-87ad-1d28658beb00?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Samsung Investors Want Evidence Profit Boom Has Staying Power</h3><p class="dek">Samsung Electronics Co.’s earnings will test whether it can convince investors of its long-term outlook, an increasingly critical task as record profits have failed to reinvigorate the stock.</p>
+        <details><summary>Read</summary><div class="body"><p>Samsung Electronics Co.’s earnings will test whether it can convince investors of its long-term outlook, an increasingly critical task as record profits have failed to reinvigorate the stock.</p></div></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-06/samsung-investors-want-evidence-profit-boom-has-staying-power" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>What comes next with the energy shock?</h2>
+    <p class="dek accent">The disruption to oil supply, oil prices and the world economy has been surprisingly manageable so far</p>
+    <div class="body drop"><p>The disruption to oil supply, oil prices and the world economy has been surprisingly manageable so far</p></div><a class="src" href="https://www.ft.com/content/37e12a42-d473-4b1b-8fc5-4ea5f06d3bfb?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://www.newscientist.com/wp-content/uploads/2026/09/SEI_314545331.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Scientists take a radiometer for a spin in a hot-air balloon</h3><p class="dek">Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-02973-9 A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that me</p>
+        <details><summary>Read</summary><div class="body"><p>Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-02973-9 A satisfying congruence between genetics and cell-biology findings, and experiments at altitude with a rotating device that me</p></div></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-02973-9" target="_blank" rel="noopener">nature.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Cells, who needs them? Biochemists turn to proteins in a tube</h3><p class="dek">Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03136-6 Scientists are using cell-free transcription and translation systems to synthesize proteins, design biology-based sensors and </p>
+        <details><summary>Read</summary><div class="body"><p>Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03136-6 Scientists are using cell-free transcription and translation systems to synthesize proteins, design biology-based sensors and </p></div></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03136-6" target="_blank" rel="noopener">nature.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>The telescope that could reveal what dark matter and dark energy are</h2>
+    <p class="dek accent">The Roman telescope is NASA’s newest space observatory. Every 10 months, it will get the equivalent of about 1000 years&#x27; worth of Hubble observations. Will it find the answers to our questions about d</p>
+    <div class="body drop"><p>The Roman telescope is NASA’s newest space observatory. Every 10 months, it will get the equivalent of about 1000 years&#x27; worth of Hubble observations. Will it find the answers to our questions about d</p></div><a class="src" href="https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://restofworld.org/wp-content/uploads/2026/09/illo_ai_safety_concentration_final-768x432.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>The ‘WarGames’ Problem: Computer Science Has Long Understood What It Takes to Keep AI Under Control</h3><p class="dek">The AI hacking events involving OpenAI, Anthropic, and Google underscore lessons that draw on years of computer science research. The post The ‘WarGames’ Problem: Computer Science Has Long Understood </p>
+        <details><summary>Read</summary><div class="body"><p>The AI hacking events involving OpenAI, Anthropic, and Google underscore lessons that draw on years of computer science research. The post The ‘WarGames’ Problem: Computer Science Has Long Understood </p></div></details>
+        <a class="src" href="https://singularityhub.com/2026/10/02/the-wargames-problem-computer-science-has-long-understood-what-it-takes-to-keep-ai-under-control/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>World Bank says Bangladesh economic rebound falls short, cuts growth outlook</h3><p class="dek">The World Bank slashed its FY27 GDP growth forecast for Bangladesh by 1.2 percentage points to 3.4%, from 4.6% projected in April, the second-steepest downgrade among South Asian economies.</p>
+        <details><summary>Read</summary><div class="body"><p>The World Bank slashed its FY27 GDP growth forecast for Bangladesh by 1.2 percentage points to 3.4%, from 4.6% projected in April, the second-steepest downgrade among South Asian economies.</p></div></details>
+        <a class="src" href="https://www.tbsnews.net/economy/bangladesh-gdp-growth-rise-39-fy28-world-bank-1564016" target="_blank" rel="noopener">tbsnews.net ↗</a>
+      </article>
+      <article class="more">
+        <h3>🔮 The transition is hiding in plain sight #604</h3><p class="dek">AI consciousness, electrification’s hidden progress, and the coming agentic bank run++</p>
+        <details><summary>Read</summary><div class="body"><p>AI consciousness, electrification’s hidden progress, and the coming agentic bank run++</p></div></details>
+        <a class="src" href="https://www.exponentialview.co/p/ev-604" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>AI companies want to embed safety evaluators, but countries need their own</h2>
+    <p class="dek accent">At a Rest of World event in New York last week, speakers explored how countries sidelined by the U.S.-China race can retain some control over safety standards as they adopt models from OpenAI, Anthrop</p>
+    <div class="body drop"><p>At a Rest of World event in New York last week, speakers explored how countries sidelined by the U.S.-China race can retain some control over safety standards as they adopt models from OpenAI, Anthrop</p></div><a class="src" href="https://restofworld.org/2026/ai-safety-independent-evaluation/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1280px-Flag_of_Palestine.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Equinor CEO says Rosebank, Jackdaw rejection would be major setback</h3><p class="dek">Equinor CEO says Rosebank, Jackdaw rejection would be major setback Reuters</p>
+        <details><summary>Read</summary><div class="body"><p>Equinor CEO says Rosebank, Jackdaw rejection would be major setback Reuters</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOempsQ3RIcnJmRnVqZ0tYSEFjdkE2bmJPMmtQN08xYUVlbkstWmtMdE5xTWRzcHJiSzEtcDZVaWU3X09XMUxpZWtiUGhLS0RIbHA2cFdsdDFrbjFuMmRpMHlLeUxGbXJjZzM1b1UzS2YzeS13N1VXcmtrT1VHVXhzaXpKd081ZmE2aW5QMjJVal9nXzRZY1ZjNXVocHVyTGdoTVg2R2RDVkR1M1VxRGczTlZRRUN6dzZVSVhGc1J5ZVZDOFU?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>On this day in 2023: Palestinian nationalist groups launched armed incursions into the Gaza envelope, starting the Gaza war.</h2>
+    <p class="dek accent">Palestinian nationalism is the national movement of the Palestinian people that espouses self-determination and sovereignty over the region of Palestine. Originally formed in the early 20th century in</p>
+    <div class="body drop"><p>Palestinian nationalism is the national movement of the Palestinian people that espouses self-determination and sovereignty over the region of Palestine. Originally formed in the early 20th century in</p></div><a class="src" href="https://en.wikipedia.org/wiki/Palestinian_nationalism" target="_blank" rel="noopener">Wikipedia ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.theatlantic.com/thumbor/hqEcPCdqDm29mafCeYh7cMJdzKU=/665x441/media/img/posts/2026/10/2026_10_04_What_is_Zionism_Adam_Kirsch_congress/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Yemen is spiralling into another civil war that could swiftly engulf in the entire region</h3><p class="dek">The Middle East has seen many explosions of violence in recent years. But while the US-Iran war has grabbed the headlines this year, the rapidly escalating conflict between the Houthis and Yemen’s int</p>
+        <details><summary>Read</summary><div class="body"><p>The Middle East has seen many explosions of violence in recent years. But while the US-Iran war has grabbed the headlines this year, the rapidly escalating conflict between the Houthis and Yemen’s int</p></div></details>
+        <a class="src" href="https://theconversation.com/yemen-is-spiralling-into-another-civil-war-that-could-swiftly-engulf-in-the-entire-region-293104" target="_blank" rel="noopener">theconversation.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>What Is Zionism?</h2>
+    <p class="dek accent">O n October 7, 2023, Hamas fighters launched a surprise attack on Israel from the Gaza Strip, killing more than 1,200 people and taking 251 hostages. The attack was the worst disaster in the history o</p>
+    <div class="body drop"><p>O n October 7, 2023, Hamas fighters launched a surprise attack on Israel from the Gaza Strip, killing more than 1,200 people and taking 251 hostages. The attack was the worst disaster in the history o</p></div><a class="src" href="https://www.theatlantic.com/ideas/2026/10/zionism-israel-palestine-history/688834/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Physics from first principles, lesson 6: conservation</h2><p class="dek accent">Go deeper: Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium</p>
+  <div class="body drop"><p>Go deeper: Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium</p></div><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/Conservation_law" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/shorts/pZ4CfG0Z4Bk" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/pZ4CfG0Z4Bk?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Pakistan &amp; Turkey Are Entering Saudi Arabia&#x27;s War? The Mecca Pact Is Now ACTIVE</h3><p></p><span>KAY Rated ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=bQPU6UJ4iCw" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/bQPU6UJ4iCw?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>13 Businesses for the Age of AI</h3><p></p><span>Greg Isenberg ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=1yKxFGhyDFE" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/1yKxFGhyDFE?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Thought Crimes, Cults, and Propaganda: The System’s Evolution Into Nazi Totalitarianism</h3><p></p><span>Tucker Carlson ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/085Ep-7zbto" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/085Ep-7zbto?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Is the Brain Enough for Consciousness? | Acharya Prashant</h3><p></p><span>Closer To Truth ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.aljazeera.com/video/newsfeed/2026/10/7/10-7-messi-final-game-sv-mp4?traffic_source=rss" target="_blank" rel="noopener">Lionel Messi plays final Argentina game to roaring Buenos Aires farewell</a><span>aljazeera.com</span></li><li><a href="https://www.bbc.co.uk/sport/football/videos/ck86zq03wznlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">What&#x27;s it like to be the World Cup final referee?</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.espn.com/college-football/story/_/id/50106231/kamario-taylor-mississippi-state-hometown-alabama" target="_blank" rel="noopener">A look inside the small hometown of college football&#x27;s big new star, Kamario Taylor</a><span>espn.com</span></li><li><a href="https://www.bbc.co.uk/sport/football/articles/cmd7qn48q13lo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Ronaldo wants Portugal &#x27;punishment&#x27; but not retiring</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.espn.com/mlb/story/_/id/50103985/mlb-2026-playoffs-ranking-home-field-advantage-yankees-padres-rays-dodgers" target="_blank" rel="noopener">Ranking home-field advantage for all 8 remaining playoff teams</a><span>espn.com</span></li></ul></div>
+</section></main>
+<nav class="archive"><a href="../2026-10-06/index.html">← Yesterday</a><span>2026-10-07</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
