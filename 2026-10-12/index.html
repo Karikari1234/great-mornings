@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6accafc0b4-1791799232.jpg?resize=1920%2C1440')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Monday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Zelenskyy says Russia breached Trump&#x27;s energy ceasefire</h2>
+      <p class="dek">An attack on Ukrainian gas facilities has deepened confusion over a truce Trump announced before Kyiv had seen its terms.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>12 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6accafc0b4-1791799232.jpg?resize=1920%2C1440" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Zelenskyy says Russia breached Trump&#x27;s energy ceasefire</h2>
+    <p class="dek accent">An attack on Ukrainian gas facilities has deepened confusion over a truce Trump announced before Kyiv had seen its terms.</p>
+    <div class="body drop"><p>Picture the Kharkiv region of Ukraine and gas facilities owned by the state company Naftogaz. Its workers are repairing equipment after an overnight Russian attack damaged the site and caused a fire. On Monday, October 12, Ukrainian President Volodymyr Zelenskyy accused Russia of violating an &quot;energy ceasefire&quot; announced by US President Donald Trump.</p><p>Trump said on Sunday that Russia and Ukraine had agreed to stop attacks on energy infrastructure. Zelenskyy initially said the agreement was news to him. Speaking by video to a security forum in Warsaw, Poland&#x27;s capital, he said Ukraine was waiting to learn the terms agreed between the Americans and Russians, and what the US would do to enforce them.</p><p>Both countries have attacked each other&#x27;s energy sites for months. Those strikes have added pressure to global energy prices, which have risen during the US-Israeli war on Iran. A day before his accusation, Zelenskyy said Ukraine was ready to stop hitting Russian oil refineries if Moscow stopped attacking Ukrainian energy infrastructure.</p><p>In Paris, French President Emmanuel Macron said he had seen no Russian energy ceasefire over the previous 48 hours. In Brussels, the European Union announced almost 1,600 new sanctions on people and organisations tied to Russia&#x27;s military industry. Sanctions restrict dealings with named targets. The EU says these measures aim to make Russian weapons harder and more expensive to produce.</p><p>Polish Prime Minister Donald Tusk said he would ask European partners to consider more sanctions. Zelenskyy said the truce could work if the US made sure Russia respected it. Kyiv is still waiting for the terms and for specific US steps to enforce them.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump announced the proposed energy ceasefire on Sunday.</li><li>Naftogaz said an overnight attack damaged its gas facilities in the Kharkiv region.</li><li>The EU announced almost 1,600 new sanctions on Russia&#x27;s military industrial complex.</li></ul></aside><a class="src" href="https://www.aljazeera.com/news/2026/10/12/ukraines-zelenskyy-accuses-russia-of-violating-trumps-energy-ceasefire?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 9 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Riyadh airport stays shut after Houthi strikes kill 14</h3><div class="body"><p>Riyadh’s main airport, in Saudi Arabia’s capital, remained closed Monday after weekend strikes by the Houthis, Yemen’s Iran-aligned rebels, killed 14 people and injured more than 300. About 60% of Monday’s scheduled flights at the airport were listed as cancelled. Saudi Arabia’s energy minister promised a serious response, while US President Donald Trump said he was weighing military action against the Houthis.</p></div><a class="src" href="https://www.nytimes.com/2026/10/10/world/middleeast/riyadh-airport-attack-energy-congress.html" target="_blank" rel="noopener">rss.nytimes.com + 6 more ↗</a></li>
+    <li><h3>139 dead after migrant boat sinks off Djibouti</h3><div class="body"><p>A boat carrying 305 migrants from Djibouti, a small country across the Gulf of Aden from Yemen, capsized near the port town of Obock on Thursday night. At least 139 died, including 15 children, and about 82 were rescued, the UN migration office said. Dozens remain missing on a route migrants use to seek work and safety in Gulf countries.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 6 more ↗</a></li>
+    <li><h3>Hall and Woodford win economics Nobel for stabilisation research</h3><div class="body"><p>At the Royal Swedish Academy of Sciences in Stockholm, two American economists, Robert Hall and Michael Woodford, were named winners of the 2026 economics Nobel on Monday. Monetary policy shapes money and borrowing, while fiscal policy covers taxes and government spending. Their work examines how those tools can steady an economy as activity rises and falls.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQb0FkcnNtRHc1MG5POU9PWVhBX0VlQzBDQUtNOUgxRWhiVmotZVRzb1pDWFdVZnBsY3dyYjdya3hnSjJ6WUc2RFdhcDVDSTJxQ3pkcTRUbDBXTk44NU5NUDJwaVVyUEZCZmNlaHNrZmg3LVdQSEdMcUc2Vy1FVHZRbXMzbU1yZU9KT3ZTdDJ0aw?oc=5" target="_blank" rel="noopener">Reuters + 5 more ↗</a></li>
+    <li><h3>North Korea fires missiles after South Korean weapons test</h3><div class="body"><p>On the Korean Peninsula, North Korea, led by Kim Jong Un, fired multiple ballistic missiles towards the sea off its east coast on Monday. South Korea&#x27;s military said one flew more than 900km from the Pyongyang area; Japan said at least two were launched 17 minutes apart. The launches followed South Korea&#x27;s hypersonic missile test, during stalled talks.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/12/north-korea-fires-multiple-ballistic-missiles-towards-the-sea?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Pope Leo to have surgery for lung nodule</h3><div class="body"><p>Pope Leo XIV, the 71-year-old Catholic leader, said during prayers in Rome, Italy, that he will have surgery after doctors found a small lump on his lung during a check-up. He said it was caught early and was well contained. The operation is planned for early next week, with about a week of recovery expected. His November trip to Uruguay, Argentina and Peru remains on.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 3 more ↗</a></li>
+    <li><h3>Pakistan suspends Khan allies’ provincial government</h3><div class="body"><p>Pakistan’s north-western Khyber Pakhtunkhwa province, led by allies of former prime minister Imran Khan, came under emergency rule on Sunday. President Asif Ali Zardari suspended its government, and authorities detained its chief minister, cabinet members and hundreds of Khan supporters. Federal officials cite Islamist militancy; Khan’s party says the takeover aims to stop a march to Islamabad for his release.</p></div><a class="src" href="https://www.theguardian.com/world/2026/oct/12/imran-khans-party-decries-coup-after-pakistan-suspends-provincial-government" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a></li>
+    <li><h3>US judge blocks taxpayer-funded Trump TV ads</h3><div class="body"><p>A US federal judge in New York, Jennifer L Rochon, ordered President Donald Trump to stop television ads promoting his policies. The Department of Homeland Security used $20 million in taxpayer money for the campaign, which Rochon called an illegal misuse of funds. The administration said the ads were ending anyway, but her order blocks them for two weeks.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOVURYbEJsVDMteXRVRGdGQWo2RnduSDB3ZklKSERDM3pvY0Q4U0FrdDZxWmJNUTNqLVpQNzVFZWRWcGVfd2ZDYXRDcFRTb0Ftd2NlQUR5dm1QVDl3dXBlcG10TUtWc18ycXFMY0U0UUZoaGQ3SkRKUkRIMWRsSXEwUGZaZ2R5bHRkZDNyR3lkSWVPa29zZGF5VDVja3laUlMyblIw?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a></li>
+    <li><h3>China freezes two ministers&#x27; assets over Taiwan ties</h3><div class="body"><p>Paraguay and Belize, two countries in the Americas among Taiwan&#x27;s 12 diplomatic allies, saw their ministers sanctioned by China on October 12. Communications Minister Gustavo Villate and Foreign Minister Francis Fonseca face asset freezes in China and entry bans for Hong Kong and Macau. Beijing says their Taiwan ties harm its sovereignty; Taiwan rejects China&#x27;s claim to the island.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/12/china-sanctions-paraguay-belize-ministers-over-taiwan-ties?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a></li>
+    <li><h3>Fire devastates Paris food market opened in 1615</h3><div class="body"><p>In Paris, France&#x27;s capital, where chefs, cooks and tourists frequented Le Marché des Enfants Rouges, fire has devastated the city&#x27;s oldest covered food market. It opened in 1615 as a produce hall.</p></div><a class="src" href="https://www.nytimes.com/2026/10/12/world/europe/france-paris-fire-market-enfants-rouges-marais.html" target="_blank" rel="noopener">rss.nytimes.com + 2 more ↗</a></li>
+    <li><h3>UN poverty count rises to 1.2 billion</h3><div class="body"><p>Across 108 developing countries, the UN Development Programme and an Oxford poverty research centre counted 1.2 billion people in acute poverty in their 2026 report, up 51.5 million from a year earlier. It is the index&#x27;s first rise since 2010. The measure counts shortages such as food, housing and schooling. UNDP says population growth helped lift the total, while fresh data covered only 13 countries.</p></div><a class="src" href="https://www.dawn.com/news/2036622/wake-up-call-for-the-world-as-un-global-poverty-index-rises-for-first-time-since-2010" target="_blank" rel="noopener">dawn.com + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://media.prothomalo.com/prothomalo-english/2026-10-12/9ub14vp8/image-433904-1791791030.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bangladesh dengue deaths reach 303 as mosquito control falls short</h3><p class="dek">Health officials reported four more deaths and 2,193 hospitalisations in the past 24 hours.</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh&#x27;s Directorate General of Health Services says dengue has killed 303 people this year, including four in the past 24 hours. Another 2,193 patients were hospitalised during that period. Professor Kabirul Bashar, a mosquito researcher at Jahangirnagar University, says authorities had warning of the surge but took inadequate action. City corporations and other local authorities have left gaps in mosquito control. Health Minister Sardar Md Sakhawat Hossain says cleanups and spraying are under way. Bashar warns infections and deaths could rise further in October.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>303 dengue deaths this year</li><li>Four deaths and 2,193 hospitalisations in the past 24 hours</li><li>Professor Kabirul Bashar warned cases could rise further in October</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/health/421884/dengue-deaths-top-300-as-control-guidelines-go" target="_blank" rel="noopener">dhakatribune.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Riyadh airport closure strands 4,851 passengers in Dhaka</h3><p class="dek">Another 18 departures were cancelled on Monday, bringing the total to 28.</p>
+        <details><summary>Read</summary><div class="body"><p>Dhaka&#x27;s airport cancelled 18 more departures because King Khalid International Airport, in Riyadh, Saudi Arabia, remains closed after Houthi attacks. Bangladesh&#x27;s Civil Aviation Authority reported the cancellations on Monday afternoon. Ten flights had already been cancelled over the previous three days and by Monday morning. The total is now 28, with 4,851 passengers stranded at Hazrat Shahjalal International Airport. The authority said it would decide what to do next once operations at Riyadh airport resume.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>18 more departures cancelled</li><li>28 flights cancelled in total</li><li>4,851 passengers stranded</li><li>Riyadh airport remains closed after Houthi attacks</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/421924/18-more-flights-cancelled-4-851-passengers" target="_blank" rel="noopener">dhakatribune.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Protesters attack GM Quader’s home in Bangladesh</h3><p class="dek">Protesters called Quader an &quot;Indian agent&quot; and accused him of backing Sheikh Hasina.</p>
+        <details><summary>Read</summary><div class="body"><p>In Bangladesh, protesters attacked the home of GM Quader, a former ally of Sheikh Hasina. They called him an &quot;Indian agent&quot; and accused him of backing Hasina. Quader blamed BNP and Jamaat for the attack.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>GM Quader’s home was attacked in Bangladesh.</li><li>Protesters accused Quader of backing Sheikh Hasina.</li><li>Quader blamed BNP and Jamaat.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTlF0bVA5S0ZDZ3JJVUFFZ2p2Qm9MaWg0U1k4cjRaNFc4cE91dmFXdXkyT2d3NS1iNG9zUnlnNVpySzVPUGxUaUJDd19ZM0dIbmtyc0I1V2NBVFpxZGZzaG5DMlkteXpiSUc0RWExUTAzNTdzTGZhSjBYRXJmaWsxSEVWMnFMOHo3U2FrWENZSk1zYk5pMGtXbXVWdl96SVlLSTVfUmVVanpCa190UnZ4RFdTZDByMkpZNWl0b01hUURlVjVSWkJXV3A3QllRQVRlSWc?oc=5" target="_blank" rel="noopener">Firstpost + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Dhaka court records Dipankar&#x27;s arrest in rally attack case</h3><p class="dek">The former state minister was returned to jail after a court recorded his arrest in an attempted murder case.</p>
+        <details><summary>Read</summary><div class="body"><p>Dipankar Talukder, a former state minister for Chittagong Hill Tracts Affairs, appeared before a Dhaka court on 12 October. The court recorded his arrest in a case filed by Bellal, an activist of Jatiyatabadi Swechchhasebak Dal, over an alleged attempt to kill him. Case documents say 200 to 300 activists held a rally in Kakrail on 28 October 2023. They say Awami League cadres attacked the group in Bijoynagar with firearms and sharp weapons, while police fired tear shells and rubber bullets. The court sent Dipankar back to jail.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Dipankar Talukder is a former state minister for Chittagong Hill Tracts Affairs.</li><li>Bellal filed the case on 8 May 2025.</li><li>Case documents say 200 to 300 activists held a rally on 28 October 2023.</li><li>The court recorded Dipankar&#x27;s arrest on 12 October and sent him back to jail.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/bangladesh/former-state-minister-dipankar-shown-arrested-attempted-murder-case-1570346" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Banglalink launches Starlink mobile service in Bangladesh</h3><p class="dek">VEON&#x27;s Banglalink has launched a Starlink satellite-to-mobile service in Bangladesh.</p>
+        <details><summary>Read</summary><div class="body"><p>VEON&#x27;s Banglalink has launched a Starlink satellite-to-mobile service in Bangladesh. The service is described as direct-to-device, which means a phone connects to a satellite instead of a nearby mobile tower.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>VEON</li><li>Banglalink</li><li>Starlink</li><li>Bangladesh</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOTXQxM1NlUTBJdk1RUFBYanhvNjFkSWIyczBxczlsYVp4dFJsSHdJS1BSR3ctSWNPekNWeFZRRzJFbENBUEJEY0pkbnF4aGtrb3ZpMWdsVlRSSVJVbWN1OWJGX1o3WnFVTTdyYzRYdXpoeTBLZ2lsaHpkWWh5SFNtaGhVOXB3cGttLXpUdm1VWHZPQWh5ZzBVRnRRN3hSNmJQYUZsLUc4Ym1YbFFHVlBMd015RWhkZFE?oc=5" target="_blank" rel="noopener">IOT Insider + 2 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Rahman seeks Canadian support for energy, farming and health</h2>
+    <p class="dek accent">At a meeting in Dhaka, the prime minister sought wider cooperation while Canada raised possible support for energy, training and climate projects.</p>
+    <div class="body drop"><p>Picture the Prime Minister&#x27;s Office at the Secretariat in Dhaka. Tarique Rahman is Bangladesh&#x27;s prime minister, and Randeep Sarai is Canada&#x27;s secretary of state for international development. When Sarai led a Canadian delegation there on Monday, 12 October, Rahman asked for cooperation in education, health, energy and agriculture. The two sides also discussed economic ties and the Rohingya crisis.</p><p>Canada expressed interest in supporting Bangladesh&#x27;s supply of oil and liquefied natural gas. It also raised cooperation in technical training, including nursing education and support for nursing institutions. In agriculture, the talks covered pulses, oilseeds and food security. These were areas of interest discussed at the meeting, with no specific projects announced in the account.</p><p>Rahman described a plan for Farmer Cards that would provide fertilisers, seeds and other supplies. The cards would also help build a database of farmers. Like a register used to deliver supplies, that database could help the government plan what farmers need and direct support to them.</p><p>Sarai said Canada was interested in providing C$13 billion in climate financing worldwide over the next five years, and that Bangladesh could benefit. The meeting also covered renewable energy and possible Canadian support for studies to assess development projects. No amount for Bangladesh was given.</p><p>Rahman said Bangladesh was hosting around 1.3 million Rohingyas, placing pressure on the economy and environment. He called for their safe, voluntary return to Myanmar, where he said the crisis began. Sarai agreed on the importance of a peaceful and dignified return. For now, the people Rahman wants to see return remain in Bangladesh.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Meeting held Monday, 12 October 2026, at the Prime Minister&#x27;s Office in Dhaka</li><li>Canadian delegation led by Randeep Sarai</li><li>Canada raised C$13 billion in global climate financing over five years</li><li>Rahman said Bangladesh was hosting around 1.3 million Rohingyas</li></ul></aside><a class="src" href="https://en.prothomalo.com/bangladesh/4qi4cobu5r" target="_blank" rel="noopener">en.prothomalo.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://ecdn.dhakatribune.net/contents/cache/images/300x300x1/uploads/media/2026/02/22/ef6444bb281597e78f9c1f697b3ad3d9-699b0449407b7.jpg?jadewits_media_id=60653" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Gen Z protests challenge Modi in India</h3><p class="dek">Youth protests are testing an Indian prime minister who has long weakened his opponents.</p>
+        <details><summary>Read</summary><div class="body"><p>In India, Prime Minister Narendra Modi has long succeeded in isolating and weakening opponents. Gen Z protests now pose a challenge unlike any he has faced before.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Narendra Modi is India’s prime minister.</li><li>The protests involve Gen Z.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/10/11/world/asia/india-crackdown-narendra-modi.html" target="_blank" rel="noopener">rss.nytimes.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Pakistan takes control of Khyber Pakhtunkhwa</h3><p class="dek">Emergency rule shifts power from Imran Khan’s party to a governor and the national parliament.</p>
+        <details><summary>Read</summary><div class="body"><p>Khyber Pakhtunkhwa is Pakistan’s northwestern province, governed since 2013 by PTI, jailed former Prime Minister Imran Khan’s party. President Asif Ali Zardari imposed emergency and governor’s rule on Sunday. Governor Faisal Karim Kundi now runs the province, while parliament takes its assembly’s powers, like a substitute council. The government cites armed attacks; an Islamabad think tank counted 1,232 nationwide in the first nine months of 2026, mostly in Khyber Pakhtunkhwa and Balochistan. PTI rejects the takeover, which followed failed talks over a march demanding Khan’s release.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>President Asif Ali Zardari signed the proclamation on Sunday.</li><li>PTI has governed Khyber Pakhtunkhwa since 2013.</li><li>An Islamabad think tank counted 1,232 attacks nationwide in the first nine months of 2026.</li></ul></aside></details>
+        <a class="src" href="https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Bangladesh sends senior official to Bimstec ministers’ meeting</h2>
+    <p class="dek accent">Home Minister Salahuddin Ahmed will skip the first meeting of Bimstec home ministers in New Delhi, while a senior secretary leads Bangladesh’s delegation.</p>
+    <div class="body drop"><p>Picture New Delhi, India’s capital. Home ministers and officials from Bimstec, a seven-member regional group, are gathering there to discuss security. Bangladesh’s home minister, Salahuddin Ahmed, will skip the ministers’ meeting on Tuesday. Senior Home Affairs Secretary Manzur Morshed Chowdhury will lead the Bangladesh delegation instead.</p><p>The two-day gathering begins on Monday with senior home ministry officials. Ministers and state ministers meet the next day. It is their first such meeting since Bimstec was established nearly three decades ago. The source gives no reason for Ahmed’s absence.</p><p>The Bangladesh delegation also includes AKM Shahidul Karim, an additional secretary at the foreign ministry, and Rebecca Khan, a joint secretary at the home ministry. In September, Prime Minister Tarique Rahman skipped a BRICS summit outreach session in New Delhi. Indian Prime Minister Narendra Modi had invited him as Bimstec chair.</p><p>Bimstec stands for the Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation. Its members are Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka and Thailand. The meeting will review how they work together on security and consider ways to expand that work.</p><p>At a 2018 summit in Kathmandu, Bimstec leaders agreed to hold home ministers’ meetings and continue meetings of national security chiefs. They wanted law enforcement and intelligence agencies to coordinate against terrorism and crime that crosses borders. This week’s meeting puts that plan before the ministers for the first time.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Home Minister Salahuddin Ahmed will skip Tuesday’s meeting in New Delhi.</li><li>Senior Home Affairs Secretary Manzur Morshed Chowdhury will lead Bangladesh’s delegation.</li><li>Bimstec has seven member states.</li><li>Bimstec leaders agreed to hold home ministers’ meetings at a 2018 summit in Kathmandu.</li></ul></aside><a class="src" href="https://www.dhakatribune.com/bangladesh/foreign-affairs/421894/bangladesh-home-minister-skips-bimstec-meeting-in" target="_blank" rel="noopener">dhakatribune.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://i.guim.co.uk/img/media/7fcd37fb677a69337367a2284f5b7abed9be13fc/13_0_809_647/master/809.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f963018b8df2854d30f8133965fbd29f" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Trump’s Russian diesel deal draws opposition in Congress</h3><p class="dek">Seven US senators say the deal breaks a ban on Russian energy imports, while Trump wants to bring down fuel prices.</p>
+        <details><summary>Read</summary><div class="body"><p>US President Donald Trump says Russian President Vladimir Putin has agreed to release 300,000 tonnes of diesel for American and global markets, about half a day’s US use. Trump wants cheaper fuel before next month’s midterm elections; diesel costs $6.28 a gallon. Seven senators from both parties say the deal breaks a 2022 ban on Russian energy imports. The US Treasury is understood to be suspending sanctions on Russian diesel exports until 7 April. Ukrainian President Volodymyr Zelensky calls the deal a gift to Putin.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Putin agreed to release 300,000 tonnes of diesel immediately.</li><li>Seven senators, four Republicans and three Democrats, oppose the deal.</li><li>US diesel averages $6.28 a gallon.</li></ul></aside></details>
+        <a class="src" href="https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>US threatens to block arms for Ukraine over refinery attacks</h3><p class="dek">The Financial Times reports a US threat tied to attacks on Russian refineries.</p>
+        <details><summary>Read</summary><div class="body"><p>The United States has threatened to block arms for Ukraine over attacks on Russian refineries, the Financial Times reports. Ukraine is a country at war with Russia, where the targeted refineries turn crude oil into fuel. The dispute links Ukraine&#x27;s access to weapons with attacks on Russia&#x27;s fuel facilities. The available report does not say who made the threat or whether any arms have been blocked.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The United States threatened to block arms for Ukraine.</li><li>The threat concerns attacks on Russian refineries.</li><li>The Financial Times reported the threat.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPaUx0a0pvZmw1VkxoRkUyc1VTemRoQV9zWEFZMmpFd3ozM0Ytdy1QMnM1Rjg1Z0FnaklEZlktUWI3Z05mMlVYQmx0c3h3X29aMUIwN01ETml6cDVhNi1TUmVWMHZicnlHdHhHc0xXZ0Z6M0QwUEJEeE1ld3BWWHI2VlpRY2Z1QW44U0xnNTVXYVJBdkxGbThsWkVqVHdXbUxmNTI5NjZKaEpteDBYTlNkbmRSMA?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Saudi Aramco studies new routes for oil exports</h3><p class="dek">The company is also working to expand overseas storage as regional conflicts disrupt energy markets.</p>
+        <details><summary>Read</summary><div class="body"><p>Saudi Aramco, the Saudi oil company led by Amin Nasser, is studying new routes for crude oil exports and working to expand storage overseas. Nasser described the plans as conflicts in the region disrupt global energy markets. Overseas storage is like a spare tank closer to a buyer: oil can be held there until it is needed. The company wants more ways to move and hold its crude while those disruptions continue.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Amin Nasser is Saudi Aramco’s chief.</li><li>The company is studying additional crude oil export routes.</li><li>It is working to expand overseas storage capacity.</li></ul></aside></details>
+        <a class="src" href="https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-studying-new-crude-export-routes-overseas-storage-expansion" target="_blank" rel="noopener">middleeasteye.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Israel moves Gaza’s Yellow Line farther west</h3><p class="dek">Concrete markers have shifted as access restrictions leave Palestinians in about 35 percent of Gaza.</p>
+        <details><summary>Read</summary><div class="body"><p>Israel’s military has moved its “Yellow Line” west in the Gaza Strip, a narrow territory home to 2.1 million Palestinians. Concrete blocks mark the line where Israeli forces initially withdrew under a US-brokered ceasefire. On Sunday, troops shifted blocks dozens of metres west in Shujayea, a Gaza City neighbourhood, and families fled. Israeli forces were expected to withdraw further. Instead, access restrictions now cover 65 percent of Gaza, leaving 2.1 million people in about 35 percent of the territory.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Israeli forces moved Yellow Line blocks dozens of metres west in Shujayea on Sunday.</li><li>Access restrictions cover 65 percent of Gaza.</li><li>About 2.1 million Palestinians are left in roughly 35 percent of Gaza.</li></ul></aside></details>
+        <a class="src" href="https://www.aljazeera.com/news/2026/10/12/maps-show-how-israels-yellow-line-keeps-squeezing-palestinians-in-gaza?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A Uyghur commander’s path from Xinjiang to Syria</h3><p class="dek">Choghtal had never held a gun back home. He is now a senior commander in a Uyghur militia in Syria.</p>
+        <details><summary>Read</summary><div class="body"><p>Choghtal, a 36-year-old Uyghur from China’s Xinjiang region, is second-in-command of the largest Uyghur militia in Syria. He told an interviewer in the countryside around Idlib, a Syrian city, that he had never held a gun back home. In 2009, two Uyghur workers were beaten to death at a factory in southern China. Protests followed in Xinjiang’s capital, Urumqi. The Chinese government says the violence that followed killed 192 people. Uyghur groups say thousands were then detained and disappeared.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Choghtal, 36, is second-in-command of the largest Uyghur militia in Syria.</li><li>Two Uyghur workers were beaten to death in southern China in 2009.</li><li>The Chinese government says 192 people died in the violence in Urumqi.</li></ul></aside></details>
+        <a class="src" href="https://foreignpolicy.com/2026/10/12/uyghur-xinjiang-china-syria-civil-war-fighters-training/" target="_blank" rel="noopener">foreignpolicy.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Riyadh airport stays closed after another Houthi missile attack</h2>
+    <p class="dek accent">Saudi Arabia extended the flight suspension after a new strike left one person dead, days after an attack killed 13.</p>
+    <div class="body drop"><p>Picture passengers queuing to board at King Khalid international airport in Riyadh, Saudi Arabia. The Houthis are an armed group fighting in Yemen. On Monday, Saudi Arabia extended the suspension of all flights to and from the airport after another round of Houthi missile attacks caused more damage and left one person dead.</p><p>The closure followed a strike on Saturday that killed 13 people and injured more than 300. CCTV footage broadcast by Saudi state TV showed smoke and falling masonry around passengers in the terminal as a missile struck. The Saudi aviation authority said the airport would stay closed while it checked that it was safe. A military spokesperson said further missile and drone threats had been detected.</p><p>The attacks have reached beyond the terminal. Since last month, Houthi strikes have targeted fuel tanks and warehouses at the airport. A parked Airbus A320 was destroyed, and at least five other aircraft were damaged. Interceptor missiles try to stop incoming missiles before they land. Saudi Arabia needs them across a wide area to protect airports, oil facilities and government buildings. An urgent review is examining how Houthi missiles have repeatedly passed through those stretched defences.</p><p>The closure came as Riyadh hosted the 25th WPC Energy Conference. Saudi energy minister Abdulaziz bin Salman told the gathering that &quot;fear has no place in the Saudi lexicon&quot;. Schoolchildren and some office workers were advised to stay home. The Houthis have vowed to attack airports across the country.</p><p>Fighting also continued around Taiz in Yemen, where Saudi planes carried out eight strikes on gatherings of Houthi forces. The governor warned that a medicine shortage could soon leave the city without emergency surgery or intensive care. On Tuesday, the UN security council is expected to debate a resolution calling the Houthis a foreign terrorist organisation.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Flights to and from King Khalid international airport remained suspended on Monday.</li><li>Saturday&#x27;s strike killed 13 people and injured more than 300.</li><li>A parked Airbus A320 was destroyed, and at least five other aircraft were damaged.</li><li>The UN security council is expected to debate a resolution on Tuesday.</li></ul></aside><a class="src" href="https://www.theguardian.com/world/2026/oct/12/saudi-arabia-suspends-flights-latest-deadly-houthi-attack-airport" target="_blank" rel="noopener">theguardian.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://www.telegraph.co.uk/content/dam/news/2026/10/11/TELEMMGLPICT000504170569_17917430299750_trans_NvBQzQNjv4BqDDlhzYBYlVolwZmnySJI8cKOdSq0MvGJhebBM6wreoY.jpeg?impolicy=OG-Standard" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Broadcom chief sees capital as AI growth’s biggest hurdle</h3><p class="dek">Broadcom and Intel’s chief executives say the cost of funding AI infrastructure could constrain its growth.</p>
+        <details><summary>Read</summary><div class="body"><p>At a conference in Singapore on Monday, Broadcom chief Hock Tan and Intel chief Lip-Bu Tan, who lead two chip companies, said money could limit AI expansion before memory chips do. Companies need funds to build data centers and buy chips. Higher bond yields make borrowing costlier, much like a higher interest rate on a home loan. Hock Tan said demand for computing capacity exceeds supply and could stay that way through 2029, perhaps into 2030. Lip-Bu Tan said companies will need to show returns from their AI spending.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hock Tan is Broadcom’s chief executive.</li><li>Lip-Bu Tan is Intel’s chief executive.</li><li>Hock Tan said demand could exceed supply through 2029, perhaps into 2030.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0V6MVV3aEtaaWxQX0hLWjAwUDZ3RFZxMnFjTlJLb0RnTzFpNGNBMU0yUTJ0WHJmd1RmbHhWMXZwU3pGVDVuc044cm1BX19WYURpSnV3cnZiQ1Q1Wm1IYmhrU1RTWllwazRaX0lST0ZzQWJwNEctbEgzNFRKSGNqVnc5TVM1UGZjUHZBMHRqUzlHY0Z6Q0JtaEhOaG9SS0RPVTlQR2t6eW9tZXNVUF9sQXVJd2RYaWZLS2NvRUhiRWZHVFoxeDROcVVMRmo?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Former HSBC banker launches Equora with 10 AI agents</h3><p class="dek">Trista Sun wants her new wealth platform to help investors track risks and opportunities.</p>
+        <details><summary>Read</summary><div class="body"><p>Trista Sun, a former managing director in HSBC&#x27;s international wealth and premier banking division, has launched Equora, a platform for investors with a team of 10 AI agents. Each has a separate job, such as tracking when an investment product matures, spotting suspect transactions or flagging market moves that affect a portfolio. Sun says existing AI tools cannot meet these needs at scale. She wants Equora to reach a billion-dollar valuation, though the company has yet to show whether its agents can do that work for many investors.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trista Sun formerly worked in HSBC&#x27;s international wealth and premier banking division.</li><li>Equora&#x27;s a2b2.ai platform has 10 AI agents.</li><li>Sun is aiming for a billion-dollar valuation.</li></ul></aside></details>
+        <a class="src" href="https://www.scmp.com/business/money/wealth/article/3370565/former-hsbc-executive-launches-wealth-platform-powered-team-ai-agents?utm_source=rss_feed" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>DeepSeek&#x27;s memory savings may make its AI miss information</h3><p class="dek">A study found that the position of information in a long input could affect DeepSeek&#x27;s answers.</p>
+        <details><summary>Read</summary><div class="body"><p>DeepSeek, a Chinese AI lab known for its low-cost models, may lose accuracy when its systems save memory. A study published late last month found that its models were more likely to miss the same information when it appeared in certain places in a long document. The method squeezes lengthy inputs into less memory, much like compressing a file to save space. In one test, irrelevant text placed before computer code made DeepSeek less able to choose the correct answer. The study has not been peer-reviewed.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The study has not been peer-reviewed.</li><li>The paper named DeepSeek-V4 and V4.1.</li><li>The article was published on 12 October 2026.</li></ul></aside></details>
+        <a class="src" href="https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research?utm_source=rss_feed" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>David Silver pursues a self-teaching AI at Ineffable</h3><p class="dek">The former DeepMind scientist is exploring reinforcement learning as a path beyond large language models.</p>
+        <details><summary>Read</summary><div class="body"><p>At Ineffable, his AI startup, David Silver, a former DeepMind scientist and an architect of AlphaGo, is building an AI &quot;super learner,&quot; according to a Financial Times interview. He is pursuing reinforcement learning, in which a system improves through trial and feedback, much like learning a game by playing it. Silver says he feels a moral obligation to advance the technology.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>David Silver is a former DeepMind scientist.</li><li>His startup is called Ineffable.</li><li>Silver was an architect of AlphaGo.</li><li>The project uses reinforcement learning.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261012/p3#a261012p3" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>US software job ads rise as AI takes on more coding</h3><p class="dek">The rebound favors experienced developers, while the path into the field looks harder for young workers.</p>
+        <details><summary>Read</summary><div class="body"><p>US software developers, who build digital products, are seeing more job ads even as AI writes more code. Indeed Hiring Lab, which tracks job postings, says developer ads have risen nearly 15% since February 2025, while overall postings fell. Senior roles accounted for 71% of the increase from May 2025 to May 2026, and roles mentioning AI accounted for 37%. The path into the field is harder: Stanford University&#x27;s 2026 AI index found employment among early-career software developers fell 20% as older developers&#x27; roles expanded.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Developer job postings rose nearly 15% since February 2025.</li><li>Senior roles accounted for 71% of the increase from May 2025 to May 2026.</li><li>Roles mentioning AI accounted for 37% of that increase.</li><li>Employment among early-career software developers fell 20%, according to Stanford University&#x27;s 2026 AI index.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>US reverses course on Britain&#x27;s testing of AI models, Telegraph says</h2>
+    <p class="dek accent">US reverses course on Britain&#x27;s testing of AI models, Telegraph says Reuters</p>
+    <div class="body drop"><p>US reverses course on Britain&#x27;s testing of AI models, Telegraph says Reuters</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPRDJvZUFPb2dwVWRONzFpd2RZLVJuLWJSeE1QRHNrYjhTX3l5eGxRaFowem4zUy1heUFEdFBEWHFvaFliWG5lREtrUV9Ob0l0dVpQWDRLLVhQWHFFR3JMbFA2dHE3S1M4NWVjZm51NldZOEFPanJBcHpnZjUzd2ZGQWVmRmFzZkE1WTVPSUIwaEJia2VaNmhuRXZMclFZRzlJcE1XVW9YaFZQVmtzTVR0a3hsZw?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/12/e8284688-5ab6-4803-8156-0310161868a7_568791c0.jpg?itok=nz_2Ewvh&amp;v=1791796347" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Major economies weather Iran shock as debt worries loom</h3><p class="dek">FT research finds resilient growth ahead of IMF and World Bank meetings.</p>
+        <details><summary>Read</summary><div class="body"><p>Across major economies, researchers for the FT found that growth is holding up through the Iran shock. Rising public debt remains a concern ahead of meetings of the IMF and World Bank.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>FT research covers major economies.</li><li>Growth is withstanding the Iran shock.</li><li>Rising public debt will loom over IMF and World Bank meetings.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/e0457dd5-8e75-4803-8ce8-6651157d2229?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Creditors examine AI data centre leases</h3><p class="dek">Investors see a bright future for AI hyperscalers, while creditors are looking at what they owe.</p>
+        <details><summary>Read</summary><div class="body"><p>In the AI data centre business, equity investors, who own shares, are looking toward a bright future. Creditors, who lend money, are examining the companies&#x27; liabilities, including data centre leases. A lease is a promise to make payments over time, like rent. The summary gives no figures for those obligations.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>AI hyperscalers</li><li>Equity investors</li><li>Creditors</li><li>Data centre leases</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/17a207f4-1563-48af-91e3-14bac89ab4b8?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh proposes new ways to send wages home from Maldives</h3><p class="dek">Bangladesh Bank has proposed three ways to ease transfers as remittances from the Maldives fall.</p>
+        <details><summary>Read</summary><div class="body"><p>The Maldives, an island country with more than 100,000 Bangladeshi workers in 2024, is the focus of a Bangladesh Bank plan to ease wage transfers home. In an 8 October letter to the Maldives Monetary Authority, its central bank, Governor Md Mostaqur Rahman proposed three routes. One is a currency swap, in which the central banks would exchange currencies to help settle payments. Remittances fell 16.4% to $118 million in FY2025-26. Banks resist taking rufiyaa, so workers buy dollars on the curb market and pay high transfer commissions.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bangladesh Bank proposed three transfer mechanisms in a letter dated 8 October.</li><li>More than 100,000 Bangladeshis worked in the Maldives, according to 2024 data.</li><li>Remittances from the Maldives fell 16.4% to $118 million in FY2025-26.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/economy/bangladesh-eyes-currency-swap-facilitate-remittances-maldives-1569781" target="_blank" rel="noopener">tbsnews.net ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>EU considers December trade steps after China car deal</h2>
+    <p class="dek accent">The European Union is looking at further trade initiatives following a car import deal with China.</p>
+    <div class="body drop"><p>In Europe, the European Union, a group of European countries, is considering trade initiatives for December after a deal with China over car imports. The summary gives no terms of the deal or details of the planned steps.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>European Union</li><li>China car import deal</li><li>December</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMixwFBVV95cUxONUVjWi04OFQ3RzdMUmNYSTk1bk0wbWtWM1ZmbWpVY0dMUk1HVUJEVTAwbHJlc2cwUHhtNktGZHhwdEV4QzBxSlJVa3YtUFpVZlhXcXozZDlzRUlsbXV0UWdyTkU3d0FLdkpQS1kxdGNaeDJpdnBpNWhfdWk0UjYwbUcwUEJHcExDcXVPcTRYZDJOWi1DMGJxNjMyOGp1QUxoZXZvbGg1X0djb1VOLU1YN0psU0FfaF9sc191QkZtaXdUaGhqc2t3?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo nophoto"><span>Scientists probe how cuttlefish hide</span></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>UK doctor-researchers dwindle as funding strains careers</h3><p class="dek">A Nature commentary says unstable funding and weak career support are driving doctors away from research.</p>
+        <details><summary>Read</summary><div class="body"><p>Medical doctors who also do research are becoming scarcer in the United Kingdom. Their share of senior doctors fell from almost 5% in 2009 to roughly 3% in 2025, a drop of about two percentage points. In a Nature commentary published on 12 October 2026, eight researchers say unstable funding and weak career support make it hard to keep younger colleagues. As older researchers retire, fewer doctors may be available to run medical trials and turn research findings into patient care.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>UK senior doctors working as academics: almost 5% in 2009, roughly 3% in 2025</li><li>UK physician-scientists under 36 fell by 25% between 2024 and 2025</li><li>Nature commentary published 12 October 2026</li></ul></aside></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03225-6" target="_blank" rel="noopener">nature.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Physicist finds another limit on life in liquid flow</h3><p class="dek">A theoretical study links the universe&#x27;s basic physical constants to the movement of liquids that living cells need.</p>
+        <details><summary>Read</summary><div class="body"><p>Kostya Trachenko, a physicist at Queen Mary University of London, has found a possible limit on which universes could support life. His theoretical analysis suggests that small changes in basic physical constants could make liquids flow too slowly or too quickly for cells to work. Think of the difference between pouring water and honey. Trachenko says a change of only a few per cent in some constants could make blood too thick or too thin. Stars might still make life&#x27;s chemical ingredients, but cells could struggle to use them.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kostya Trachenko is a physicist at Queen Mary University of London.</li><li>The analysis was published in Science Advances.</li><li>A few per cent change in some constants could make blood too thick or too thin, according to the model.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/10/261009025602.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Scientists probe how cuttlefish hide</h2>
+    <p class="dek accent">Researchers want to learn how cephalopod brains control camouflage.</p>
+    <div class="body drop"><p>Cuttlefish are cephalopods skilled at camouflage. Scientists are trying to find out how the process works in their brains.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Cuttlefish are cephalopods.</li><li>Scientists are studying camouflage in the brain.</li></ul></aside><a class="src" href="https://www.nytimes.com/2026/10/12/science/cuttlefish-brain-camouflage.html" target="_blank" rel="noopener">rss.nytimes.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo nophoto"><span>OPEC cuts 2026 oil demand growth forecast</span></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Google DeepMind puts a detectable mark in AI-designed proteins</h3><p class="dek">SynthID Bio worked in lab tests, though another design tool can remove its mark.</p>
+        <details><summary>Read</summary><div class="body"><p>Google DeepMind, an AI research group, has built a watermark into proteins designed by AI. Its SynthID Bio system makes tiny changes as a model chooses amino acids, the building blocks of proteins. Together, those changes leave a pattern a detector can find. In lab tests, watermarked proteins bound to their targets as well as unmarked versions. The mark could help scientists tell AI designs from experimentally tested structures, but another design tool can scrub it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The method is called SynthID Bio.</li><li>It changes amino acid choices during protein design.</li><li>Watermarked proteins performed as well as unmarked versions in lab tests.</li><li>Another design tool can remove the watermark.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/10/05/google-deepmind-gives-ai-designed-proteins-a-watermark/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>China&#x27;s technology race reaches beyond AI</h3><p class="dek">China leads in electric vehicles, solar panels and batteries, while a research tracker shows how far its scientists have advanced.</p>
+        <details><summary>Read</summary><div class="body"><p>China, locked in an AI contest with the U.S., now makes 70% of the world&#x27;s electric vehicles and more than 75% of its batteries. Its companies account for 80% to 85% of solar panel manufacturing. A December 2025 tracker found Chinese researchers ahead in nearly 90% of 74 technologies it assessed. That tracker counts cited research, which does not always turn into products. In consumer drones, DJI, a company based in the Chinese city of Shenzhen, already holds more than 70% of the global market.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>China makes 70% of the world&#x27;s electric vehicles.</li><li>Chinese companies account for 80% to 85% of global solar panel manufacturing.</li><li>A December 2025 tracker assessed research in 74 technologies.</li><li>Shenzhen-based DJI holds more than 70% of the global consumer drone market.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/china-america-tech-ai/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>A digital whip for Claude raises a human question</h3><p class="dek">A joke tool that scolds an AI assistant has prompted a debate about how people treat the systems they use every day.</p>
+        <details><summary>Read</summary><div class="body"><p>Claude, Anthropic&#x27;s AI model, is the target of BadClaude, a tool that cracks an animated whip across its window and orders it to speed up. Its demo drew millions of views in a couple of days. Soon, a rival tool called GoodClaude appeared to cheer the model on. Yaniv Regev, a Georgetown University graduate student, argues that cruelty toward a familiar chatbot could become a habit. His concern is that the habit could carry into people&#x27;s relationships with one another.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>BadClaude interrupts Claude mid-response with a command to speed up.</li><li>The demo drew millions of views in a couple of days.</li><li>GoodClaude appeared a day later.</li></ul></aside></details>
+        <a class="src" href="https://www.noemamag.com/does-claude-feel-the-whip" target="_blank" rel="noopener">noemamag.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>OPEC cuts 2026 oil demand growth forecast</h2>
+    <p class="dek accent">The oil producers&#x27; group expects demand to grow by 400,000 barrels a day in 2026 and sees pent-up demand in 2027.</p>
+    <div class="body drop"><p>In the global oil market, OPEC, a group of oil-producing countries, has cut its forecast for growth in oil demand in 2026 to 400,000 barrels a day. It also sees pent-up demand in 2027.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>OPEC</li><li>2026 forecast: 400,000 barrels a day</li><li>Pent-up demand expected in 2027</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSHpiemJmQ3V5V3pqc1NKUTc5MXVCVW92Mm8wQ3BWUnlmeXNmTUotNUFjYl95ZmVFN09sLXV6SzhhRWJpRG5sV3o4dUhHSTNubjZRZXpyajRDTTJYWUdNY1NDMzRWYmtEZVhsRC1Jd05SaW9ic0t3dWFtUTIwWmNFNW9SYWF2eGo0RlpNYl9QOVljdVE2RkVGR2VpZ1FZMmxXdFZuS0lNcnJyMG5IbE1yWm8xNzZJRHQ5SUVTRFJIbFFoQjZERkVVbA?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Bataille_de_Verdun_1916.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Roman fort gives Welsh emperor&#x27;s camp tale a new clue</h3><p class="dek">A fort and two late fourth-century coins have been found near the hill named in a medieval Welsh tale.</p>
+        <details><summary>Read</summary><div class="body"><p>Oxford archaeologist Mark Merrony has found a Roman fort in Pembrokeshire, in Wales, near a hill where medieval stories place Magnus Maximus, a fourth-century emperor who ruled Britain. Merrony discovered the site in 2024, about 3.5km from Frenni Fawr&#x27;s summit. Excavations found two late fourth-century coins. The fort measures 180 by 150 metres and may have held about 500 troops. It is the first Roman military site found close to the hill, though whether Maximus camped there remains uncertain.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Mark Merrony discovered the fort in 2024.</li><li>The fort is about 3.5km from Frenni Fawr&#x27;s summit.</li><li>Excavations found two late fourth-century coins.</li><li>The fort may have held about 500 troops.</li></ul></aside></details>
+        <a class="src" href="https://www.theguardian.com/uk-news/2026/oct/12/mythical-roman-fort-frenni-fawr-wales-emperor" target="_blank" rel="noopener">theguardian.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>New Zealand suffered its worst single-day death toll at Passchendaele in 1917</h2>
+    <p class="dek accent">More than 800 soldiers died in a single day during an Allied assault on the Western Front.</p>
+    <div class="body drop"><p>Picture soldiers from New Zealand, an island country in the southern Pacific Ocean, pinned down in cold mud on the Western Front in Europe. On this day in 1917, at the First Battle of Passchendaele, these troops attacked entrenched German lines. In that single day, New Zealand suffered more than 2,000 casualties. More than 800 soldiers died.</p><p>The Allied coalition wanted to breach the German front. Fortified trenches between the English Channel and Switzerland blocked their path. Machine guns and heavy artillery stopped infantry advances across open ground. The assault failed to break the stalemate.</p><p>A trench stalemate is like two people pushing against the same heavy door from opposite sides. Neither side can move forward, and anyone stepping into the gap is exposed to fire. At Passchendaele, soldiers advanced into fortified positions without adequate cover.</p><p>This conflict, also known as the Great War, lasted from 28 July 1914 to 11 November 1918. Two coalitions fought across Europe, the Allies and the Central Powers. The war caused 15 to 22 million deaths. For New Zealand, that day in 1917 is the nation&#x27;s largest loss of life in one day.</p><p>The disaster exposed the machinery of modern industrial warfare, where defensive firepower outmatched infantry tactics. The lingering question is whether alliance systems inevitably pull distant populations into destructive rivalries they did not start.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>1917, during the First Battle of Passchendaele</li><li>More than 2,000 casualties, with over 800 deaths in one day</li><li>15 to 22 million total deaths in World War I</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/World_War_I" target="_blank" rel="noopener">Wikipedia ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.theatlantic.com/thumbor/Dr6-H0ZBM8Ua2Q6Y26GZj2f8lU4=/media/img/mt/2026/10/2026_10_07_NYC_October_7_Rallies_Michael_Powell/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Trump&#x27;s Russian diesel deal covers 16 hours of US demand</h3><p class="dek">The US already exports surplus diesel, while Ukrainian strikes have cut Russian refinery capacity.</p>
+        <details><summary>Read</summary><div class="body"><p>US President Trump said late on October 9 that his country would buy 2.25 million barrels of diesel from Russia, whose forces are attacking Ukraine. That is about 16 hours of American diesel use. US refineries already make more diesel than Americans consume and sell the surplus abroad. The Atlantic says the purchase will do little to lower US diesel prices, which are set by the world market. Russia has banned diesel exports through October after Ukrainian strikes cut its refinery capacity.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Deal: 2.25 million barrels of Russian diesel</li><li>Equivalent to about 16 hours of US diesel consumption</li><li>Ukrainian estimate: 43 percent of Russian refinery capacity shut down by late summer 2026</li></ul></aside></details>
+        <a class="src" href="https://www.theatlantic.com/ideas/2026/10/trumps-diesel-deal-sells-out-ukraine/688964/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>New York rallies test how October 7 is remembered</h2>
+    <p class="dek accent">On the attack’s third anniversary, Mayor Zohran Mamdani mourned Israeli victims and condemned the war in Gaza, drawing criticism from opposing sides.</p>
+    <div class="body drop"><p>Picture New York City, in the United States: students in a park, a mayor issuing a statement, and a vigil for the dead. On October 7, the third anniversary of Hamas’s attack on Israel, Mayor Zohran Mamdani mourned Israelis killed that day and condemned Israel’s war in Gaza. Some pro-Palestinian protesters still turned against him.</p><p>Mamdani said Hamas killed more than 1,100 Israelis and abducted 251 people. He then described Palestinian deaths in Gaza and accused the Israeli government of genocide. Ammiel Hirsch, a New York rabbi and peace advocate, called the statement “morally perverse.” Protest organizers, meanwhile, called for “victory to the resistance.”</p><p>The Atlantic’s writer counted about 80 students at a noon rally in Washington Square Park and another 75 or 80 outside Columbia University two hours later. At City Hall Park, the late-afternoon crowd was a little over 200. A small group there chanted against Mamdani, and one protester held an anti-Mamdani sign.</p><p>Afterward, news reports cited in the article said about 100 protesters marched toward Union Square to disrupt a remembrance attended by Mamdani. Israelis for Peace, an anti-war group, held the vigil for Israelis killed in the attack and Palestinians killed in Gaza. The marchers booed and chanted as they arrived. Could a gathering mourn both groups of dead while some protesters rejected the mayor’s attempt to do so?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>October 7 was the third anniversary of Hamas’s attack on Israel.</li><li>Mamdani said more than 1,100 Israelis were killed and 251 people abducted.</li><li>The Atlantic’s writer counted a little over 200 protesters at City Hall Park.</li><li>News reports cited in the article put the later march at about 100 people.</li></ul></aside><a class="src" href="https://www.theatlantic.com/ideas/2026/10/october-7-new-york-israel-mamdani/688932/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Electricity and magnetism build on electric charges and fields</h2><p class="dek accent">Calculus connects electric charges, fields, and electromagnetic induction into a unified framework.</p>
+  <div class="body drop"><p>A person notices that objects push or pull across a gap, like a spark or a magnet on a door. Physics explains this action through electric charges and fields. In a structured sequence of study, these ideas form unit 8 of physical principles. This unit comes after 7 units of Newtonian mechanics.</p><p>Electric charges create fields in the space around them. Gauss&#x27;s law uses calculus to formulate how those electric fields spread outward from charges. Physical principles describe how forces act across space. Calculus provides the mathematical method to apply these principles to physical problems.</p><p>Magnetism connects to electricity in the same physical framework. Electromagnetism culminates in electromagnetic induction, which is unit 13 in the sequential curriculum. Through induction, changing magnetic fields produce electric effects. The study moves sequentially from charges in unit 8 to induction in unit 13.</p><p>Applying these principles to physical problems requires measuring rates and quantities. Consider the timing required to solve physical problems under College Board standards. A student has 80 minutes to answer 40 multiple choice questions on electromagnetism. Eighty minutes divided by 40 questions yields an average rate of 2 minutes per question. For free response problems, 100 minutes divided by 4 questions yields 25 minutes per question.</p><p>Electromagnetism was once taught alongside Newtonian mechanics in a single exam before 1973. In 1973, the College Board created two separate exams for Newtonian mechanics and electromagnetism. Students use methods of calculus to solve physical problems in electromagnetism. This study builds directly on the foundation of mechanics.</p><p>Lesson 10 establishes how electric charges and fields produce electromagnetic induction through unit 13. How do these electromagnetic fields carry energy through empty space as waves in lesson 11?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1973, the College Board split its exam into Newtonian mechanics and electromagnetism.</li><li>The curriculum covers unit 8 on electric charges through unit 13 on electromagnetic induction.</li><li>The exam allots 80 minutes for 40 multiple choice questions and 100 minutes for 4 free response questions.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/AP_Physics_C%3A_Electricity_and_Magnetism" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=dMZYoPeGyP0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/dMZYoPeGyP0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Perun examines Ukraine and Russia&#x27;s 2027 war budgets</h3><p>The video title points to spending pressures and economic pain in both countries.</p><span>Perun ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/DBrk9n7LRgA" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/DBrk9n7LRgA?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>India&#x27;s &#x27;cockroach&#x27; movement plans to continue despite crackdown</h3><p>A South China Morning Post headline says the movement plans to press on despite a crackdown.</p><span>South China Morning Post ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=X0_GDOkLKzQ" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/X0_GDOkLKzQ?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>AI Search video covers enzymes, math and DNA research</h3><p>The video title also points to room-temperature semiconductors.</p><span>AI Search ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=utrkutzLcA8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/utrkutzLcA8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Aperture video takes up Carl Jung’s idea of synchronicity</h3><p>The video’s title pairs Jung’s idea with quantum theory.</p><span>Aperture ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.bbc.co.uk/sport/cricket/articles/cw98z44glde4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Mahmud takes Test hat-trick - can you name the others in past 40 years?</a><span>feeds.bbci.co.uk</span></li><li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOenpHakNqSlFSckJuU05VbjlCVEtlWG4xSlVnQ0tmQVFTNHBkRXlFSGFhay0tanJweXNvbllqN2Y0ejM2Y2Z3UVAxSjRVc1dOTXZITUI4aXBac2N6LXM5SjdvUkIxalZvVTdsNDAzbnBnd2o2RTVsMlRxNGdzTVZCVTAxZi00LVlzNHJBN2NXYmxEYXJEa1E?oc=5" target="_blank" rel="noopener">Texans acquire WR Marvin Harrison Jr. from Cardinals, hoping to unlock first-round pick&#x27;s potential</a><span>AP News</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ0lHZnNqVGpBR2psNkQxemZPME1jenUyRWZyb0xJdUkzZzRacmVVcUpUV1NWOEkzaHQ4bmFhSm44TjJVSHlaSTMwSTBxcW1wSndzQjBmMlNsYkZtVlE5WlQtTjJpRy1pNXZObTkyRWdDajJpRFpZWUZnQ0JlZ2g2a1hNYVZfaGM?oc=5" target="_blank" rel="noopener">Huntley leads late TD drive to force OT and then scores on 1-yard run as Ravens beat Falcons 30-23</a><span>AP News</span></li><li><a href="https://www.france24.com/en/tv-shows/sports/20261012-marseille-end-five-game-losing-streak-to-climb-out-of-the-relegation-zone" target="_blank" rel="noopener">Marseille end five-game losing streak to climb out of Ligue 1 relegation zone</a><span>france24.com</span></li><li><a href="https://www.aljazeera.com/sports/2026/10/12/manchester-city-guilty-verdict-financial-charges-liverpool-anfield?traffic_source=rss" target="_blank" rel="noopener">What we learned from ‘guilty’ Man City’s win over Liverpool at Anfield</a><span>aljazeera.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The distance between a promise and what holds</h2><p class="dek accent">Today&#x27;s headlines show how much depends on clear rules and systems that can bear strain.</p>
+  <div class="body drop"><p>A promise can reach the public before the people expected to live by it know its terms. That is the gap in the reported energy ceasefire, which Kyiv had not seen when Trump announced it. Trust depends on something quieter than an announcement: whether the parties share the same account of what was agreed, and whether events on the ground fit it.</p><p>Distance offers little protection when daily life depends on routes and schedules. The closure of Riyadh airport stranded 4,851 passengers in Dhaka. A disruption in one place becomes a missed journey somewhere else. The headline is a strike and a closed airport. Underneath are the connections people count on each day, usually without having to think about them.</p><p>There is another kind of strain that builds without a single dramatic moment. In Bangladesh, dengue deaths reached 303 as mosquito control fell short. In the AI industry, creditors are examining what data centre leases leave companies owing. These are different pressures, but both draw attention to the work and the costs that continue after a plan is announced.</p><p>News arrives as an event: a statement, a closure, a new count. The slower story is whether rules are clear, whether essential systems keep working, and who carries the cost when they do not. A day&#x27;s headlines give those processes a visible moment. To understand any one of them, the question is: what had to be in place for this to happen, and who now has to live with it?</p></div></article>
+</section></main>
+<nav class="archive"><span>← Yesterday</span><span>2026-10-12</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
