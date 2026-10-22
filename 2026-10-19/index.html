@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-19</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://s.france24.com/media/display/7c3ce8c8-cb0e-11f1-946e-6313a763b466/w:1024/p:16x9/2026-10-18T155301Z-1509213277-RC2KQIA83EQP-RTRMADP-3-ISRAEL-ELECTION-TRUMP.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Monday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Trump backs Netanyahu nine days before Israel votes, after holding off</h2>
+      <p class="dek">Trump gave Netanyahu his &quot;Complete and Total Endorsement&quot; on Truth Social, after refusing to do so earlier this month.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>19 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Big Picture</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://s.france24.com/media/display/7c3ce8c8-cb0e-11f1-946e-6313a763b466/w:1024/p:16x9/2026-10-18T155301Z-1509213277-RC2KQIA83EQP-RTRMADP-3-ISRAEL-ELECTION-TRUMP.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Trump backs Netanyahu nine days before Israel votes, after holding off</h2>
+    <p class="dek accent">Trump gave Netanyahu his &quot;Complete and Total Endorsement&quot; on Truth Social, after refusing to do so earlier this month.</p>
+    <div class="body drop"><p>Earlier this month, Time magazine asked Donald Trump again and again whether Benjamin Netanyahu was doing a good job. Trump dodged, talking about his own popularity and Middle East security instead.</p><p>On Sunday, he did a U-turn. In a Truth Social post, Trump gave Netanyahu his &quot;Complete and Total Endorsement&quot;, nine days before Israel&#x27;s October 27 election.</p><p>So why the wait? Trump told Axios his answer: &quot;I was always going to do that. I just didn&#x27;t want to do it too soon.&quot;</p><p>Here&#x27;s the backdrop. The two men launched a war on Iran together on February 28. The source says it has upended global oil and gas supply, with no clear end in sight.</p><p>At home, that has cost Trump. A Pew poll this month found roughly two-thirds of US voters disapprove of how he is handling the war, which has pushed up fuel prices. His Republicans face a midterm election on November 3 that decides who controls Congress.</p><p>The source says experts have speculated his earlier silence may have come from a public sense that Israel coaxed the US into the war. There were also reports of friction. In June, Trump acknowledged calling Netanyahu &quot;crazy&quot;, with an expletive attached, over Israel&#x27;s attacks on Lebanon.</p><p>In the post, Trump defended the war and wrote: &quot;If Israel has the wrong Leader, which would be anyone other than Bibi, America will have to do this work ourselves, and I am not inclined to do so.&quot;</p><p>Netanyahu is facing a close race. His Likud Party and its far-right coalition could lose to an opposition bloc led by Gadi Eisenkot, who heads the Yashar party.</p><p>Netanyahu answered with a video. Then he spoke to American voters directly: if you are worried about gas prices, think of what happens if Iran gets nuclear weapons.</p><p>That&#x27;s the clever bit. One endorsement, two elections. Each leader is trying to help the other win while the same war weighs on both.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump endorsed Netanyahu on Truth Social on Sunday, nine days before Israel&#x27;s October 27 election.</li><li>Trump had declined to endorse him earlier this month in a Time interview.</li><li>The US-Israel war on Iran began February 28; a Pew poll found roughly two-thirds of US voters disapprove of Trump&#x27;s handling of it.</li><li>US midterms are on November 3.</li></ul></aside><a class="src" href="https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 7 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Major fire at Canada military base leaves four dead, dozens injured</h3><div class="body"><p>Prime Minister Carney said military and emergency crews fought the flames throughout the night in &quot;some of the worst conditions imaginable&quot;.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>Indian Bollywood superstar Tiger Shroff allegedly shot at by gunmen</h3><div class="body"><p>Bollywood actor Tiger Shroff escaped unharmed after gunmen opened fire at his vehicle in Mumbai, India</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/10/18/tiger-shroff-mumbai-shooting-salman-khan?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Kenya Confirms Four New Ebola Cases</h3><div class="body"><p>Seven Ebola infections have now been confirmed in Kenya, which before this month had never recorded cases of the deadly virus.</p></div><a class="src" href="https://www.nytimes.com/2026/10/17/world/africa/kenya-ebola.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li>
+    <li><h3>16 People Rescued in Pacific Ocean Off Mexico, U.S. Coast Guard Says</h3><div class="body"><p>The agency said a major rescue operation was underway near the coast of Baja California after it received reports of 27 people in the water.</p></div><a class="src" href="https://www.nytimes.com/2026/10/16/world/americas/baja-california-mexico-rescue-coast-guard.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li>
+    <li><h3>Macron condemns violence after riots lead to looting and mass arrests</h3><div class="body"><p>French President Emmanuel Macron says protesters who attacked government buildings need to pay for their crimes.</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/10/18/macron-condemns-violence-after-riots-lead-to-looting-and-mass-arrests?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a></li>
+    <li><h3>Flydubai captain describes blocking axe blows as co-pilot attacked him</h3><div class="body"><p>Capt Smit Machchhar said he screamed for help as he reached to open the cockpit door on flight FZ1073 The captain of a flydubai flight who was attacked by a co-pilot who intended to crash the plane ha</p></div><a class="src" href="https://www.theguardian.com/world/2026/oct/18/flydubai-captain-smit-machchhar-blocking-axe-blows-flight-fz1073" target="_blank" rel="noopener">theguardian.com + 2 more ↗</a></li>
+    <li><h3>Pope Leo tells faithful in St. Peter&#x27;s Square he will gradually resume duties after cancer surgery</h3><div class="body"><p>Pope Leo tells faithful in St. Peter&#x27;s Square he will gradually resume duties after cancer surgery AP News</p></div><a class="src" href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOUGxoemZ1SU5mT0NtVU56WWxPclZWWXZ3Vlc2TkpJOVlIaUw5T3luaDlkVVE0YlJqOXRTUmJ5anI3eHdqTEdJemtKRGtxUmNaN2U3Z21CWUQ0UEVLSUdZX3UtZVlFRzBQSHZmTWRQTFJtWmNrcHg2NDkxX1RBRy1BVkRMZEtnU3BfR0dYSWk3M01RZlowenZCT0QwZw?oc=5" target="_blank" rel="noopener">AP News + 2 more ↗</a></li>
+    <li><h3>The state of the State Department in the wake of the Kimberly Guilfoyle scandal</h3><div class="body"><p>NPR&#x27;s Joel Rose talks with James B. Story, former U.S. Ambassador to Venezuela, about the state of the State Department in the wake of the Kimberly Guilfoyle scandal.</p></div><a class="src" href="https://www.npr.org/2026/10/17/nx-s1-6001729/the-state-of-the-state-department-in-the-wake-of-the-kimberly-guilfoyle-scandal" target="_blank" rel="noopener">feeds.npr.org + 1 more ↗</a></li>
+    <li><h3>Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve (Bloomberg)</h3><div class="body"><p>Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60 workers at Ch</p></div><a class="src" href="https://www.techmeme.com/261017/p21#a261017p21" target="_blank" rel="noopener">techmeme.com + 1 more ↗</a></li>
+    <li><h3>Trump says Washington golf course renovation to start in November, despite judge&#x27;s order</h3><div class="body"><p>Trump says Washington golf course renovation to start in November, despite judge&#x27;s order Reuters</p></div><a class="src" href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNWUFpZWVRek1jNGw1WFA1bS1pUTFYQ3U5NW96R2poMzJRVkJsRXZ6RjJIaTJ2OUc1eUdwN0tLQVZEQ0JhYWw3NWRLcllNejN4M3A2N2FXRjBCNDhoWkk3NFNTTGQtOHBiTG45WWE3eUJMT2dOTHV1ZFhHVmRwazV4bkdUWWhUaVE3RVVXRFJRcUF3aDVObmFKMGZpelhQOWJQcXo0QW52djBNLTB0Mk5hczNLTjNIYUY4ZTlUcW5XbjJ6aUw3M2NSN2VfV1FHUQ?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/17/38454539-caa0-415c-a511-5f2257d6fe0f.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Beside the Padma River in Pabna, a 1,080 megawatt reactor built over eight years reached its first chain reaction, and the milestone makes Bangladesh the world&#x27;s newest nuclear power producer</h3><p class="dek">Beside the Padma River in Pabna, a 1,080 megawatt reactor built over eight years reached its first chain reaction, and the milestone makes Bangladesh the world&#x27;s newest nuclear power producer Energies</p>
+        <details><summary>Read</summary><div class="body"><p>Beside the Padma River in Pabna, a 1,080 megawatt reactor built over eight years reached its first chain reaction, and the milestone makes Bangladesh the world&#x27;s newest nuclear power producer Energies</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1FMlBocU5QZ1lvYXBtdjkxeHBtYUtiWmR4QkduSnpKYnUzTHMzeW8wcXZhMzJLU2tJaXNlUU9QZ2k2SWpmQ0pyQnZyaVRWcmVUZ1NiYVhYVkljOG5YaV9VNGVNazFPU2h6dkkzdHhpbmFXQWxY?oc=5" target="_blank" rel="noopener">Energies Media ↗</a>
+      </article>
+      <article class="more">
+        <h3>Graft charges at home, arrest in Qatar: Former Bangladesh Air Force chief held</h3><p class="dek">Graft charges at home, arrest in Qatar: Former Bangladesh Air Force chief held The Times of India</p>
+        <details><summary>Read</summary><div class="body"><p>Graft charges at home, arrest in Qatar: Former Bangladesh Air Force chief held The Times of India</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOG9WN0JoaE1UZFBha1NnUG5NbG40czhxSVc0NnUwWWhMYWI0SWNTS0Q5dEtwSjNLXzd2OFdsUHNNVldoNjB3LXpWNEJjY2J2ektDcXVkZnhJX2xjX24xWFJMUlVTZjNiS21UQTJDT0hXWHNoeHVWV2FYSUg4bHhtRm5HNVJiaXRuX0RKc1JMd0VkY0ZfV0pINUtpYnZfc1dJc1k5dWR4dW13NHJiaHRfSFdyVUhTZ0NKNjA0YURINUt6M1NvTWh4LTVoZzBQcXh4Vk1VMWpndFFpS3VqY0s2SE1UeWZTU0M3a3Z30gHwAUFVX3lxTE1yQ3ozamloM3pxakpvcnF4blQ1d2lCVm02UVJRcHBJY0d1Qno3ZkF1WENPZ1d5aW4zUUM2VlJnczBUVEZBWDRUX01saVpHM0ZENHd6MzE1NjZGdnR1V0g4MFlRd2lmbUEwUkJza2VCMFVNN2c3dDFNWUI1RlluWnZJcTZNd3g1dnRPTmo5Nk9jVzNFd2tIWFpjMGdmdjhPZG1YMXdMTUdERVNhT1d0UExvcmhtOXZxb1l3dGxfemN3Mi1PRkRTUHdkUlJudHFUb1h3NmllYjV1RWVNSjRQcjk1Rzh4SXFsV3NzWHRtZUpKUA?oc=5" target="_blank" rel="noopener">The Times of India + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Sufia Kamal&#x27;s daughter, freedom fighter and artist Saeeda Kamal, dies at 74</h3><p class="dek">Saeeda Kamal, who served at the frontline Bangladesh Field Hospital during the Liberation War, died at a private hospital in Dhaka this morning.</p>
+        <details><summary>Read</summary><div class="body"><p>Saeeda Kamal, who served at the frontline Bangladesh Field Hospital during the Liberation War, died at a private hospital in Dhaka this morning.</p></div></details>
+        <a class="src" href="https://www.tbsnews.net/bangladesh/obituary/sufia-kamals-daughter-freedom-fighter-and-artist-saeeda-kamal-dies-74-1576941" target="_blank" rel="noopener">tbsnews.net ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh battles massive outbreaks of dengue and measles</h3><p class="dek">Bangladesh battles massive outbreaks of dengue and measles Outbreak News Today</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh battles massive outbreaks of dengue and measles Outbreak News Today</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOS0s0a1hmTEd3MWpDWjJtQ0xmbTNNU2VBczN4WkhXZk5nRTc1MzRPVV9LS0NTdHBXU0FpQUVnTmhQVkFiWEVyaEJsYXNUay1ZTWRTR3h3X0hwODhPTzQ1U1Q2cTNLWW1HelNUSjhaQWtOc0RPLThDUUtyNmEwcnZPOVhJQQ?oc=5" target="_blank" rel="noopener">Outbreak News Today + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>India news: Kolkata stampede dampens Durga Puja festivities</h3><p class="dek">Authorities have detained several people over a deadly stampede in India&#x27;s eastern city of Kolkata, after the state vowed strict action. Meanwhile, &#x27;Cockroach&#x27; leader Dipke is out of detention.</p>
+        <details><summary>Read</summary><div class="body"><p>Authorities have detained several people over a deadly stampede in India&#x27;s eastern city of Kolkata, after the state vowed strict action. Meanwhile, &#x27;Cockroach&#x27; leader Dipke is out of detention.</p></div></details>
+        <a class="src" href="https://www.dw.com/en/india-news-kolkata-stampede-dampens-durga-puja-festivities/live-79685143?maca=en-rss-en-all-1573-rdf" target="_blank" rel="noopener">rss.dw.com + 2 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Ishraque&#x27;s armed antics during anti-drug drive put BNP in awkward position</h2>
+    <p class="dek accent">Although there is support for efforts to curb drug trafficking, the minister’s actions have reportedly put the government in an uncomfortable position.</p>
+    <div class="body drop"><p>Although there is support for efforts to curb drug trafficking, the minister’s actions have reportedly put the government in an uncomfortable position.</p></div><a class="src" href="https://www.tbsnews.net/bangladesh/ishraques-armed-antics-during-anti-drug-drive-put-bnp-awkward-position-1576971" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://ecdn.dhakatribune.net/contents/cache/images/300x300x1/uploads/media/2026/10/12/9ec3e456bef73587617f0f8c9af7d6e3-6accb4deefaa4.jpg?jadewits_media_id=75274" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>India, Bangladesh need to cooperate on ‘grey areas’ in Bay of Bengal maritime boundaries</h3><p class="dek">A UN Tribunal on the India-Bangladesh maritime boundary dispute in 2014 awarded Bangladesh 19,467 sq. km of the 25,602 sq km sea area of Bay of Bengal</p>
+        <details><summary>Read</summary><div class="body"><p>A UN Tribunal on the India-Bangladesh maritime boundary dispute in 2014 awarded Bangladesh 19,467 sq. km of the 25,602 sq km sea area of Bay of Bengal</p></div></details>
+        <a class="src" href="https://www.thehindu.com/news/national/india-bangladesh-need-to-cooperate-on-grey-areas-in-bay-of-bengal-maritime-boundaries/article70339222.ece" target="_blank" rel="noopener">thehindu.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>‘The joke is on us’</h3><p class="dek">THE post began with an apology. The writer Amitava Kumar explained that Facebook had blocked his Substack link in India, so he was sharing his essay as plain text instead. I read that line twice. Then</p>
+        <details><summary>Read</summary><div class="body"><p>THE post began with an apology. The writer Amitava Kumar explained that Facebook had blocked his Substack link in India, so he was sharing his essay as plain text instead. I read that line twice. Then</p></div></details>
+        <a class="src" href="https://www.dawn.com/news/2037974/the-joke-is-on-us" target="_blank" rel="noopener">dawn.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>India’s protest wave goes global as Modi faces mounting pressure</h2>
+    <p class="dek accent">The voter-list revision has sparked allegations of voter disenfranchisement, opposition protests and criticism of police action against demonstrators Details</p>
+    <div class="body drop"><p>The voter-list revision has sparked allegations of voter disenfranchisement, opposition protests and criticism of police action against demonstrators Details</p></div><a class="src" href="https://www.dhakatribune.com/world/south-asia/422434/india%E2%80%99s-protest-wave-goes-global-as-modi-faces" target="_blank" rel="noopener">dhakatribune.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://s.france24.com/media/display/c0e82312-cae0-11f1-8a5c-6313a763b466/w:1024/p:16x9/08624102e36095dfc5692eadfc7780474a0d2bb4.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Trump says suspension of Russia sanctions is to keep peace negotiations going</h3><p class="dek">The US president blocked numerous sanctions on Russia two days before they were due to take effect.</p>
+        <details><summary>Read</summary><div class="body"><p>The US president blocked numerous sanctions on Russia two days before they were due to take effect.</p></div></details>
+        <a class="src" href="https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Iran war live: Tehran says Netanyahu seeks more war; Yemen fighting flares</h3><p class="dek">Iran&#x27;s Foreign Minister Abbas Araghchi says Israeli Prime Minister Benjamin Netanyahu seeks more war before elections.</p>
+        <details><summary>Read</summary><div class="body"><p>Iran&#x27;s Foreign Minister Abbas Araghchi says Israeli Prime Minister Benjamin Netanyahu seeks more war before elections.</p></div></details>
+        <a class="src" href="https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Zelenskyy thanks Trump for resumed intelligence sharing after US Starlink ‘message’</h3><p class="dek">Two people killed and at least 17 injured as Russia and Ukraine continue to trade strikes on power infrastructure Volodymyr Zelenskyy on Sunday thanked the Trump administration for resuming intelligen</p>
+        <details><summary>Read</summary><div class="body"><p>Two people killed and at least 17 injured as Russia and Ukraine continue to trade strikes on power infrastructure Volodymyr Zelenskyy on Sunday thanked the Trump administration for resuming intelligen</p></div></details>
+        <a class="src" href="https://www.theguardian.com/world/2026/oct/18/killed-injured-russia-ukraine-strikes-power-infrastructure" target="_blank" rel="noopener">theguardian.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Egypt says ready to back Saudi Arabia in war against Iran-allied Houthis</h3><p class="dek">Egypt says ready to back Saudi Arabia in war against Iran-allied Houthis Reuters</p>
+        <details><summary>Read</summary><div class="body"><p>Egypt says ready to back Saudi Arabia in war against Iran-allied Houthis Reuters</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNaUsxbVVqQ0FFUl81U25IbG1NaXhrNzFqZzIzaFpRUVhKbF9rYlZoMXg1Z3NzYjR1TEtkeHNCU1BrOWs4ZXR5VHFqMTBoX3VjSV9FRV9neGVDSkdUNWIxMlNhZWRJbldocDM5Q2hiMXYxUXpHVUJqWkkyOEF5OGNBNWduQXFPMXp6VXhYRjUyNmsxaV9pbXJhS29uVGh6Tm51emp4S3YtdmI5c21HZE9HeFkycENlNGxHRUlJd29YWkxwRF85eXc?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>&#x27;Life is absolutely brutal in Gaza,&#x27; says World Food Programme head</h3><p class="dek">The UN&#x27;s World Food Programme says 1.4 million people in Gaza are suffering acute food shortages and that funding gaps are forcing cutbacks in critical aid, despite the U.S. brokered Hamas-Israel ceas</p>
+        <details><summary>Read</summary><div class="body"><p>The UN&#x27;s World Food Programme says 1.4 million people in Gaza are suffering acute food shortages and that funding gaps are forcing cutbacks in critical aid, despite the U.S. brokered Hamas-Israel ceas</p></div></details>
+        <a class="src" href="https://www.npr.org/2026/10/18/nx-s1-6001709/life-is-absolutely-brutal-in-gaza-says-world-food-programme-head" target="_blank" rel="noopener">feeds.npr.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>144 drones fired at Putin&#x27;s hometown, and one man worried about petrol</h2>
+    <p class="dek accent">Ukraine hit Saint Petersburg with its biggest drone attack on the city since 2022, and the Kremlin says it changes nothing.</p>
+    <div class="body drop"><p>Sergei, 58, felt his apartment block shake in Saint Petersburg and quickly realised it was a drone attack. His first thought, he told AFP, was that petrol would run out and he had better fill up.</p><p>That is a strange thing to think while drones are overhead. It makes sense once you know what the drones were aiming at.</p><p>Russia says Ukraine struck an oil refinery and an oil depot in night-time strikes on Saint Petersburg, Vladimir Putin&#x27;s hometown. Governor Alexander Beglov said one person was killed and five hospitalised. Fires burned at the oil terminal, the Ruchyi oil depot and industrial warehouses.</p><p>Here&#x27;s the number. The head of the wider Leningrad region, Alexander Drozdenko, said air defences shot down 144 Ukrainian drones. State media called it the largest attack on the city since the war began in 2022.</p><p>The damage reached past oil. Beglov said 12 housing blocks were damaged and flights were restricted at Pulkovo airport. Russia&#x27;s VKontakte social network said its data centre was hit, and the retailer Ozon reported a hit on its logistics centre.</p><p>In the region around the city, a substation hit in the town of Yanino left 20,000 people without power. A woman and three children were hospitalised with symptoms of carbon monoxide poisoning after drone debris set a house on fire.</p><p>Why Sergei&#x27;s worry? Ukrainian strikes caused nationwide fuel shortages in Russia earlier this year. Hitting refineries is a way of reaching the war machine through the fuel tank.</p><p>So did it change anything? Kremlin spokesman Dmitry Peskov said Kyiv is putting up a fight, but it cannot change the course of events.</p><p>Meanwhile Russia keeps hitting Ukraine too. President Zelensky said Russian strikes hit substations in four Ukrainian regions, leaving tens of thousands of families without power. He also said Moscow had violated an energy ceasefire announced by Donald Trump 76 times.</p><p>Another resident, 58-year-old Galina, put it this way: they attack, we attack, it has become the dreadful routine of war. Ukraine&#x27;s strike on Putin&#x27;s hometown is rare for its size, but the Kremlin says it will not change its war aims.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Drozdenko said air defences shot down 144 Ukrainian drones over Saint Petersburg and the Leningrad region.</li><li>Governor Beglov said one person was killed and five hospitalised in Saint Petersburg.</li><li>An oil terminal, the Ruchyi oil depot and industrial warehouses caught fire.</li><li>Peskov said the attacks cannot change the course of events.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxORkdkNk9DVENGZU50OHVsbHF4Z3ZWbnBxcHVqaDJSa1JEWXZ5aFVqbTQwWmwzUGpvZUJsTUFzSnZHd2laVHpqd05XaF9KM2YxdUNUSVV0YUp1SFVKbTBRVHNzcVc0ek84cTY5TTVmZGhPbnhzMVJiejFXaDdXV3pBcTZYeEI3QkZrNDlOOWllWFk3ejFfMVdVd3lQUGJMeXBhNW5xTjZJQnBINTVSTjVDUnZKSm1laDdKaEE3eGdoSUtaQQ?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo nophoto"><span>Microsoft drops its deal at Nscale&#x27;s Essex AI data center, r</span></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Samsung to use TSMC technology for Nvidia&#x27;s next-generation memory chips, Seoul newspaper reports</h3><p class="dek">Samsung to use TSMC technology for Nvidia&#x27;s next-generation memory chips, Seoul newspaper reports Reuters</p>
+        <details><summary>Read</summary><div class="body"><p>Samsung to use TSMC technology for Nvidia&#x27;s next-generation memory chips, Seoul newspaper reports Reuters</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLVd3RU5QdzNwZHd0cUNCbUQxM3B6M2JOTXZZbEE4b3Y4czkxSjBuNklIRXU2S1VyRld6WTlRQUdlZkN3TGNRcng5cjR6ZEViNXNqcHh2RnlRU2hWVXRPUVFjVXRvd2FaaTVkd002aUk4WHlEQ2wxTGk3alF5S0FUTGNMUXF2dV9QUjk4eThjcWVPaVBLYzc2c0NUaUN4UUVMcVZTSERiMDE5VXp0NDdoVFpuS2E0TGZoUnBrRTExcnZDRlJia1VNcU40SUxQcE1y?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Anthropic gives outside AI watchdog “employee-like” access</h3><p class="dek">The outside watchdog can publish its findings without Anthropic&#x27;s approval.</p>
+        <details><summary>Read</summary><div class="body"><p>The outside watchdog can publish its findings without Anthropic&#x27;s approval.</p></div></details>
+        <a class="src" href="https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/" target="_blank" rel="noopener">feeds.arstechnica.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more (Joanna Stern/The New Things)</h3><p class="dek">Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more — My exc</p>
+        <details><summary>Read</summary><div class="body"><p>Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more — My exc</p></div></details>
+        <a class="src" href="https://www.techmeme.com/261017/p20#a261017p20" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation (Nick Lichtenberg/Fortune)</h3><p class="dek">Nick Lichtenberg / Fortune : Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation — Steven Pr</p>
+        <details><summary>Read</summary><div class="body"><p>Nick Lichtenberg / Fortune : Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation — Steven Pr</p></div></details>
+        <a class="src" href="https://www.techmeme.com/261018/p3#a261018p3" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>The AI promise was automation. The reality? Managing digital workers</h3><p class="dek">When artificial intelligence agents first arrived, they came with a tantalising promise: autonomous “digital workers” that would finally free humans from corporate drudgery. As businesses across Asia </p>
+        <details><summary>Read</summary><div class="body"><p>When artificial intelligence agents first arrived, they came with a tantalising promise: autonomous “digital workers” that would finally free humans from corporate drudgery. As businesses across Asia </p></div></details>
+        <a class="src" href="https://www.scmp.com/tech/big-tech/article/3371246/ai-promise-was-automation-reality-managing-digital-workers?utm_source=rss_feed" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Microsoft drops its deal at Nscale&#x27;s Essex AI data center, report says</h2>
+    <p class="dek accent">Microsoft has reportedly cancelled its deal to anchor Nscale&#x27;s Essex AI data center, a site that may not get grid power until the 2030s, just as investors question Nscale&#x27;s IPO price.</p>
+    <div class="body drop"><p>What is a data center worth if it might not get switched on for years?</p><p>That question just got real for Nscale, a UK company that builds data centers packed with Nvidia AI chips and rents the computing power to big customers. Microsoft has cancelled its deal to be the anchor tenant at Nscale&#x27;s site in Essex, according to a report by James Titcomb in the Telegraph.</p><p>Microsoft was going to rent 23,000 Nvidia AI chips there. That&#x27;s a big customer to lose.</p><p>Wait, what&#x27;s an anchor tenant? Think of a shopping mall that gets built because a big department store signed up first. The anchor&#x27;s long-term promise to pay rent is what makes lenders and investors believe in the whole project.</p><p>Here&#x27;s the catch. The Telegraph also reported that the Essex site may not get grid power until the 2030s. AI data centers need huge, reliable electricity connections, and the queue for those has become a widely reported bottleneck for new projects in Britain and the US.</p><p>So did the power wait push Microsoft out? Nobody has confirmed that. The reasons for the exit, and whether it touches any other Nscale deals, weren&#x27;t in the reports available.</p><p>Why does the timing sting? Nscale has been preparing an IPO, its first sale of shares on the stock market, at a valuation of roughly $30 billion. Bloomberg, citing unnamed sources, reports that some investors are pushing back and urging $16 billion to $19 billion instead.</p><p>Put simply, some would-be buyers think the company is worth somewhere between about half and two-thirds of what it hopes.</p><p>Nscale isn&#x27;t the only one hitting walls. The Financial Times reported that RegLayer counted 47 or more large US data center projects delayed, withdrawn or blocked in 2026. Bernstein says only about 35% of the planned US data center pipeline is credible. That&#x27;s roughly one in three.</p><p>That&#x27;s the lesson hiding in the Essex story. Chips grab the headlines in the AI rush, yet a data center needs two duller things before it&#x27;s worth anything: a customer who signs for the long haul, and power that actually arrives.</p><p>The next thing to watch is the price tag Nscale finally puts on its IPO. If it holds near $30 billion, investors have shrugged off Essex. If it slides toward $16 billion to $19 billion, the doubters won. Either way, Essex still needs a new anchor tenant.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Microsoft has cancelled its deal to anchor Nscale&#x27;s Essex data center and rent 23,000 Nvidia AI chips there, the Telegraph reports.</li><li>The Essex site may not get grid power until the 2030s.</li><li>Some investors want Nscale&#x27;s roughly $30 billion IPO valuation cut to $16 billion to $19 billion, Bloomberg reports.</li><li>Bernstein says about 35% of the planned US data center pipeline is credible.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmVDUVQyZjhnbFN2MHQ1MHVPMHVpLVVsUFE1aU44Y2QzMUx2a25MRXR5OWtkTGd5RkViaG9fM3lZcnFHblYyT2xMeGZ3MHI3NkFjQ0FhdWFVRWlmdHlPRDRFRVRsclFpbUExakpiN3Z4aGMtODdDb09Mb0xXbnIxdU04ZmQ3UTEyTkhQd2EyMFhDNzQzYVgzZG9FeDlNYTJTanNOOThVSGRTb2RnRWdCajBVXzFMcDB4MWZpbXR1STMzZ1JaOXRr?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://ecdn.dhakatribune.net/contents/cache/images/300x300x1/uploads/media/2026/10/18/1420dee84441af5f5e907dec6c675964-6ad49fab32a97.png?jadewits_media_id=75643" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bond Market’s Big Short Bet Gets Wakeup Call as AI Trade Wobbles</h3><p class="dek">US Treasuries are showing tentative signs of reclaiming their traditional role as a haven — threatening to wrong-foot investors who are heavily positioned for this year’s bond slump to deepen.</p>
+        <details><summary>Read</summary><div class="body"><p>US Treasuries are showing tentative signs of reclaiming their traditional role as a haven — threatening to wrong-foot investors who are heavily positioned for this year’s bond slump to deepen.</p></div></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-18/bond-market-s-big-short-bet-gets-wakeup-call-as-ai-trade-wobbles" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Wage Board for garment workers soon: Labour secretary</h3><p class="dek">The board will review these aspects before reaching a decision on wage levels; in other words, the Ministry will not unilaterally set the wage amount through administrative action, he added.</p>
+        <details><summary>Read</summary><div class="body"><p>The board will review these aspects before reaching a decision on wage levels; in other words, the Ministry will not unilaterally set the wage amount through administrative action, he added.</p></div></details>
+        <a class="src" href="https://www.tbsnews.net/economy/rmg/wage-board-garment-workers-soon-labour-secretary-1575656" target="_blank" rel="noopener">tbsnews.net ↗</a>
+      </article>
+      <article class="more">
+        <h3>Listings in south-east Asia gain momentum with $1bn IPO</h3><p class="dek">Owner of digital wallet GCash set to start trading in region’s biggest debut this year</p>
+        <details><summary>Read</summary><div class="body"><p>Owner of digital wallet GCash set to start trading in region’s biggest debut this year</p></div></details>
+        <a class="src" href="https://www.ft.com/content/a2b83aa7-49e0-4735-b115-d406fcb24de8?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Some poor countries spend up to 14% of their income just on debt payments</h2>
+    <p class="dek accent">The IMF says low-income countries hand over 8% to 14% of their own revenue to service debt, and wants faster restructuring and more cheap loans.</p>
+    <div class="body drop"><p>Before a poor country pays a single teacher or builds a single road, up to 14 cents of every dollar it collects may already be spoken for. That is the IMF&#x27;s figure for low-income countries: anywhere from 8% to 14% of their own revenue goes solely to debt servicing.</p><p>Debt servicing just means the regular payments on money a government has borrowed.</p><p>Here&#x27;s the odd part. These countries have actually made progress. IMF managing director Kristalina Georgieva said that while debt compared with the size of the economy is rising in high-income nations, it has dipped somewhat in low-income ones.</p><p>So why doesn&#x27;t that feel like good news? Because of high interest rates. She said the benefit of the lower ratio is not being fully realized.</p><p>Add inflation and conflicts that have pushed up fuel and commodity prices, and the squeeze tightens. Georgieva said inflation acts much like a tax, and it hits low-income people hardest.</p><p>She spoke at a press conference at the IMF and World Bank annual meetings in Bangkok, with Saudi Arabia&#x27;s finance minister, Mohammed Al-Jadaan, also present.</p><p>What does she want? First, swift and effective debt restructuring where it is needed, with the G20 Common Framework as a tool. Restructuring means renegotiating the terms of a debt so a country can actually pay it.</p><p>Second, more cheap money. The IMF has mobilized extra resources for the Poverty Reduction and Growth Trust, which gives concessional (below-market) loans. Georgieva said new reforms create room to more than triple that lending compared with before.</p><p>Here&#x27;s the catch for anyone expecting a harsh recipe. She rejected the idea that every low-income country must face massive austerity. Actions, she said, should fit each country&#x27;s economy and debt profile.</p><p>She also drew a line between two problems. Some countries have long-term debt sustainability but face immediate shortages of cash, and they need help raising more revenue at home.</p><p>That last distinction is the one to keep. A country can be fine over decades and still be choking this year.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Low-income countries spend 8% to 14% of their own revenue on debt servicing, per the IMF.</li><li>Georgieva said new reforms create room to more than triple concessional lending through the PRGT.</li><li>She rejected the idea that all low-income countries need massive austerity.</li><li>The press conference was at the IMF and World Bank annual meetings in Bangkok.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOek14dnVaSHRfckw2SkxnWUlJb0ZXSmcyeTJuNlpXMjR6bS1WRExZejg4dUFweG5sUmVUTndpeXQ4X0EwVHFwVzIxU24xME1OaHVUeHdqYjJpSGJ3SDB4aVFWcmlNVEZVMHFDbndVSC1aQ0NhY09odHctV2xKWFpwNEtvaDYwakF1WHVOTHJzbVEwRkx6Z214RGk2U0tGUE0xcDNBenZGZU5KSnZLRkVKVUxuTjNYdzhyczBn?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/957dc2e5-455a-49d0-bc27-9ccf4e621e83_1ec074f4.jpg?itok=IODflVmj&amp;v=1792319710" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Physicists prove a long-suspected quantum speed limit for thermalization</h3><p class="dek">Whether we are waiting for a car windshield to defrost in winter or a warm drink to cool down, how long it takes for an object to settle into a stable, even temperature within its environment (thermal</p>
+        <details><summary>Read</summary><div class="body"><p>Whether we are waiting for a car windshield to defrost in winter or a warm drink to cool down, how long it takes for an object to settle into a stable, even temperature within its environment (thermal</p></div></details>
+        <a class="src" href="https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html" target="_blank" rel="noopener">phys.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Scientists who discovered a third form of magnetism win major physics prize</h3><p class="dek">Physicists have uncovered a hidden third form of magnetism that challenges more than 100 years of established physics. Called altermagnetism, the discovery could transform future computing and electro</p>
+        <details><summary>Read</summary><div class="body"><p>Physicists have uncovered a hidden third form of magnetism that challenges more than 100 years of established physics. Called altermagnetism, the discovery could transform future computing and electro</p></div></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/10/261017230035.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Japan is about to try a round trip to a moon of Mars</h2>
+    <p class="dek accent">Japan&#x27;s MMX probe is set to launch Tuesday to collect samples from a Martian moon and bring them back to Earth.</p>
+    <div class="body drop"><p>Why would anyone fly all the way to Mars and then skip the planet?</p><p>Because this time the prize is one of its moons. Japanese scientists are getting an uncrewed probe called Martian Moons eXploration, or MMX, ready to collect samples from Mars&#x27;s moons and carry them home.</p><p>Quick background. Mars has two small moons, Phobos and Deimos. Phobos is the bigger one and sits closer to the planet, and headlines about the mission name it as the target.</p><p>Here&#x27;s the bold part. The mission aims to be the first round trip to the Martian region. Plenty of robots have gone to Mars. Getting something there and back again is a whole different job.</p><p>So how does that work? A sample-return mission grabs material from another world and flies it back, so scientists can study it in labs on Earth. Think of a grocery run where the hard part is the drive home.</p><p>Japan has done this before. Its space agency, JAXA, already brought back bits of asteroids with its Hayabusa and Hayabusa2 missions. MMX takes that skill to the neighbourhood of Mars.</p><p>Why bother? The hope is that the samples could help unlock the origins of the Solar System and of life on Earth. The mission could also help lay the groundwork for people exploring there one day.</p><p>Japan isn&#x27;t doing this alone. MMX is a collaboration with US and European space agencies, plus many universities and tech companies.</p><p>Launch is set for Tuesday at 4.41am on JAXA&#x27;s flagship H3 rocket, from the Tanegashima Space Center. &quot;Being able to be involved in such a grand mission is incredibly exciting,&quot; said Makoto Arita, project manager of JAXA&#x27;s H3 rocket team, speaking to reporters two days before launch.</p><p>First thing to watch is Tuesday&#x27;s liftoff. The real finish line comes much later, on the day those samples from a moon of Mars reach Earth.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The uncrewed probe is called Martian Moons eXploration (MMX) and aims to bring samples back from Mars&#x27;s moons.</li><li>It aims to be the first round trip to the Martian region.</li><li>It is set to launch Tuesday at 4.41am on an H3 rocket from Tanegashima Space Center, per JAXA.</li><li>MMX is a collaboration with US and European space agencies, universities and tech companies.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOT0JWSWU4S3JaTElScFlOdnhEZml0TkVISkFVWURZaS02TzR3eGNhMG5QbGI2UUVVSmx3ajBCZXpFNVJNSVQ5eHliRGVmOU9VRjZ0V2l6R1JqVC1xSjVINTBpajhLejg0bUQ2Mkx0dERJTFdzd0pLVGdaSGJ3RUU1MGVBeVo5ellXVXJndGdnYlNoUmczcnpHdVcyVnJXa01lQUk0NEVn?oc=5" target="_blank" rel="noopener">AP News + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://substackcdn.com/image/fetch/$s_!LfrB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e73621d-6818-403f-b8ab-6266f8461f63_539x568.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>An Inside Look At How To Tame Unstoppable AI</h3><p class="dek">The post An Inside Look At How To Tame Unstoppable AI appeared first on NOEMA .</p>
+        <details><summary>Read</summary><div class="body"><p>The post An Inside Look At How To Tame Unstoppable AI appeared first on NOEMA .</p></div></details>
+        <a class="src" href="https://www.noemamag.com/an-inside-look-at-how-to-tame-unstoppable-ai" target="_blank" rel="noopener">noemamag.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>This AI Reconstructs What You’re Looking at From a Brain Scan</h3><p class="dek">The technology could one day decode dreams—or reveal our most private thoughts. The post This AI Reconstructs What You’re Looking at From a Brain Scan appeared first on SingularityHub .</p>
+        <details><summary>Read</summary><div class="body"><p>The technology could one day decode dreams—or reveal our most private thoughts. The post This AI Reconstructs What You’re Looking at From a Brain Scan appeared first on SingularityHub .</p></div></details>
+        <a class="src" href="https://singularityhub.com/2026/10/12/this-ai-reconstructs-what-youre-looking-at-from-a-brain-scan/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>The Evolving Quest to Build Life in a Lab</h3><p class="dek">Scientists want to create cells from scratch, to unveil life’s origins or provide specialized functions. Are they close? The post The Evolving Quest to Build Life in a Lab appeared first on Singularit</p>
+        <details><summary>Read</summary><div class="body"><p>Scientists want to create cells from scratch, to unveil life’s origins or provide specialized functions. Are they close? The post The Evolving Quest to Build Life in a Lab appeared first on Singularit</p></div></details>
+        <a class="src" href="https://singularityhub.com/2026/10/16/the-evolving-quest-to-build-life-in-a-lab/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>📈 What is bigger than AI?</h2>
+    <p class="dek accent">GLP-1s: the science, the savings and the societal stakes.</p>
+    <div class="body drop"><p>GLP-1s: the science, the savings and the societal stakes.</p></div><a class="src" href="https://www.exponentialview.co/p/what-is-bigger-than-ai" target="_blank" rel="noopener">exponentialview.co ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Chemical_weapon1.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Arthur Conan Doyle Based Sherlock Holmes on a Real-Life Scottish Surgeon Who Used Deduction to Diagnose Patients and Investigate Crimes</h3><p class="dek">A new book chronicles the exploits of Joseph Bell, an Edinburgh lecturer whose lessons sparked the creation of the world&#x27;s most famous detective</p>
+        <details><summary>Read</summary><div class="body"><p>A new book chronicles the exploits of Joseph Bell, an Edinburgh lecturer whose lessons sparked the creation of the world&#x27;s most famous detective</p></div></details>
+        <a class="src" href="https://www.smithsonianmag.com/history/arthur-conan-doyle-based-sherlock-holmes-on-a-real-life-scottish-surgeon-who-used-deduction-to-diagnose-patients-and-investigate-crimes-180989623/" target="_blank" rel="noopener">smithsonianmag.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>On this day in 1987: Iran–Iraq War: U.S. Navy forces destroyed two Iranian oil platforms in the Persian Gulf in response to an Iranian missile attack on a Kuwaiti oil tanker three days earlier.</h2>
+    <p class="dek accent">The Iran–Iraq War, also called the First Imposed War, Eight-Year War, or Sacred Defense by Iran, began with the Iraqi invasion of Iran in September 1980. After eight years of conflict, both countries </p>
+    <div class="body drop"><p>The Iran–Iraq War, also called the First Imposed War, Eight-Year War, or Sacred Defense by Iran, began with the Iraqi invasion of Iran in September 1980. After eight years of conflict, both countries </p></div><a class="src" href="https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War" target="_blank" rel="noopener">Wikipedia ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2023/12/hesse_seasonsofthesoul.jpg?fit=320%2C480&amp;amp;ssl=1" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>China is mass-producing slop at a scale the world has never seen</h3><p class="dek">“A 1960s American retro-futurist city street. A zombie outbreak has just erupted. The city has freshly emerged from battle, wearing the stillness that follows combat. It’s high summer, the sun directl</p>
+        <details><summary>Read</summary><div class="body"><p>“A 1960s American retro-futurist city street. A zombie outbreak has just erupted. The city has freshly emerged from battle, wearing the stillness that follows combat. It’s high summer, the sun directl</p></div></details>
+        <a class="src" href="https://bigthink.com/history-society/china-is-mass-producing-slop-at-a-scale-the-world-has-never-seen/" target="_blank" rel="noopener">bigthink.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Hermann Hesse said all the books in the world won&#x27;t make you happy</h2>
+    <p class="dek accent">A 1918 poem says books can lead you toward your heart, but the wisdom you went looking for was already in you.</p>
+    <div class="body drop"><p>A future Nobel Prize winner in literature once wrote that all the books of the world will not bring you happiness. Odd thing for a writer to say, right?</p><p>To see why he said it, start with why we read at all. Books show us what it is like to be someone else, and they also send us back to ourselves. We read to learn how to love and suffer, how to grieve and how to be glad.</p><p>We also read for company. James Baldwin described the feeling: you think your pain and heartbreak have never happened to anyone in history, and then you read.</p><p>Here&#x27;s the catch. No example, no parallel, no borrowed wisdom can stand in for living. The story of your life only gets written on the blank page of living it.</p><p>Hermann Hesse put this into a short poem in 1918, when he was entering his forties. It appears in a collection published after his death, The Seasons of the Soul.</p><p>The poem says the books will not bring you happiness. They do build a secret path toward your heart. What you need is in you: the sun, the stars, the moon. The light you were seeking shines up from within.</p><p>Then comes my favourite turn. You combed the libraries in a quest for wisdom, Hesse says, and now every page speaks the truth that flashes forth from you. So the books were a way in, and you were the place they led.</p><p>The young Proust reached the same conclusion about why we read. The end of a book&#x27;s wisdom, he wrote, appears to us as merely the start of our own, because the essential book, the one true book, already exists in every one of us.</p><p>Now the twist on the twist. Hesse wrote that poem more than a decade before he wrote his essay on the timeless magic of books. The man who said books can&#x27;t make you happy went on to praise them anyway.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hermann Hesse wrote the short poem in 1918, when he was entering his forties.</li><li>It appears in the posthumous collection The Seasons of the Soul.</li><li>The poem says books build a secret path toward your heart, but what you need is already in you.</li><li>Hesse wrote his essay on the magic of books more than a decade later, and won the Nobel Prize in Literature about three decades after the poem.</li></ul></aside><a class="src" href="https://www.themarginalian.org/2026/10/12/hermann-hesse-books-poem/" target="_blank" rel="noopener">themarginalian.org + 2 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Physics from first principles, lesson 15: open problems</h2><p class="dek accent">Go deeper: Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium</p>
+  <div class="body drop"><p>Go deeper: Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium</p></div><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=tDWtcyeNNew" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/tDWtcyeNNew?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Quantum breakthrough, Gemini 4 Argon, MOSS Image, KLING 4, OpenAI spy, Muse Wonder: AI NEWS</h3><p></p><span>AI Search ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=ozaovHSsI_8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/ozaovHSsI_8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>The Dangerous Saudi-Turkey-Pakistan Military Axis Explained</h3><p></p><span>Observer Research Foundation ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=cvBFMOiBBsE" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/cvBFMOiBBsE?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>The Evolution of the Russian Military - Its Strengths and Shortfalls in 2026 (With Michael Kofman)</h3><p></p><span>Perun ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=f93mSbqYe1w" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/f93mSbqYe1w?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Reasons Scientists Now Think Aging Can Be Cured</h3><p></p><span>Chill Dude Explains ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.dawn.com/news/2038011/two-moments-of-madness-cost-sri-lanka-as-pakistan-win-tri-series-opener-after-salman-ali-agha-century" target="_blank" rel="noopener">Two moments of madness cost Sri Lanka as Pakistan win tri-series opener after Salman Ali Agha century</a><span>dawn.com</span></li><li><a href="https://www.dhakatribune.com/sport/football/422369/haaland-stars-in-man-city-win-liverpool-beat" target="_blank" rel="noopener">Haaland stars in Man City win, Liverpool beat Brentford</a><span>dhakatribune.com</span></li><li><a href="https://www.dhakatribune.com/sport/football/422365/messi-scores-twice-provides-assist-as-inter-miami" target="_blank" rel="noopener">Messi scores twice, provides assist as Inter Miami beat Atlanta United 3-1</a><span>dhakatribune.com</span></li><li><a href="https://www.bbc.co.uk/sport/tennis/articles/cqm2411vp3dgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Britain&#x27;s Kartal misses out on biggest title of her career</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.espn.com/college-football/story/_/id/50211284/connelly-week-7-upsets-mean" target="_blank" rel="noopener">What the heck just happened and what does it mean? Connelly on an epic Week 7</a><span>espn.com</span></li></ul></div>
+</section>
+<section class="page spread" id="p15" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/15c7/live/4f318350-ca52-11f1-852c-2b93a8fc4799.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Big Picture</p>
+    
+  </div>
+  <article class="lead half">
+    <h2>Masked settlers attacked European diplomats, and Israel&#x27;s own reaction split in two</h2>
+    <p class="dek accent">Diplomats from Belgium, France, Poland and the Catholic Church were attacked in the West Bank, and the Israeli military condemned it while the prime minister&#x27;s office questioned the reports.</p>
+    <div class="body drop"><p>The most striking thing about this story is not the attack. It is that Israel&#x27;s military and Israel&#x27;s prime minister&#x27;s office looked at the same event and described it very differently.</p><p>First, what happened. On Saturday, European diplomats from Belgium, France, Poland and the Catholic Church went to Taybeh, a largely Christian village near Ramallah in the occupied West Bank.</p><p>They had come to assess the situation after almost daily attacks by Israeli settlers on Palestinians trying to bring in their olive harvest.</p><p>Video from the scene showed masked settlers confronting the convoy, and reports suggest stones were thrown. Belgium said a window on one of its consulate&#x27;s cars was smashed and a French mayor was assaulted.</p><p>That mayor is Bernard Baudoux, who leads Aulnoye-Aymeries in northern France. He told the AFP news agency that settlers kicked him and beat him with iron bars. &quot;It&#x27;s the gratuitous nature of the violence that stuns me,&quot; he said.</p><p>Here&#x27;s the split. The Israel Defense Forces, the country&#x27;s military, strongly condemned what it called a severe act of violence by &quot;Israeli rioters&quot; and said no soldiers were present. Foreign minister Gideon Sa&#x27;ar also condemned it.</p><p>But Prime Minister Benjamin Netanyahu&#x27;s office urged &quot;caution before drawing conclusions&quot;. It said social media images &quot;do not establish the complete sequence of events&quot;, and spoke of a &quot;coordinated campaign to smear Israel&quot; during the olive harvest. It also said police had opened an investigation.</p><p>Sa&#x27;ar added a pointed line: the visit was not coordinated with the IDF in advance, and that could have helped keep the visitors safe.</p><p>Belgium&#x27;s foreign minister Maxime Prevot said Israel must bring those responsible to justice, and that Belgium will keep pressing for EU sanctions. France called the attack &quot;appalling&quot;.</p><p>It came a day after a separate settler assault in another village injured several Palestinians and Heidi Levine, a Washington Post photographer. Even US ambassador Mike Huckabee, described as a staunch ally of Israel, called that attack a &quot;despicable act of terror&quot;.</p><p>So the thing to watch is the police investigation. Whether anyone is identified, and whether the prime minister&#x27;s office accepts the findings, will show if the two Israeli messages come together.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Diplomats from Belgium, France, Poland and the Catholic Church were attacked by masked settlers in Taybeh, near Ramallah.</li><li>The IDF condemned the attack and said no soldiers were present; Netanyahu&#x27;s office spoke of a campaign to smear Israel.</li><li>French mayor Bernard Baudoux said he was kicked and beaten with iron bars.</li><li>The attack came a day after settlers injured Palestinians and Washington Post photographer Heidi Levine in another village.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a>
+  </article>
+</section></main>
+<nav class="archive"><a href="../2026-10-18/index.html">← Yesterday</a><span>2026-10-19</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
