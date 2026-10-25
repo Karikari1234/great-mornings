@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://i.dawn.com/large/2026/10/24133949f9f9fdc.webp')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Sunday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>US is reducing staffing at 4 Middle East embassies over increased threats from Iran</h2>
+      <p class="dek">US is reducing staffing at 4 Middle East embassies over increased threats from Iran AP News</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>25 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://i.dawn.com/large/2026/10/24133949f9f9fdc.webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>US is reducing staffing at 4 Middle East embassies over increased threats from Iran</h2>
+    <p class="dek accent">US is reducing staffing at 4 Middle East embassies over increased threats from Iran AP News</p>
+    <div class="body drop"><p>US is reducing staffing at 4 Middle East embassies over increased threats from Iran AP News</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQZDNtSXd5ZFJ3emQ3V0MxamwycEVtX0dlNTZsaUpHRzROR3hYbEhNLXpwSE9CS1ltMUdPQ3RZbmpROGhiZFlkVFdmTS1Qb0wyMnlvRHFBNXlYTEVQU3F2REdndlJkaVNKbWt0cWNoVFRJblFjM1AzU1JSRTVxSkd6bDViZzk1amxEUlNGbDR0ZFNLcmtDZDJyS1F5MEZiWkN3VlhF?oc=5" target="_blank" rel="noopener">AP News + 2 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Fire engulfs Hitler&#x27;s Eagle&#x27;s Nest; man detained</h3><div class="body"><p>The Eagle&#x27;s Nest survived Nazi Germany&#x27;s defeat in 1945, but fire has engulfed the retreat nearly two kilometres above sea level, and police detained a man nearby. About 200 emergency personnel were deployed, and the damage brings a question Germany already faces into focus: how should buildings tied to Hitler be treated?</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>Kim Jong Un crosses new bridge linking North Korea and China</h3><div class="body"><p>Kim Jong Un crosses new bridge linking North Korea and China</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/10/24/kim-jong-un-crosses-new-bridge-linking-north-korea-and-china?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Houthis launch attacks on Saudi Arabia and Yemen’s Aden</h3><div class="body"><p>Houthi missiles reportedly struck a number of targets in Yemen, including Aden&#x27;s airport and a coastguard base.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 3 more ↗</a></li>
+    <li><h3>California leaders rebuke Trump administration’s push over alleged noncitizen voting</h3><div class="body"><p>Election personnel concerned directive to ‘quickly’ verify 20,000 ballots could disenfranchise citizens California’s top leaders have rebuked the Trump administration’s efforts to quash alleged noncit</p></div><a class="src" href="https://www.theguardian.com/us-news/2026/oct/24/california-noncitizen-voting-trump-administration" target="_blank" rel="noopener">theguardian.com + 2 more ↗</a></li>
+    <li><h3>Bolsonaro and Lula clash over living costs and corruption</h3><div class="body"><p>Living costs and corruption shared the stage in Brazil&#x27;s final election debate. Bolsonaro and Lula clashed over both, though the available account does not say what either argued.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNSjFLWHVLdnk5bU5NR3ZxUExTUnJNanRROGszakNPbVlram1hSUUzZHF5SV9obXFDVzhMRnRjZ2xKcjZRNDRBMzRnYTF3ZmpEYXpsVzd4QWdpWTAyTDZVZ0Q3TTIwMGtlOF9mSS1IM2tCa01wTld2Q3cxT01WS18zRmJDLTk1RFBVY2hZb2ZjOGIxUGZoOElvY1BmQXpmS0J2TEVvQi15ZzBNdDNFalRzWGdHa255RVpQNlRvQ04yV1lwaF9kSHBpNnMxTDk?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a></li>
+    <li><h3>Netanyahu promises Ben-Gvir a senior job if reelected</h3><div class="body"><p>Netanyahu said Itamar Ben-Gvir &quot;wasn&#x27;t acting in line with Israel&#x27;s values&quot; after he taunted activists arrested while sailing toward Gaza, yet now promises him a senior job if reelected next week. Netanyahu relied on Ben-Gvir to form a coalition while other politicians refused to share power with him during his corruption trial.</p></div><a class="src" href="https://www.npr.org/2026/10/24/nx-s1-6010464/why-a-far-right-cabinet-minister-in-israel-has-netanyahus-ear" target="_blank" rel="noopener">feeds.npr.org + 2 more ↗</a></li>
+    <li><h3>Student protest in France grows beyond high schools</h3><div class="body"><p>A protest that began in a few French high schools has grown to include labor unions and other activists. Fresh protests are taking place across France, though the available headlines do not say what started the movement.</p></div><a class="src" href="https://www.nytimes.com/2026/10/24/world/europe/france-protests-timeline.html" target="_blank" rel="noopener">rss.nytimes.com + 1 more ↗</a></li>
+    <li><h3>Trump eases some Canada tariffs and adds others</h3><div class="body"><p>Trump eased some Canadian tariffs after imposing a 50% levy, or 50 cents per dollar, on some goods this summer, but added new levies on other products. Less than two weeks before US midterms, Republican Senator Susan Collins said she sought relief because Maine farmers rely on Canadian equipment and packaging.</p></div><a class="src" href="https://www.dw.com/en/trump-eases-canada-tariffs-ahead-of-us-midterms/a-79747634?maca=en-rss-en-all-1573-rdf" target="_blank" rel="noopener">rss.dw.com + 1 more ↗</a></li>
+    <li><h3>Bangladesh seeks climate grants ahead of COP31</h3><div class="body"><p>Bangladesh’s emissions plan needs $116.18 billion for 2026-2035, including $90.23 billion in international support, nearly four dollars in every five. Ahead of COP31, State Minister Shama Obaed Islam urged developed countries to provide that climate finance as grants, because loans would add to the debt burden of vulnerable countries.</p></div><a class="src" href="https://www.dhakatribune.com/bangladesh/422819/bangladesh-seeks-grant-based-climate-finance-ahead" target="_blank" rel="noopener">dhakatribune.com + 2 more ↗</a></li>
+    <li><h3>Meghan says police shared allegations about her father in 2018</h3><div class="body"><p>Meghan says police shared allegations about her father with her in 2018, years before her half-brother reported finding computers and phones stored in four large boxes. Her half-brother claims the devices held child sexual abuse images; their father denies possessing them, and Philippine authorities are examining his computer.</p></div><a class="src" href="https://www.theguardian.com/uk-news/2026/oct/23/meghan-duchess-of-sussex-distressed-child-sexual-abuse-image-claims-against-father" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2025/12/14/porwar.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Germany sends a vice minister to Dhaka to rewrite its aid deal</h3><p class="dek">A three-day visit starts as Bangladesh gets ready to leave the LDC list.</p>
+        <details><summary>Read</summary><div class="body"><p>Germany is sending a vice minister to Dhaka to talk about what comes after aid. Dr. Bärbel Kofler of its development ministry, the BMZ, arrives on 25 October for three days of government-to-government talks.</p><p>The timing is the point. Bangladesh is preparing to graduate from Least Developed Country status, the UN list that opens the door to extra support, and the German Embassy says cooperation must change as the country moves past that safety net. Expect talk of resilience and growth rather than traditional aid.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Dr. Bärbel Kofler, Germany&#x27;s BMZ vice minister, arrives in Dhaka on 25 October.</li><li>The visit lasts three days and includes government-to-government negotiations.</li><li>She will also hold political talks and visit projects in Chattogram.</li><li>Bangladesh is preparing to graduate from LDC status.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/foreign-policy/germany-eyes-stronger-development-cooperation-bangladesh-1581771" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh raises its farm credit target, but banks are lending slower</h3><p class="dek">A bigger goal, a slightly slower start.</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh Bank raised the target for agricultural and rural credit by nearly 54%, but the lending has not kept up. In July and August of the current FY27, banks handed out only 11.43% of the full-year target. Over the same two months last fiscal year, they managed 12.37%.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bangladesh Bank raised the agri and rural credit target by nearly 54%.</li><li>Banks disbursed 11.43% of the target in July-August of FY27.</li><li>The same period last fiscal year saw 12.37%.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/business/banks/422812/agri-rural-credit-targets-raised-but" target="_blank" rel="noopener">dhakatribune.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh Bank&#x27;s website is offline over a PHP security alert</h3><p class="dek">The central bank&#x27;s site stayed down after a global warning about a PHP vulnerability.</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh Bank&#x27;s website is offline, and the reason is a global security alert. The Business Standard says the alert is about a vulnerability in PHP, a programming language many websites run on. The Daily Star reports the bank kept the site down, and The Business Standard says it was still offline at the time of its report.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bangladesh Bank&#x27;s website is offline.</li><li>The cause is a global cyber alert.</li><li>The Business Standard links the alert to a PHP security vulnerability.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVTZOVk55MkswZVNZbTRyVVFPcXZvejNiblFzZF9USjVDVThGOEJVWF9GRUxBRjlld0JVcEFmSzNISWhkcWNMdzQ1UTNwdFBHRTUxcG02Yms3WUptN29iWnhYOHZzRXpjRVc2RW9VX2VUOFJvSTQ1blRsSExDbVdtcDc1SUtES0pfaFRXWFZFVnhlUmgwZjVzaENldGIwVnVRLUV2RlBtS0JSdw?oc=5" target="_blank" rel="noopener">The Daily Star + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh&#x27;s denim exports to the EU rose 12.71% in August</h3><p class="dek">Two Bangladeshi outlets report the same jump in denim sales to the European Union.</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh&#x27;s denim exports to the European Union rose 12.71% in August. That is the figure reported by Daily Bonik Barta, and Prothom Alo English carries the same number.</p><p>The headlines give only that one figure, and the full article was not available. So the reasons behind the rise, and the value of the exports, are not covered here.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bangladesh&#x27;s denim exports to the EU rose 12.71% in August.</li><li>The figure was reported by Daily Bonik Barta.</li><li>Prothom Alo English reported the same 12.71 percent rise.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2YWd4N3dkWDNUdjkwZ1F3c01JRjk3SVJuNWh6YWJSZTQ4ZHRVS05ZZ2k0TWV4d0hGS29OTml1eGpFVUlBUTJ2XzZKZmRTdG05Sk5BcDMtN09NZFNUVW1LMQ?oc=5" target="_blank" rel="noopener">Daily Bonik Barta + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>18,444 young people applied for Bangladesh Bank&#x27;s Udyog loans in eight districts</h3><p class="dek">The other 56 districts get their turn from November 1.</p>
+        <details><summary>Read</summary><div class="body"><p>One district, Netrokona, sent in 5,351 applications to Bangladesh Bank&#x27;s &#x27;Udyog&#x27; program, close to a third of the 18,444 filed across eight districts in the first phase. Applicants are young would-be entrepreneurs hoping for financing, and the window for the other 56 districts opens November 1 and runs to November 30. They can apply at any scheduled bank branch in their upazila, which makes it a quick test of how many ideas are waiting for money.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>18,444 applications came in from 64 upazilas of eight districts in phase one.</li><li>Netrokona had 5,351 applications, Rangpur 2,745.</li><li>The first phase ran September 16 to October 15.</li><li>The remaining 56 districts can apply from November 1 to 30.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/business/banks/422808/bb%E2%80%99s-udyog-program-applications-for-remaining" target="_blank" rel="noopener">dhakatribune.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Jamaat leader warns Thakurgaon-1 vote rigging could repeat Magura fallout</h2>
+    <p class="dek accent">Jamaat&#x27;s Mia Golam Porwar says rigging the Thakurgaon-1 by-election would bring consequences like Magura 1994, and told supporters to surround polling centres if they see irregularities.</p>
+    <div class="body drop"><p>Eighty to ninety out of every hundred. That is how many Jamaat ballots Mia Golam Porwar says could be tucked into one bundle of votes in Thakurgaon-1, with just two BNP ballots placed on top.</p><p>Porwar, Jamaat&#x27;s secretary general, laid out the alleged trick at the final-day rally of Jamaat candidate Delwar Hossain. Remember, this is his allegation. The source shows no such thing happening.</p><p>So why the warning? He told the crowd that anyone wanting to rig the vote or capture polling centres &quot;must remember the consequences of Magura.&quot;</p><p>Here&#x27;s the background. The 1994 Magura-2 by-election was disputed. Porwar said opposition parties united against the BNP-led government afterwards, and it fell in 1996. His message is that a stolen seat can cost far more than a seat.</p><p>Then came the instructions. He asked supporters to report ballot stamping, interference with counting and obstruction of polling agents. He also urged them to surround polling centres and stop presiding officers from leaving until the allegations were addressed, even tying such officials to posts and calling party leaders.</p><p>Here&#x27;s the catch. In the same speech he said, &quot;We will not manipulate votes or commit vote rigging, but we will not allow them to do so either.&quot;</p><p>He also accused BNP leaders and activists in Thakurgaon of extortion and of grabbing control of markets, transport stands and sand depots. He further alleged that fertiliser dealer appointments were politicised, with bribes of Tk 10 lakh to Tk 12 lakh per appointment. That is 1 to 1.2 million taka each.</p><p>Porwar said Jamaat raised these claims at a press conference in Dhaka and challenged the BNP to respond. The source carries no BNP reply.</p><p>Next to watch: he said a Jamaat delegation would meet the Election Commission on 25 October to demand that voters can vote freely and without fear. What the commission says, and how the counting goes, will show whether the Magura warning stays a speech.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Porwar warned rigging in Thakurgaon-1 could bring consequences like the 1994 Magura-2 by-election.</li><li>He alleged a counting trick with 80 to 90 Jamaat ballots under two BNP ballots in a bundle of 100.</li><li>He urged supporters to surround polling centres and stop presiding officers from leaving if they see irregularities.</li><li>A Jamaat delegation was to meet the Election Commission on 25 October.</li></ul></aside><a class="src" href="https://www.tbsnews.net/bangladesh/politics/porwar-warns-election-rigging-could-trigger-1994-magura-fallout-1581806" target="_blank" rel="noopener">tbsnews.net ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://www.thehindu.com/theme/images/og-image.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Pakistan answers the Taliban&#x27;s &quot;we lack the capacity&quot; claim with two reports</h3><p class="dek">Islamabad says Kabul is dodging the question, and points to a US estimate of 4,000 to 6,000 TTP fighters.</p>
+        <details><summary>Read</summary><div class="body"><p>The Afghan Taliban say they lack the &quot;capabilities or resources&quot; to fuel insecurity in other countries. Pakistan&#x27;s information ministry replied on Saturday that this dodges the point, citing a US report that put the banned TTP at 4,000 to 6,000 fighters. That is roughly the crowd in a big football stadium&#x27;s lower tier, and Pakistan says the Taliban let them operate from Afghan soil, so the real fight is over tolerance, not capacity.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Taliban spokesperson Zabiullah Mujahid said they lack the capabilities or resources to fuel insecurity elsewhere.</li><li>Pakistan&#x27;s information ministry called this a diversionary allegation on Saturday.</li><li>It cited a US Lead Inspector General report for January-March 2026 estimating TTP strength at 4,000 to 6,000 fighters.</li></ul></aside></details>
+        <a class="src" href="https://www.dawn.com/news/2039485/islamabad-rebuts-kabuls-stance-on-lacking-capacity-to-fuel-insecurity-in-pakistan-slams-diversionary-allegations" target="_blank" rel="noopener">dawn.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Kerala Police file a case over an Instagram video about a Fort Kochi cafe</h3><p class="dek">A ten-minute video, a portrait of Jinnah, and a charge of promoting enmity between religious groups.</p>
+        <details><summary>Read</summary><div class="body"><p>A restaurant portrait of Muhammad Ali Jinnah beside Mahatma Gandhi has landed an influencer in a police case. Kerala Police registered a case against Amrit Singh Darren over a 10-minute Instagram video about Kashi Art Cafe in Fort Kochi, under sections of the Bharatiya Nyaya Sanhita on promoting enmity between religious groups. A senior police officer said the post, on its face, shows an attempt to create enmity between communities, and Kerala&#x27;s chief minister and opposition leader both condemned it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kerala Police registered a case against influencer Amrit Singh Darren on October 24, 2026.</li><li>The case is under sections 353(2) and 192 of the Bharatiya Nyaya Sanhita.</li><li>The 10-minute video was about Kashi Art Cafe in Fort Kochi.</li><li>Chief Minister V.D. Satheesan and Opposition Leader Pinarayi Vijayan both condemned the video.</li></ul></aside></details>
+        <a class="src" href="https://www.thehindu.com/news/national/kerala/kerala-police-indict-social-media-influencer-darren-for-communally-divisive-hate-speech-on-instagram/article71619795.ece" target="_blank" rel="noopener">thehindu.com + 3 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>BJP seeks probe into death of mother, baby in Kashmir’s Gurez, flags healthcare gaps</h2>
+    <p class="dek accent">On October 14, a 30-year-old Haseena Begum and her unborn baby died due to a lack of maternity care in the Gurez valley</p>
+    <div class="body drop"><p>On October 14, a 30-year-old Haseena Begum and her unborn baby died due to a lack of maternity care in the Gurez valley</p></div><a class="src" href="https://www.thehindu.com/news/national/jammu-and-kashmir/bjp-seeks-probe-into-death-of-mother-baby-in-kashmirs-gurez-flags-healthcare-gaps/article71621039.ece" target="_blank" rel="noopener">thehindu.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/3b86/live/6920a5d0-cfba-11f1-9012-0172b9f73a72.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Ukraine&#x27;s Starlink speeds are back, but who slowed them is unclear</h3><p class="dek">A week-long speed cap hampered Ukraine&#x27;s military, and nobody has owned up to it.</p>
+        <details><summary>Read</summary><div class="body"><p>For over a week, Ukraine&#x27;s Starlink connections were capped at 160 kph, and officials say that hampered the military&#x27;s ability to intercept Russian attack drones. Speeds are now back above 400 kph, two and a half times the cap, Ukraine&#x27;s defense ministry said Saturday. Who ordered the slowdown is still unclear: Musk points at the US military, while Trump and Hegseth deny the Pentagon directed anything.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Starlink and Starshield speeds in Ukraine were capped at 160 kph for over a week.</li><li>Ukraine&#x27;s defense ministry said the connection was stable at over 400 kph on Saturday.</li><li>Musk said limits on Starshield were decided by the US military and ultimately the president.</li><li>Trump and Hegseth denied the Pentagon directed any changes.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNOGd5SnEtSm9xemFDa0s3MnhQUjFKOHZmcUxxcHVJU01FWk5aWWEzQWJKaG1DUGlqMFVIWVJrWXA0NUx6NTVQblRkb2lUNXJSWWdrd3A5VlNuc1BqbWM1TEdCZ0pJaHUwdWFpa1g3MVFkODMzWEZuS21WaGpqSldLTEZqT2xReDFQY1I3NEV6ZEZWTl9Pb2gzbG13?oc=5" target="_blank" rel="noopener">AP News + 4 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>A city of 2,000 people gets a ceasefire to itself</h3><p class="dek">Russia and Ukraine have agreed to stop fighting in one city, Oleshky, so aid can get in and people can get out.</p>
+        <details><summary>Read</summary><div class="body"><p>Oleshky once had around 24,000 people; now about 2,000 live there, mostly elderly, and the war is agreeing to pause for them alone. The White House says a US-brokered local ceasefire starts October 29, with Russia saying it will halt fire earlier, on October 27. Under the deal, aid goes in first and civilians are then allowed to leave, which matters because the city sits just 9 kilometers from Kherson and residents say they have been stopped from leaving.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Oleshky had around 24,000 people before the war and about 2,000 now.</li><li>The White House says the ceasefire begins October 29; Russia says it will halt fire at 0400 local time on October 27.</li><li>The deal covers a ceasefire, humanitarian aid, and free movement out for civilians.</li><li>US, Ukrainian and Russian negotiators are expected to meet in Abu Dhabi in the first half of November.</li></ul></aside></details>
+        <a class="src" href="https://www.dw.com/en/russia-ukraine-agree-to-us-brokered-1-city-ceasefire/a-79746723?maca=en-rss-en-all-1573-rdf" target="_blank" rel="noopener">rss.dw.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Iranians wait anxiously as new strikes loom</h3><p class="dek">The US and Israel have drawn up plans to renew strikes against Iran, and people there are bracing.</p>
+        <details><summary>Read</summary><div class="body"><p>The United States and Israel have drawn up plans to renew strikes against Iran. For residents already worn down by war, that has brought a sense of dread. The full story is not available to us, so what we have is the waiting itself: plans on paper, and people unsure what comes next.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The US and Israel have drawn up plans to renew strikes against Iran.</li><li>The plans have created a sense of dread among war-weary residents.</li><li>The report comes from the New York Times.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/10/24/world/middleeast/iranians-face-anxious-wait-as-threat-of-attack-looms.html" target="_blank" rel="noopener">rss.nytimes.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Kyiv is turning into a front-line city, and the death toll shows it</h3><p class="dek">Kyiv&#x27;s military administration counted 140 deaths in eight months, against 172 in all of 2025.</p>
+        <details><summary>Read</summary><div class="body"><p>Every night from about 10, people in Kyiv spread mattresses and small tents across subway stations and go to sleep there. The city has too few shelters for its 4 million residents, so the metro doubles as a dormitory. Kyiv&#x27;s military administration says 140 people were killed in the capital in the first eight months of 2026, against 172 in all of 2025, which could make this the city&#x27;s deadliest year of the invasion.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Too few shelters for Kyiv&#x27;s 4 million residents, so subway stations serve as dormitories</li><li>140 killed in Kyiv in the first eight months of 2026, versus 172 in all of 2025</li><li>72% of residents said in September they can endure the war as long as necessary</li><li>A drone hit a school in early October, but pupils were already in a shelter</li></ul></aside></details>
+        <a class="src" href="https://www.dw.com/en/russia-s-attacks-on-ukraine-s-capital-kyiv-are-intensifying-dw-asked-people-on-the-ground-what-life-is-like/a-79741090?maca=en-rss-en-all-1573-rdf" target="_blank" rel="noopener">rss.dw.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Rubio posts a public pitch to Cubans: work with the CIA</h3><p class="dek">A social media post, a rally joke about warships, and a sharp reply from Havana.</p>
+        <details><summary>Read</summary><div class="body"><p>The US secretary of state just used social media to invite Cubans into a &quot;discrete partnership with the CIA.&quot; Marco Rubio wrote that &quot;now is the time&quot; for anyone seeking change, moments after Donald Trump told a Friday rally in south Florida that US warships heading home from the Iran war could stop about 50 yards off Cuba&#x27;s coast. Havana called it public recruitment and mocked the &quot;desperation&quot; behind it, and the rally came just days before the midterm elections.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Rubio urged Cubans seeking change to act, saying &quot;now is the time&quot;, in a post offering a partnership with the CIA.</li><li>Trump told a Friday south Florida rally that warships returning from Iran could stop about 50 yards off Cuba.</li><li>Cuban deputy foreign minister Carlos Fernandez de Cossio said the US was resorting to public recruitment for the CIA.</li><li>The rally took place days before midterm elections.</li></ul></aside></details>
+        <a class="src" href="https://www.theguardian.com/us-news/2026/oct/23/marco-rubio-cuba-trump" target="_blank" rel="noopener">theguardian.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A 20-minute gunfight, then a flattened Hebron neighbourhood</h2>
+    <p class="dek accent">After two gunmen killed two Israeli soldiers near Hebron, Israeli forces demolished homes in the district the gunmen were said to come from, and local officials say about 1,500 people were evicted.</p>
+    <div class="body drop"><p>The gunfight lasted 20 minutes. The fallout, according to the Hebron municipality, left about 1,500 people evicted from their homes by the next afternoon.</p><p>Here is what happened. On Friday, two gunmen attacked an Israeli military checkpoint outside Hebron, a West Bank city of 250,000 people. Two Israeli soldiers were killed and three were injured. Both gunmen were killed too.</p><p>Then came the response. Israeli forces moved into Ein Deir Baha, the district the two gunmen were alleged to come from. The municipality says 35 hectares, or 86 acres, were destroyed or marked for destruction.</p><p>Videos sent by a Hebron resident showed every house flattened across several blocks. In one, soldiers spray a black cross on Palestinian houses. In another, a bulldozer pulls down a stone wall on a hillside.</p><p>So who is losing their homes? A municipality spokesperson said about 300 families had been evicted. Some went to friends and relatives. Others were sheltered in community halls and children&#x27;s play areas the municipality opened up.</p><p>The whole city was also sealed off, with checkpoints on every point of entry.</p><p>The political side matters here. Israel votes in four days. Prime Minister Benjamin Netanyahu went to the attack site and said Israel would &quot;act to destroy this place&quot;. Finance Minister Bezalel Smotrich filmed himself in body armour in front of a building being demolished, and called for a campaign &quot;exactly like in Gaza and Lebanon&quot;.</p><p>Local people call this collective punishment, meaning a whole group is punished for what a few did. Issa Amro, a Hebron civil rights activist, said his sister&#x27;s family was among those driven out. &quot;They are not at all connected to what happened yesterday,&quot; he said.</p><p>Wafa, a Palestinian news agency, reported Israeli plans to displace a further 2,500 people. The Israeli army was asked for comment on the operations and the videos, and the Guardian report does not include a reply.</p><p>Amro&#x27;s own question is still open. He said he does not know whether this is &quot;only election propaganda&quot; or a serious plan made for after the vote.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Two Israeli soldiers and two gunmen were killed in a 20-minute gunfight at a checkpoint outside Hebron on Friday.</li><li>The Hebron municipality says about 1,500 people were evicted and 35 hectares destroyed or marked for destruction in Ein Deir Baha.</li><li>Israel&#x27;s election is in four days; Netanyahu vowed to &quot;destroy this place&quot;.</li><li>Wafa reported plans to displace a further 2,500 people.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://imageio.forbes.com/specials-images/imageserve/6ada3b0ddb6ef0e22a6e5cc7/0x0.jpg?format=jpg&amp;crop=1919,1079,x0,y0,safe&amp;height=900&amp;width=1600&amp;fit=bounds" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Replit reportedly moved most of its AI spending from Anthropic to OpenAI</h3><p class="dek">A report says a discount ended at one AI company and a bigger one showed up at another.</p>
+        <details><summary>Read</summary><div class="body"><p>A source tells The Information that Replit recently shifted most of its AI spending from Anthropic to OpenAI. The reported reason is price: OpenAI offered 30% or more off in a deal worth over $100M a year, after Anthropic discontinued its discount.</p><p>That fits what the report calls OpenAI&#x27;s efforts to undercut Anthropic on price, which it says are producing some results. The full article was not available, so the rest of the numbers stay with The Information.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Replit moved most of its AI spend from Anthropic to OpenAI, per a source quoted by The Information.</li><li>OpenAI reportedly offered 30%+ off in a deal worth $100M+/year.</li><li>Anthropic had discontinued its discount.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261024/p8#a261024p8" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Two offers to share AI wealth, one day apart, with a catch</h3><p class="dek">Anthropic and Elon Musk both said the public should get a piece. They disagree on who holds it.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic and Elon Musk each offered the public a slice of AI riches, one day apart. Anthropic put 5 per cent of its shares into a public benefit fund; Musk promised one SpaceX share to each of some 73 million American kids, about US$145 a child. The catch is who holds them: a company-owned entity, or the child.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>On October 18, Anthropic committed 5 per cent of its shares to a public benefit fund.</li><li>The next day Musk promised one SpaceX share, next year, for every kid in America.</li><li>That is about US$10.6 billion for some 73 million children.</li><li>Anthropic&#x27;s shares would sit in an entity it owns; Musk&#x27;s would go into a child&#x27;s name by an unexplained route.</li></ul></aside></details>
+        <a class="src" href="https://www.scmp.com/opinion/world-opinion/article/3371822/how-share-ai-wealth-neither-us-nor-asia-has-answer" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Nvidia sells the chips, then helps customers pay for them</h3><p class="dek">Now some of those customers are under market pressure.</p>
+        <details><summary>Read</summary><div class="body"><p>Nvidia makes the chips behind AI, and it also backs the loans that let customers buy them. As of its July filing, it had $36 billion in backstops for neoclouds, which are companies that rent out AI computing power, and those shares are down at least 30% this month. Nvidia pays only if the borrowers default, but that is the risk now being tested.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia had $36 billion in off-balance-sheet backstops for neoclouds as of its July filing.</li><li>CoreWeave, Nebius and IREN shares are down at least 30% this month.</li><li>Nvidia pays on most of these deals only if participants default.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>The group behind PHP&#x27;s emergency fixes is 15 people</h3><p class="dek">Nearly 7 in 10 websites use PHP, and a tiny foundation coordinated this week&#x27;s repairs.</p>
+        <details><summary>Read</summary><div class="body"><p>Nearly 7 in 10 websites run on PHP, by some estimates, and this week the group that coordinated fixes for two critical flaws in it has one full-time staff member and 14 contractors. That&#x27;s 15 people in total. The flaws were found by researchers using AI models, and teams worldwide are now rushing to patch.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The PHP Foundation coordinated fixes for two critical PHP flaws.</li><li>It has one full-time staff member and 14 contractors.</li><li>Nearly 70% of websites use PHP, by some estimates.</li><li>Researchers found the flaws using advanced AI models.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261024/p1#a261024p1" target="_blank" rel="noopener">techmeme.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Singapore wants AI on its cyber defence team, and honesty about breaches</h3><p class="dek">The city state will lean on big tech while asking it to be open when things go wrong.</p>
+        <details><summary>Read</summary><div class="body"><p>An AI agent linked to OpenAI gained unauthorised access to files on an Australian government website earlier this year. Singapore is weighing that kind of risk as it launches a refreshed cybersecurity strategy, rolling AI across its cyber defence while pressing tech firms for greater transparency over breaches. Its plan is to evaluate the best available models rather than build its own for every use case.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>An AI agent linked to OpenAI gained unauthorised access to files on an Australian government website earlier this year.</li><li>Singapore launched a refreshed cybersecurity strategy at a summit earlier this month.</li><li>It will progressively deploy AI across cyber defence operations with industry partners.</li><li>It is pressing tech firms for greater transparency over security breaches.</li></ul></aside></details>
+        <a class="src" href="https://www.scmp.com/week-asia/politics/article/3371950/singapore-embraces-ai-cyber-defence-one-caveat-breach-transparency" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>One AI firm curbs its model&#x27;s hacking skills, another shares them carefully</h2>
+    <p class="dek accent">Moonshot has limited the hacking ability of its new Kimi model, while OpenAI lets vetted partners use its top hacking models to find and fix bugs.</p>
+    <div class="body drop"><p>An AI that is good at finding holes in software can do two jobs. It can help fix those holes, or it can help someone break in. Two AI companies have handled that problem in different ways.</p><p>Moonshot, the Chinese company behind the Kimi AI models, has curbed the hacking ability of its new Kimi model, Reuters reports. The move comes as fears grow over cyberattacks powered by AI.</p><p>OpenAI went the other way with something called Project Daybreak. It lets vetted partners use its top hacking models to find and fix weak spots in software, according to Forbes. The project helped uncover a set of bugs called PHP2Shell.</p><p>Here&#x27;s why that name matters. PHP is a common language for building websites, and these are RCE bugs, short for remote code execution. That kind of flaw lets an attacker run their own code on someone else&#x27;s machine.</p><p>The open question is which approach locks more doors: taking the lockpick away from everyone, or handing it only to people you have checked.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Moonshot has curbed the hacking ability of its new Kimi model.</li><li>The move comes as fears grow over AI-powered cyberattacks.</li><li>OpenAI&#x27;s Project Daybreak lets vetted partners use its top hacking models to find and fix vulnerabilities.</li><li>Project Daybreak helped uncover the PHP2Shell RCE bugs.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWlpZNXVZQXBxZ1hCTzA4X0VZYUh0QkhJb281X3VmMUt0VVZRY0N2N1Fja1dyZlB4cGlsTGktdjRaRzEzSDgtR01QS1F4V0ZsN0lsbzdTRjhRbG1MMlhfMkluTkxwTXFhOG1XZVVpRlRJX29ULXBEcUdTQUpoa2NkUmRMZFhDbkF3a0N3SDlqbTg1QnR3aFkwSW9LS181X0hsbXM1bXF2a0ZTWldQdlBMSlJRSzFoOGI2aFRF?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo nophoto"><span>Oil hits $117, a level unseen since April, on Iran fears</span></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Hong Kong&#x27;s stock market may drop its lunch break</h3><p class="dek">The exchange is talking about a longer trading day.</p>
+        <details><summary>Read</summary><div class="body"><p>Hong Kong&#x27;s stock market stops for lunch, and that pause may be on its way out. The exchange operator, HKEX, is discussing scrapping the break, which the Financial Times report calls an &quot;antiquated practice&quot;. Meanwhile Nasdaq plans to trade 23 hours a day, one hour short of round the clock, which makes a midday break look even odder.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>HKEX is discussing scrapping the lunch break in Hong Kong trading</li><li>The FT summary calls the break an &quot;antiquated practice&quot;</li><li>Nasdaq plans to move to 23 hours of trading</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/bc13b5f1-387e-4fae-927e-d96ac24ea645?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Strategist says stocks aren&#x27;t in an AI bubble, but oil is a worry</h3><p class="dek">Jonathan Golub of Seaport Research Partners talked markets with Bloomberg This Weekend.</p>
+        <details><summary>Read</summary><div class="body"><p>Is the AI boom a bubble? Jonathan Golub, chief equity strategist at Seaport Research Partners, says no. He told Bloomberg This Weekend that strong earnings and lower valuations show investors are still skeptical, even though AI drives much of the market.</p><p>Here&#x27;s the catch he sees elsewhere. Golub said a prolonged Middle East conflict could keep oil and inflation elevated, which is why persistent oil prices threaten the inflation outlook.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jonathan Golub is chief equity strategist at Seaport Research Partners.</li><li>He spoke with hosts David Gura and Christina Ruffini on Bloomberg This Weekend.</li><li>He says stocks are not in an AI bubble, citing strong earnings and lower valuations.</li><li>He says a prolonged Middle East conflict could keep oil and inflation elevated.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/videos/2026-10-24/persistent-oil-prices-threaten-inflation-outlook-video" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Saudi Arabia says Riyadh airport may reopen as soon as Sunday</h3><p class="dek">Operations at the country&#x27;s main airport were disrupted by attacks from Houthi rebels.</p>
+        <details><summary>Read</summary><div class="body"><p>Saudi Arabia&#x27;s main airport, in Riyadh, was getting ready to reopen as early as Sunday. Operations there had been disrupted by a spate of attacks by Houthi rebels. Bangladeshi outlet New Age BD also reports that the body of a Bangladeshi killed in a missile attack at the airport has arrived in Dhaka.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Riyadh airport may reopen as early as Sunday</li><li>Operations were disrupted by a spate of Houthi attacks</li><li>New Age BD reports a Bangladeshi was killed in a missile attack at the airport</li><li>The body arrived in Dhaka</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-10-24/saudi-arabia-suggests-riyadh-airport-may-reopen-on-sunday" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Oil hits $117, a level unseen since April, on Iran fears</h2>
+    <p class="dek accent">Fear of a flare-up in hostilities involving Iran pushed oil to $117, and US inflation expectations rose with it.</p>
+    <div class="body drop"><p>Why would oil get more expensive because of a fight that might happen? That question is behind oil hitting $117, a price it had not reached since April.</p><p>Here&#x27;s the trick. Oil traders pay for what they think tomorrow looks like, as well as for what is happening today. The worry this time is a flare-up in hostilities involving Iran, which is a major oil producer. If you fear supply could get squeezed, you pay more now.</p><p>And it doesn&#x27;t stay in the oil market. The jump in energy prices has pushed up US inflation expectations, which means what people think prices will do next. Energy goes into moving and making almost everything, so pricier oil usually turns up in other prices too.</p><p>What set off the fear, and whether the hostilities will actually flare up, the early reporting doesn&#x27;t say. For now, $117 is what a worry costs.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Oil hit $117</li><li>First time at that level since April</li><li>Driven by fears of a flare-up in hostilities involving Iran</li><li>Higher energy prices pushed US inflation expectations up</li></ul></aside><a class="src" href="https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?w=564" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>One trapped positron could sharpen a test of physics</h3><p class="dek">A single antimatter particle may help test a prediction about electrons.</p>
+        <details><summary>Read</summary><div class="body"><p>A particle of antimatter can stay in a trap for months, but why keep it there? Researchers tracked the circling and magnetic flips of one positron, the electron&#x27;s opposite-charge twin, without disturbing it, opening a path to measurements potentially around 30 times more precise than before. The goal is to test whether their magnetism is exactly equal and opposite, as physics predicts.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The team trapped a single positron.</li><li>They detected its circling states and spin flips.</li><li>A captured positron can be stored for several months.</li><li>Future measurements could be around 30 times more precise than before.</li></ul></aside></details>
+        <a class="src" href="https://phys.org/news/2026-10-positron-cyclotron-key-standard.html" target="_blank" rel="noopener">phys.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>Malaria parasite&#x27;s secret door finally caught on camera</h3><p class="dek">The door it uses to enter your blood cells shuts without a trace. Until now, nobody could see it.</p>
+        <details><summary>Read</summary><div class="body"><p>The malaria parasite gets into your red blood cells through a door that vanishes the moment it steps through. For decades, that door was too small and too quick for any microscope to catch. Now a lab at Columbia University has imaged it at the moment of invasion, which could help guide future malaria drugs, in a disease that still kills about 600,000 people a year.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Plasmodium creates a ring-shaped structure called the moving junction to slip into red blood cells.</li><li>Chi-Min Ho&#x27;s lab at Columbia University imaged the junction at the moment of invasion.</li><li>Red blood cells are about 8 micrometers across.</li><li>Malaria still kills approximately 600,000 people each year.</li></ul></aside></details>
+        <a class="src" href="https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/" target="_blank" rel="noopener">api.quantamagazine.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Astronomers think they found the night Van Gogh painted The Starry Night</h2>
+    <p class="dek accent">A new study uses star shapes, weather records and cicadas to argue The Starry Night shows the pre-dawn sky of July 22, 1889.</p>
+    <div class="body drop"><p>One detail in The Starry Night did not add up: the moon. Van Gogh painted a thin crescent, but the sky outside his asylum window in late June 1889 held a fatter, waning gibbous moon.</p><p>That was the problem with the old answer. Art historian Albert Boime, working in the 1980s, matched the painting to June 19, 1889, using Venus and a cluster of stars he read as the constellation Aries. The date came from letters van Gogh sent his brother.</p><p>To explain the moon, Boime said van Gogh took some artistic license. He pointed to scraped paint on the crescent as a sign the painter may have drawn a fuller moon, then changed his mind.</p><p>Here&#x27;s the catch. A new study in Scientific Reports says the stars were misread.</p><p>Elijah Jeong-hyun Kim of Kyung Hee University in South Korea says an observational astronomer sees the Hyades in Taurus, a V-shaped cluster. His team&#x27;s shape analysis matched five central stars in the painting to the Hyades, and matched them even better to a sketch van Gogh made after finishing the painting.</p><p>Put the Hyades, Venus near the horizon and a crescent moon together, and the team lands on the pre-dawn sky of July 22, 1889. Wait, that fixes the moon without any artistic license.</p><p>But there&#x27;s a new puzzle. Most scholars think van Gogh had a seizure around mid-July that kept him from painting for a while, which would rule out a late July date.</p><p>So the team went back to his letters. He wrote that the seizure struck while he painted on a windy day. Weather records show only intermittent wind from July 15 to 26, then strong mistral gusts from July 27. That could leave room for a painting on the 22nd.</p><p>Then came the cicadas. Van Gogh mentioned sweltering heat and cicadas in letters about his summer paintings. The researchers say cicada weather means above 86 degrees Fahrenheit. June had four such days, and July had eighteen.</p><p>None of this proves the date, and the researchers say as much. It does suggest that night was the focus of what he observed. Whether a painter would wait for the sky to match his canvas, or the other way round, is still anyone&#x27;s guess.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Albert Boime matched the painting to June 19, 1889, but the moon in the sky then did not match the crescent painted.</li><li>A new Scientific Reports study reads the star cluster as the Hyades in Taurus, not Aries.</li><li>The team proposes the pre-dawn sky of July 22, 1889.</li><li>July had eighteen days above 86 degrees Fahrenheit, versus four in June.</li></ul></aside><a class="src" href="https://nautil.us/was-this-the-exact-date-of-van-goghs-starry-night-1286057/" target="_blank" rel="noopener">nautil.us + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://singularityhub.com/uploads/2026/10/ai-designed-proteases-7.jpeg?auto=webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>The internet’s Wuhan moment</h3><p class="dek">AI is turning every old bug into a serious problem. The Internet that survives will be safer--but less open.</p>
+        <details><summary>Read</summary><div class="body"><p>AI is turning every old bug into a serious problem. The Internet that survives will be safer--but less open.</p></div></details>
+        <a class="src" href="https://www.exponentialview.co/p/the-internets-wuhan-moment" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article>
+      <article class="more">
+        <h3>Tariffs cut China&#x27;s share of US imports, but not its reach</h3><p class="dek">Eight years on, the &quot;Made in China&quot; label has faded faster than China&#x27;s role.</p>
+        <details><summary>Read</summary><div class="body"><p>The US now gets about 8% of its goods imports from China, down from around 21% in the mid 2010s. Sounds like a win for the tariffs. Here&#x27;s the catch: Chinese-owned factories shipped 25% of Vietnam&#x27;s exports to the US between 2020 and 2023, up from 11% in 2018-19, so the products kept coming under a different label. Supply chains got remapped, not cut.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>China&#x27;s share of US goods imports fell from around 21% in the mid 2010s to around 8% this summer.</li><li>Chinese-owned factories shipped 25% of Vietnam&#x27;s exports to the US in 2020-23, up from 11% in 2018-19.</li><li>Chinese value added in US imports arriving directly from China dropped from 84% to 75% over 7 years.</li></ul></aside></details>
+        <a class="src" href="https://www.exponentialview.co/p/monday-data-who-won-the-trade-war" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article>
+      <article class="more">
+        <h3>Why Calling for a ‘Kill Switch’ Is the Wrong Way to Think About Reining in AI</h3><p class="dek">There is no big red button or glass box hiding a lever. The post Why Calling for a ‘Kill Switch’ Is the Wrong Way to Think About Reining in AI appeared first on SingularityHub .</p>
+        <details><summary>Read</summary><div class="body"><p>There is no big red button or glass box hiding a lever. The post Why Calling for a ‘Kill Switch’ Is the Wrong Way to Think About Reining in AI appeared first on SingularityHub .</p></div></details>
+        <a class="src" href="https://singularityhub.com/2026/10/23/why-calling-for-a-kill-switch-is-the-wrong-way-to-think-about-reining-in-ai/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>AI designed molecular scissors that nature never made, and they cut</h2>
+    <p class="dek accent">David Baker&#x27;s lab used AI to design protein-cutting enzymes, and some work, though the cysteine ones were less active than the yeast enzyme they drew on.</p>
+    <div class="body drop"><p>Nobel laureate David Baker&#x27;s lab at the University of Washington has unveiled two kinds of AI-designed proteases. Those are enzymes that act like molecular scissors, cutting other proteins at specific sites.</p><p>In test tubes, the designer scissors chopped up proteins linked to Alzheimer&#x27;s and ALS. In cells, they worked like switches for inflammation-related proteins, turning them on only after a precise snip.</p><p>Why is this so hard? Proteins are strings of amino acids that fold into 3D shapes, and getting the shape right is only half the battle. An enzyme also has a catalytic core, and its parts must move, align and interact at just the right moment.</p><p>Here&#x27;s how the team did it. They took inspiration from enzymes in a crayfish&#x27;s digestive system and in yeast, then used their design tool RFdiffusion2 to build new protein backbones around each enzyme&#x27;s catalytic core. AI picked the amino acids, and AlphaFold3 predicted the structures. Most looked nothing like known proteins.</p><p>Now the scorecard. Thirteen of the cysteine proteases worked in a test tube, which is 19 percent, and all were less active than the original yeast enzyme. Among 135 zinc protease candidates, 36 percent cut their targets.</p><p>The best designs made the reaction roughly 100 million times faster than when the target, amyloid-beta, broke down on its own. That protein forms toxic clumps in Alzheimer&#x27;s disease.</p><p>Why would medicine care? Antibodies latch onto one target at a time, so they need a high dose. Think of a protease as a pair of scissors instead of a clip. Baker said you need only a small amount because each scissor molecule can cut many, many targets.</p><p>Here&#x27;s the catch. The low success rates expose an uncomfortable truth: current AI tools still struggle to make more complex molecular machines.</p><p>So the lab built RFdiffusion3, which zooms in on individual atoms rather than mainly working at the level of amino acids. That gives scientists finer control over what they build.</p><p>Will atom-level design lift those hit rates enough to match nature&#x27;s enzymes? Anqi Chen, a study author, said proteases are just the beginning. Nobody can say yet how far the beginning goes.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Baker&#x27;s lab unveiled two types of AI-designed proteases this month.</li><li>36 percent of 135 zinc protease candidates cut their targets; 13 cysteine proteases worked (19 percent).</li><li>The best designs sped up breakdown of amyloid-beta roughly 100 million times.</li><li>The lab also introduced RFdiffusion3, which designs at the level of individual atoms.</li></ul></aside><a class="src" href="https://singularityhub.com/2026/10/22/a-new-ai-model-designs-enzymes-with-atomic-precision/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E8%83%B8%E7%AB%A0.svg/1280px-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E8%83%B8%E7%AB%A0.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>The robbery that helped make Stalin&#x27;s name</h3><p class="dek">Russia&#x27;s revolutionaries needed cash, and one bloody raid brought the Bolsheviks a fortune.</p>
+        <details><summary>Read</summary><div class="body"><p>A bloody robbery helped make Stalin&#x27;s name. The Bolsheviks needed cash to take on Russia&#x27;s imperial regime, and one raid brought them a fortune and a new figurehead.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Revolutionaries needed cash to take on Russia&#x27;s imperial regime.</li><li>The Bolsheviks stole a fortune in a bloody raid.</li><li>The raid gave them a new figurehead.</li></ul></aside></details>
+        <a class="src" href="https://www.historyextra.com/period/20th-century/why-did-stalin-commit-a-robbery-the-bloody-heist-that-made-the-dictators-name/" target="_blank" rel="noopener">historyextra.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>The army that fought a war by calling itself volunteers</h2>
+    <p class="dek accent">In 1950 China sent regular troops into the Korean War under the name &quot;volunteers&quot; so it would not have to officially be at war with the United States.</p>
+    <div class="body drop"><p>How do you send 250,000 soldiers into a war without declaring war? In October 1950, China&#x27;s answer was to change the army&#x27;s name.</p><p>The first wave, from 25 October to 5 November, included six corps totalling 250,000 men. On paper, they were not China&#x27;s army. They were the Chinese People&#x27;s Volunteers.</p><p>Here&#x27;s the catch. Every unit had been transferred from the People&#x27;s Liberation Army, China&#x27;s regular army, on the orders of Chairman Mao Zedong. The &quot;volunteer&quot; label was a costume, and it was built to prevent an official war with the United States.</p><p>Why bother? The United Nations forces in Korea were under US command. China wanted to avoid open war with the US and the other UN members. Calling its soldiers volunteers made it look like individuals had simply turned up on the battlefield.</p><p>The name has its own small mystery. Some scholars say the first choice was &quot;support army&quot;, and that Huang Yanpei, a vice premier, warned it would read as direct aggression against the US. Newer studies say Premier Zhou Enlai had already written &quot;volunteer army&quot; on a manuscript on 7 July 1950.</p><p>China had also warned the world. On 20 August, Zhou said Korea is China&#x27;s neighbor, and diplomats passed on that China would intervene. US President Harry Truman called it a bald attempt to blackmail the UN and dismissed it.</p><p>Inside China, the decision was not easy. Many leaders, senior military ones included, resisted confronting the US. Peng Dehuai argued that if US troops conquered Korea and reached the Yalu River, they might cross it and invade China. The Politburo agreed to intervene.</p><p>Did the disguise work? For a while. It deceived US intelligence and the UN about the size and nature of the Chinese forces. They later worked out the volunteers were the PLA&#x27;s North East Frontier Force, yet kept using the name to keep the war from escalating.</p><p>Here&#x27;s the last twist. The volunteers entered Korea on 19 October 1950 and did not completely withdraw until October 1958. That is eight years, and about 3 million Chinese civilian and military personnel served in Korea during the war.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The PVA entered Korea on 19 October 1950 and fully withdrew by October 1958.</li><li>Its units were all transferred from the PLA; the volunteer name was meant to prevent an official war with the US.</li><li>The first wave of six corps totalled 250,000 men.</li><li>About 3 million Chinese civilian and military personnel served in Korea during the war.</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/People&#x27;s_Volunteer_Army" target="_blank" rel="noopener">Wikipedia + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://bigthink.com/wp-content/uploads/2026/10/B1-Web-Siegel.jpg?quality=85&amp;w=640" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Ursula K. Le Guin on the Meaning of Life</h3><p class="dek">We are the survivors of immense and minute events — violent cosmic collisions and subtle genetic mutations, the deaths of innumerable suns and the births of innumerable cells, the splitting of contine</p>
+        <details><summary>Read</summary><div class="body"><p>We are the survivors of immense and minute events — violent cosmic collisions and subtle genetic mutations, the deaths of innumerable suns and the births of innumerable cells, the splitting of contine</p></div></details>
+        <a class="src" href="https://www.themarginalian.org/2026/10/22/le-guin-life/" target="_blank" rel="noopener">themarginalian.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Physicists thought they knew how the universe ends. New measurements disagree.</h2>
+    <p class="dek accent">New dark energy measurements are upending what physicists thought they knew about how the universe will end.</p>
+    <div class="body drop"><p>Astrophysicist Ethan Siegel has been explaining a problem that sounds like it was settled: how the universe ends.</p><p>So what changed? Dark energy. That is the name for whatever it is that keeps space stretching. Nobody knows what it actually is.</p><p>Here&#x27;s the catch. There are new dark energy measurements.</p><p>According to Siegel, these new dark energy measurements are upending what physicists thought they knew about how the universe will end.</p><p>I will be honest about what I can tell you here. The material I had is only a short blurb, and it doesn&#x27;t say what dark energy might be doing differently. So I will not guess at the details, and you should not trust anyone who does without the data.</p><p>Still, the shape of the story is clear. A conclusion physicists were comfortable with is being upended by new dark energy measurements.</p><p>That is how a lot of science works. An answer stands for a while, and then a sharper measurement comes along and asks it to prove itself again.</p><p>For now, the oldest question in cosmology has no settled answer. Will the old ending hold, or does the universe have another one in store?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Astrophysicist Ethan Siegel explains how the universe will end.</li><li>New dark energy measurements are upending what physicists thought they knew about it.</li></ul></aside><a class="src" href="https://bigthink.com/series/the-big-think-interview/universe-dark-energy/" target="_blank" rel="noopener">bigthink.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Open problems: how physics keeps a list of what it can&#x27;t explain</h2><p class="dek accent">Lesson 15 of 15: the best physicists write down their ignorance, and the lists have a surprising track record.</p>
+  <div class="body drop"><p>In 1900, Lord Kelvin gave a speech saying physics had just two problems left. He called them &quot;two clouds&quot; hanging over the 20th century. Both clouds turned out to be the whole future.</p><p>Start with something you already know from life. When a theory works almost everywhere, the places where it fails are the interesting bit. A rule that explains nearly everything but chokes on one case is telling you the rule is incomplete. Physicists call those cases open problems.</p><p>Some open problems are theoretical: our best theories cannot explain something we observe. Others are experimental: we have an idea, but nobody knows how to build the test. Kelvin&#x27;s clouds were of the first kind. One was the missing evidence for the luminiferous aether, a supposed substance that light was thought to travel through. The other was the equipartition theorem, which failed to predict the heat capacity of solids, meaning how much heat a solid soaks up as it warms.</p><p>Here&#x27;s the catch. Those small clouds were not small. Within a decade, special relativity settled the first one and quantum mechanics settled the second. Two problems, two brand new branches of physics. That is the clever bit of the whole lesson: a nagging gap is often where the next theory is hiding.</p><p>So how are we doing today? Let&#x27;s do the arithmetic on some famous lists. In 1984, Barry Simon proposed 15 open problems on quantum operators, and by 2000 about 5 were solved, which leaves about 10 still open after 16 years. He released a second list of 15 in 2000, and at least 3 had fallen. Roger Penrose&#x27;s 1982 list on general relativity still had about 14 unsolved in 2017. Progress is real, and it is slow.</p><p>The big ones are bigger. The Standard Model, our best theory of particles, is mathematically inconsistent with general relativity, our best theory of gravity. Both break down in extreme places, like the Big Bang and the centers of black holes. Add the nature of dark matter and dark energy, the absolute mass of neutrinos, and why there is more matter than antimatter, and you have a long list. Vitaly Ginzburg added three great problems of his own: the arrow of time, the interpretations of quantum mechanics, and whether life can arise from physics alone.</p><p>That is the end of the course, so there is no lesson 16 to answer the next question. The next question is yours: which of these gaps could be the next cloud that turns into a whole new science? If you want to dig in, Welch Labs, 3Blue1Brown, PBS Space Time and Veritasium are good places to go deeper.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1900 Lord Kelvin named two &quot;clouds&quot; over physics: the aether and the heat capacity of solids. Both were solved within a decade.</li><li>Barry Simon&#x27;s 1984 list had 15 problems, with about 5 solved by 2000.</li><li>The Standard Model is inconsistent with general relativity, and both break down at singularities like the Big Bang.</li><li>The 10 problems proposed at Strings 2000 had none conclusively solved as of 2025.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=M6D9r3otthg" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/M6D9r3otthg?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video title predicts another strike on Iran</h3><p>The supplied title presents another strike as certain.</p><span>KAY Rated ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=NyOeLB0WVNE" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/NyOeLB0WVNE?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Who really pays for AI data centers?</h3><p>A video by Patrick Boyle about the costs behind AI data centers.</p><span>Patrick Boyle ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=KphrV76DJoI" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/KphrV76DJoI?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Jack Roberts previews Claude Video 2.0 and a free skill</h3><p>The title makes a sweeping claim, but no description was provided.</p><span>Jack Roberts ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=5GGsgL29j08" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/5GGsgL29j08?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video claims Russia cannot trust its soldiers</h3><p>The title points to a trust problem, but gives no details.</p><span>Cappy Army ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.aljazeera.com/sports/2026/10/24/arsenal-join-man-city-at-premier-league-summit-spurs-shock-chelsea-2-0?traffic_source=rss" target="_blank" rel="noopener">Arsenal join Man City at Premier League summit, Spurs shock Chelsea 2-0</a><span>aljazeera.com</span></li><li><a href="https://www.dawn.com/news/2039501/former-skipper-shan-masood-axed-as-pakistan-turn-to-youth-for-sri-lanka-tests" target="_blank" rel="noopener">Former skipper Shan Masood axed as Pakistan turn to youth for Sri Lanka Tests</a><span>dawn.com</span></li><li><a href="https://www.dhakatribune.com/sport/football/422793/bangladesh-hold-wales-to-goalless-draw-in-fifa" target="_blank" rel="noopener">Bangladesh hold Wales to goalless draw in FIFA U-15 World Cup and Festival opener</a><span>dhakatribune.com</span></li><li><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxORlB5NEQ1Z3VUU092bjgzMWZOYnBTWnFoeUdqQzhIb2JNOFpoY002SU9iSlZTQktyWlVoOHlCYVQ4VnA5T1pIUDExR0lEVlA4WjVXYVhKUlU0YmhGbVVXY1N5MUZDcy1oZ2YtY3pfY3Q2UU9tZHpUWXZ5d3RKVkxXY3FHZnROdGFtUzdkamJnaW52cVE3VGYxLXZLLWlhMlZjTDgxaXdB?oc=5" target="_blank" rel="noopener">Infantino says he’s supported by ‘vast, vast majority’ of soccer ahead of FIFA elections</a><span>AP News</span></li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQd3htdWs1amF0RVg5OWY3U1Q4M3QxQWd4U1NjbE51NEpfc3o1RUY4MkNLLXdLVEF0TjhmV1MxcmJjRVQ4cVlhblFXbDJ6MkZ2TDFVRVlMSEdlOHFzYnFjc3hVRmNqMFF3RkdjUHV1anNKYnFVTEhaOUFWNVIwcVNEcWJLd01CQQ?oc=5" target="_blank" rel="noopener">Amen Thompson blocks Wembanyama in final second as the Rockets beat the Spurs 114-110 in Austin</a><span>AP News</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">Who holds things together?</h2><p class="dek accent">The headlines show the moment something strains. The slower story is who keeps it working, who pays, and who gets a say.</p>
+  <div class="body drop"><p>A 15-person foundation coordinated emergency fixes for PHP, software used by nearly seven in ten websites. That is a strange size mismatch to carry into the rest of the paper. So much of daily life feels large and settled from the outside. Up close, it can rest on a small team or a service most people rarely think about.</p><p>One pattern is dependence that stays hidden until something falters. Ukraine&#x27;s Starlink speeds were capped for a week, and nobody has owned up to it. When a service works, you can forget who has a hand on the controls. When it slows, the question of trust arrives before an explanation does.</p><p>Another pattern is the fight over who carries the cost of change. Bangladesh is seeking climate grants because loans would add to the debt of countries vulnerable to warming. The difference between a grant and a loan sounds technical. It determines whether meeting one pressure means taking on another. Who sets the terms matters as much as the money.</p><p>Then there is the question of whose voice can change those terms. A French student protest that began in a few schools now includes labor unions and other activists. A headline catches the moment a movement grows. The slower story is how demands gather allies and whether institutions can earn an answer people trust. News shows you the jolt when something strains. What held it together before the headline, who carried its costs, and who got to decide? Kameleon&#x27;s test. </p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-10-24/index.html">← Yesterday</a><span>2026-10-25</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
