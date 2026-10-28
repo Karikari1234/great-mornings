@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-10-28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/62a7/live/0a738c90-d1fa-11f1-8c9f-8d21fef6ffad.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Wednesday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Norway and Finland leaders hold rare call with Putin</h2>
+      <p class="dek">An end to the conflict in Ukraine &quot;will not be achieved through silence,&quot; Finland&#x27;s President Alexander Stubb said.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>28 October 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/62a7/live/0a738c90-d1fa-11f1-8c9f-8d21fef6ffad.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Norway and Finland leaders hold rare call with Putin</h2>
+    <p class="dek accent">An end to the conflict in Ukraine &quot;will not be achieved through silence,&quot; Finland&#x27;s President Alexander Stubb said.</p>
+    <div class="body drop"><p>An end to the conflict in Ukraine &quot;will not be achieved through silence,&quot; Finland&#x27;s President Alexander Stubb said.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>US promises visas after reports Flavio Bolsonaro left Brazil</h3><div class="body"><p>Flavio Bolsonaro reportedly left Brazil after losing the presidency by more than 4.4 million votes; the reports came a day after the Supreme Court ordered him to hand over his passports. The US says he and his family will get visas, while that passport order forms part of a money-laundering probe whose allegations he denies.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/27/flavio-bolsonaro-flees-brazil-after-election-loss-us-says-will-grant-visa?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 6 more ↗</a></li>
+    <li><h3>Israel&#x27;s partial election results leave no clear winner</h3><div class="body"><p>Netanyahu&#x27;s bloc leads in partial results from Israel&#x27;s election, yet its projected 56 seats leave it five short of the 61 needed to govern. Eisenkot&#x27;s bloc is projected at 49 seats, so parties face coalition talks while Netanyahu could remain in office as caretaker.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 5 more ↗</a></li>
+    <li><h3>Court hears suspected Iran link in RAF Fairford case</h3><div class="body"><p>One of five men directed to drive petrol-loaded vans to RAF Fairford called police after their handler said he had planted a bomb, prosecutors told a court. Two men now face national security charges, and UK police believe the handler, known as Ali, was working on behalf of Iran.</p></div><a class="src" href="https://www.theguardian.com/uk-news/2026/oct/27/two-men-charged-raf-fairford" target="_blank" rel="noopener">theguardian.com + 4 more ↗</a></li>
+    <li><h3>Fighting stops in Oleshky ahead of planned evacuation</h3><div class="body"><p>Residents of Russian-occupied Oleshky have gone three years without electricity, gas or water, and some reported eating weeds to survive. Fighting has stopped under a truce the White House says Melania Trump secured, meant to allow aid deliveries and a Friday evacuation, though residents say routes could take them through Crimea and Russia.</p></div><a class="src" href="https://www.bbc.co.uk/news/videos/c687z5ne1w4ro?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 3 more ↗</a></li>
+    <li><h3>Syria says five killed in Jordanian strike</h3><div class="body"><p>Jordan says it coordinated a retaliatory strike in Syria with the Syrian government; Syria says it got no warning, and health officials there report five people killed, including women and children. The strike followed a church funeral attack that killed nine, and Syria has now closed the countries&#x27; only passenger and commercial border crossing.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 3 more ↗</a></li>
+    <li><h3>Charles to discuss slavery&#x27;s legacy as Bahamian committee seeks apology</h3><div class="body"><p>Three in five Britons aged 18 to 24 support a meeting on reparatory justice, a poll found, as King Charles said Commonwealth leaders will discuss slavery&#x27;s legacy next week in Antigua. The Bahamas National Reparations Committee wants a formal apology, so the summit will put the distance between discussion and apology on display.</p></div><a class="src" href="https://www.theguardian.com/world/2026/oct/28/king-charles-confirms-he-will-discuss-legacy-of-slavery-at-commonwealth-summit" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a></li>
+    <li><h3>Congo’s Ebola outbreak passes 10,000 cases</h3><div class="body"><p>More than 10,000 people have been infected in an Ebola outbreak first declared in DR Congo in May, and nearly 5,000 have died, roughly one death for every two reported cases. Evidence suggests the virus was spreading by February or March, giving it a head start before the outbreak was recognized.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPZlBHRG5jakZCMG5CbnJSZ1ZfdUZnRlRsMU9BYTRER2h4VEN3ZVJPdGxyTGRfaXQ2VTNrSmp1WmhpQnBFOTIzR0RjSXN4ejUzZ2Z3MTBwVnp3V3JZUy10ZFJkWUM4SGhaNVRWdWxXLVB1WE1UU25DY1FFMmxHN3FNUy1zWHBncDROX2k2NFBqdFlabWdkdGc5RnR4bmdDcWtQSU40?oc=5" target="_blank" rel="noopener">AP News + 3 more ↗</a></li>
+    <li><h3>Egypt approves military support for Saudi Arabia</h3><div class="body"><p>The Houthis called Egypt&#x27;s vote a declaration of war, although Egyptian officials say the military support authorized for Saudi Arabia will be defensive. Saudi forces reported intercepting three missiles aimed at the Eastern Province and two at Riyadh, five in all, while Egypt&#x27;s exact role remains unclear.</p></div><a class="src" href="https://www.nytimes.com/2026/10/26/world/middleeast/egypt-military-saudi-houthis.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li>
+    <li><h3>Wall Street rises as AI momentum returns</h3><div class="body"><p>Wall Street ended higher as momentum around artificial intelligence revived, Reuters reported, making AI the thread running through the market&#x27;s gains. Why does that matter? Interest in one area of technology can help move the wider stock market.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a></li>
+    <li><h3>Last Republican senator in a Democratic-leaning state fights for seat</h3><div class="body"><p>Just one Republican incumbent senator remains in a Democratic-leaning state, and that senator is fighting to keep the seat. The race matters because it tests whether a sitting Republican can hold on where voters generally lean toward the other party.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWUtHMnlaYU1NQi1yREdpemNiOUc2VVVfcS1fNXlCcWpRWDQ0VEVYbGNCT3QxNmdzazdPVEJBc0ZMcjNJeHJjVm12NzlORWdJUXhPR0J1cTJhRlE3Uk1STXA0M2FpWWFaY0RxZ01zLXlyelliYWZoYlNxTnRYNzF1ZG45YkN6cnkzQ2Z0dUt4T1BkT1FBM1BaQ0U0ZWRDaWtBanlTSG02eFhPZHFLYXloaVhYN1NibkhlZVpr?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://ecdn.dhakatribune.net/contents/cache/images/300x300x1/uploads/media/2026/03/12/c7d83c6055a047dcf28526e4e3b9246f-69b2a925ea882.jpg?jadewits_media_id=61800" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Japanese investment plans could create 200,000 jobs in Bangladesh</h3><p class="dek">Bangladesh also asked Japan to support more time before LDC graduation.</p>
+        <details><summary>Read</summary><div class="body"><p>A possible 200,000 jobs came up at a summit about Bangladesh&#x27;s ties with Japan. Foreign Affairs State Minister Humaiun Kobir said Japanese private firms plan to invest around $6.34 billion over five years, which could mean about 40,000 jobs a year if evenly spread. The talks carried another request: Japan&#x27;s support for three more years to prepare for Bangladesh to leave the least developed country category.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kobir spoke after a summit between the two prime ministers.</li><li>He said Japanese private firms plan to invest around $6.34 billion over five years.</li><li>He said the investment could create about 200,000 jobs.</li><li>Bangladesh sought Japan&#x27;s support for three more years to prepare for LDC graduation.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/foreign-policy/bangladesh-prioritises-national-interests-strengthening-ties-japan-humaiun-kobir" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Grid operator probes failure after generation drops by over a third</h3><p class="dek">A five-member team has five working days to find the cause.</p>
+        <details><summary>Read</summary><div class="body"><p>A tripped grid line took more than a third of Bangladesh&#x27;s power generation offline within an hour. After the Meghnaghat-Haripur line tripped on 27 October, several plants went offline and output fell 5,370 megawatts, disrupting electricity in parts of Dhaka and Chattogram. A five-member committee has five working days to find the precise technical cause and recommend ways to prevent a repeat.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Meghnaghat-Haripur line tripped on 27 October.</li><li>Generation fell by 5,370 megawatts within an hour.</li><li>The grid operator formed a five-member probe committee.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/economy/energy/power-grid-forms-5-member-probe-committee-over-grid-failure-1584901" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>CPB office attacked after disputed slogan</h3><p class="dek">Police are investigating the attack in Paltan.</p>
+        <details><summary>Read</summary><div class="body"><p>A party office was attacked over a slogan its leaders say never came from there. Police say supporters of former student leader Dipak Shil chanted &quot;Joy Bangla&quot; after his release from detention, angering some people who then attacked the CPB office in Paltan. CPB blamed BNP and Jamaat activists, while BNP activists denied the allegation; police have positioned themselves between the two groups.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The CPB office in Paltan was attacked.</li><li>Police linked the attack to slogans chanted after Dipak Shil&#x27;s release.</li><li>CPB blamed BNP and Jamaat activists; BNP activists denied the allegation.</li><li>Police are investigating and have positioned themselves between the groups.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/422995/cpb-office-attacked-in-paltan" target="_blank" rel="noopener">dhakatribune.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Tarique discusses ¥50b in Japanese energy assistance</h3><p class="dek">The discussion concerned assistance to strengthen Bangladesh&#x27;s energy security.</p>
+        <details><summary>Read</summary><div class="body"><p>Tarique discussed ¥50b in Japanese assistance to strengthen Bangladesh&#x27;s energy security. The available headline does not say what the assistance would cover or whether an agreement was reached.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Tarique discussed Japanese assistance.</li><li>The amount cited was ¥50b.</li><li>The stated aim was to strengthen Bangladesh&#x27;s energy security.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRTdueG03akZTVWFQMWFFU3NibDJDTWtlbGt6LW9Pb1BFUnp5Tnh2bHB6UW4tYTNUWUpZZzBjTzFzQTFVVVRNTy1kazIwYk9hbDdpSkJJRFdiTzNYTFA4TklxUzQ5NmgybHpPSW9GMHF1TjlPLUEyT2hLaUZQVlRhVGk0eDRoTXZUUFZuWk8tbHFiemtQUzJBUjRweVlab3ZONkpDODRxZWFhM2luVFJfNmFNcW1MM1JRaDI4ZGdQTmU?oc=5" target="_blank" rel="noopener">The Business Standard ↗</a>
+      </article>
+      <article class="more">
+        <h3>Japan eyes ¥1 trillion private investment in Bangladesh</h3><p class="dek">The five-year aim includes talks on energy, infrastructure and ICT.</p>
+        <details><summary>Read</summary><div class="body"><p>Japan is eyeing ¥1 trillion in private investment in Bangladesh over five years. Bangladesh and Japan have discussed investment in energy, infrastructure and ICT, according to another outlet&#x27;s headline.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Japan is eyeing ¥1 trillion in private investment.</li><li>The period is five years.</li><li>Bangladesh and Japan discussed energy, infrastructure and ICT investment.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaGUwOXFQdGw0M2hHOW1oYjh5Y2dJRnByMk5URFNnQlBRN01uVG1ZRXZvdG5xd2RscHM3RVJEM1dVTnhxTExNT19TVkdQSWJyWm5kclpMWWt1aFNFXzZvQW41aUJoazJ3RDIyWGFxczRHQmkxS2dhZVdTdXZ4TjJuYnRtVjlLUktHNUh2T2I2aHZoWlhhWTJOVG9aSG5HbllveUdVenpkNmJ1c0t2dzl2cHZPUm9LeGZ2?oc=5" target="_blank" rel="noopener">Japan Today + 2 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Jamaat chief says Awami League has lost moral right to politics</h2>
+    <p class="dek accent">Speaking to families of 2006 clash victims, Shafiqur Rahman rejected an Awami League return and called for trials and constitutional reform.</p>
+    <div class="body drop"><p>Can a political party lose the moral right to take part in politics? Shafiqur Rahman says the Awami League has. The opposition leader and Jamaat-e-Islami chief says it has lost all moral and democratic rights to practise politics in Bangladesh.</p><p>He called the Awami League a &quot;club of fascism&quot; rather than a political party. His test for politics was public welfare, nation-building, social justice and an end to discrimination. He said the party met none of those tests.</p><p>Why make that argument at this meeting? Jamaat had brought together family members of victims of the October 28, 2006 &quot;logi-boitha&quot; clashes at Paltan. Rahman was speaking to them when he made his case against the Awami League.</p><p>He alleged that the party withdrew murder cases from those clashes after coming to power. He also accused it of later having top Jamaat leaders executed through cases he called false. Those are accusations Rahman made in his speech.</p><p>His account reached beyond the clashes. Rahman accused the Awami League of relying on state-sponsored terror, bloodshed and unlawful killings during the 1972-75 period and the last 15 and a half years. The source gives these claims as his allegations.</p><p>So what does he want to happen now? Rahman demanded exemplary, fair trials for everyone responsible for political killings. He said Jamaat would not compromise over the blood of those he called martyrs and that the trials should reach their end.</p><p>He also warned people he said were trying to rehabilitate the Awami League. He compared helping it return to playing with a venomous snake. The warning was forceful, though the account does not name the people he was addressing.</p><p>Rahman called on the current administration to pursue constitutional reforms, saying they should prevent what he calls fascism from returning. He framed that demand as a response to a public mandate for fundamental political change.</p><p>His speech leaves one practical question unanswered: what would those reforms do to the Awami League&#x27;s path back into politics? For now, his stated demand is for trials, while his claim about the party&#x27;s right to return remains his own.</p><p></p></div><aside class="facts"><h4>Key facts</h4><ul><li>Shafiqur Rahman said the Awami League had lost its moral and democratic rights to practise politics.</li><li>He spoke at a Jamaat meeting with families of victims of the October 28, 2006 clashes at Paltan.</li><li>He demanded fair trials for political killings and called for constitutional reforms.</li></ul></aside><a class="src" href="https://www.dhakatribune.com/bangladesh/423055/jamaat-ameer-awami-league-lost-all-rights-to-do" target="_blank" rel="noopener">dhakatribune.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://th-i.thgim.com/public/incoming/xod4r8/article71630782.ece/alternates/LANDSCAPE_1200/20260901129L.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Indian court orders posts sharing Modi and Adani film removed</h3><p class="dek">A widely viewed documentary faces a temporary takedown order.</p>
+        <details><summary>Read</summary><div class="body"><p>One post sharing a film accusing Prime Minister Narendra Modi and billionaire Gautam Adani of cronyism drew 4.8 million views before an opposition politician removed it. A Kolkata court has now ordered YouTube, X and Instagram to remove several posts after Adani Enterprises called the documentary defamatory. The temporary order also bars its creator from sharing it; the company and government deny favouritism.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Raj Thackeray&#x27;s X post drew 4.8 million views before he removed it.</li><li>The court ordered several posts of the film removed.</li><li>The interim order runs until January 31, 2027.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQRXhzaUVOakxHWU5rUVV0TGR3bXZNZ0VnazRJTnM3dVNoVXB4ZzM2dUJLekprWkJTckZtS2lSS3FyUmJPYkZtR19GWWFYWlFodnFUQ0hwQTNJZ2dSd1B2OWY4WnN0SUIwZC11c053VExrajZWRktnU0dRYUIzaUdsdmVsM1hwNk83WGVTbjRjQS1SX1BVcDBGWFY4Y3JFdUZQ?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Rubio skipped Modi but returned to India within five months</h3><p class="dek">His stops in Mumbai and Jamnagar put business and oil in focus.</p>
+        <details><summary>Read</summary><div class="body"><p>Marco Rubio returned to India five months after his first visit as US secretary of state, yet he skipped New Delhi and did not meet Prime Minister Narendra Modi. Instead, he met business leaders in Mumbai and Reliance chair Mukesh Ambani in Jamnagar, home to the company&#x27;s oil refinery complex. Why that route? It points to business deals and oil as US priorities while tariffs and India&#x27;s purchases of Russian oil strain relations.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Rubio visited India for the second time this year, five months after his first visit as secretary of state.</li><li>He did not meet Narendra Modi or visit New Delhi.</li><li>He met business leaders in Mumbai and Mukesh Ambani in Jamnagar.</li><li>Tariffs and India&#x27;s purchases of Russian oil have strained US-India ties.</li></ul></aside></details>
+        <a class="src" href="https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai" target="_blank" rel="noopener">theguardian.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>In a first since 2023, Delhi invites Pakistan Minister for inaugural SCO Civilisational Dialogue in November</h2>
+    <p class="dek accent">PM Modi will inaugurate event with representatives of more than 25 countries, to be held at the 16th Century Purana Quila (Old Fort) in Delhi</p>
+    <div class="body drop"><p>PM Modi will inaugurate event with representatives of more than 25 countries, to be held at the 16th Century Purana Quila (Old Fort) in Delhi</p></div><a class="src" href="https://www.thehindu.com/news/national/in-a-first-since-2023-delhi-invites-pakistan-minister-for-inaugural-sco-civilisational-dialogue-in-november/article71630539.ece" target="_blank" rel="noopener">thehindu.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://www.aljazeera.com/wp-content/uploads/2026/10/AP26292530001121-1-1792607264.jpg?resize=1920%2C1440" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Trump floats Venezuela as 51st state at Texas rally</h3><p class="dek">A tanker, an oil deal and a much bigger suggestion.</p>
+        <details><summary>Read</summary><div class="body"><p>Trump pointed to a tanker off Texas that he said held one million barrels of Venezuelan oil, enough to give one barrel each to a million people. Then he floated Venezuela as a future 51st state. The oil deal is with Venezuela&#x27;s interim government, following the US capture of Nicolás Maduro in January; statehood was a suggestion Trump made at the rally.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump spoke at a campaign rally in Texas.</li><li>He claimed the tanker held one million barrels of Venezuelan oil.</li><li>The oil deal is with Venezuela&#x27;s interim government.</li><li>Trump suggested Venezuela might someday become the 51st state.</li></ul></aside></details>
+        <a class="src" href="https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela" target="_blank" rel="noopener">theguardian.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Trump explores sanctions relief for Russian investment fund</h3><p class="dek">An economic incentive enters the effort to end the war in Ukraine.</p>
+        <details><summary>Read</summary><div class="body"><p>Could lifting sanctions on one fund help end a war? President Trump is exploring relief for Russia&#x27;s flagship investment fund as he pursues economic incentives for Moscow. He hopes those incentives will help secure an end to the war in Ukraine; the reported move remains under consideration.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump is exploring lifting sanctions on Russia&#x27;s flagship investment fund.</li><li>He hopes economic incentives will help end the war in Ukraine.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html" target="_blank" rel="noopener">rss.nytimes.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Merz says US and Russia cannot settle Ukraine war alone</h3><p class="dek">He says Ukraine and Europe must have a say.</p>
+        <details><summary>Read</summary><div class="body"><p>Even Russia and the United States cannot settle the Ukraine war on their own, Germany&#x27;s chancellor says. Friedrich Merz says Ukraine and Europe must be involved too. So a proposed deal has a simple test: does Ukraine, the country whose future is at stake, have a say in it?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Friedrich Merz is Germany&#x27;s chancellor.</li><li>Merz says Russia and the US cannot settle the Ukraine war without Kyiv and Europe.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNVc2emkxZkxNNXJ3U2E3TTJ5UVhOSGJHQnZKYzZuSjFOVXZiaC1QVkc4dE9pMWJsd2RteE50M1czVlBhN1dRNWhjUjc4VUpNRXVjZ3RrdklENUVTWWNtVVlHQXExRE9DZGZBUXdaRnVOb3RXNlFHY3NVbThyNWRFME9fMElTR19iclFxaUczRkpaOGphRXVlMENMM2tHdWNnUHZKXzl5YWctYVcxLVhEdXhtLTVjcEtab1o3ZnVvaFBDdw?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Russia and Ukraine say local ceasefire has begun in Oleshky</h3><p class="dek">The pause is meant to bring aid to stranded residents.</p>
+        <details><summary>Read</summary><div class="body"><p>Russia and Ukraine say they have begun a ceasefire in Oleshky, while Russian missile attacks continue elsewhere in Ukraine. Around 2,000 people remain trapped in the town, which had about 24,000 residents before Russia&#x27;s invasion, with food and medicine scarce. The pause is meant to bring in supplies before evacuations, though a decrease in fighting has not been independently verified.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Both sides confirmed the local truce began on October 27.</li><li>Around 2,000 people remain trapped in Oleshky.</li><li>Food and medicine are in short supply.</li><li>Reduced fighting has not been independently verified.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/9aedc2d9-dc92-4412-bc5a-d5ffecf4d8d9" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Trump credited his uncle with inventing radar</h3><p class="dek">His uncle worked on radar, but the invention came earlier.</p>
+        <details><summary>Read</summary><div class="body"><p>Donald Trump said his uncle invented radar while voting in Palm Beach on 24 October. John G. Trump worked on radar for the Allies during World War Two, but an X community note said the technology grew from the work of several scientists before then. His contribution was real; the claim that he invented it was false.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump made the claim during early voting in Palm Beach, Florida, on 24 October.</li><li>His uncle, John G. Trump, worked on radar research for the Allies during World War Two.</li><li>An X community note said radar originated earlier through the work of several scientists.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/worldbiz/usa/trump-falsely-claims-his-uncle-invented-radar-social-media-fact-checks-potus-dr-john" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Iran war live: Pezeshkian says Middle East can solve own issues without US</h2>
+    <p class="dek accent">Iranian president&#x27;s words came at summit for gas exporting countries in Russia.</p>
+    <div class="body drop"><p>Iranian president&#x27;s words came at summit for gas exporting countries in Russia.</p></div><a class="src" href="https://www.aljazeera.com/news/liveblog/2026/10/27/iran-war-live-pezeshkian-says-middle-east-can-solve-own-issues-without-us?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo nophoto"><span>Banks eye $21 billion bond sale for Broadcom chip deal</span></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Oracle expands Nvidia chip deal, adds Google and Cerebras offerings</h3><p class="dek">Oracle is widening its chip offerings while expanding its Nvidia deal.</p>
+        <details><summary>Read</summary><div class="body"><p>Oracle is expanding its chip supply deal with Nvidia and adding offerings from Google and Cerebras. So why add more names while expanding the Nvidia deal? The available headline does not say.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Oracle expanded its chip supply deal with Nvidia.</li><li>Oracle added Google offerings.</li><li>Oracle added Cerebras offerings.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWDJXeTV2b1RmZFlma2hTZktBN0RYbFJKNXhFU1pkN0ZzYjYxYVUtcTgyNFpqcGdQTGxWWFFxTFpHMUtGb0tBOURUcm0ya0RiSXFXMHRmTWZCYnBMeVZTUlRRR3VDZVpuWndJeDhjdTZoSjVOdWtHQjBqLThJUG9aT0l0MkNUWFBRZnhnNG9vampRVXFSTHBvZkpzSVdDZ2JDZm9xdlFvNUp6Rm0xQnBvQUZRcGVPVl9QWHU0?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Nvidia and AMD buy shares in Meta</h3><p class="dek">The chipmakers are investing as Meta raises money for AI infrastructure.</p>
+        <details><summary>Read</summary><div class="body"><p>Two companies whose hardware helps run Meta&#x27;s AI systems are buying a piece of Meta itself. Nvidia said it will invest $3 billion, three times AMD&#x27;s $1 billion, as Meta plans to raise $95 billion for AI infrastructure. Meta plans to expand its use of Nvidia hardware, while AMD says its processors already power Muse, Meta&#x27;s AI agent.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia said it would invest $3 billion in Meta&#x27;s equity offering.</li><li>AMD said it would invest $1 billion.</li><li>Meta plans to raise $95 billion for AI infrastructure.</li><li>AMD says its processors power Meta&#x27;s Muse AI agent.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPS2Q3RzNwUk5IQWZ1NjIwYmxWV2xCVjZRQVk2OUQ3a1B5MWhKanZMZ3JyMHVRQ2MwSzRzZVZ4VmxNTGNKWDljd084OTRUSWcwNHdFYmduNTJ1RTAtcW0xRHVobW1BcVNQakJrT3paQkdQODl0dVoxZHNwYXhiVFJpclpNaVZrQ2lqRk5oMnBZYzlPOGc2alc3Q2szb2pDOWJhUDJXUA?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Oracle aims to bring its business apps into ChatGPT</h3><p class="dek">A planned workspace would put approved business tasks in one place.</p>
+        <details><summary>Read</summary><div class="body"><p>Oracle says market research that once took its recruiting team two to four days to compile now takes 15 to 20 minutes to prepare with ChatGPT Work. So what happens when ChatGPT can also reach the business software behind the work? Oracle and OpenAI are expanding their partnership, and Oracle is developing AI Workspace to bring its apps and data into ChatGPT, where staff could find information and complete approved tasks within company permissions.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Oracle reported 130,000 active ChatGPT users and more than 95,000 active Codex users.</li><li>Oracle is developing AI Workspace to connect its applications and data with ChatGPT.</li><li>The planned workspace would support approved business tasks within company permissions.</li></ul></aside></details>
+        <a class="src" href="https://openai.com/index/oracle-apps-in-chatgpt" target="_blank" rel="noopener">openai.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>UNICEF workshop speaker urges action at first signs of autism</h3><p class="dek">Early support begins with noticing.</p>
+        <details><summary>Read</summary><div class="body"><p>Why wait for several signs of autism when one has already appeared? At a UNICEF workshop, Deepa Bhaskaran urged intervention at the first signs, including when a baby does not respond to their name by six to nine months. Another speaker said 3% to 10% of nearly 4 lakh children born in the state could have special needs, roughly 12,000 to 40,000 children.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Deepa Bhaskaran urged intervention when the first signs of autism are identified.</li><li>Not responding to one&#x27;s name by six to nine months was among the signs she cited.</li><li>Vivek Virendra Singh said 3% to 10% of nearly 4 lakh children born in the state could have special needs.</li></ul></aside></details>
+        <a class="src" href="https://www.thehindu.com/news/national/kerala/focus-on-early-intervention-at-unicef-workshop-on-inclusive-child-development/article71633010.ece" target="_blank" rel="noopener">thehindu.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Infisical raises $40M at a $600M valuation</h3><p class="dek">It helps companies use AI agents without handing over private credentials.</p>
+        <details><summary>Read</summary><div class="body"><p>Companies including Airbus and Volkswagen can use AI agents without handing over their private credentials, with help from Infisical. The company has raised a $40M Series B led by Elad Gil at a $600M valuation.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Infisical helps companies use AI agents without handing over private credentials.</li><li>Airbus and Volkswagen are named as companies it helps.</li><li>It raised a $40M Series B led by Elad Gil.</li><li>The stated valuation is $600M.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261027/p35#a261027p35" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Banks eye $21 billion bond sale for Broadcom chip deal</h2>
+    <p class="dek accent">The planned sale is part of a $63 billion package to help finance chips for Anthropic.</p>
+    <div class="body drop"><p>Banks could sell up to about $21 billion in high-grade bonds as soon as early next year. Why such a large sale? It is part of a $63 billion funding package Broadcom has put together to help finance chips for AI developer Anthropic. At the planned amount, the bonds would cover about a third of the package.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Banks are planning a bond sale of up to about $21 billion.</li><li>The sale could happen as soon as early next year.</li><li>Broadcom has assembled a $63 billion funding package to help finance chips for Anthropic.</li></ul></aside><a class="src" href="https://www.bloomberg.com/news/articles/2026-10-27/banks-eye-21-billion-of-bonds-for-broadcom-chip-financing-deal" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/10/27/cid_officials.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>India needs more shipping capacity for cheap crude, IOC chairman says</h3><p class="dek">The price matters. Getting the oil home matters too.</p>
+        <details><summary>Read</summary><div class="body"><p>Cheap crude is only a bargain if you can bring it home. IOC&#x27;s chairman says India needs to build up its shipping capacity to benefit from it. The puzzle is simple: a low oil price helps less if there is too little capacity to carry the oil to buyers.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>IOC&#x27;s chairman called for more shipping capacity in India.</li><li>The stated goal is to benefit from cheap crude.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQa1RfS1hxT2Q0S0MzdWdEdE9pOGY1ak12U1MxTU14aExXbHU2U2JCVkROM0dDdGd1dTdWckZJXzZKNUZDUm4wZUxjVUNHbDBsV09XMTBkWnJTaHlCNVRLSG8xeW9vdExQZkIwT0VpVTVZOXpNR2dGSjVoeG9YYU1tQVVFQTB0aGV0UktUSVBnUmo3ZFhOUm5kTVZrUVlUVTRLZy1SQ0F3S0JwTWlsU1VqVnJ0MEQwdW41cmtYNVBzT3lOc0E?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Prediction markets push past sports betting</h3><p class="dek">Their growth is bringing fresh questions about who should oversee them.</p>
+        <details><summary>Read</summary><div class="body"><p>Prediction markets are growing fast, and the questions now reach beyond sports wagering: What about younger traders and market manipulation? Sean Patrick Maloney, head of the Coalition for Prediction Markets, argues that federally regulated platforms should be treated as financial markets overseen by a well-funded CFTC, rather than as casinos.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The summary describes rapid growth in prediction markets.</li><li>It raises questions about sports wagering, younger traders, manipulation and regulation.</li><li>Maloney argues for CFTC oversight of federally regulated platforms.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/videos/2026-10-27/prediction-market-betting-stretches-past-sports-video" target="_blank" rel="noopener">feeds.bloomberg.com + 4 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Gold gains ahead of Fed meeting</h3><p class="dek">Oil prices softened as traders awaited a rate decision.</p>
+        <details><summary>Read</summary><div class="body"><p>Gold gained while oil prices softened ahead of a Federal Reserve meeting. Bloomberg reported gold holding above $4,000 as traders looked to the Fed&#x27;s rate decision.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Reuters reported that gold gained.</li><li>Reuters reported softer oil prices.</li><li>Bloomberg reported gold above $4,000.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQQWIyeWVhRnVBaHZfV05HanpZVFJzZDZiaC1MTEFVX0JEbWc5RVhRV3htMnJFMDNCVjBPWTJISkhha3ZWc3otaXBCTGloREJidmlqOWtXMTQ4Zks2aTA5czBzNC1OdGNuVXlqLVZ4TTk3M1VUSEZvdVdCLXV3bHJsZXBHSktGcXR0dk1wS2VYdWYxTm9ueGc?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Two arrested after Bangladeshis&#x27; Cambodia scam centre ordeal</h2>
+    <p class="dek accent">Two men promised good jobs in Cambodia were forced into online fraud, while their families paid to secure their return.</p>
+    <div class="body drop"><p>Their families arranged $5,000 to free them. Then, according to Bangladesh&#x27;s Criminal Investigation Department, the two men were taken back under the traffickers&#x27; control. How could paying for their release fail to get them home?</p><p>The men had gone to Cambodia after being promised good jobs and financial security, the CID says. Each family paid around Tk6 lakh to send him abroad. The CID alleges that the two men were then sold to a scam centre for $5,000.</p><p>That $5,000 appears twice in the CID&#x27;s account: once as the alleged price for the two men, and again as the amount traffickers demanded for their release. The same sum marked two different points in the ordeal.</p><p>After the men arrived, their passports were taken away, according to the CID&#x27;s preliminary investigation. They were forced to carry out online fraud. A job promise had led them to work they had not agreed to do, without their passports.</p><p>Refusing to work, or making a mistake, brought physical and mental abuse, CID official Mohammad Sufi Ullah said. Eventually, the men contacted their families. The traffickers demanded money for their release, and the families arranged it.</p><p>But release did not mean a journey home. The CID says the men were allegedly taken back under the traffickers&#x27; control. Their families also had to pay for return air tickets, adding another cost after the money spent sending them abroad and securing their freedom.</p><p>The men stayed at a local hotel in Cambodia for nearly two months before contacting BRAC Migration Centre online. With assistance, they returned to Bangladesh on 3 September, the CID says. The account does not explain how they reached the hotel.</p><p>On 27 October, the CID arrested Shawon Molla, 23, and Sakib Sarkar, 26, in Paltan. Both are named in a case filed the day before. They are suspected of trafficking the men; the allegations remain under investigation.</p><p>The CID says it is still working to identify others allegedly involved. Who else helped turn the promise of a job into captivity?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The CID alleges two Bangladeshi men were sold to a scam centre in Cambodia for $5,000.</li><li>Each family paid around Tk6 lakh to send a man abroad and later arranged money for his release.</li><li>The men returned to Bangladesh on 3 September with assistance.</li><li>The CID arrested two suspects on 27 October.</li></ul></aside><a class="src" href="https://www.tbsnews.net/bangladesh/crime/2-bangladeshis-sold-cambodian-scam-centre-5000-2-arrested-1585001" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://media.nature.com/lw1200/magazine-assets/d41586-026-03396-2/d41586-026-03396-2_53887238.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>OpenAI announced a physics finding but held back the work</h3><p class="dek">Three results, three ways to share them.</p>
+        <details><summary>Read</summary><div class="body"><p>OpenAI announced a physics finding, then held back the work behind it. The company reported three results across mathematics, computer science and physics, with a different release plan for each: the math output is public, outside researchers will help explain the computer science result, and an expert group will advise on releasing the physics materials. Researchers told The Verge they want announced findings open to wider scrutiny.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>OpenAI announced results in mathematics, computer science and physics.</li><li>The math output was released; the physics materials were not.</li><li>OpenAI said outside experts would help decide how to share the physics materials.</li></ul></aside></details>
+        <a class="src" href="https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics" target="_blank" rel="noopener">theverge.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Rare phrases offer clues to AI-written books</h3><p class="dek">Shared wording may reveal a pattern, but it cannot settle authorship.</p>
+        <details><summary>Read</summary><div class="body"><p>Two writers can independently use the same phrase. So what happens when entire books are checked for rare expressions? Computer scientist Tuhin Chakrabarty and his colleagues compared three groups of 200 books each. Titles flagged by AI-detection software had the most overlap with existing books, while prize-recognized literary fiction had the least. That pattern offers a clue, not proof of who wrote any one novel.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The study compared three groups of 200 books.</li><li>One group was flagged by AI-detection software as containing substantial AI-written text.</li><li>The researchers looked for rare expressions repeated word for word in other books.</li><li>The flagged group had the most overlap; prize-recognized literary fiction had the least.</li></ul></aside></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03394-4" target="_blank" rel="noopener">nature.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Could measuring immune health reshape medical care?</h2>
+    <p class="dek accent">Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03396-2 Finding practical ways to analyse the state of a person’s immune system could guide treatment decisions and create opportuniti</p>
+    <div class="body drop"><p>Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03396-2 Finding practical ways to analyse the state of a person’s immune system could guide treatment decisions and create opportuniti</p></div><a class="src" href="https://www.nature.com/articles/d41586-026-03396-2" target="_blank" rel="noopener">nature.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo nophoto"><span>Coca-Cola lifts profit forecast on international soda demand</span></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Anthropic gets most revenue from recent models</h3><p class="dek">Its filing shows a business with a question about future costs.</p>
+        <details><summary>Read</summary><div class="body"><p>More than four in five dollars of Anthropic&#x27;s current revenue comes from models no older than six months. Azeem Azhar says the company&#x27;s S-1 filing shows customers and cash flow. So the question shifts from whether people pay for its AI to whether growth can keep up with the computing power Anthropic has promised to buy.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>More than 80% of current revenue comes from models six months old or less.</li><li>Azhar says the filing shows customers and cash flow.</li><li>The filing does not settle whether growth can pay for promised computing power.</li></ul></aside></details>
+        <a class="src" href="https://www.exponentialview.co/p/anthropics-s-1-in-charts" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article>
+      <article class="more">
+        <h3>SK Hynix profit jumps 632% in third quarter</h3><p class="dek">Revenue and operating profit both beat estimates.</p>
+        <details><summary>Read</summary><div class="body"><p>SK Hynix&#x27;s third-quarter operating profit jumped 632% from a year earlier to about $62.76 billion. Revenue rose 328% to about $78.8 billion, and both results beat estimates. That puts operating profit at about four-fifths of revenue.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Third-quarter revenue was about $78.8 billion, up 328% year over year.</li><li>Operating profit was about $62.76 billion, up 632% year over year.</li><li>Both figures exceeded the estimates in the feed.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261027/p37#a261027p37" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Noema&#x27;s AI reading list may need a sequel soon</h3><p class="dek">A couple of years of reading, with more to come.</p>
+        <details><summary>Read</summary><div class="body"><p>A reading list covers essays and interviews from a couple of years; Noema says it may need another in a few months. That is how fast the magazine says AI is moving, with the collection ranging from jobs and inequality to the question of whether AI could be conscious. For you, the point is simple: following AI means following the human questions its new abilities bring.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Noema compiled AI essays and interviews from a couple of years ago through the present.</li><li>Noema says it may need a new list in a few months.</li><li>The listed topics include jobs, inequality and AI consciousness.</li></ul></aside></details>
+        <a class="src" href="https://www.noemamag.com/noemas-ai-reading-list-2" target="_blank" rel="noopener">noemamag.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Coca-Cola lifts profit forecast on international soda demand, flags higher costs</h2>
+    <p class="dek accent">Coca-Cola lifts profit forecast on international soda demand, flags higher costs Reuters</p>
+    <div class="body drop"><p>Coca-Cola lifts profit forecast on international soda demand, flags higher costs Reuters</p></div><a class="src" href="https://news.google.com/rss/articles/CBMingFBVV95cUxNeXVhS0lsd2Y2TWNoSkp5RFlXZ3Jxdmk3TXJOZTluVVhjTEVQekJYRlpUOWVTamdtQUJKWXg0M3NoR29yQnNWRE0yaGEtd0xqZkhTV2puTnpteE9TMFNfX3Z3am5zQkNJamhtRFlrVkFtcWNWell5empwLVdyU0hldklXc24tdkNjQXJBWlUtN3VJcktsalJZcGJ1T0Q1dw?oc=5" target="_blank" rel="noopener">Reuters ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Surrender_of_Lord_Cornwallis.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Tutankhamun&#x27;s gold mask may have had another intended owner</h3><p class="dek">A famous face, with an open question behind it.</p>
+        <details><summary>Read</summary><div class="body"><p>Tutankhamun&#x27;s gold mask may originally have been meant for a female pharaoh, Neferneferuaten. Howard Carter&#x27;s team uncovered it on 28 October 1925, when they opened the innermost of three coffins. The mask had been buried for about 3,250 years, yet even after its discovery, one question remains: was Tutankhamun the person it was first made for?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The tomb was found in 1922; the mask was revealed in 1925.</li><li>The mask bears Tutankhamun&#x27;s likeness.</li><li>Some Egyptologists have suggested it was originally intended for Neferneferuaten.</li></ul></aside></details>
+        <a class="src" href="https://en.wikipedia.org/wiki/Mask_of_Tutankhamun" target="_blank" rel="noopener">Wikipedia ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Britain took White Plains. Washington still won the war.</h2>
+    <p class="dek accent">A British victory during Washington&#x27;s retreat shows why one lost village could not settle the fight for independence.</p>
+    <div class="body drop"><p>The British captured White Plains while George Washington&#x27;s army retreated northward from New York City. Yet that army eventually defeated Britain. How does a side lose a village and still win a war?</p><p>To see the puzzle, you need the fight that came before it. Britain and its thirteen colonies had been in conflict over laws and control. Fighting began in 1775, and colonial forces were brought together as the Continental Army, with Washington in command.</p><p>In 1776, the colonies declared independence. Washington&#x27;s army drove British forces out of Boston that March. But the British launched a campaign around New York and New Jersey, and Washington&#x27;s troops were retreating when White Plains fell. Independence had been declared; winning it was another matter.</p><p>Here&#x27;s the turn. The capture of White Plains was a British gain, but the war continued. Washington later crossed the Delaware River and won victories at Trenton and Princeton. Neither the retreat nor those victories settled the conflict on its own.</p><p>Then another British army surrendered at Saratoga in 1777. That victory helped convince France and Spain that an independent United States was possible. France made a commercial agreement with the revolutionaries and signed an alliance in 1778.</p><p>Why would that matter to a fight that began in the colonies? The war reached beyond North America, into the Caribbean and the Atlantic. By 1779, Spain had allied with France against Britain, though Spain did not formally ally with the Americans.</p><p>The decisive scene came at Yorktown in 1781. A Franco-American army besieged British General Cornwallis, while the French navy cut off his escape. Cornwallis surrendered. Britain then negotiated an end to the war, although its wars with France and Spain continued.</p><p>In 1783, Britain acknowledged the independence of the thirteen colonies in the Treaty of Paris. White Plains was still a British capture. It just was not the end of the story that began with Washington&#x27;s retreat.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The British captured White Plains in 1776 as Washington&#x27;s army retreated northward from New York City.</li><li>The Continental Army later won at Trenton and Princeton.</li><li>The British surrender at Saratoga helped convince France and Spain that American independence was possible.</li><li>Britain acknowledged American independence in the 1783 Treaty of Paris.</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/American_Revolutionary_War" target="_blank" rel="noopener">Wikipedia + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://bigthink.com/wp-content/uploads/2022/02/STDM-higgs-and-field-D.png?quality=80&amp;w=640" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Sylvia Plath on quieting the nagging mind</h3><p class="dek">A letter to her mother holds a hard-won thought about getting through the day.</p>
+        <details><summary>Read</summary><div class="body"><p>Sylvia Plath told her mother that fighting her own mind could wear a person out. She was 22 when she wrote about their family&#x27;s nights of self-hatred and the sting of careless remarks; she lived to 31. Her answer was to shut off the &quot;nagging part of the mind&quot; and attend to the life at hand, a glimpse of how she kept going while making poetry.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Plath wrote the letter to her mother at 22.</li><li>She described nights of self-hatred and dwelling on careless remarks.</li><li>She wrote that fighting oneself can become exhausting.</li><li>Plath lived to 31 and wrote poetry.</li></ul></aside></details>
+        <a class="src" href="https://www.themarginalian.org/2026/10/27/sylvia-plath-letter-mother/" target="_blank" rel="noopener">themarginalian.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Do the three quantum forces all unify together?</h2>
+    <p class="dek accent">Here in our Universe, there are a series of fundamental forces that all appear to operate independently of one another. There’s gravity, which is an attractive force between all objects with mass and/</p>
+    <div class="body drop"><p>Here in our Universe, there are a series of fundamental forces that all appear to operate independently of one another. There’s gravity, which is an attractive force between all objects with mass and/</p></div><a class="src" href="https://bigthink.com/starts-with-a-bang/three-quantum-forces-all-unify/" target="_blank" rel="noopener">bigthink.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">What makes a problem open</h2><p class="dek accent">An unsolved question needs a clear answer to count as an open problem.</p>
+  <div class="body drop"><p>You ask for the nearest shop. Nearest to you, or to the person answering? The question sounds simple, but you need to pin down what it means before anyone can answer it.</p><p>Science has questions like that. An open problem is a question we can state accurately and expect to have an answer that can be checked, but no solution is known. That gives us a puzzle: what happens if the question itself is unclear?</p><p>Sometimes that is how a supposed open problem gets closed. Researchers show that it was never well defined. They have resolved the puzzle about the question, even though they have not produced the answer it seemed to ask for.</p><p>For a clearer example, take protein structure prediction: given a protein&#x27;s sequence, how can you predict its structure? Suppose someone offers four possible structures for one sequence. A check verifies one and rejects the other three. That settles this case, but it does not yet give you a way to predict the structure from another sequence.</p><p>An open problem can close with a solution, too. Fermat&#x27;s Last Theorem, the four-color theorem and the Poincaré conjecture are named examples that researchers solved.</p><p>So the lesson ends where a new investigation begins: when someone claims to have solved an open problem, how do we check that the answer really closes it?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>An open problem can be accurately stated and is assumed to have a verifiable solution.</li><li>Some supposed open problems were closed by showing they were not well defined.</li><li>Protein structure prediction asks how to predict structure from sequence.</li><li>Fermat&#x27;s Last Theorem, the four-color theorem and the Poincaré conjecture were solved.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/open_problems" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/shorts/w_ZUPq1et-A" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/w_ZUPq1et-A?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>America&#x27;s newest air-to-air missile</h3><p>A video about an American missile and a comparison with China&#x27;s PL-15.</p><span>Afterburn Defense ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/jeUgtyvvkfs" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/jeUgtyvvkfs?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Who would have voting power in an Anthropic IPO?</h3><p>The title poses a question about control, but supplies no answer.</p><span>Matthew Berman ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=C0jOKDJtK9s" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/C0jOKDJtK9s?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Trying to learn AI video editing in one day</h3><p>Ali Abdaal takes on a one-day learning challenge.</p><span>Ali Abdaal ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/UKjrMZSIhvg" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/UKjrMZSIhvg?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>What is the point of art fairs?</h3><p>Great Art Explained takes up a question about why art fairs exist.</p><span>Great Art Explained ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.bbc.co.uk/sport/rugby-league/articles/c674p3v4v9vmo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">England face &#x27;do or die&#x27; World Cup game with Samoa</a><span>feeds.bbci.co.uk</span></li><li><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNY0Z1ejBuOWphNVZZM1h6NW45Yng3LUI3Y0ZFTDJNZnhSVkVzOEJVY3d4bEdrZGVkWk1tT3RSWG9RSWVlSE9yb2N6OGd3UFNLWlZzMUJIRUExR19RNGV3T3pYeV9QUGZISWd1bU41NzQ1NDJZVGtrb2RacWJ6MllpTlpXcW9TUlNXa0czRWs1Z1czY2h2c24zb3pR?oc=5" target="_blank" rel="noopener">Asian Champions Trophy 2026 hockey: India beat Bangladesh 13-0; Mandeep Singh scores hat-trick</a><span>Olympics</span></li><li><a href="https://www.dawn.com/news/2040181/madushankas-five-for-powers-sri-lanka-into-tri-series-final-after-pakistan-drubbing" target="_blank" rel="noopener">Madushanka’s five-for powers Sri Lanka into tri-series final after Pakistan drubbing</a><span>dawn.com</span></li><li><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNekdROGtxVmhEN2Y3dXVucGdheFBod2R2RTVkSDJ3V20xUk1ybURuTHRTMnllZkhOU0VUb3JMR0VoTGZVNTJwekhkd3FNa1lFSTNvWi0tZkpHRVQ5TUIxU0NSNlBlS2FCV2tUV1JHMzVHemV1YjA3SDNLaVFoWHVhX3pqdzNzbGoyN01naEdIcFlndUhSNFVLSkl3?oc=5" target="_blank" rel="noopener">Small colleges are starting football programs, hoping to boost enrollment as student shortage looms</a><span>AP News</span></li><li><a href="https://www.dhakatribune.com/sport/football/423027/bangladesh-beat-fiji-3-1-in-fifa-u-15-world-cup" target="_blank" rel="noopener">Bangladesh beat Fiji 3-1 in FIFA U-15 World Cup &amp; Festival</a><span>dhakatribune.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">What the headlines cannot show all at once</h2><p class="dek accent">Today&#x27;s events bring slower questions about power, trust and the systems people depend on.</p>
+  <div class="body drop"><p>A headline tells you what moved. It rarely tells you what had been straining before the movement became visible. That gap matters today. Again and again, the event is quick to name, while the story underneath sits in who gets to decide, what people are asked to trust, and what a system can quietly absorb.</p><p>Start with who gets a seat. Merz says Ukraine and Europe must have a say in ending the war; Bahamian advocates seek an apology from Charles. These are different histories, but they lead to a shared question: can people accept an outcome when someone else sets the terms? A decision can arrive in a day. Its authority takes longer to build.</p><p>Then there is trust in what you can check. OpenAI announced a physics finding while holding back the work. You can see the puzzle: how does a claim earn confidence when the route to it is out of view? An announcement travels quickly. Checking it, challenging it and correcting it take time.</p><p>And underneath the arguments, ordinary systems have limits. A grid operator is probing a failure after generation dropped by over a third. The drop made news; the daily work of keeping a grid dependable is harder to see. That is how news can change your sense of time: the sharp moment gets the headline, while the pressures beneath it keep working. When you read the next one, ask: what had to be true for this event to happen?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-10-27/index.html">← Yesterday</a><span>2026-10-28</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
