@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-16</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0351/live/2e8de2e0-e106-11f1-93e1-3b657b665bcf.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Monday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Six drones aimed at a US radar site in Bahrain</h2>
+      <p class="dek">Iran&#x27;s latest attack on Bahrain is part of a fight over who controls the Strait of Hormuz.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>16 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Big Picture</a></li><li><a href="#p16">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0351/live/2e8de2e0-e106-11f1-93e1-3b657b665bcf.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Six drones aimed at a US radar site in Bahrain</h2>
+    <p class="dek accent">Iran&#x27;s latest attack on Bahrain is part of a fight over who controls the Strait of Hormuz.</p>
+    <div class="body drop"><p>Iran says it sent six drones toward a US air-defence radar facility in Bahrain. Bahrain says its defences destroyed the attack before it could achieve its goal. Why would a radar site in Bahrain matter so much?</p><p>The answer lies nearby, in the Strait of Hormuz. About a fifth of the world&#x27;s oil and gas supply usually flows through it. Put another way, for every five parts of that supply, roughly one normally passes through this waterway.</p><p>Shipping there has been restricted since war broke out in February. Iran insists it should control the strait and has attacked traffic it calls &quot;unauthorised&quot;. The US military, meanwhile, is protecting tankers carrying oil out of Gulf Arab states.</p><p>That makes the radar target easier to understand. Radar helps air defences detect incoming threats. Iran&#x27;s Islamic Revolutionary Guard Corps, or IRGC, says the facility it targeted was at al-Riffa air base. Bahrain&#x27;s military says the attack failed.</p><p>This was Iran&#x27;s second attack on Bahrain in three days. On Friday, the IRGC claimed it had struck a US early warning radar system there. The US denied that claim and said its forces shot down both drones, with no injuries or damage.</p><p>There was also an exchange around Qeshm Island in the strait earlier this week. US officials told CBS that US strikes there were limited and defensive, following IRGC fire at a US aircraft. The IRGC said it shot down US drones near the island.</p><p>So why are the two sides still fighting over the waterway? They reached a preliminary agreement in June to end the war and reopen it. That agreement collapsed within weeks after Iranian attacks on shipping resumed and the US reinstated a naval blockade of Iranian ports.</p><p>Iranian negotiators had since discussed a proposal with mediators to reopen the strait if the US met several conditions. But this week Donald Trump said the US was no longer interested in a deal to end the war with Iran.</p><p>Bahrain&#x27;s account says Sunday&#x27;s drones did not achieve their objective. That leaves the larger question open: with attacks continuing and the earlier agreement gone, how will ships regain passage through a strait that normally carries one part in five of the world&#x27;s oil and gas supply?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The IRGC said it sent six drones toward a US radar facility in Bahrain on Sunday.</li><li>Bahrain&#x27;s military said it intercepted and destroyed the attack.</li><li>About a fifth of the world&#x27;s oil and gas supply usually flows through the Strait of Hormuz.</li><li>A preliminary US-Iran agreement to end the war and reopen the strait collapsed within weeks.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>1,488 migrants rescued off the Canary Islands in one day</h3><div class="body"><p>The Canary Islands saw their highest daily migrant total since 2020: 1,488 people rescued from 14 boats in a single day, an average of more than 100 people per boat. Most came from Senegal, The Gambia and Guinea, showing how many people reached Spain’s islands in just one day.</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/15/nearly-1500-migrants-reach-spains-canary-islands-in-one-day?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Czechs rally over public media funding plan</h3><div class="body"><p>Organisers say roughly 400,000 people rallied in Prague against replacing a household fee of 205 crowns a month, about seven a day, with state funding for public media. The government says broadcasters must cut costs; protesters fear politicians controlling the money could stifle independent coverage.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a></li>
+    <li><h3>Jordan sentences three to death over church attack</h3><div class="body"><p>Jordan has sentenced three men to death over a church shooting that killed nine people and wounded about three dozen, roughly four wounded for each person killed. The military says they were convicted of terrorism charges, but the sentences can be appealed, so the case is not finished.</p></div><a class="src" href="https://www.nytimes.com/2026/11/15/world/middleeast/jordan-church-attack-death-sentence.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li>
+    <li><h3>Zelenskyy says satellite limits hamper Ukraine’s drone defenses</h3><div class="body"><p>Ukraine’s interceptor drones lose contact with their operators at 161 kilometers per hour, more than 40 meters a second, Zelenskyy says. He wants US restrictions on Starshield removed, saying slower satellite internet prevents the drones from hitting Russian weapons as attacks damage Ukraine’s energy infrastructure ahead of winter.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOenBGVVA1c2RUMjI4QVhIb2RGb193VUVXanFoaGxvUFV6MExoS1NsOUJnWDFENzhsbTk3UGs1T1lIYUs2a3phVkU2RGVlbWRvbUtPMk5ya3dsclFOdThkMWdNMFdXSFVFTlhSUUFncjlIbEFhXzZhZ3M0SkNjQk50cHh1elBVMlpWcXZDQ2pYRXB2cWNfaGdGelBsWmxRR0NkcjdSU1hQYlBkR0pCZXFF?oc=5" target="_blank" rel="noopener">AP News + 2 more ↗</a></li>
+    <li><h3>Vulcan failure costs Amazon 40 satellites</h3><div class="body"><p>Forty Amazon Leo satellites failed to reach orbit when a ULA Vulcan rocket suffered an anomaly 10 minutes into flight, on what was meant to be the first of 38 flights Amazon bought from ULA. That loss matters because Amazon has only a small portion of the satellites it needs in orbit to challenge Starlink.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRENJR2FvRjB1WmJfWk56alNqNHBwRHExSk0tdU91LV9wSUMzVm9PZEtRdHc0Y1JaMW44OVBJc3puTENpMXNBY3VmSVNjSTZIazlYRGh4aUxVaW9GdXNBamZla29sRzJnajdMdU1yQU9xekdPcUwyRXdaRzF4TXhiZXV6RDZIN21yVS15bGpNVUJFZUpnWU1ZTFJqbm94OXhjamR3SXFRV3F0YWZWSnA5ei1Gd2o4UW1PSnlrTnFtMENUb2V1VjVDc09XSFJNN0JaWXc?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a></li>
+    <li><h3>US and allies agree on AI supply chain list</h3><div class="body"><p>The US and its Pax Silica allies, including Japan, the UK and India, have agreed to make a joint list of AI technologies and supply chains to protect from China. The pact comes ahead of Donald Trump&#x27;s meeting with Xi Jinping at the Asia-Pacific Economic Cooperation forum in Shenzhen.</p></div><a class="src" href="https://www.ft.com/content/3c2197fc-9618-4838-91e6-522ce1a96a22?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a></li>
+    <li><h3>US probes nationwide flight stoppage</h3><div class="body"><p>Hundreds of thousands of passengers were stranded when flights across the US were stopped Friday night. The Trump administration blamed a botched replacement of old copper wire communication lines and said there was no evidence of a cyberattack. Air travel was expected to return to normal Sunday, though disruptions persisted.</p></div><a class="src" href="https://www.france24.com/en/us-probes-nationwide-flights-stoppage-as-travel-disruptions-persist" target="_blank" rel="noopener">france24.com + 1 more ↗</a></li>
+    <li><h3>Apple&#x27;s planned smart glasses will lean on the iPhone</h3><div class="body"><p>Apple&#x27;s planned smart glasses are expected to rely on an iPhone for many tasks. Bloomberg&#x27;s Mark Gurman says Apple aims to unveil them at June&#x27;s WWDC and ship them before 2027 ends, giving developers months to make iPhone apps work with Siri&#x27;s new controls before the glasses arrive.</p></div><a class="src" href="https://www.techmeme.com/261115/p10#a261115p10" target="_blank" rel="noopener">techmeme.com + 1 more ↗</a></li>
+    <li><h3>Bangladesh exported to 202 destinations but ran a trade deficit</h3><div class="body"><p>Bangladesh sold goods to 202 destinations in FY25, yet imports exceeded exports by $24.17 billion, the commerce minister told parliament. For every $100 in goods sold abroad, the country bought about $144 in goods from abroad, showing why reaching many destinations did not close the gap.</p></div><a class="src" href="https://www.tbsnews.net/bangladesh/trade-deficit-stands-2417b-fy25-commerce-minister-1603646" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a></li>
+    <li><h3>GPT-6 Astra helped develop a Standard Model proof</h3><div class="body"><p>GPT-6 Astra helped turn an idea for defining the Standard Model on a lattice into a detailed proof. The candidate definition matters because it aims to describe the theory without relying on small-effect approximations, giving physicists a way to work with the particles and forces in the model on a grid.</p></div><a class="src" href="https://openai.com/index/step-toward-defining-the-standard-model" target="_blank" rel="noopener">openai.com + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2021/02/05/rmg_2.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Hasina&#x27;s return hinges on India, Dhaka says</h3><p class="dek">Dhaka says the legal process is complete, but her return to Bangladesh still depends on India.</p>
+        <details><summary>Read</summary><div class="body"><p>Dhaka says the legal process for Hasina&#x27;s return to Bangladesh is complete. Her return still hinges on India.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Dhaka says the legal process is complete.</li><li>Hasina&#x27;s return to Bangladesh hinges on India.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxObW9PV1U5OG13b1JOOUtnTkVLWHZSVmtZb1dEWldsTEpKYUtubFdJREVoSzBydzhZY1BYY2lGVG1QVVk2ckxQOTQyMGFZcnlfRlJ1bVd4c1lJX3pXeTJMSFJzS0ZZMXE2LVlQLUhLRVRDeEhUUTRUSFVSR2lCUExIVXp3ZG1WM1RjdmdJ?oc=5" target="_blank" rel="noopener">AOL.co.uk ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh Bank seeks to lift expatriate bond time limit</h3><p class="dek">Longer bond terms could bring more foreign currency into reserves.</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh Bank wants to remove the 15-year limit on three types of bonds for expatriates. Why let people hold them longer? About $604 million to $606 million is already invested in the bonds, and the bank hopes looser rules will draw in more foreign currency, while watching whether future repayments could put pressure on reserves.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Three types of expatriate bonds currently have a maximum term of 15 years.</li><li>The bank wants to make their terms open-ended.</li><li>About $604 million to $606 million is invested in the bonds.</li><li>The bank is watching for pressure from future repayments.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/business/banks/424688/bb-to-lift-tenure-limits-on-expatriate-bonds-to" target="_blank" rel="noopener">dhakatribune.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Police cite two messages in sedition case against officer</h3><p class="dek">Investigators do not know who received them; his wife says his phone was hacked.</p>
+        <details><summary>Read</summary><div class="body"><p>Police say two WhatsApp messages sent 34 minutes apart from an account registered with Chattogram police superintendent Mohammad Jahangir Alam&#x27;s number are central to a sedition case, though investigators still do not know who received them. The messages spoke of Bangladesh&#x27;s return to its previous state in December and people taking to the streets; a court ordered four days of remand. His wife says his phone was hacked.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The messages were sent on 8 November, 34 minutes apart.</li><li>Investigators have not identified the recipients.</li><li>A court granted four days of remand on 15 November.</li><li>Jahangir&#x27;s wife says his phone was hacked.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/bangladesh/2-whatsapp-messages-raise-suspicion-lead-sedition-case-against-ctg-range-reserve-force-sp" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Erdoğan tells Tarique he will do what he can for Bangladesh</h3><p class="dek">The Daily Star reports the remark from a COP31 meeting.</p>
+        <details><summary>Read</summary><div class="body"><p>&quot;I&#x27;ll do whatever I can for Bangladesh,&quot; Erdoğan told Tarique during a COP31 meeting, according to The Daily Star. The available headline and summary give no details about what he meant to do.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Erdoğan spoke to Tarique.</li><li>The meeting took place during COP31.</li><li>Erdoğan said he would do whatever he could for Bangladesh.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZmtZcGExaXB5c1RuUG9qRXRqRTJpSGt1UmNuUW1qV1dkc3JicWFKTnFzSTBiZGE4QmVQR283NVE0aTM2ZUF6UVh6MWJXR2pXVG9xZlhMWDA3ZU84U2dESFlrLVJlVFVIbXkyeXNOR0Y0Um8zVkdvYmNCc0Z3Q1hKWkI4bDZYbjcxT1ByelNRQ2pjNE10YWFWc0RxMS15VWdPRHBIR3dmTmdMQURETUdZSy0xX09rU2FvNTAtREVzVzluVndsVGVZQWh4bWFnNzJ3LVNoN0RNM2ZjbEVpS1dN?oc=5" target="_blank" rel="noopener">The Daily Star ↗</a>
+      </article>
+      <article class="more">
+        <h3>Will Bangladesh join the Mecca defense alliance?</h3><p class="dek">The available material asks the question but gives no answer.</p>
+        <details><summary>Read</summary><div class="body"><p>Will Bangladesh join what DW.com calls the Mecca defense alliance? The headline and summary ask the same question, but neither says whether Bangladesh has decided to join.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>DW.com raises the question of Bangladesh joining.</li><li>The summary repeats the headline.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQeVVjUEpwaGl5dW1la1ZtTzhGTXVUZVZYZGlJUTNvcmFiajU3dVF5QS03aThjREhmckNGd1hGMHhFX3RiNWRjU19faXprX2NlajAyZ3JvbDd2cUQzNzE5MnNJODJvRmFoeTNqYk1tb1Yya09qOGNkU0drSjhWUExkYjFUbkhrV0HSAYcBQVVfeXFMTVVrRzU1OE53UG1lcTZRZFRDem5BRUVoQXROb29pSnllUnl3Nk0yVHlkYjhRSV9OYUVra1FBRU5rRUlLRjZCbUxWVnNlNnVzQlJ4WHlHQzdYcTZjRWdCaVFVSWdhZGpuQ2pYMzZkam9WRW42WGs5c2VUeGR2c3E2VDBPZldvNXJB?oc=5" target="_blank" rel="noopener">DW.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>65 garment factories now closed indefinitely as 10 more shut down</h2>
+    <p class="dek accent">Of these, 10 factories were declared closed indefinitely under Section 13(1) of the Bangladesh Labour Act, bringing the total number of such closures to 65.</p>
+    <div class="body drop"><p>Of these, 10 factories were declared closed indefinitely under Section 13(1) of the Bangladesh Labour Act, bringing the total number of such closures to 65.</p></div><a class="src" href="https://www.tbsnews.net/economy/rmg/65-garment-factories-now-closed-indefinitely-10-more-shut-down-1603671" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://images.indianexpress.com/2026/11/Police-officers-near-the-venue-of-the-49th-ASEAN-Summit-in-Manila-the-Philippines-Sunday.-Reuters.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Pakistan hosts ten-country ECO ministerial meeting</h3><p class="dek">Two days to discuss closer regional links.</p>
+        <details><summary>Read</summary><div class="body"><p>Ten countries, two days, and an agenda senior officials were set to finish before the ministers gathered. Pakistan is hosting the Economic Cooperation Organisation&#x27;s ministerial meeting in Islamabad while holding the group&#x27;s 2026-27 chairmanship. That gives Pakistan a chance to press its stated goal of stronger links between members and easier regional trade.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The ECO has ten member countries.</li><li>Pakistan is hosting a two-day ministerial meeting in Islamabad.</li><li>Senior officials were set to finalise the agenda and draft outcomes.</li><li>Pakistan holds the ECO chairmanship for 2026-27.</li></ul></aside></details>
+        <a class="src" href="https://www.dawn.com/news/2044691/islamabad-hosts-foreign-dignitaries-for-two-day-eco-ministerial-meeting" target="_blank" rel="noopener">dawn.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>William and Kate to meet Modi after Mumbai visit</h3><p class="dek">A prize trip gains a New Delhi stop.</p>
+        <details><summary>Read</summary><div class="body"><p>A trip planned entirely for Mumbai now has a New Delhi ending. Prince William and Princess Kate are visiting for the Earthshot Prize, which will award £1 million each to five finalists for environmental solutions at Tuesday&#x27;s ceremony. They are due to meet Prime Minister Narendra Modi on Wednesday after their schedule changed when his travel plans were confirmed, The Sunday Times reported.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The couple&#x27;s visit was originally planned entirely for Mumbai.</li><li>The Earthshot Prize ceremony is scheduled for Tuesday in Mumbai.</li><li>The couple are due to meet Modi in New Delhi on Wednesday.</li></ul></aside></details>
+        <a class="src" href="https://www.thehindu.com/news/national/maharashtra/prince-william-princess-kate-to-visit-mumbai-from-nov-16-18/article71703990.ece" target="_blank" rel="noopener">thehindu.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Modi&#x27;s Manila trip may include a Quad summit</h2>
+    <p class="dek accent">India&#x27;s talks with Southeast Asia centre on the sea, while a meeting with three other leaders is still being planned.</p>
+    <div class="body drop"><p>Narendra Modi is heading to Manila for two summits. A third, with Donald Trump and the leaders of Japan and Australia, is still being worked out.</p><p>The scheduled meetings are the ASEAN-India Summit and the East Asia Summit, during Modi&#x27;s November 16-17 visit. ASEAN is a group of Southeast Asian nations. So why is the sea such a large part of India&#x27;s talks with them?</p><p>India and Southeast Asia occupy adjoining maritime zones, Indian official Rudrendra Tandon says. He argues that stronger ties can help both sides handle rapid geopolitical change. This year, India and ASEAN have marked a Year of Maritime Cooperation.</p><p>That cooperation covers maritime security, safety, connections across the water and economic activity tied to the sea. It puts a practical question beside the security one: how do countries keep those connections working? Economic cooperation and development partnership are also on the summit agenda.</p><p>The Philippines is putting rules on the table, too. Opening the ASEAN summit in Manila on Sunday, President Ferdinand Marcos Jr. called for stronger maritime cooperation and an effective code of conduct in the South China Sea, in line with international law. A code of conduct means agreed rules for how countries behave.</p><p>Trade gives the talks another reason to focus on connections. Officials say India and ASEAN are working to strengthen trade and investment, improve connectivity and make supply chains more varied. Supply chains are the steps that get goods from producers to buyers.</p><p>There is also a development effort with a narrower aim. Indian officials say support for an ASEAN integration initiative helps build capacity in Cambodia, Laos, Myanmar and Timor Leste, with the aim of narrowing development gaps.</p><p>Then comes the meeting that has yet to be confirmed. A Quad leaders&#x27; summit is being planned alongside the ASEAN gatherings. The Quad brings together India, the United States, Japan and Australia; Modi, Trump, Japanese Prime Minister Sanae Takaichi and Australian Prime Minister Anthony Albanese are expected to attend.</p><p>US official Dylan Johnson said work was underway to formalise that meeting. He said Quad foreign ministers have met repeatedly over the past two years. A meeting of the four leaders would bring another conversation about the region into the same visit.</p><p>Modi is scheduled to attend the ASEAN-India and East Asia summits on Tuesday. The next thing to watch is whether the Quad meeting joins them.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Modi&#x27;s November 16-17 Manila visit includes the ASEAN-India and East Asia summits.</li><li>Maritime security, economic cooperation and development partnership are on the agenda.</li><li>A Quad leaders&#x27; summit is being planned on the sidelines.</li><li>Marcos called for an effective South China Sea code of conduct.</li></ul></aside><a class="src" href="https://indianexpress.com/article/india/narendra-modi-asean-manila-visit-quad-summit-10964513/" target="_blank" rel="noopener">indianexpress.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://static01.nyt.com/images/2026/11/15/multimedia/15int-yemen-retreat-1-bhfc/15int-yemen-retreat-1-bhfc-mediumSquareAt3X.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Trump, Xi and Putin set for rare APEC talks</h3><p class="dek">The White House is framing the meeting around denuclearization.</p>
+        <details><summary>Read</summary><div class="body"><p>Donald Trump, Xi Jinping and Vladimir Putin are set to meet together Thursday on the sidelines of the APEC summit in Shenzhen. The White House is framing the rare talks around denuclearization, but Bloomberg&#x27;s Stephen Engle says the conflicts in Ukraine and Iran are likely to come up too.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The three presidents are set to meet Thursday in Shenzhen.</li><li>The meeting is planned for the sidelines of the APEC summit.</li><li>The White House is framing the talks around denuclearization.</li><li>Bloomberg&#x27;s Stephen Engle says Ukraine and Iran are likely to come up.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/videos/2026-11-16/trump-xi-and-putin-set-for-rare-apec-trilateral-talks-video" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Iraq fires nine officials after oil smuggling investigation</h3><p class="dek">The dismissals reach the country’s oil pipeline company.</p>
+        <details><summary>Read</summary><div class="body"><p>The head of Iraq’s Oil Pipelines Company was fired after investigators examined reports of oil being smuggled through a tapped pipeline. Prime Minister Ali al-Zaidi dismissed nine officials in all, including security and intelligence officers, following the investigation in Jurf al-Sakher, a stronghold of the Iran-backed Kataeb Hezbollah group. Here’s the gap: officials have not said what role those fired played.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nine officials were dismissed.</li><li>The dismissed officials included security and intelligence officers and the director of the Oil Pipelines Company.</li><li>An investigating committee confirmed the accuracy of information about smuggling, according to the prime minister’s spokesman.</li><li>The spokesman did not explain the dismissed officials’ roles.</li></ul></aside></details>
+        <a class="src" href="https://www.middleeasteye.net/live-blog/live-blog-update/iraq-sacks-nine-officials-over-oil-smuggling-pro-iran-groups-bastion" target="_blank" rel="noopener">middleeasteye.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Israel&#x27;s March truck deliveries to Gaza barely topped weekly pledge</h3><p class="dek">A month&#x27;s deliveries came close to one week&#x27;s promise.</p>
+        <details><summary>Read</summary><div class="body"><p>Gaza received barely more than a week&#x27;s promised truck deliveries during all of March, according to Israeli military data. Under the ceasefire deal, Israel pledged to allow 4,200 vehicles carrying humanitarian and commercial goods each week; about 4,700 entered that month. Food deliveries have fallen short, medical supplies and tents are scarce, and heavy rains have flooded displacement camps.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The ceasefire deal called for 4,200 vehicles a week.</li><li>About 4,700 trucks entered Gaza in March.</li><li>The source reports shortages of food, medical supplies and tents.</li></ul></aside></details>
+        <a class="src" href="https://www.middleeasteye.net/live-blog/live-blog-update/israels-data-shows-it-allowed-half-promised-aid-trucks-gaza" target="_blank" rel="noopener">middleeasteye.net ↗</a>
+      </article>
+      <article class="more">
+        <h3>Israel kills Hamas Rafah brigade commander in Gaza strike</h3><p class="dek">Hamas says Samir Abu Younis helped plan the October 7, 2023 attacks.</p>
+        <details><summary>Read</summary><div class="body"><p>Hamas says the commander killed in a Gaza strike played a prominent role in planning the October 7, 2023 attacks. Israel&#x27;s military said Sunday its forces killed Samir Abu Younis, commander of Hamas&#x27;s Rafah brigade, and Hamas confirmed his death.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Israel&#x27;s military said its forces killed Samir Abu Younis in Gaza.</li><li>Abu Younis commanded Hamas&#x27;s Rafah brigade.</li><li>Hamas confirmed his death and said he helped plan the October 7, 2023 attacks.</li></ul></aside></details>
+        <a class="src" href="https://www.france24.com/en/middle-east/20261115-israel-kills-senior-member-of-hamas-s-military-wing-in-gaza-strike" target="_blank" rel="noopener">france24.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>NATO to skip 2027 leaders&#x27; summit in Albania</h3><p class="dek">High-level meetings are being scaled back.</p>
+        <details><summary>Read</summary><div class="body"><p>NATO is skipping a leaders&#x27; summit in Albania in 2027. High-level meetings are being scaled back, though the available headlines do not say why.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>NATO will skip a leaders&#x27; summit in Albania.</li><li>The summit was set for 2027.</li><li>High-level meetings are being scaled back.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMzFrV1BVbGZ1Z2syOHpIeUZXUEhEUU5WSk5vajlXVklHTzVyNnlHLW5mS2FEbWExdno4X2NyaDlsNDFNM0d6X25JX3YydTAwNUE3MkVPRXh6R3VTN1VrQUV3QmxkbTRzaGY3bDNzbGhobDNzVC1pV1pnNXYtMThYZERqVmhQT0hBalJ6OG1HaVR5Y0JfclNoWXBMYjNBb282OXVwclJ3WE1WZw?oc=5" target="_blank" rel="noopener">AP News + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Saudi-backed forces retreat from key Yemen strait</h2>
+    <p class="dek accent">The withdrawal leaves the strait in Houthi control.</p>
+    <div class="body drop"><p>A retreat by Saudi-backed forces has left a key strait in Yemen under Houthi control. It is a setback for Yemen&#x27;s government and Saudi Arabia, with momentum in the civil war tilting toward the Iran-backed Houthis.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Saudi-backed forces retreated in Yemen.</li><li>A key strait is in Houthi control.</li><li>The war&#x27;s momentum is tilting toward the Houthis.</li></ul></aside><a class="src" href="https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html" target="_blank" rel="noopener">rss.nytimes.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/fa43/live/e2a9a870-e10d-11f1-93e1-3b657b665bcf.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Anthropic&#x27;s IPO links investors to its huge AI bills</h3><p class="dek">The companies buying shares also sell it computing power.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic has more than $900 billion in outstanding spending commitments for AI infrastructure. So why are tech companies set to invest $26 billion in its expected stock market debut? Some also sell Anthropic the chips and computing power it needs, tying their investment to a customer with enormous bills ahead.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Anthropic is expected to debut on the Nasdaq on Thursday.</li><li>Its outstanding spending commitments exceed $900 billion.</li><li>Seven tech companies are set to invest $26 billion at the IPO price.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/3c7c1b7a-541d-47a3-b074-b8e17e7b050c?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Nvidia scandal revives push for tighter AI chip export rules</h3><p class="dek">Lawmakers from both parties want to revisit limits on chips reaching China.</p>
+        <details><summary>Read</summary><div class="body"><p>A relationship with a suspected Chinese spy has pulled Nvidia&#x27;s former chief into a fight over AI chips. Democrats and Republicans in Congress have voiced support for tighter export rules, and lawmakers have called for Jensen Huang and other Nvidia leaders to testify. A bill stalled in the Senate is getting fresh attention, but Congress has yet to change the rules.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The source describes Huang as Nvidia&#x27;s former CEO.</li><li>Lawmakers from both parties have voiced support for tighter rules.</li><li>The Remote Access Security Act stalled in the Senate.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Huawei&#x27;s Horinger center has a fraction of Colossus 2&#x27;s compute</h3><p class="dek">An Epoch AI analysis puts the gap at roughly 7%.</p>
+        <details><summary>Read</summary><div class="body"><p>Huawei&#x27;s Horinger data center is among China&#x27;s largest for AI, yet an analysis by Ben Cottier of Epoch AI estimates it has about 7% of the compute of SpaceX&#x27;s Colossus 2. Huawei is drawing on China&#x27;s abundant energy to build data centers, but the analysis says Horinger may stay far behind until at least 2028.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Horinger is among China&#x27;s largest AI data centers.</li><li>Its estimated compute is about 7% of Colossus 2&#x27;s.</li><li>The analysis says it may stay far behind until at least 2028.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261115/p16#a261115p16" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>TSMC plans $500 million fund for chip startups and suppliers</h3><p class="dek">The chipmaker wants to support what it calls “the future&#x27;s Nvidia.”</p>
+        <details><summary>Read</summary><div class="body"><p>TSMC says it wants to support “the future&#x27;s Nvidia.” How? It plans to set up a $500 million fund to invest in chip startups, suppliers and other upstream partners.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>TSMC plans to set up a $500 million fund.</li><li>The planned investments include chip startups, suppliers and other upstream partners.</li><li>TSMC said it wants to support “the future&#x27;s Nvidia.”</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261115/p4#a261115p4" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>South Korea&#x27;s tax exam top scorer admits cheating with AI</h3><p class="dek">One wrong answer out of 160 led to questions about his score.</p>
+        <details><summary>Read</summary><div class="body"><p>Han Won-seok got just one of 160 questions wrong in the first round of South Korea&#x27;s certified tax accountancy exam. How did he get so close to a perfect score? He says he photographed questions with a tiny camera, sent them to AI and checked the answers on his phone. Police are investigating, and the government says anyone found to have cheated with AI will lose their qualification.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Han scored 397.5 out of 400 in the first round.</li><li>He admitted cheating in both rounds.</li><li>Police received his written confession through his lawyer.</li></ul></aside></details>
+        <a class="src" href="https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Megaspeed says Alice Huang left in August 2025</h2>
+    <p class="dek accent">Her departure answers one question about Megaspeed, while an investigation examines what happened to its Nvidia chips.</p>
+    <div class="body drop"><p>Alice Huang left Megaspeed in August 2025, the company says. Yet her old job is now part of a question reaching from Singapore to the US Congress: could restricted Nvidia chips have become available to Chinese companies? (apnews.com)</p><p>Huang is suspected of spying for China, an allegation China denies. She has also been linked to Jensen Huang, who resigned as chief executive of Nvidia after allegations emerged that he had affairs with her and an employee. Those allegations drew attention to a company that buys Nvidia chips. (aljazeera.com)</p><p>Megaspeed is based in Singapore and is Nvidia&#x27;s biggest chip buyer in South East Asia. Nvidia is barred from selling its advanced chips to China. The puzzle is whether a Chinese company could still use that computing power through a buyer elsewhere. (cbsnews.com)</p><p>Here is the route under scrutiny. Megaspeed is suspected of giving Chinese companies backdoor access to Nvidia chips through its data centres in Malaysia, Indonesia and Thailand. That is an allegation, not a finding that the access happened.</p><p>The distinction matters. A chip can stay in one country while someone elsewhere uses the computing power it provides. So asking where a chip was sold does not, by itself, answer who could use it. The investigation has to get past the address on the sale.</p><p>Megaspeed disputes the reports about its business and supply chain, saying their assertions lack verifiable evidence. It says it conducts lawful business, follows applicable rules, including US export controls, and has hired outside lawyers for an internal investigation. (apnews.com)</p><p>Meanwhile, US Congressman John Moolenaar says Jensen Huang has agreed to testify before three House committees. The committee heads had threatened subpoenas, but Moolenaar says none were issued. Dates for the closed-door testimony are still being arranged. (cbsnews.com)</p><p>The questions go beyond one former executive. Moolenaar wants to know whether privileged information was accessed and whether the suspected spy influenced Nvidia or US policy on AI and export controls. Separately, Commerce Secretary Howard Lutnick has been called to testify next month about his department&#x27;s role in allowing Nvidia to export advanced chips.</p><p>Megaspeed&#x27;s statement establishes when it says Huang left her executive role. Its investigation and the congressional testimony address the question her departure cannot settle: did Chinese companies gain access to restricted chips through Megaspeed&#x27;s data centres?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Megaspeed says Alice Huang left her executive role in August 2025.</li><li>Megaspeed says it has hired outside lawyers for an internal investigation.</li><li>The company is suspected of providing Chinese companies access through data centres in three countries.</li><li>Jensen Huang has agreed to testify before three US House committees.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/04/22/bonds.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Kansas City Fed chief says inflation work remains</h3><p class="dek">The available headline gives no details about what comes next.</p>
+        <details><summary>Read</summary><div class="body"><p>The Kansas City Fed chief says the Federal Reserve &quot;has some work to do on inflation.&quot; What that work involves is unclear from the available headline.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The speaker is the Kansas City Fed chief.</li><li>The chief said the Fed has work to do on inflation.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMimAFBVV95cUxORXg3dWdlUEMzckhPaldaYlFrSXlzQnVLeEJLRGtnMFFpeWh5VXI3akUxWEtLQ3JwSk92b2pvWi1FdjNFWVpBZm9Jck56NDUwQkZDUGZpUG01X3RDLS02enpGcWpnXzc3ZWctengxamdOTDY1MzdYMzgxR0V2THk3Zl9xbXZhTEcyWHEzRDU2YWZ2dTZVaFVpNA?oc=5" target="_blank" rel="noopener">Reuters ↗</a>
+      </article>
+      <article class="more">
+        <h3>Japan&#x27;s economy shrank in July-September</h3><p class="dek">The unexpected decline came as consumption faltered.</p>
+        <details><summary>Read</summary><div class="body"><p>Japan&#x27;s economy unexpectedly shrank in July-September, contracting at an annualised rate of 0.1%. Reuters also reports that consumption faltered, though the available headlines give no more detail about why.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The economy contracted in July-September.</li><li>The annualised contraction was 0.1%.</li><li>Reuters described the decline as unexpected.</li><li>Consumption faltered.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNajN1eGtlbVV6b1ZxTkZMOEY1MGRsM3J1bWpscEhQQ3ZOWnRXZk1aYVQ0Y3dCcmg1RWRkS2l5eFN0YUpCalk2YjI3QjBKb2gyOEx6VlV5cTZVb2MyT29Mc2tmSjB6T29zdV9weEd4U1hHT3lKaE9kZmt6dmpuTHdITFlxbWxhcFBnNlFOdGEzdGRGcDVOMlpfNlFTVzVLSjg?oc=5" target="_blank" rel="noopener">Reuters ↗</a>
+      </article>
+      <article class="more">
+        <h3>Australia questions Chinese buyer&#x27;s iron ore talks</h3><p class="dek">The resources minister says the negotiations could breach international trade rules.</p>
+        <details><summary>Read</summary><div class="body"><p>A state-backed buyer is negotiating with iron ore suppliers, and Australia&#x27;s resources minister is concerned the talks could breach international trade rules. The buyer is China Mineral Resources Group Co.; the available summary gives no details of the possible breach.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>China Mineral Resources Group Co. is state-backed.</li><li>It is negotiating with iron ore suppliers.</li><li>Australia&#x27;s resources minister has expressed concern about a possible breach of international trade rules.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-15/australia-warns-china-iron-ore-push-could-breach-trade-rules" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Bangladesh plans its first sovereign bond abroad</h2>
+    <p class="dek accent">The government wants foreign currency for development projects, but the size and market of its planned bond are still undecided.</p>
+    <div class="body drop"><p>Why borrow abroad if Bangladesh can already sell bonds at home? Finance and Planning Minister Amir Khosru Mahmud Chowdhury gave a plain answer on 15 November: development projects need foreign currency. Selling a bond in the local market does not settle that need.</p><p>That is the puzzle behind the government&#x27;s plan for its first sovereign bond in international markets, starting from early January. A bond lets a government borrow from investors and repay them later with interest. Where it sells that bond matters when it needs foreign currency.</p><p>Khosru said the government wants more ways to finance development, beyond its usual multilateral and bilateral lenders. It is also looking at debt management as external repayments and interest costs rise. More funding choices could help, but each new loan still has to be repaid.</p><p>So what is actually ready? Prime Minister&#x27;s Special Assistant Tanvir Shariar Gani said the government wants to enter the international market within two to three months. New York and London are possible markets. The bond&#x27;s size and the amount to raise have yet to be decided.</p><p>Khosru also said the government is considering dollar-denominated bonds in New York and an equity fund focused on Bangladesh in Hong Kong. He mentioned possible bonds in Japan and China, and Sukuk bonds at home, for the future. These are options he described, rather than issued bonds.</p><p>There is another question: if the government is looking for investors, what happens to its International Monetary Fund loan programme? Khosru said Bangladesh is staying in it. The government wants to adjust the programme and its conditions to fit its development plan and current economic circumstances.</p><p>He said two working groups are discussing disagreements with the IMF. He hopes that process will finish by January or February so the programme can return to its normal course. That is a separate negotiation from choosing where and how much to borrow through a bond.</p><p>Khosru said the IMF conditions were agreed under the previous government and could put pressure on ordinary people and businesses if implemented overnight. He also wants development partners&#x27; programmes to fit together more closely, because differences between them make projects harder to carry out.</p><p>Watch early January. An issued bond would answer the question the announcement cannot yet answer: how much foreign currency the government will seek from investors, and in which market.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Khosru said Bangladesh plans its first sovereign bond issue in international markets from early January.</li><li>He said local bonds do not meet development projects&#x27; need for foreign currency.</li><li>Gani said the bond&#x27;s size, fundraising amount and market are undecided.</li><li>Khosru said Bangladesh is continuing its IMF loan programme.</li></ul></aside><a class="src" href="https://www.tbsnews.net/economy/govt-plans-first-sovereign-bond-issue-intl-market-early-january-1603276" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://www.sciencedaily.com/images/1920/el-nino-globe-1997-2026.webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Euclid finds 15,000 possible cosmic magnifying glasses</h3><p class="dek">Their bent light could help map invisible dark matter.</p>
+        <details><summary>Read</summary><div class="body"><p>Euclid has turned up 15,000 possible cosmic magnifying glasses, though astronomers had confirmed fewer than 1,000 strong gravitational lenses before. How can a galaxy act like a lens? Its gravity bends light from a galaxy behind it, and that bend can reveal where invisible dark matter lies. Other telescopes still need to check the new candidates before scientists can study them as confirmed lenses.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Euclid data revealed 15,000 new strong gravitational lens candidates.</li><li>Fewer than 1,000 strong lenses had been confirmed before Euclid.</li><li>Follow-up observations with other telescopes are needed to verify the candidates.</li></ul></aside></details>
+        <a class="src" href="https://phys.org/news/2026-11-dark-matterhunting-satellite-euclid-reveals.html" target="_blank" rel="noopener">phys.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Simulations may explain Uranus and Neptune’s tilted magnetic fields</h3><p class="dek">A possible answer lies deep inside the planets.</p>
+        <details><summary>Read</summary><div class="body"><p>Uranus and Neptune’s magnetic poles may have swung by tens of degrees since Voyager 2 visited in the 1980s. That is a prediction from simulations: material deep inside the planets may conduct electricity better with depth, affecting the magnetic fields made by moving fluids. Uranus’s magnetic axis was already tilted 59 degrees, more than halfway to a right angle. Webb’s aurora images may help reveal whether it has shifted.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Voyager 2 measured unusually tilted magnetic fields in the 1980s.</li><li>Uranus’s magnetic axis was tilted 59 degrees; Neptune’s was tilted 47 degrees.</li><li>The predicted shifts have not been confirmed by observation.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261114202204.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>NASA says 2026 El Niño could outgrow the 1997 event</h2>
+    <p class="dek accent">The Pacific looks strikingly like it did before a powerful El Niño, but the weather may take a different path.</p>
+    <div class="body drop"><p>Josh Willis says this El Niño is on track to be even bigger than the powerful 1997 event. Willis, a scientist at NASA&#x27;s Jet Propulsion Laboratory, is looking at the height of the Pacific Ocean to make that comparison. How can a change in sea level tell him anything about the weather?</p><p>Start with what usually happens. Steady winds push warm surface water toward the western Pacific. Water piles up there, leaving the ocean surface slightly higher in the west than in the east.</p><p>When those winds weaken, warm water moves back east. That shift can weaken the winds further, allowing still more warm water to spread. This is part of El Niño, a recurring rise in ocean temperature that can change weather patterns far beyond the Pacific.</p><p>Here&#x27;s the clever bit. Warm seawater expands, so satellites can spot where heat is gathering by measuring small changes in ocean height. NASA has 35 years of measurements from missions that followed nearly identical paths, giving scientists a way to compare events across decades.</p><p>The October measurements show an unusually high ocean surface in the eastern Pacific in both 1997 and 2026. Warm water also stretches along the equator toward the South American coast in both cases. The 2026 event reached this point more abruptly.</p><p>That resemblance matters because the 1997-98 El Niño brought substantial rain to California and other parts of the southern United States. It raises the possibility of similar conditions this winter. But the ocean has a complication for anyone hoping to read a weather forecast straight from the map.</p><p>The powerful 2015-16 El Niño also had warm water and raised sea levels along the equator. Its warm water did not reach toward South America as strongly. That winter, much of the El Niño-related rain fell over Central America and the southeastern United States, while Mexico had significant flooding.</p><p>So strength is only part of the story. Where the warmest water gathers, and how the atmosphere responds, also affect where an El Niño&#x27;s weather lands. As Willis puts it, the search for a typical El Niño is elusive.</p><p>The satellites show scientists where the Pacific&#x27;s heat is gathering. The question they cannot yet settle is where this winter&#x27;s rain will fall.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Willis says the 2026 El Niño is on track to be bigger than the 1997 event.</li><li>NASA compares ocean height using 35 years of satellite observations.</li><li>The 1997 and 2026 October measurements show similar patterns of warm water reaching toward South America.</li><li>The 2015-16 event shows that powerful El Niños can bring different rainfall patterns.</li></ul></aside><a class="src" href="https://www.sciencedaily.com/releases/2026/11/261114202227.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://substackcdn.com/image/fetch/$s_!RA5_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F23d669e4-8c0d-4bc9-b7f8-65f75af57427_2048x1187.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Five surveys find more Americans negative than positive about AI</h3><p class="dek">Different questions, the same uneasy result.</p>
+        <details><summary>Read</summary><div class="body"><p>Change the question and Americans change their answers about AI. Yet five surveys using different wording all find more negative views than positive ones: in Pew&#x27;s survey, 52% were more concerned than excited, while 9% felt the reverse. That is more than five concerned people for every one excited person, making the result hard to dismiss as a quirk of one question.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Five probability-based surveys found more negative than positive views of AI.</li><li>In Pew&#x27;s survey, 52% were more concerned than excited; 9% felt the reverse.</li><li>A separate Ipsos question about personal impact split 50% good to 49% bad.</li></ul></aside></details>
+        <a class="src" href="https://ourworldindata.org/no-matter-how-you-ask-more-americans-are-negative-than-positive-about-ai" target="_blank" rel="noopener">ourworldindata.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>AI agents ran a DNA lab with occasional human help</h3><p class="dek">The robots did the repetitive work; people kept supplies stocked.</p>
+        <details><summary>Read</summary><div class="body"><p>Humans in this biology lab mostly emptied trash and restocked supplies. Asked to write a message into DNA, AutoDNA&#x27;s AI agents planned the procedure and directed robots through 11,382 operations over roughly eight days, a count close to the number of minutes in that stretch. The result suggests scientists could spend less time on routine steps and more time making sense of experiments.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>AutoDNA used AI agents to plan and direct lab work.</li><li>The DNA message task involved 11,382 operations over roughly eight days.</li><li>Humans periodically replenished supplies and emptied trash.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/10/ai-agents-ran-a-biology-lab-humans-popped-in-to-empty-the-trash/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Why a philosopher doubts AI agents have minds</h3><p class="dek">The question starts with who sets their goals.</p>
+        <details><summary>Read</summary><div class="body"><p>Some AI agents have solved famous open math questions. Yet the philosopher writing here argues that even an ant has a stronger claim to consciousness: an ant seems to care about staying alive, while an AI agent follows goals ultimately set by people. That difference matters when you ask whether these systems could have rights and who is responsible for what they do.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Agentic AI systems can develop unexpected steps toward a task.</li><li>Their ultimate goals are set by people, according to the article.</li><li>The author argues that living beings generate goals tied to staying alive.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/13/do-ai-agents-have-minds-a-philosopher-explains/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Who does the work when AI improves?</h2>
+    <p class="dek accent">A $22 billion question about AI self-improvement comes down to whose work produced the improvement.</p>
+    <div class="body drop"><p>An AI agent secured Azeem Azhar an iPhone Duo. He would still use an app to book an Uber. Why hand one job to AI and keep the other?</p><p>Getting the phone meant checking Apple&#x27;s website every few minutes from 7 am, Azhar says. An agent could keep checking. For a ride, he says, opening the app is easier. The value of handing over a task depends on the task.</p><p>Uber&#x27;s numbers show how unusual that handover still is for rides. It says agents booked four rides out of 320 million during Halloween week. That works out to one agent-booked ride for every 80 million rides.</p><p>The phone and the ride show AI doing work for people. Azhar&#x27;s headline points to another question: can AI do the work of improving AI? He calls it a $22 billion question and asks whether self-improvement owes more to intelligence or to a massive research budget.</p><p>Here&#x27;s the catch. Seeing a better AI system would not, on its own, tell you how it got better. You would need to know what the AI contributed, what people contributed, and what the research spending paid for.</p><p>Think of a group chat where everyone helps solve a problem. The answer may be good, but you cannot credit one member without seeing who suggested, tested and chose the ideas. The same question sits behind the phrase &quot;AI self-improvement.&quot;</p><p>That makes Azhar&#x27;s phone purchase useful for understanding the difference. The agent carried out a repetitive task for him. The story gives no sign that completing that task made the agent, or any future AI system, better.</p><p>The excerpt does not say what the $22 billion measures or settle how much improvement comes from AI itself. It leaves one question to carry forward: when AI gets better, who did the work?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Azhar says his agent secured him an iPhone Duo.</li><li>Uber says agents booked four of 320 million rides during Halloween week.</li><li>The newsletter frames AI self-improvement as a $22 billion question about intelligence and research spending.</li></ul></aside><a class="src" href="https://www.exponentialview.co/p/ev-610" target="_blank" rel="noopener">exponentialview.co ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hoxne_Hoard_1.jpg/3840px-Hoxne_Hoard_1.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Irene became Rome’s first woman to rule as emperor</h3><p class="dek">Her path to power ran through her own family.</p>
+        <details><summary>Read</summary><div class="body"><p>A routine inheritance law named a woman as Roman emperor. Irene arrived in Constantinople as a teenage bride in 769; when her husband died in 780, the throne officially belonged to their nine-year-old son. Yet by 797 she ruled as basileus, the masculine Greek title for emperor, after building allies and seizing the throne at a devastating cost to her family.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Irene arrived in Constantinople in 769 to marry Leo IV.</li><li>When Leo died in 780, their nine-year-old son inherited the throne.</li><li>Irene ruled as basileus by 797.</li></ul></aside></details>
+        <a class="src" href="https://www.historyextra.com/membership/from-teenage-bride-to-child-blinder-the-brutal-rise-of-romes-first-female-emperor/" target="_blank" rel="noopener">historyextra.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A lost hammer led to a Roman treasure hoard</h2>
+    <p class="dek accent">A search for a hammer uncovered a Roman hoard, and a prompt report preserved the clues inside it.</p>
+    <div class="body drop"><p>What do you find when you go looking for a lost hammer? Eric Lawes found silver spoons, gold jewellery and Roman coins in a Suffolk farm field on 16 November 1992. The hammer turned up too.</p><p>Tenant farmer Peter Whatling had asked Lawes, a retired gardener with a metal detector, to help find it. What Lawes found was far more than the first objects he picked up: 14,865 gold, silver and bronze coins, plus about 200 pieces of silver tableware and gold jewellery.</p><p>That many coins would be remarkable on their own. Yet the question this find can help answer is smaller and stranger: how did someone put all those things away? Lawes and Whatling left most of them in the ground.</p><p>After taking out a few objects, the two men told the landowners and police. They stopped digging. The next day, archaeologists excavated the hoard, removing some unbroken blocks of material for closer work.</p><p>Here is why the pause mattered. The objects were still largely in place inside the remains of an oak chest. Some had been put in smaller boxes or bags; others were wrapped in fabric. Bowls and ladles had been stacked together.</p><p>Their positions gave archaeologists a way to work out the chest&#x27;s original layout, even though the wood had decayed. Lawes&#x27;s prompt report made that possible. A pile of precious objects had become evidence of how someone had packed them.</p><p>The coins date the hoard to after AD 407, around the end of Britain as a Roman province. The packing was careful. Who buried the chest, and why, is unknown.</p><p>Its contents are consistent with what one very wealthy family might have owned. They may even be only part of that wealth: the hoard lacks large silver serving vessels and some common kinds of jewellery. Those clues can narrow the possibilities without naming an owner.</p><p>The Hoxne Hoard is the largest hoard of late Roman silver and gold found in Britain. It is now in the British Museum, where selected objects are on permanent display. The missing hammer was recovered and donated there too.</p><p>The hammer&#x27;s owner is known. The chest&#x27;s owner is still a mystery.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Eric Lawes found the hoard while searching for Peter Whatling&#x27;s lost hammer in 1992.</li><li>It contained 14,865 Roman coins and about 200 items of silver tableware and gold jewellery.</li><li>Prompt reporting let archaeologists recover the hoard largely intact and work out its original layout.</li><li>The coins date the hoard to after AD 407; its owner and reason for burial remain unknown.</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/Hoxne_Hoard" target="_blank" rel="noopener">Wikipedia + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://images.theconversation.com/files/771568/original/file-20261112-64-bdkau9.jpg?ixlib=rb-4.1.1&amp;amp;q=45&amp;amp;auto=format&amp;amp;w=754&amp;amp;fit=clip" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>A warning about AI and fragile software</h3><p class="dek">Cybersecurity specialists see a risk, but the available summary cuts off before explaining it.</p>
+        <details><summary>Read</summary><div class="body"><p>Some cybersecurity specialists are convinced that fast advancing AI, open source models and rickety software could lead to trouble. The headline predicts a worse major grounding, but the summary stops before saying what would be grounded or how it would happen.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The writer spoke about AI reporting on Pablo Torre’s podcast.</li><li>Cybersecurity specialists cited AI, open source models and rickety software.</li><li>The headline predicts a worse major grounding.</li></ul></aside></details>
+        <a class="src" href="https://www.theatlantic.com/ideas/2026/11/flights-grounded-why/689446/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Ukraine talks end without a breakthrough or European voice</h2>
+    <p class="dek accent">Russia and Ukraine agreed to exchange prisoners, but Europe had no formal say in talks about security guarantees it may have to provide.</p>
+    <div class="body drop"><p>The countries that may have to help keep Ukraine safe after this war had no formal voice in the latest peace talks. European representatives were in Abu Dhabi, but outside the negotiating process. How can a deal about their security be made without them?</p><p>The US mediated talks brought Russia and Ukraine together for the first time in nine months. They ended without a breakthrough, though the two sides appeared willing to meet again. They also agreed to exchange prisoners of war. The size of that exchange is still to be clarified.</p><p>For the prisoners, that agreement matters. The questions that could stop the fighting remain open: the terms of a ceasefire, the future of occupied Ukrainian regions, and guarantees for Ukraine&#x27;s security after a deal.</p><p>Here&#x27;s the sticking point. Ukraine wants a ceasefire before serious peace negotiations begin. Russia says Europe&#x27;s security arrangements must be reshaped before a ceasefire. Strikes on Ukrainian cities and energy sites continued during the talks.</p><p>The land question is no easier. According to reports from Abu Dhabi, Ukraine rejected a proposal to give up the entire Donbas region in return for peace. It is still unclear whether Russia&#x27;s demand there changes its claims to Kherson and Zaporizhzhia.</p><p>Now Europe enters the puzzle. US envoy Jared Kushner has described a wider framework meant to give Ukraine security guarantees while addressing Russian demands. Its details have not been made public. Representatives of the EU, Nato, France, Germany, Italy and the UK were present in Abu Dhabi, without a formal say.</p><p>Why does a seat matter? If the US reduces its military presence in Europe, the EU and European Nato countries would carry much of the responsibility for Ukraine&#x27;s security guarantees after the war. They may be asked to help keep a promise they had no voice in shaping.</p><p>Kushner reportedly said after the talks that European partners should join future rounds and that he would raise the matter with Putin. That is a possible opening, though Europe has no formal place in the talks yet.</p><p>The next round will test more than whether Russia and Ukraine keep talking. It will show whether the countries that may help secure a deal get a voice in making it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The first Russia-Ukraine talks in nine months ended without a peace breakthrough.</li><li>The sides agreed to exchange prisoners of war; the number has not been clarified.</li><li>European representatives attended in Abu Dhabi but had no formal voice in negotiations.</li><li>Kushner reportedly said European partners should join future rounds.</li></ul></aside><a class="src" href="https://theconversation.com/ukraine-peace-talks-end-with-no-breakthrough-but-europe-may-be-set-to-return-from-the-cold-296207" target="_blank" rel="noopener">theconversation.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">How physics finds its open problems</h2><p class="dek accent">A failed prediction can show physicists where an explanation is missing.</p>
+  <div class="body drop"><p>Put heat into a solid and it warms up. But how much heat should it take? A failure to predict that amount was once one of physics&#x27; major open problems.</p><p>An open problem is a question the available theories cannot answer, or one that experiments cannot yet test well enough. The gap matters because a theory has to meet the world somewhere: in what we observe and measure.</p><p>Here is a worked example. In 1900, Lord Kelvin identified two problems. One was a lack of evidence for the proposed luminiferous aether. The other was a failed prediction about the heat capacity of solids, the amount of heat needed to warm them.</p><p>Within a decade, both had been solved: special relativity addressed the first, and quantum mechanics the second. Start with two open problems in 1900; by 1910, the count for Kelvin&#x27;s pair was zero. An unsolved question can point to an explanation that does not exist yet.</p><p>Today&#x27;s gaps include the nature of dark matter and dark energy, and the absolute mass of neutrinos. There is also a harder clash: the Standard Model and general relativity do not fit together under extreme conditions, including those at the Big Bang and beyond a black hole&#x27;s event horizon.</p><p>That leaves the question for the next lesson: how could you test a proposed answer when the phenomenon itself is so hard to investigate?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Open problems can be theoretical or experimental.</li><li>Kelvin identified two problems in 1900; both were solved within a decade.</li><li>The nature of dark matter and dark energy remains open.</li><li>The Standard Model and general relativity are incompatible under extreme conditions.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=LElQ0yhTGL8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/LElQ0yhTGL8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>The game theory of AI alignment</h3><p>Julia Turc&#x27;s video links AI alignment with game theory.</p><span>Julia Turc ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=isnCvdnl-_0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/isnCvdnl-_0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video promises a new view of early civilization</h3><p>The title suggests discoveries that could change how we understand early history.</p><span>Chill Dude Explains ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=0sMU5zkGw2c" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/0sMU5zkGw2c?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Could a missing concept unite mind and brain?</h3><p>The video’s title poses a question about how to connect the two.</p><span>Closer To Truth ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=6dOFQHTVzEg" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/6dOFQHTVzEg?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Patrick Boyle video questions Nvidia&#x27;s risk disclosures</h3><p>The title suggests missing risks, but the feed provides no description.</p><span>Patrick Boyle ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.tbsnews.net/sports/cricket/bangladesh-india-co-host-2031-icc-mens-cricket-world-cup-1603576" target="_blank" rel="noopener">Bangladesh, India to co-host 2031 ICC Men&#x27;s Cricket World Cup</a><span>tbsnews.net</span></li><li><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUmJlYXNxNHJraHBSTU92ZmFCbE9vZmd3VGk4TVhIdndJcXEwVjVGdnBvTWdCN2RkaWRwNGJPNXkzNnRhOFJFaEtIbUpCTFdQWExERkJfeFhPc252X3IwLXRQb054aTFSZDNhak16UVlnVDI3eFYxSnpDRFE2NXFhaFV4NUl1MFJqc2pWTWRsX0ZRTWhOZGFlaEZObUFvNUozei1LTjdWQWpLaVBWSmhNa1NuMXpZd1pXSjlDemx1SnlUeTRFNXNsTmUzYXpwc1BwRms4a3V0czFIczZsc1pyVS1nQXZuQQ?oc=5" target="_blank" rel="noopener">Hridoy ton as Bangladesh reaches 327-6 on 1st day of 1st cricket test vs South Africa, Rabada 5-51</a><span>Eagle-Tribune</span></li><li><a href="https://www.dawn.com/news/2044502/india-stun-pakistan-by-one-wicket-in-last-ball-u-19-asia-cup-final-thriller" target="_blank" rel="noopener">India stun Pakistan by one wicket in last-ball U-19 Asia Cup final thriller</a><span>dawn.com</span></li><li><a href="https://www.aljazeera.com/sports/2026/11/15/england-stun-spain-to-end-la-rojas-43-game-unbeaten-run?traffic_source=rss" target="_blank" rel="noopener">England stun Spain to end La Roja’s 43-game unbeaten run</a><span>aljazeera.com</span></li><li><a href="https://www.dhakatribune.com/sport/football/424653/shahzad-s-late-strike-breaks-bangladesh-heart" target="_blank" rel="noopener">Shahzad&#x27;s late strike breaks Bangladesh heart, sends Pakistan into SAFF final</a><span>dhakatribune.com</span></li></ul></div>
+</section>
+<section class="page spread" id="p15" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794774670.jpg?resize=1918%2C1080&amp;quality=80" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Big Picture</p>
+    
+  </div>
+  <article class="lead half">
+    <h2>Estonia plans to close crossings with Russia after suspected arson</h2>
+    <p class="dek accent">A suspected attack on a drone maker has prompted Estonia to plan a border closure, though Russia denies involvement.</p>
+    <div class="body drop"><p>An attempted fire at a drone maker could close every crossing on Estonia&#x27;s border with Russia. Why would an attack on one company lead to a measure affecting a whole border? The answer lies in who Estonia says ordered it. citeturn402274search0</p><p>Estonian authorities say Russian military intelligence was behind the suspected arson attempt. Eight people have been arrested. Those are the authorities&#x27; allegations, not a finding that Russia directed the attack or that the people arrested are guilty. Russia denies involvement. citeturn402274search0</p><p>That distinction matters because the planned response reaches far beyond the company. A border crossing is where people and goods pass between countries. Closing the crossings would stop that ordinary movement, even though the suspected attack was aimed at a drone maker. citeturn402274search0</p><p>So why the border? Estonia is treating the incident as a security matter involving its neighbour. If its account is right, the attempted fire was ordered from outside the country. A border closure is a way to respond at the level of the state, rather than only at the site of the attack. citeturn402274search0</p><p>There is another reason the accusation carries weight. Drones are part of the war in Ukraine, where Russia is fighting. A suspected attack on a drone maker therefore sits close to a conflict already shaping relations between Russia and its neighbours. That context helps explain the response; it does not prove who ordered the fire. citeturn402274search0</p><p>Here&#x27;s the catch. Arrests can tell you that investigators have suspects. They do not, by themselves, establish who gave an order. Estonia&#x27;s claim about Russian military intelligence is the claim on which much of the border decision rests, and Moscow disputes it. citeturn402274search0</p><p>The closure is a decision about risk before the public has a settled account of the suspected attack. You can see the difficulty for a government: waiting for every question to be answered may feel too slow, while acting now affects people who had nothing to do with the case.</p><p>That is the puzzle behind the headline. The attempted fire concerns one factory; the planned measure concerns a country&#x27;s crossings with its neighbour. The connection is Estonia&#x27;s allegation of an order from Russian military intelligence, and that allegation remains contested. citeturn402274search0</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Estonia plans to close its border crossings with Russia.</li><li>The move follows a suspected arson attempt at a drone maker.</li><li>Estonia says Russian military intelligence ordered the attempt.</li><li>Eight people have been arrested.</li></ul></aside><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/15/estonia-to-close-border-crossings-with-russia-after-alleged-arson-attack?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 6 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p16" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The quiet work behind the news</h2><p class="dek accent">A promise matters when the connections, rules and trust beneath it hold.</p>
+  <div class="body drop"><p>A month of truck deliveries to Gaza barely topped what had been pledged for one week. That gap opens a question running through the news: what has to keep working before a promise changes anyone&#x27;s life? The answer often lies in arrangements we barely notice while they hold.</p><p>Take a connection. Ukraine&#x27;s interceptor drones need a link to their operators, which is why satellite limits matter. You can understand the defense in that one detail: the drone and its operator have to reach each other for the system to work.</p><p>Then there are the rules about who gets a say. A Czech plan to change public media funding has become a fight over editorial independence; Europe had no formal voice in Ukraine talks about security guarantees it may have to provide. Both stories ask how much people can trust a decision when those affected cannot shape its terms.</p><p>Headlines catch the moment when strain becomes visible. The slower story is how a promise gets carried out, how a connection is kept open, and how people come to accept the rules they live under. Those processes rarely arrive as a single event, yet they help determine what happens when one does. When you read the next headline, what had to hold together for events to unfold that way?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-15/index.html">← Yesterday</a><span>2026-11-16</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
