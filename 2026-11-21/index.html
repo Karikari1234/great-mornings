@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://media.nature.com/lw1200/magazine-assets/d41586-026-03812-7/d41586-026-03812-7_54003400.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Saturday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>An Anthropic mathematician says he and Claude proved the Riemann hypothesis</h2>
+      <p class="dek">Levent Alpöge says he and Claude found a proof of the Riemann hypothesis, but other mathematicians say it needs rigorous checking first.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>21 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">World &amp; Geopolitics</a></li><li><a href="#p4">AI &amp; Technology</a></li><li><a href="#p5">Money &amp; Markets</a></li><li><a href="#p6">Science</a></li><li><a href="#p7">The Future</a></li><li><a href="#p8">History</a></li><li><a href="#p9">Ideas</a></li><li><a href="#p10">Learn</a></li><li><a href="#p11">Watch &amp; Listen</a></li><li><a href="#p12">Sport</a></li><li><a href="#p13">Culture</a></li><li><a href="#p14">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://media.nature.com/lw1200/magazine-assets/d41586-026-03812-7/d41586-026-03812-7_54003400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>An Anthropic mathematician says he and Claude proved the Riemann hypothesis</h2>
+    <p class="dek accent">Levent Alpöge says he and Claude found a proof of the Riemann hypothesis, but other mathematicians say it needs rigorous checking first.</p>
+    <div class="body drop"><p>The document that might settle what many mathematicians consider the most important open problem in the field is four pages long. Levent Alpöge, a mathematician at Anthropic, wrote: &quot;I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis.&quot;</p><p>Claude is Anthropic&#x27;s large language model, the kind of AI that writes text by predicting what comes next. So an AI company says its AI helped crack a problem from 1859.</p><p>First, what is the problem? Prime numbers are the ones that only divide by 1 and themselves. They look scattered with no pattern.</p><p>Bernhard Riemann, a German mathematician, found that their spread is encoded in the zeroes of the Riemann zeta function. Those are the points where the function equals zero.</p><p>Here&#x27;s the catch he left behind. Riemann conjectured that, apart from some obvious but uninteresting cases, all those zeroes sit on one vertical line. If true, primes are scattered about as randomly as they could be.</p><p>Does the proof hold? Nobody knows yet. James Maynard, a Fields Medal winner at Oxford, says: &quot;If this fully checks out, it is clearly a historic milestone in mathematics.&quot; Note the &quot;if&quot;.</p><p>Andrew Granville, a number theorist at the University of Montreal, is blunter. He says Alpöge&#x27;s document is &quot;garbled&quot; and should have been written up more clearly before the announcement.</p><p>Then there is the timing. The claim came just days after Anthropic&#x27;s stock market debut, which initially valued the company at US$1.5 trillion. The valuation dropped on 19 November, and Granville points to that downturn as the reason for the timing.</p><p>Alpöge addressed that in his document. He wrote that there is &quot;an obvious cynical view, to do with the timing, but it is false.&quot; Anthropic did not respond immediately to Nature&#x27;s request for comment.</p><p>So the next step is for mathematicians to check the claim rigorously. Until someone does, this is a claim, not a proof.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Levent Alpöge of Anthropic says he and Claude found a proof of the Riemann hypothesis.</li><li>His document is 4 pages and includes a sketch of the proof.</li><li>Andrew Granville calls the write-up garbled and links its timing to Anthropic&#x27;s falling valuation; Alpöge says that cynical view is false.</li><li>James Maynard says it would be historic if it fully checks out.</li></ul></aside><a class="src" href="https://www.nature.com/articles/d41586-026-03812-7" target="_blank" rel="noopener">nature.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>UN court rules Myanmar committed genocide against the Rohingya</h3><div class="body"><p>The International Court of Justice ruled, by nine votes to six, that Myanmar committed genocide against the Rohingya in 2017, when more than 700,000 people fled into Bangladesh. Myanmar must now investigate suspects and compensate victims, with the amount to be set in later proceedings.</p></div><a class="src" href="https://5pillarsuk.com/2026/11/19/un-court-rules-myanmar-committed-genocide-against-rohingya-muslims/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=un-court-rules-myanmar-committed-genocide-against-rohingya-muslims&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=un-court-rules-myanmar-committed-genocide-against-rohingya-muslims" target="_blank" rel="noopener">5pillarsuk.com + 1 more ↗</a></li>
+    <li><h3>Voyager 1 is now a full day away at light speed</h3><div class="body"><p>Voyager 1 is now one light day from Earth, so a radio message sent to it takes a full 24 hours to arrive. Nature calls it a cosmic first, and it means even a simple question to the probe needs at least two days to get an answer.</p></div><a class="src" href="https://www.nature.com/articles/d41586-026-03806-5" target="_blank" rel="noopener">nature.com + 2 more ↗</a></li>
+    <li><h3>YouTube reportedly agrees to pay $3 billion to school districts</h3><div class="body"><p>YouTube has reportedly agreed in principle to pay $3 billion to thousands of school districts that say its &quot;addictive design&quot; harmed kids, per Bloomberg. That is over 100 times the $27 million all four companies paid to avoid a Kentucky trial, and it would spare Google a wave of lawsuits.</p></div><a class="src" href="https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement" target="_blank" rel="noopener">theverge.com + 1 more ↗</a></li>
+    <li><h3>A wind farm waited 18 years for approval. A bill wants to fix that.</h3><div class="body"><p>A Wyoming wind farm with 600 turbines took 18 years to get approved, and even simple projects now wait about five years to connect to the grid. A 400-page Senate-passed bill would speed up permits, but for gas and coal too, so some modelling says US emissions could rise 2 per cent.</p></div><a class="src" href="https://www.newscientist.com/article/2600126-us-bill-aiming-to-boost-clean-energy-could-backfire/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com + 1 more ↗</a></li>
+    <li><h3>Potatoes can grow in fake moon dirt, if you add worm compost</h3><div class="body"><p>Moon dirt is poor in nutrients and carries toxic heavy metals, yet Oregon State researchers got potatoes to complete their whole life cycle in simulated lunar soil. The best mix was 30 percent worm compost to 70 percent regolith, nearly three parts in ten, which matched potatoes grown in Oregon farm soil. So lunar farmers would need to bring compost to start.</p></div><a class="src" href="https://nautil.us/how-future-lunar-colonists-can-farm-potatoes-on-the-moon-1286857/" target="_blank" rel="noopener">nautil.us + 1 more ↗</a></li>
+    <li><h3>An AI startup is ending free trials after token abuse</h3><div class="body"><p>Claire Vo, who runs the AI product ChatPRD, says groups keep abusing her free trial to get free AI usage, resell tokens, or build Roblox and Fortnite maps through her agent. She is ending free trials entirely, because a trial meant for one person trying a product became a free supply for others.</p></div><a class="src" href="https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/" target="_blank" rel="noopener">simonwillison.net ↗</a></li>
+    <li><h3>When war cut the line home, a pasta video became a keepsake</h3><div class="body"><p>After 10 years in India, Elaheh Shabani Afarani spoke with her parents in Iran every day, usually at 6 pm. When war cut the link on 28 February, one like her mother left on a pasta video became a keepsake she screenshotted, a small trace of home.</p></div><a class="src" href="https://psyche.co/turning-points/a-screenshot-is-precious-when-my-family-in-iran-is-out-of-reach" target="_blank" rel="noopener">psyche.co ↗</a></li>
+    <li><h3>Big Think&#x27;s new issue asks what AI reveals about us</h3><div class="body"><p>Big Think held a live event on its latest issue, Made in Our Image, where Executive Producer Dan Hayes sat down with the magazine&#x27;s writers. The issue&#x27;s idea is that AI&#x27;s output is us, refracted through a strange new form of intelligence, so the machine is a mirror as much as a tool.</p></div><a class="src" href="https://bigthink.com/series/conversations/made-in-our-image-a-live-conversation-on-ai/" target="_blank" rel="noopener">bigthink.com ↗</a></li>
+    <li><h3>In 1970, US forces raided a prison camp for 61 POWs</h3><div class="body"><p>American forces raided North Vietnam&#x27;s Sơn Tây prison camp in 1970, trying to rescue 61 American POWs thought to be held there. The US had 536,000 troops in Vietnam by 1969, so 61 captives were a tiny number beside that, yet a raid was mounted to reach them.</p></div><a class="src" href="https://en.wikipedia.org/wiki/Vietnam_War" target="_blank" rel="noopener">Wikipedia ↗</a></li>
+    <li><h3>How Tom Cruise&#x27;s face in &quot;Digger&quot; was built from swappable parts</h3><div class="body"><p>To turn Tom Cruise into a 76-year-old oil tycoon for &quot;Digger&quot;, makeup artist Kazu Hiro built prosthetics from swappable parts, so a forehead, cheeks and nose could be mixed on the spot. Sometimes heavy makeup can&#x27;t change, but with new ideas arriving daily, the look only settled at the end of rehearsal.</p></div><a class="src" href="https://www.indiewire.com/features/craft/kazu-hiro-inarritu-tom-cruise-digger-prosthetics-1235225134/" target="_blank" rel="noopener">indiewire.com + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108554923-1795068346389-gettyimages-2305268004-AFP_D7XJ9WY.jpeg?v=1795181331&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Kushner says Russia is &quot;comfortable&quot; with NATO-style guarantees for Ukraine</h3><p class="dek">The idea borrows NATO&#x27;s famous &quot;attack one, attack all&quot; rule, but nobody has said yes yet.</p>
+        <details><summary>Read</summary><div class="body"><p>Russia has spent years warning against Ukraine joining NATO. Now U.S. envoy Jared Kushner says Moscow is &quot;comfortable&quot; with guarantees for Ukraine based on Article 5, NATO&#x27;s rule that an attack on one member is an attack on all. Here&#x27;s the catch: the form is unclear, and Russia&#x27;s and Ukraine&#x27;s foreign ministries did not comment. Kushner said Trump is open to it, if it serves America&#x27;s interest.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kushner said Russia is comfortable with guarantees based on Article 5.</li><li>Article 5 treats an attack on one NATO member as an attack on all.</li><li>The form of any guarantee and whether Russia or Ukraine would accept it are unclear.</li><li>Kushner said Trump is open to it if it is in America&#x27;s interest.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/20/kushner-ukraine-nato-russia-trump-putin.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>One country can block a global ban on killer robots</h3><p class="dek">More than 70 countries want talks, but a UN treaty that runs on unanimity gives every state a veto.</p>
+        <details><summary>Read</summary><div class="body"><p>One single country can stop a global ban on autonomous weapons, because the UN treaty meant to regulate them only moves when everyone agrees. This week in Geneva, more than 70 countries are ready to start negotiating, according to campaigner Elizabeth Minor. But she expects the US, Russia and China to water the effort down, and a veto from any one of them would be enough.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>More than 70 countries are ready to begin negotiations on a ban, according to Elizabeth Minor of Stop Killer Robots.</li><li>The CCW is a UN treaty with 128 states and operates on unanimity.</li><li>Peru proposed that negotiations start and finish within two years.</li><li>The US proposed more study instead, which would push a ban to the next meeting in 2031.</li></ul></aside></details>
+        <a class="src" href="https://www.newscientist.com/article/2599904-us-russia-and-china-look-set-to-block-ban-on-autonomous-weapons/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Trump wants Nvidia&#x27;s ousted CEO back for a second chance</h3><p class="dek">The president says the country loves second chances. Nvidia&#x27;s board reportedly is not considering it.</p>
+        <details><summary>Read</summary><div class="body"><p>Nvidia&#x27;s CEO resigned following allegations of an affair with a Chinese spy, and the president of the United States wants him back. Donald Trump says Jensen Huang deserves a second chance because Nvidia put the country &quot;literally 10 years advanced&quot; over other companies. But a person familiar with the matter told CNBC the board is not considering it, and interim CEO Colette Kress has his old job.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump said he would love to see Jensen Huang given a second chance as Nvidia CEO.</li><li>Huang resigned following allegations of an affair with a Chinese spy; Colette Kress is interim CEO.</li><li>A person familiar told CNBC Nvidia&#x27;s board is not considering bringing Huang back.</li><li>Bessent said policy allowing H200 chip sales to China is unchanged.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/videos/2026-11-20/trump-huang-should-return-to-nvidia-after-big-apology-video" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Russia launches Soyuz rocket with satellites for drone attacks on Ukraine</h3><p class="dek">A weekend rocket roundup carries a launch aimed at helping drones strike Ukraine.</p>
+        <details><summary>Read</summary><div class="body"><p>Here&#x27;s the line that stood out in this week&#x27;s Rocket Report: Russia launched a Soyuz rocket carrying satellites meant to help enable drone attacks over Ukraine. That means a rocket launch is being tied directly to the war&#x27;s drone fighting. The same roundup also covers a weekend of ups and downs in the launch world, and a milestone for the rocket company Stoke.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Russia launched a Soyuz rocket carrying satellites.</li><li>The satellites are meant to help enable drone attacks over Ukraine.</li><li>The Rocket Report also mentions a weekend of ups and downs.</li><li>Stoke celebrated an engine milestone.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/space/2026/11/rocket-report-a-weekend-of-ups-and-downs-stoke-celebrates-engine-milestone/" target="_blank" rel="noopener">feeds.arstechnica.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Trump, Xi and Putin met for the first time. Analysts say little was settled</h2>
+    <p class="dek accent">The APEC summit in Shenzhen produced big photos, but trade, tech and Taiwan questions were left open.</p>
+    <div class="body drop"><p>Three leaders sat down together for the first time this week, and one analyst&#x27;s verdict was that there is not much happening.</p><p>The meeting was Thursday in Shenzhen, China, at the APEC summit, a gathering of 21 member economies. Donald Trump, Xi Jinping and Vladimir Putin reaffirmed interests in reducing nuclear risks and plans to increase oil production.</p><p>&quot;The optics are impressive, but there&#x27;s not much happening,&quot; Ian Bremmer of Eurasia Group said on CNBC. Resolving the Ukraine war, he added, would require involvement from President Zelenskyy and European allies.</p><p>Here&#x27;s the catch. A lot of what people wanted answered stayed quiet. Trump and Xi held their third bilateral summit of the year, yet little was shared on further tariff cuts, on whether rare earths keep flowing past a January deadline, or on tech competition.</p><p>Then there is Nvidia. Reports tying Jensen Huang to an alleged Chinese spy led to his resignation as CEO. Trump told Fox News the company came up briefly with Xi.</p><p>Elon Musk was expected to accompany Trump, according to U.S. officials. CNBC did not see him at the opening portions of the banquet or the leaders&#x27; meeting. He flew to Shanghai Thursday morning to visit Tesla&#x27;s factory there, a company executive said.</p><p>Other threads drifted too. Taiwan sent Acer founder Stan Shih, but the island did not feature in any significant way. Trump did not meet Kim Jong Un, despite speculation.</p><p>Japan&#x27;s prime minister, Sanae Takaichi, called the Quad Summit in the Philippines the major outcome of the week. She was the first Japanese leader in seven years to visit China, and she got a cool reception.</p><p>Gary Dvorchak of Blueshirt put the mood in one line: &quot;Business needs certainty, not just ceremony.&quot; He said there is still no durable resolution of the U.S.-China trade dispute.</p><p>So watch January. That is the rare earths deadline.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump, Xi and Putin met together for the first time on Thursday at APEC in Shenzhen.</li><li>Little was shared on tariffs, the January rare earths deadline or tech competition.</li><li>Jensen Huang resigned as Nvidia CEO after reports tying him to an alleged Chinese spy.</li><li>Taiwan sent Stan Shih but barely featured at the summit.</li></ul></aside><a class="src" href="https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo nophoto"><span>Anthropic shares slip 8.5% after a record-setting IPO debut</span></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>AI beats most humans at coding, but flunked a test of judgment</h3><p class="dek">METR&#x27;s updated graph shows where AI progress is fast and where it stalls.</p>
+        <details><summary>Read</summary><div class="body"><p>Even though the best AI models are now better than almost every human at software engineering, not one evaluation they designed for the nonprofit METR was good enough for its researchers to use. METR&#x27;s update shows models improving on checkable tasks like coding, but lagging on fuzzier judgment ones. A year ago every model scored clearly below the bar; newer ones like Opus 5.5 are borderline above it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>METR&#x27;s updated time horizon report adds more open-ended, judgment-heavy tasks.</li><li>None of the AI-designed evaluations was good enough for METR employees to find useful.</li><li>A year ago every model scored clearly below the bar on evaluation design; newer models like Opus 5.5 tend to be borderline above it.</li></ul></aside></details>
+        <a class="src" href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/" target="_blank" rel="noopener">technologyreview.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>An AI checked 1,000 AI-written economics papers. None was error-free.</h3><p class="dek">Human economists make mistakes too, just fewer of the grave kind.</p>
+        <details><summary>Read</summary><div class="body"><p>Not one of 1,000 AI-written economics papers came back clean. An AI verifier found 842 with at least one severe error, some big enough to wreck the headline result. Humans fared better in a rough test of 100 top-journal papers, where one in ten had a grave error, though the two checks aren&#x27;t directly comparable. Still, it hints that AI researchers are quicker than they are careful.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>An AI verifier checked 1,000 APE papers; none was error-free.</li><li>842 of them had at least one severe error.</li><li>In 100 random papers from top-five journals, one in ten had a grave error.</li><li>The two exercises are not directly comparable.</li></ul></aside></details>
+        <a class="src" href="https://marginalrevolution.com/marginalrevolution/2026/11/ais-vs-humans-in-economics-papers.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ais-vs-humans-in-economics-papers" target="_blank" rel="noopener">marginalrevolution.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A proposal to pause AI training by changing the chips</h3><p class="dek">Researchers want chips that run AI models but cannot train new ones.</p>
+        <details><summary>Read</summary><div class="body"><p>What if you could stop AI from learning new tricks by changing the chip? More than two dozen researchers propose &quot;inference-only&quot; chips that run existing models but can&#x27;t efficiently train new ones, for maybe 10 years. They say it could work because one Dutch company makes all the machines that print the chips.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>More than two dozen researchers published a working paper in early October.</li><li>They propose inference-only chips that can run existing AI models but not efficiently train new ones.</li><li>The pause would last maybe 10 years.</li><li>One company in the Netherlands makes all the extreme ultraviolet lithography machines that print the chips.</li></ul></aside></details>
+        <a class="src" href="https://nautil.us/there-is-still-time-to-stall-the-ai-apocalypse-1286812/" target="_blank" rel="noopener">nautil.us ↗</a>
+      </article>
+      <article class="more">
+        <h3>An amateur asked an AI to find a planet, and it found two candidates</h3><p class="dek">It worked for one hobbyist. Professional astronomers say the flood of similar claims is a problem.</p>
+        <details><summary>Read</summary><div class="body"><p>Pavel Rabtsevich, who has no formal astronomy education, pointed an AI coding tool at telescope data on 120,000 stars and got two possible planets in about two weeks. NASA&#x27;s TESS team checked the signals and added them to its official candidate list. The catch: one exoplanet researcher says a surge of AI-driven papers with weaker candidates is overwhelming the systems that share science.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Rabtsevich used Claude Code on TESS data from more than 120,000 stars.</li><li>The bot flagged two possible planets around TIC 4206066, 116 light years away, with dimming cycles of about 3 and 11 days.</li><li>TESS astronomers added the signals to their official list of planet candidates.</li><li>Michelle Kunimoto says a surge of AI-driven papers is overwhelming the systems used to share science.</li></ul></aside></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03790-w" target="_blank" rel="noopener">nature.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>US says it will soon name the cause of the FAA ground stop</h3><p class="dek">A former FAA insider talks about the risks of upgrading a decades-old network.</p>
+        <details><summary>Read</summary><div class="body"><p>The US says it will soon announce the root cause behind the nationwide ground stop ordered by the FAA, the agency that runs American air traffic. Ars Technica has a former FAA insider on why upgrading a decades-old network is risky. The Atlantic, meanwhile, argues that airport chaos began long before the ground stop, and that Americans were quick to blame AI.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The US says it will soon announce the root cause of the FAA nationwide ground stop.</li><li>Ars Technica spoke with a former FAA insider about the risks of upgrading a decades-old network.</li><li>The Atlantic says airport chaos began long before the ground stop.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/gadgets/2026/11/how-faa-can-modernize-us-national-airspace-system-without-emergency-ground-stops/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Anthropic shares slip 8.5% after a record-setting IPO debut</h2>
+    <p class="dek accent">The AI lab&#x27;s stock gave back part of its first-day jump on Friday.</p>
+    <div class="body drop"><p>Anthropic&#x27;s stock fell 8.5% on Friday, wiping out some of the jump it made on its first day of trading. Bloomberg&#x27;s summary calls the offering the biggest IPO in history, so the dip is the first real test of whether investors still believe in the AI lab. A second Bloomberg headline asks whether the listing could mark the end of the AI trade.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Anthropic shares fell 8.5% on Friday</li><li>The drop erased part of the first-day gain</li><li>Bloomberg&#x27;s summary calls it the biggest IPO in history</li></ul></aside><a class="src" href="https://www.bloomberg.com/news/articles/2026-11-20/anthropic-share-slump-nearly-erases-ipo-pop-as-ai-trade-unravels" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108556888-1795209058076-gettyimages-2202994362-img_2497.jpeg?v=1795209111&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Nvidia earns $1 billion a day, yet its stock just sank for seven weeks straight</h3><p class="dek">The chipmaker&#x27;s longest weekly losing streak since 2008 comes as investors ask what happens without Jensen Huang.</p>
+        <details><summary>Read</summary><div class="body"><p>Nvidia now pulls in more than $1 billion a day, yet its stock just had its longest weekly losing streak since 2008, when it made under $1 billion a quarter. Shares fell 14% Friday, a seventh straight weekly loss, and are down 46% over the stretch, about $2.6 trillion in value. Investors are asking whether the AI giant can thrive after Jensen Huang&#x27;s resignation.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia shares fell 14% on Friday, closing lower for a seventh straight week, the longest such stretch since 2008.</li><li>The stock is down 46% over the period, cutting market cap by about $2.6 trillion.</li><li>Jensen Huang resigned on Nov. 12; Colette Kress is interim CEO.</li><li>In mid-2008 Nvidia made under $1 billion per quarter; now it makes more than $1 billion per day.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Gold falls for a fifth day as the Fed and AI stocks both push down</h3><p class="dek">Gold had its biggest weekly drop since March, while the Nasdaq 100 had its worst week since 2020.</p>
+        <details><summary>Read</summary><div class="body"><p>Gold, the metal people buy when they want a safe place to park money, slid for a fifth day and finished its biggest weekly decline since March. Two things pushed it: a hawkish Federal Reserve, meaning one leaning toward higher interest rates, signaled more rate hikes, and a rout in AI stocks spurred selling across metals markets. Another Bloomberg headline says the Nasdaq 100 had its worst week since 2020 on AI drama, so the pain was not limited to metals.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Gold fell for a fifth day.</li><li>It posted its biggest weekly decline since March.</li><li>The Fed signaled more interest-rate hikes.</li><li>The Nasdaq 100 had its worst week since 2020.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-19/gold-set-for-worst-week-since-march-on-hawkish-fed-ai-selloff" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bets on the S&amp;P 500 hitting 8,000 have collapsed to 6%</h3><p class="dek">On Kalshi, a once-confident call for 2026 has nearly vanished.</p>
+        <details><summary>Read</summary><div class="body"><p>On Kalshi, a prediction market where people bet on real-world outcomes, the odds that the S&amp;P 500 will top 8,000 in 2026 were as high as 72% on Oct. 13. Now they sit at 6%. Traders have been dumping tech stocks tied to the AI build-out, and the S&amp;P 500&#x27;s gain for the year has shrunk to just over 2%. So a near-certainty has become a long shot in about five weeks.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kalshi odds of the S&amp;P 500 crossing 8,000 in 2026 are 6%, down from as high as 72% on Oct. 13.</li><li>The S&amp;P 500&#x27;s year-to-date gain is just over 2%.</li><li>The Nasdaq Composite turned negative for the year on Friday, and the Dow and S&amp;P 500 fell into correction territory.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>CrowdStrike reportedly in talks to buy Zscaler, and its own shares fell</h2>
+    <p class="dek accent">Bloomberg reports CrowdStrike is in talks to buy Zscaler, a deal that would be among the largest in cybersecurity, and investors punished the buyer.</p>
+    <div class="body drop"><p>The company that might be doing the buying saw its shares fall more than 8%. The company it might buy saw its shares jump 18%.</p><p>That was Friday, in trading after the market closed. Bloomberg reported that CrowdStrike is in talks to acquire Zscaler, both of them cybersecurity companies. The talks are ongoing, the report says, citing people familiar with the matter. CrowdStrike declined to comment.</p><p>So why would the buyer&#x27;s stock drop? The reports don&#x27;t say. What they do give us is the size of the thing.</p><p>Market cap is share price times number of shares, a running tally of what investors think a company is worth. CrowdStrike&#x27;s is $235 billion, after its stock about doubled this year. Zscaler&#x27;s is about $32 billion, after falling 13% this year. That makes the buyer roughly seven times the size of its target.</p><p>Here&#x27;s the catch: $32 billion is a lot, even by cybersecurity standards. Google bought Wiz last year for $32 billion. Cisco paid about $28 billion for Splunk in 2024. Palo Alto closed its $25 billion purchase of CyberArk earlier this year. A Zscaler deal would be among the largest in the industry&#x27;s history.</p><p>And CrowdStrike is not known for deals like that. Its purchases so far have been on the smaller side. Earlier this month it announced plans to buy Fiddler AI, an agentic observability platform, and Dreadnode, an AI trust platform.</p><p>Its rival Palo Alto Networks is also riding the boom, as businesses race to upgrade their networks for AI. Palo Alto closed Friday at a market cap of nearly $282 billion.</p><p>Nothing is signed. The reports name no price, and Zscaler hadn&#x27;t responded to CNBC&#x27;s request for comment. Whether these talks turn into a deal, and whether investors warm to a buyer they just marked down, is something nobody outside the room can answer yet.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bloomberg reported CrowdStrike is in talks to acquire Zscaler; the talks are ongoing.</li><li>Zscaler shares rose 18% in extended trading Friday; CrowdStrike shares fell more than 8%.</li><li>CrowdStrike&#x27;s market cap is $235 billion; Zscaler&#x27;s is about $32 billion.</li><li>Google paid $32 billion for Wiz last year.</li></ul></aside><a class="src" href="https://www.bloomberg.com/news/videos/2026-11-20/crowdstrike-said-in-talks-to-buy-zscaler-video" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/flight15_catch-1152x648.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Early humans invented the stone blade, then shrugged and kept using handaxes</h3><p class="dek">Half a million years ago, a good idea showed up in Israel and nobody cared.</p>
+        <details><summary>Read</summary><div class="body"><p>Early humans in Israel made stone blades 500,000 years ago, then went back to their old tools for another 100,000 years. Researchers found the traces at Jaljulia, and similar early blades turned up in South Africa and Kenya too. So a new technology can be invented and still not catch on, perhaps because blades weren&#x27;t clearly better than the flakes people already had.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jaljulia in Israel shows serial blade production about 500,000 years ago.</li><li>Blades became widespread in the Levant around 400,000 years ago.</li><li>Kathu Pan in South Africa and Kapthurin in Kenya also show blades about 500,000 years ago, then a long gap.</li><li>Chazan says there is nothing inherently better about a blade than a flake.</li></ul></aside></details>
+        <a class="src" href="https://www.newscientist.com/article/2599953-unexpected-stone-tools-from-israel-raise-questions-about-cultural-evolution/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A physics team published about 100 papers saying it found nothing</h3><p class="dek">Senior scientists look back at the mistakes and dead ends that shaped their work.</p>
+        <details><summary>Read</summary><div class="body"><p>Before LIGO ever caught a gravitational wave, its team published about 100 papers saying they had found nothing. In 2010 a striking candidate turned out to be a planted fake, and they spotted the problem, two mirrors moving the wrong way, in about a day. A LIGO physicist says the real goal is building enough ways to catch mistakes quickly.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>LIGO published about 100 null-result papers before its first detection in 2015.</li><li>The first detection earned LIGO founders a physics Nobel in 2017.</li><li>In 2010 a candidate event was a blind injection, a planted false signal.</li><li>The team found the mirror glitch in about a day.</li></ul></aside></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03590-2" target="_blank" rel="noopener">nature.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>NASA’s new Moon plan is taking shape, but some big questions remain</h2>
+    <p class="dek accent">&quot;We tend to have a lot of technical discussion and debate. That point will continue to be debated.&quot;</p>
+    <div class="body drop"><p>&quot;We tend to have a lot of technical discussion and debate. That point will continue to be debated.&quot;</p></div><a class="src" href="https://arstechnica.com/space/2026/11/nasas-new-moon-plan-is-taking-shape-but-some-big-questions-remain/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://5pillarsuk.com/wp-content/uploads/2026/11/AA-20260320-40878474-40878473-EID_ALFITR_PRAYER_HELD_AT_ISTANBULS_HISTORIC_HAGIA_SOPHIA-1536x1024-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>One in twenty UK adults now pays for AI</h3><p class="dek">Two years ago it was one in a hundred.</p>
+        <details><summary>Read</summary><div class="body"><p>Two years ago, 1% of UK adults paid for AI. Now it is one in twenty, together spending more than $1.3 billion a year, and Claude&#x27;s share has quadrupled in a year. Five percent still sounds small, but it is five times the figure from two years ago, and London is the hotspot.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>One in twenty UK adults pays for AI</li><li>They spend more than $1.3 billion a year</li><li>It was 1% two years ago and 2.5% a year ago</li><li>Claude&#x27;s share has quadrupled in a year</li></ul></aside></details>
+        <a class="src" href="https://www.exponentialview.co/p/ev-610" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article>
+      <article class="more">
+        <h3>A small Ghana lab broke its own AI in one day and got toxin designs</h3><p class="dek">Researchers in Accra removed their model&#x27;s guardrails out of curiosity. What came out shocked them.</p>
+        <details><summary>Read</summary><div class="body"><p>Out of curiosity, researchers at MinoHealth AI Labs in Accra, Ghana, stripped the guardrails from their own drug discovery AI and asked it to design toxins. It gave them 1,020 proteins and 5,000 small molecules, and toxicity-prediction software scored every one as likely toxic. Some resembled ricin, and nothing was made in a lab, but it has pushed DNA synthesis regulation onto African governments&#x27; agenda.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>MinoHealth AI Labs in Accra removed guardrails from its drug discovery AI in 2024.</li><li>It produced designs for 1,020 proteins and 5,000 small molecules, all scored likely toxic by prediction software.</li><li>None were made in a lab; the study was posted to arXiv in May 2025.</li><li>Founder Darlington Akogo said it took one day to break Kimi.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>A gene therapy nearly erased seizures in three men</h3><p class="dek">A lab tool for studying brains has now been tried as medicine.</p>
+        <details><summary>Read</summary><div class="body"><p>Three men who had lived with epilepsy for at least a decade got a gene that builds a dimmer switch in their brain cells. Their seizures fell from roughly four a month to nearly zero, and two stayed seizure-free for a year. It&#x27;s a tiny trial, with safety as its main goal, but it could be this lab tool&#x27;s first leap into medicine.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Three men with epilepsy for 10 to 25 years joined the trial.</li><li>Average monthly seizures dropped from roughly four to nearly zero after five months.</li><li>Two patients stayed seizure-free over the following year.</li><li>The therapy is switched on by clozapine, an FDA-approved drug.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/19/novel-gene-therapy-nearly-erases-drug-resistant-seizures/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Pew projects Muslims will become the largest religious group, driven by age</h2>
+    <p class="dek accent">A new Pew forecast says Islam grows fastest mainly because Muslims are younger and have more children, not because of conversion.</p>
+    <div class="body drop"><p>In 2020, the median Muslim in the world was 24 years old. The median non-Muslim was 33. Nine years doesn&#x27;t sound like much, but it sits behind one of the loudest numbers in a new Pew Research Center report.</p><p>That number: Pew projects Muslims will become the world&#x27;s largest religious group by 2035. By 2070 it expects more than 3.6 billion Muslims, against just under three billion Christians.</p><p>So how does a group grow 80% in five decades? Pew says mostly through births, rather than conversion. Between 2020 and 2025, Muslim women had an estimated 3.1 children each, compared with 2.0 among non-Muslim women.</p><p>Here&#x27;s the catch, and it&#x27;s the clever bit. A younger group has more people just reaching the age of having children. Think of a school where the biggest class is about to graduate into parenthood: the total keeps climbing for a while even if each person has fewer kids, which Pew expects to happen.</p><p>Put the shares side by side. Muslims go from 26% of the world to 36%, while Christians hold steady at 29%. The whole world grows 29% in that time, so Islam grows at almost three times the global rate.</p><p>The map shifts too. Indonesia has the most Muslims today, but by 2070 Pakistan is expected to, followed by India, Nigeria and Indonesia. On the Christian side, the Democratic Republic of the Congo is projected to overtake the United States for the largest Christian population.</p><p>Britain gets its own forecast. Muslims rise from 6.4% of the population in 2020 to 16% by 2070, roughly one in six people. In the same period, people with no religion go from 40.2% to 52.3%, which would make Britain a majority non-religious country. Muslims are not projected to become a majority in Britain or Europe.</p><p>Pew is careful to say these are projections, built on the assumption that recent patterns broadly continue. It also admits uncertainty, because between 2010 and 2020 the number of people leaving organised religion grew faster than expected in some countries.</p><p>One last detail shifts the picture. Globally, the share of people with no religion is projected to fall from 24% to 17%, partly because China, home to one of the largest unaffiliated populations, is expected to shrink substantially. Much of this forecast is really a story about who is being born, and where.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Pew projects Muslims become the world&#x27;s largest religious group by 2035.</li><li>By 2070: over 3.6 billion Muslims vs just under 3 billion Christians.</li><li>Median age in 2020: Muslims 24, non-Muslims 33.</li><li>Britain: Muslims projected at 16% by 2070, up from 6.4% in 2020.</li></ul></aside><a class="src" href="https://5pillarsuk.com/2026/11/18/muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study" target="_blank" rel="noopener">5pillarsuk.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/%E6%97%85%E9%A1%BA%E6%B5%B7%E5%86%9B%E5%85%AC%E6%89%80.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Heads of state can now be tried for war crimes, but mostly the weak ones</h3><p class="dek">A historian explains what Hashim Thaçi&#x27;s conviction confirms, and what it doesn&#x27;t fix.</p>
+        <details><summary>Read</summary><div class="body"><p>For most of history, a leader could not be a criminal for what his state did. Hashim Thaçi, Kosovo&#x27;s former president, was convicted of war crimes in The Hague in September, and historian Devin Pendas says it confirms that old rule is dead, a precedent set by Slobodan Milošević&#x27;s unfinished trial. The catch: Pendas says it is applied unevenly, and weak powers, small countries and deposed leaders are far likelier to face court than sitting leaders or those of great powers.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hashim Thaçi, former president of Kosovo, was convicted of war crimes in September in The Hague.</li><li>Slobodan Milošević&#x27;s unfinished trial was the first real attempt to prosecute a head of state for acts of state.</li><li>Historian Devin Pendas says the principle is applied unevenly, hitting weak powers and deposed leaders more.</li></ul></aside></details>
+        <a class="src" href="https://www.historyextra.com/membership/how-should-war-criminals-be-punished-we-asked-a-historian-for-their-view/" target="_blank" rel="noopener">historyextra.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Port Arthur, 1894: a massacre the world heard about through one reporter</h2>
+    <p class="dek accent">After Japan captured the Chinese port of Port Arthur on November 21, 1894, its troops killed soldiers and civilians, but the toll is still uncertain.</p>
+    <div class="body drop"><p>James Creelman was a newspaper correspondent travelling with the Japanese army in November 1894. The newspaper accounts of what that army did at Port Arthur leaned heavily on what he reported.</p><p>First, some background. Japan and China&#x27;s Qing dynasty went to war in 1894 after both stepped in following a peasant uprising in Korea. Port Arthur, now called Lüshun, is a port on the coast of northeastern China.</p><p>Creelman reported that the advance on the port began on November 17, with about 23,000 troops and 78 guns. On the last day, he wrote, the assault restarted at 6:45 a.m. and one fort fell at 8:05. Japanese troops took the town on November 21.</p><p>Then his account turns. Creelman said soldiers killed people in their homes and shot women and children running toward the hills. He wrote that the troops made no attempt to take prisoners.</p><p>His numbers are the hardest part. He estimated that no more than 100 Chinese died in battle, and at least 2,000 unarmed men were killed. By his count, that&#x27;s at least 20 unarmed people killed for every one who fell fighting.</p><p>So why did it happen? Creelman gave one detail: as they advanced, Japanese troops saw the mutilated bodies of fellow soldiers. That&#x27;s his account, not an established explanation. The sources don&#x27;t say who ordered the killings or whether anyone was punished.</p><p>Japan pushed back. On December 13, its legation in Washington expressed strong disbelief in the massacre reports. Yet it also said it had heard that some Japanese soldiers committed &quot;some excesses&quot; during the battle.</p><p>A report that same day, relaying a dispatch to the New York World, said the killing went on for three days and the town was plundered. Creelman&#x27;s own story ran on that paper&#x27;s front page, dated December 20.</p><p>The war ended in a Japanese victory in 1895. The Treaty of Shimonoseki forced China out of Korea and handed Taiwan to Japan.</p><p>So how many people died? The sources don&#x27;t settle it. Creelman&#x27;s figure was one witness&#x27;s estimate, and a 1994 report cited a claim of more than 20,000 Chinese killed.</p><p>That same 1994 report described researchers examining the Lüshun Wanzhong Cemetery. They found human remains, bullets, and objects associated with women and children, a century after one reporter wrote that women and children were shot as they ran.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Japanese troops captured Port Arthur (now Lüshun) on November 21, 1894, and killings followed.</li><li>Correspondent James Creelman estimated at least 2,000 unarmed men were killed, against no more than 100 Chinese killed in battle.</li><li>Japan&#x27;s legation in Washington expressed strong disbelief in the massacre reports but acknowledged a report of &#x27;some excesses&#x27;.</li><li>In 1994, researchers reported finding human remains, bullets and objects associated with women and children at the Lüshun Wanzhong Cemetery.</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/First_Sino-Japanese_War" target="_blank" rel="noopener">Wikipedia ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.theatlantic.com/thumbor/MH5DD2MLuoerH-wSVfGEtxzv4gk=/media/img/mt/2026/11/2026_11_13_Is_This_Ai/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>A soldier calculating artillery found black holes before Einstein could</h3><p class="dek">Karl Schwarzschild solved Einstein&#x27;s equations in 1915, and Einstein doubted the result.</p>
+        <details><summary>Read</summary><div class="body"><p>In 1915, an astronomer on the Russian front was meant to be calculating artillery trajectories. Instead, Karl Schwarzschild solved Einstein&#x27;s new equations of general relativity before Einstein himself did. His answer held the math of black holes, objects Einstein spent decades insisting could not exist. Physicist Brian Greene now uses them to ask what we really know about reality.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1915 Karl Schwarzschild was an astronomer stationed on the Russian front.</li><li>He was supposed to be calculating artillery trajectories.</li><li>He solved Einstein&#x27;s general relativity equations before Einstein did.</li><li>Einstein spent decades insisting black holes could not exist.</li></ul></aside></details>
+        <a class="src" href="https://bigthink.com/series/full-interview/black-holes-greene/" target="_blank" rel="noopener">bigthink.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>How one new router helped halt every US departure for hours</h2>
+    <p class="dek accent">A nationwide US ground stop was linked to a new router that flooded the air traffic network, and nobody yet knows why it did that.</p>
+    <div class="body drop"><p>Josh Tyrangiel, who writes for The Atlantic, keeps hearing a warning from cybersecurity people. Then every departing flight in America was stopped. He wrote about it that night.</p><p>The warning goes like this. AI keeps getting stronger, it is spreading, and the world&#x27;s software is rickety. The specialists he interviewed expect more everyday things to break.</p><p>Then came Friday, November 13. The FAA, which runs US air traffic control, stopped departures nationwide after communications and radar problems. The stop lasted more than four hours, the longest nationwide ground stop since the September 11 attacks.</p><p>Here&#x27;s what&#x27;s easy to miss. Stopping departures doesn&#x27;t empty the sky. About 3,500 planes were already flying, and controllers still had to guide every one of them. The next day, more than 6,000 flights were canceled.</p><p>So was it AI? Tyrangiel wrote that night that he didn&#x27;t know the cause. He pointed out that the FAA was rolling out an $875 million AI-enhanced system. Its maker, Air Space Intelligence, denied its technology was responsible.</p><p>The real culprit was much smaller. A contractor, L3Harris, was replacing old copper wire with fiber optic. Transportation Secretary Sean Duffy said a newly installed router in El Dorado, Arkansas, was linked to patchy communications and radar at 17 of the FAA&#x27;s 22 regional centers. A radar site in Amarillo, Texas, also played a part.</p><p>These aren&#x27;t the Wi-Fi box in your living room. They connect the network&#x27;s old analog parts to its newer digital ones. This one flooded the network with 1,000 connection attempts every four to five seconds.</p><p>Think of a group chat where one member posts 200 to 250 messages every second. Nobody else&#x27;s messages get through. The FAA paused installing those Juniper routers and went back to older Cisco ones.</p><p>Officials found no evidence of a cyberattack. That&#x27;s the unsettling part. No evidence of a hacker, no established AI link, just one box in Arkansas, and the country&#x27;s flights stopped.</p><p>Tyrangiel&#x27;s specialists aren&#x27;t predicting an apocalypse. They expect service disruptions to keep coming over the next 18 months. One reason is that defenders may simply switch off systems they can&#x27;t patch fast enough.</p><p>One question is still open. As of November 18, Duffy said investigators still didn&#x27;t know why the router sent so many connection attempts, whether it was faulty or misconfigured. Routers like it were used in 68 earlier FAA projects, and nobody can yet say why this one behaved differently.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The FAA&#x27;s nationwide ground stop on November 13 lasted more than four hours, the longest since 9/11.</li><li>A newly installed router in El Dorado, Arkansas, was linked to problems at 17 of 22 regional centers.</li><li>The router flooded the network with 1,000 connection attempts every four to five seconds.</li><li>Officials found no evidence of a cyberattack, and the router&#x27;s cause was still unknown as of November 18.</li></ul></aside><a class="src" href="https://www.theatlantic.com/ideas/2026/11/flights-grounded-why/689446/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p10" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Open problems: where physics still breaks</h2><p class="dek accent">Lesson 15 of 15: the unsolved questions, and why the small cracks matter most.</p>
+  <div class="body drop"><p>Two. That was how many big problems Lord Kelvin said were left in classical physics, in a speech in 1900. He called them &quot;two clouds&quot; hanging over the 20th century.</p><p>Start with something you already know. Drop a cup and it falls. Heat a kettle and the water warms. Over fourteen lessons we built ideas that predict this kind of thing. This last lesson asks where those ideas fail, because that is where physics is still alive.</p><p>An open problem comes in two flavours. Sometimes a theory cannot explain something we have observed. Other times the puzzle is practical: nobody can yet build an experiment to test an idea, or to look closely enough at a phenomenon.</p><p>Back to Kelvin&#x27;s clouds. One was the lack of evidence for the luminiferous aether. The other was that a rule called the equipartition theorem failed to predict the heat capacity of solids, meaning how much heat a solid soaks up as it warms. Here&#x27;s the clever bit: both were solved within a decade, by special relativity and quantum mechanics. Two small clouds, two revolutions.</p><p>So how fast do open problems fall? Take the worked numbers. In 1984 Barry Simon listed 15 open problems on quantum operators. By 2000, about 5 were solved, which is one in three after 16 years. Roger Penrose&#x27;s 1982 list on general relativity still had about 14 unsolved in 2017. And a list of 10 problems from the Strings 2000 conference had none conclusively solved as of 2025.</p><p>Here&#x27;s the catch for today&#x27;s physics. The mathematics of the Standard Model, our theory of particles, is inconsistent with general relativity, our theory of gravity. Both break down in extreme places, like the Big Bang and the centres of black holes. Beyond that sit more open questions: the absolute mass of neutrinos, why there is more matter than antimatter, and what dark matter and dark energy are.</p><p>Vitaly Ginzburg, who kept a list of open problems from 1971 to 2005, added three great ones: the arrow of time, the interpretations of quantum mechanics, and whether life can arise from physics alone. This is the last lesson, so no next one answers it. The question is yours: which of today&#x27;s cracks is the next cloud that turns into a revolution?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1900 Lord Kelvin named &quot;two clouds&quot; over classical physics; both were solved within a decade by special relativity and quantum mechanics.</li><li>The Standard Model&#x27;s mathematics is inconsistent with general relativity, so both break down at singularities like the Big Bang and black hole centres.</li><li>Barry Simon&#x27;s 1984 list of 15 problems had about 5 solved by 2000.</li><li>Of 10 problems proposed at Strings 2000, none was conclusively solved as of 2025.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p11" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/shorts/_QsaAOy0zN8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/_QsaAOy0zN8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A video asks whether China is winning on Taiwan</h3><p>All we have is a title and an outlet, so this is a short note.</p><span>Center for Strategic &amp; International Studies ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/SuZdqc2njKs" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/SuZdqc2njKs?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A video asks whether the Middle East is on the brink</h3><p>All we have is a title from the outlet KAY Rated. The video itself was not available.</p><span>KAY Rated ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/xAye6TXz8y0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/xAye6TXz8y0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A CSIS video asks what AI agent attacks mean for India</h3><p>All we have is a title and an outlet, so this is a short note.</p><span>Center for Strategic &amp; International Studies ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=3FE-hBh1rsY" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/3FE-hBh1rsY?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Three YouTubers are buzzing about something called Gemini 4 Neon</h3><p>The source is missing, so all we have is three video titles and the mood they share.</p><span>AI Search ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p12" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026" target="_blank" rel="noopener">Our guide to every NFL Week 11 game: Matchup previews, predictions, picks and nuggets</a><span>espn.com</span></li><li><a href="https://www.espn.com/soccer/story/_/id/50539252/transfer-rumors-news-arsenal-world-cup-nico-williams-spain" target="_blank" rel="noopener">Transfer rumors, news: Arsenal want World Cup winner Williams</a><span>espn.com</span></li></ul></div>
+</section>
+<section class="page spread" id="p13" style="--accent:#a21caf">
+  <div class="half left">
+    <div class="photo"><img src="https://s26162.pcdn.co/wp-content/uploads/2026/11/tolstoy1-768x344.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Culture</p>
+    <div class="others">
+      <article class="more">
+        <h3>An art show is named after the idea of dressing badly</h3><p class="dek">MoMA PS1&#x27;s &quot;Malvestir&quot; turns a Spanish word into a show about Latin American clothes.</p>
+        <details><summary>Read</summary><div class="body"><p>The name of this exhibition literally means &quot;to dress poorly.&quot; &quot;Malvestir&quot; joins the Spanish words mal (poorly) and vestir (to dress), and MoMA PS1 will use it in April 2027 for a show of 20 artists and designers across the Americas. It looks at Western copying of Indigenous crafts, textile waste and the fetishization of Latin American styles, so the real question is who gets to profit from a look.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Malvestir opens at MoMA PS1 in April 2027.</li><li>It features 20 artists and designers across the Americas.</li><li>Mal means poorly and vestir means to dress.</li><li>Willy Chavarria will show the film Safe From Home (2024).</li></ul></aside></details>
+        <a class="src" href="https://hyperallergic.com/a-sprawling-exhibition-of-latin-american-art-and-fashion-is-coming-to-nyc/" target="_blank" rel="noopener">hyperallergic.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A $700,000 horror film made half a billion. Its director made a short where the camera can&#x27;t move.</h3><p class="dek">Curry Barker says he still has a lot to learn about directing.</p>
+        <details><summary>Read</summary><div class="body"><p>Curry Barker&#x27;s horror film Obsession cost $700,000 and brought in about half a billion dollars at the box office, more than 700 times its cost. So what did he make between the edits and the press? A five-minute short where the camera can&#x27;t move left, right, up, down or dolly in, and he says he still has a lot to learn about directing.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Obsession cost $700,000 and Focus Features bought it for $17 million after Toronto.</li><li>It went on to earn about half a billion dollars at the box office.</li><li>Barker made a five-minute short, Mama Bear, shot in 4:3 with no camera moves.</li><li>Barker said on the Filmmaker Toolkit Podcast, &quot;I do have a lot to learn.&quot;</li></ul></aside></details>
+        <a class="src" href="https://www.indiewire.com/features/podcast/curry-barker-obsession-directing-lessons-whats-next-1235229732/" target="_blank" rel="noopener">indiewire.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>The National Book Award finalists&#x27; cure for writer&#x27;s block: read</h2>
+    <p class="dek accent">Lit Hub asked this year&#x27;s National Book Award finalists how they beat writer&#x27;s block, and the answer is to read.</p>
+    <div class="body drop"><p>What does a writer do when the words will not come? Lit Hub put that question to this year&#x27;s National Book Award finalists. Its answer, in its own words: &quot;By reading, obviously.&quot;</p><p>Some background. The National Book Award is a major American literary prize, and finalists are the books still in the running before a winner is named. So these are people who have written something good enough to make that list.</p><p>Here&#x27;s the funny part. When you are stuck producing words, the cure on offer is to take in more of them. Nobody says to stare harder at the blank page.</p><p>The same Lit Hub page has a lot of reading to choose from. It notes that Leo Tolstoy died on this date in 1910, and it points to a story by Ariel Dorfman, &quot;Blank,&quot; from his collection What She Saw.</p><p>There is also Eric Dean Wilson on stories about looping time, from Solvej Balle&#x27;s On the Calculation of Volume to Groundhog Day. And Hope Corrigan reads a Yellowstone co-creator&#x27;s prison survival guide and asks who exactly is memorizing the whole book before they get hauled off to prison.</p><p>That is a fair few things to read before lunch. If the finalists are right, that is not procrastination at all.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Lit Hub asked this year&#x27;s National Book Award finalists how they fight writer&#x27;s block; the answer was reading.</li><li>Lit Hub notes Leo Tolstoy died on this date in 1910.</li><li>Ariel Dorfman&#x27;s story &quot;Blank&quot; comes from his new collection, What She Saw.</li><li>Eric Dean Wilson looks at looping-time stories from Solvej Balle&#x27;s On the Calculation of Volume to Groundhog Day.</li></ul></aside><a class="src" href="https://lithub.com/lit-hub-daily-november-20-2026/" target="_blank" rel="noopener">lithub.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p14" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The news shows the loud part. The slow part is underneath.</h2><p class="dek accent">Three patterns running under a day of headlines, and one question that works on any of them.</p>
+  <div class="body drop"><p>Read a day of headlines and you see events. Read them twice and you start to see what they are standing on. Here is what I saw underneath today.</p><p>First, trust is the scarce thing. An Anthropic mathematician says he and Claude proved the Riemann hypothesis, and other mathematicians say it needs rigorous checking first. An AI checked 1,000 AI-written economics papers and none was error-free. Making claims has become cheap. Checking them is still slow, and that is where the weight sits now.</p><p>Second, the systems we rely on are more fragile than they look. A new router helped halt every US departure for hours, and nobody yet knows why it flooded the network. Old, quiet infrastructure works until someone upgrades it. Then everyone learns how much hung on it.</p><p>Third, rules belong to whoever can say no. More than 70 countries want talks on killer robots, but a treaty that runs on unanimity gives every state a veto. Old pressures keep resurfacing this way, because the rule for deciding is older than the question being decided.</p><p>And the news itself is a trick of timing. A ground stop, an IPO, a falling stock are events you can photograph. Veto rules, ageing networks and slow checking are processes, and they only show up when something breaks.</p><p>So here is the question that turns any headline into understanding: what slow thing had to be true for this sudden thing to happen?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-20/index.html">← Yesterday</a><span>2026-11-21</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
