@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-23</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://www.aljazeera.com/wp-content/uploads/2026/11/AP26323232078136-1-1795411745.jpg?resize=1920%2C1440')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Monday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Asked if Putin is America&#x27;s friend, the intelligence chief said no, in Ukraine</h2>
+      <p class="dek">After Trump called Putin &quot;my friend,&quot; US intelligence chief Jay Clayton defended the line as appropriate, while saying Putin is no friend to America in Ukraine.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>23 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://www.aljazeera.com/wp-content/uploads/2026/11/AP26323232078136-1-1795411745.jpg?resize=1920%2C1440" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Asked if Putin is America&#x27;s friend, the intelligence chief said no, in Ukraine</h2>
+    <p class="dek accent">After Trump called Putin &quot;my friend,&quot; US intelligence chief Jay Clayton defended the line as appropriate, while saying Putin is no friend to America in Ukraine.</p>
+    <div class="body drop"><p>The question was simple: is Vladimir Putin America&#x27;s friend? Trump had said he couldn&#x27;t answer it. On Sunday, the man who runs US intelligence had to try.</p><p>That man is Jay Clayton, the Director of National Intelligence. On ABC&#x27;s This Week, Jonathan Karl pressed him on it.</p><p>Clayton&#x27;s answer came in two parts. &quot;He is not America&#x27;s friend in Ukraine. Not at all. Not at all.&quot;</p><p>But he also called Trump&#x27;s friendly words &quot;entirely appropriate.&quot; On CNN he went further: &quot;whatever language the president wants to use, I trust him completely.&quot;</p><p>So where did the &quot;friend&quot; line come from? On November 19, Trump, Putin and Chinese President Xi Jinping held a roundtable on the sidelines of the APEC conference in Shenzhen, China. Seeing Putin, Trump joked, &quot;Who is he?&quot; Then he crossed the room to shake his hand. &quot;He&#x27;s my friend.&quot;</p><p>Trump later posted images of the meeting, one captioned &quot;My Friend.&quot; Asked at a Friday briefing whether Russia is a friend to America, he said, &quot;I can&#x27;t speak to America.&quot; He said he and Putin got close while dealing with the &quot;Russia, Russia, Russia hoax.&quot;</p><p>Here&#x27;s the catch. Washington has backed Ukraine since Russia&#x27;s full-scale invasion in February 2022, sending billions in security assistance and weaponry. Under Trump, that support has cooled, and he has criticised Zelenskyy for failing to cut a deal with Russia.</p><p>Outgoing Representative Don Bacon accused Trump of &quot;playing footsie&quot; with Putin and said Republicans traditionally stood up to Russia and China.</p><p>Clayton&#x27;s defence leaned on the nuclear side. He called it assuring that the three nuclear powers got together to say they wouldn&#x27;t go in that direction. The meeting ended with a statement about &quot;reducing nuclear risks,&quot; though it contained no firm commitments.</p><p>So the official line has two layers. Friendly words are a tool for building rapport with Putin. On Ukraine, Clayton says, the two are not on the same side.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jay Clayton said Putin is &#x27;not America&#x27;s friend in Ukraine&#x27; but called Trump&#x27;s remarks &#x27;entirely appropriate&#x27;.</li><li>Trump, Putin and Xi met on November 19 at the APEC conference in Shenzhen.</li><li>The meeting ended with a statement about &#x27;reducing nuclear risks&#x27;, but it contained no firm commitments.</li><li>Rep. Don Bacon accused Trump of &#x27;playing footsie&#x27; with Putin.</li></ul></aside><a class="src" href="https://www.aljazeera.com/news/2026/11/23/us-intelligence-chief-defends-trumps-comments-calling-putin-his?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Rescuers recover 24 body bags after Indonesian factory fire</h3><div class="body"><p>Rescuers recovered 24 body bags from a confectionery factory fire in western Java by Sunday evening, while at least three people had been reported killed. About 60 people were believed to be inside when the fire began, and around 36 were still missing, leaving the full toll unclear.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>South Korea&#x27;s education minister resigns after exam cheating crackdown</h3><div class="body"><p>Three emergency alerts made phones across South Korea blare during its college entrance exam, part of a last-minute effort to catch AI-assisted cheating that ended with Education Minister Choi Kyo-jin&#x27;s resignation. About 500,000 students took the career-shaping test; Choi said the measures caused confusion and accepted responsibility.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>Ukraine says its drones sank a Russian ship off Libya</h3><div class="body"><p>Ukraine says its naval drones sank a Russian ship off Libya. Zelenskyy said the weekend strikes hit a corvette, a helicopter and a cargo vessel, while the UN mission in Libya raised concern about the attack and Libya&#x27;s sovereignty and security.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQVVVOaXhUTVZWaDZ0YnlSQnRpZk1JdVpWdkJKVUlmQVpETHVkYV9CazJxR0xnS041MUYxQXcyV3IxZWpqbkVrWk9ZU1NaY2NyNTdHTjd6YmFHSFRIX0NpTE8tV3ZYaS1LajllOGxZZlAzclF3OGpiWU1Jd1dTNVB2VWtJMEZQd1lROVhxUnhYUUJ3TFBsMUV2YlFaQktHU0Q4RHktYnpTLXRndjl2aEZlQ3VzZWZSSFRSVzJiZjJsa3JaSkV4?oc=5" target="_blank" rel="noopener">Reuters + 4 more ↗</a></li>
+    <li><h3>Alcaraz wins his first ATP Finals title</h3><div class="body"><p>Alexander Zverev had three consecutive chances to take the second set, but Carlos Alcaraz saved them all and won 6-2, 7-6 (9-7) to claim his first ATP Finals title. That trophy puts Alcaraz among just four men to have won all four majors and the ATP Finals.</p></div><a class="src" href="https://www.aljazeera.com/sports/2026/11/23/carlos-alcaraz-atp-finals-2026-title-alexander-zverev-tennis?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Substance in crowd ends Don Toliver concert</h3><div class="body"><p>Near the end of American rapper Don Toliver&#x27;s concert in Manchester, a substance believed to be tear gas was let off in the crowd, forcing an evacuation. One release was enough to end the whole show: the concert was abandoned even though it was nearly over.</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/23/don-toliver-concert-chaos-after-substance-let-off-in-crowd?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Russian warship sinks at Libyan port after suspected drone attack</h3><div class="body"><p>More than 1,000 miles from south Ukraine, a Russian warship sank in Benghazi, Libya, after a suspected sea drone attack; no one has claimed responsibility. The distance matters: the war has reached a port on another continent, where the ship had stopped for fuel and supplies.</p></div><a class="src" href="https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a></li>
+    <li><h3>Eisenkot calls West Bank settler attacks “Jewish terrorism”</h3><div class="body"><p>Opposition leader Gadi Eisenkot called settler attacks “Jewish terrorism” after fires hit about a dozen vehicles and several homes across at least four Palestinian communities in the occupied West Bank. Eisenkot was asked to form a government after Netanyahu lost his majority, putting the attacks into Israel’s political fight.</p></div><a class="src" href="https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a></li>
+    <li><h3>PSG&#x27;s Doué to undergo knee surgery</h3><div class="body"><p>PSG&#x27;s Doué will undergo surgery after a serious knee injury. That operation gives the setback a scale you can grasp: his recovery now requires surgery, while the information available gives no date for when he might play again.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOakdBY0hzNk5tT2ZIbXZWRlRMbEFDcmU0RTZja2tlbzJxRHNSM2kwei1fTGZQcWlCNlRUdFIwc1Z6d05PVjhRVWY5c0VQVkJFNWI2bEotOWNHZHZxdHZJajBRaEtaeU9CSWYxa2U2LUZyUHV6U29FZThtOHhveGNiX25makdSb2pJcHdTLWw0RWVYc3MzTzVMUzd3UUplRVkwcmhN?oc=5" target="_blank" rel="noopener">Reuters + 3 more ↗</a></li>
+    <li><h3>Formula 1 presses on with Qatar and Abu Dhabi finale</h3><div class="body"><p>Formula 1 is pressing ahead with its finale in Qatar and Abu Dhabi, two destinations in the Middle East, despite rising tensions in the region. The closing events remain planned for both places, though the available headline gives no details about the tensions or any safety measures.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPSHFVM1o0WjlHbG9SeVY3TWM4QlIxeGV6djhGcThta2R5MlVRQ3ZKQ1hSVUtUcFpXWk1sREtCUTdlWVlMblNzcFF6cDh6S1ZGZ3E3aG5kUlduU3o0N3RDcUZTWHAtNXk5dmRwTU9TelR2SUVrY2taUm9IT2NDQ3A4dHoycndTMHhGWGhycTNTOUxUa0NlcTE0Vklob19kXzA?oc=5" target="_blank" rel="noopener">AP News + 3 more ↗</a></li>
+    <li><h3>COP31 talks collapse over fossil fuel phase-out</h3><div class="body"><p>The COP31 draft set a 2035 goal for electricity to supply 35% of global energy, just over a third, yet omitted any fossil fuel phase-out. European and vulnerable nations rejected the proposal after Saudi Arabia and other oil producers blocked that language, and the talks collapsed over the missing commitment.</p></div><a class="src" href="https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://media.prothomalo.com/prothomalo-english/2025-12-17/joj2v360/2REL337SNRJGNEDRYAIMBUFYRM.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Student uprising leaders demand apology as national unity talks begin</h3><p class="dek">Three lawmakers from the July uprising bring firm demands to the Secretariat.</p>
+        <details><summary>Read</summary><div class="body"><p>Prime Minister Tarique Rahman wants anti-fascist parties on one platform, but his very first meeting comes with a catch. Five days after his call, three lawmakers from the student-led National Citizen Party are sitting down with him, insisting he apologise for past broken promises. They also want the Constitution Amendment Committee dissolved, making that their condition before joining any common platform.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Prime Minister Tarique Rahman called on anti-fascist political parties on 18 November to unite on a single platform.</li><li>The National Citizen Party, formed by student leaders of the July mass uprising, was the first group to sit for dialogue with him.</li><li>NCP leader Nahid Islam stated the prime minister must apologise for past broken promises and dissolve the Constitution Amendment Committee before consensus can form.</li></ul></aside></details>
+        <a class="src" href="https://en.prothomalo.com/bangladesh/politics/gk3uxeatow" target="_blank" rel="noopener">en.prothomalo.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh garment unrest cost 317 factories $428 million in 18 days</h3><p class="dek">Factory halts cost millions, but fleeing buyers inflict the lasting damage.</p>
+        <details><summary>Read</summary><div class="body"><p>Eighteen days of labour unrest cost 317 garment factories $428 million in lost output, or nearly $24 million for each day. Eroded buyer confidence also led international clients to shift 59 million garments worth $254 million to rival destinations. The immediate halts hurt, but the deeper blow is that missed deadlines push global brands toward competing countries.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>A survey of 317 garment factories reported $428 million in direct production losses across 18 days of unrest.</li><li>Production was halted between 1 and 16 days across participating factories from November 1 to November 18.</li><li>International buyers shifted 59 million garments valued at $254 million to rival destinations.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/business/425435/bgmea-rmg-unrest-costs-317-factories-428m-in-18" target="_blank" rel="noopener">dhakatribune.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Garment factory owners set to submit wage proposal to the board</h3><p class="dek">Workers want the floor wage raised from Tk12,500 to at least Tk30,000.</p>
+        <details><summary>Read</summary><div class="body"><p>Garment workers want their minimum wage more than doubled, demanding at least Tk30,000 a month to cover rising rent and living costs. That is well above the current Tk12,500 monthly floor, while worker representatives are seeking up to Tk48,000 for top grades. Factory owners are expected to submit their own pay proposal as the Minimum Wage Board convenes its third meeting.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Current RMG minimum wage is Tk12,500 per month, established in late 2023.</li><li>Worker representatives proposed Tk30,000 for apprentice workers and up to Tk48,000 for Grade 1.</li><li>Factory owners are scheduled to present their wage proposal at the Minimum Wage Board third meeting.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/425446/minimum-wage-board-meets-monday-rmg-owners-set-to" target="_blank" rel="noopener">dhakatribune.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Court rules Myanmar committed genocide against Rohingya</h3><p class="dek">The verdict does not bring refugees home by itself.</p>
+        <details><summary>Read</summary><div class="body"><p>The court has named the crime. Can it bring the refugees home? On 19 November, the UN&#x27;s highest court ruled that Myanmar committed genocide against the Rohingya during its 2017 military campaign. More than 700,000 people fled into Bangladesh within months, each leaving a home behind. The ruling does not, by itself, bring them home.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The court ruled on 19 November that Myanmar committed genocide against the Rohingya.</li><li>The ruling concerned Myanmar&#x27;s 2017 military campaign.</li><li>More than 700,000 Rohingya fled into Bangladesh within months.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/features/In-the-views/rohingya-genocide-court-delivers-justice-will-world-be-able-hold-myanmar" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Nahid ties national unity to reforms and justice</h3><p class="dek">He also pressed for Bangladesh&#x27;s fair share of Ganges water.</p>
+        <details><summary>Read</summary><div class="body"><p>Nahid Islam put conditions on a call for national unity. After meeting Prime Minister Tarique Rahman on 23 November, the NCP leader said unity must be built around reforms, justice and sovereignty, and urged a firm stand on Bangladesh&#x27;s Ganges water share before the treaty expires on 12 February, less than three months later. For Nahid, unity starts with those commitments.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nahid met Prime Minister Tarique Rahman on 23 November.</li><li>He called for unity built around reforms, justice and sovereignty.</li><li>He urged a firm position on Ganges water sharing before the treaty expires on 12 February.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/bangladesh/pm-tarique-rahman-holds-meeting-ncp-leaders-1611351" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Banned party&#x27;s leaders spent two hours at an Indian border post. Nobody will say why.</h2>
+    <p class="dek accent">Awami League leaders Jahangir Kabir Nanak and Bahauddin Nasim were seen at the Petrapole immigration centre in West Bengal, and officials declined to comment.</p>
+    <div class="body drop"><p>Two leaders of a banned political party spent about two hours inside an Indian immigration centre on Sunday afternoon. The officials who work there won&#x27;t say what they were doing.</p><p>The party is Bangladesh&#x27;s Awami League, whose activity is banned. The two men are Jahangir Kabir Nanak and Bahauddin Nasim. Multiple sources said four people were there in total.</p><p>The place is Petrapole, a land port on the India side of the border. Reach the Bangaon subdivision in West Bengal&#x27;s North 24 Parganas, keep heading toward the port, and the immigration centre is on your right.</p><p>Here&#x27;s what we know about how they came. They arrived in a white car. They did not use the entrance that local people use, and journalists waiting at the scene said they came and went by a different route.</p><p>So what happened inside? That&#x27;s the blank. The immigration department, India&#x27;s Border Security Force (the country&#x27;s border guard) and Petrapole police station all did not want to comment.</p><p>Here&#x27;s the odd timing. At the same moment, a procession was held there, led by several BJP leaders from Bangaon North and South, along with state minister Ashok Kirtania. MLA Swapan Majumdar was also there.</p><p>A Hindu nationalist organisation called Hindu Suraksha Samiti organised it. The marchers demanded the release of Chinmoy Krishna Das, spokesperson of the Sanatani Jagaran Jote, who is imprisoned in Bangladesh, and alleged that minorities were being persecuted there.</p><p>Later, Majumder told local media that Sheikh Hasina could enter Bangladesh by this route: from Kolkata along Jashore Road, through Bangaon and Petrapole.</p><p>Why does that line matter? Hasina was ousted from power in the July mass uprising and fled to India. She has been staying there since 5 August 2024.</p><p>Several Awami League leaders now in West Bengal claim an attempt to enter Bangladesh is planned for mid-December. They say many party leaders are considering going in alongside her.</p><p>Nothing in the report ties Sunday&#x27;s visit to that plan, and I won&#x27;t either. Mid-December is the date to watch. If officials ever explain those two hours, or anyone actually heads for the border, the picture changes fast.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jahangir Kabir Nanak and Bahauddin Nasim spent around two hours at the Petrapole immigration centre on Sunday afternoon.</li><li>Immigration officials, the BSF and Petrapole police declined to comment.</li><li>Awami League leaders in West Bengal claim an attempt to enter Bangladesh is planned for mid-December.</li><li>Sheikh Hasina has been in India since 5 August 2024.</li></ul></aside><a class="src" href="https://en.prothomalo.com/bangladesh/wonrqjh039" target="_blank" rel="noopener">en.prothomalo.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://static.dw.com/image/76556857_6.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>India pledges $1.62 billion to help flood-hit Nepal rebuild</h3><p class="dek">New Delhi steps in after a glacier collapse left thousands dead or missing.</p>
+        <details><summary>Read</summary><div class="body"><p>A glacier collapse on Nepal&#x27;s border sent mud and rock crashing into valleys, washing away entire villages. India has now pledged 240 billion Nepalese rupees, or $1.62 billion, after the flood killed 1,500 people and left 5,200 missing, more than triple the confirmed dead. The aid will rebuild snapped highways and bridges, helping an impoverished neighbor get affected families back on track.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Indian Prime Minister Narendra Modi announced an economic package worth 240 billion Nepalese rupees ($1.62 billion) for Nepal.</li><li>The August glacier collapse triggered floods that killed about 1,500 people, with another 5,200 missing and presumed dead.</li><li>The disaster washed away villages and snapped highways, bridges, and power lines across Nepal.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQSWpDakZzTzdkdDFwdmNHcHlTc0Q0SDBxWEN3Uk5ZcmZaZXJzdzV3RXNtZkUzZzk1RlJKVFdkNkp5aVI2cVNaeVBBMFRBcXZ5S00xVVRvN3JuNXJUcXpvaVdrTnZPRmVhTUhuNHNEdDZtQmF4bFEyRVB4NG93c19Ub3hsQnJZNUJURGZjcndld1ZTVGViQnFDaGFzeExYaGVxZkE0SXdR?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Nepal&#x27;s Shah seals aid deal with Modi</h3><p class="dek">Their first meeting since Shah took office produced a deal.</p>
+        <details><summary>Read</summary><div class="body"><p>A rapper turned prime minister has sealed an aid deal with Nepal&#x27;s most important ally. Balendra Shah met India&#x27;s Narendra Modi for the first time since taking office in March. That gives their first meeting a concrete result, though the account does not say how much aid is involved or what it will fund.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Balendra Shah is Nepal&#x27;s rapper-turned-prime minister.</li><li>Shah took office in March.</li><li>Shah met Narendra Modi for the first time since taking office.</li><li>The two leaders sealed an aid deal.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/c2626635-ed45-492a-a300-5972f2db9fa9?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Nepal&#x27;s rapper-turned-PM makes Delhi his first bilateral stop</h2>
+    <p class="dek accent">Nepal&#x27;s prime minister Balendra Shah is in India for talks on flood recovery, trade and energy with the country that sells Nepal most of its imports.</p>
+    <div class="body drop"><p>More than 60% of what Nepal imports comes from a single country. By World Bank figures, that is $8.6 billion of goods, or a bit over six of every ten dollars Nepal spends on foreign products.</p><p>That country is India, and it is where Nepal&#x27;s prime minister, Balendra Shah, is now. He is 36, a former rapper, and in office since March. This is his first bilateral foreign trip as prime minister.</p><p>So why Delhi first? Look at the other side of the ledger. China supplies 13% of Nepal&#x27;s imports, and India and China regularly compete for influence in Nepal.</p><p>The visit runs two days. Shah meets Prime Minister Narendra Modi on Monday, and also meets Foreign Minister S Jaishankar and will briefly visit President Droupadi Murmu. Finance Minister Swarnim Wagle and Foreign Minister Shishir Khanal travel with him.</p><p>Floods come first. August&#x27;s floods left some 1,500 people dead and more than 5,200 missing. Roads, bridges, power plants, farms and homes were destroyed, and rebuilding is expected to dominate the talks.</p><p>Then comes the everyday business of neighbours. Nepal&#x27;s Foreign Secretary, Amrit Bahadur Rai, said the leaders would discuss trade, transit, investment, energy, connectivity and infrastructure. He called India &quot;a major and important partner for Nepal.&quot;</p><p>There is one smaller, very concrete ask. Nepal is pressing for an extra route for commercial flights to Bhairahawa and Pokhara.</p><p>Here&#x27;s the catch. Local media reported the talks may also touch unresolved border disputes, which is rarely a quick conversation between neighbours.</p><p>New Delhi said the visit &quot;reflects the importance India attaches to its relations with Nepal.&quot; The question for Monday&#x27;s meeting with Modi is whether that importance turns into concrete help for flood reconstruction and the flight route Nepal wants.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Balendra Shah, 36, took office in March and is on his first bilateral foreign trip, to New Delhi.</li><li>He meets Modi on Monday; flood reconstruction, trade and energy are expected topics.</li><li>August floods left some 1,500 dead and more than 5,200 missing.</li><li>India supplies more than 60% of Nepal&#x27;s imports, worth $8.6 billion; China supplies 13%.</li></ul></aside><a class="src" href="https://www.dw.com/en/india-nepal-pm-balendra-shah-heads-to-delhi-for-first-bilateral-visit/live-80008104?maca=en-rss-en-all-1573-rdf" target="_blank" rel="noopener">rss.dw.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://static01.nyt.com/images/2026/11/23/multimedia/23int-theworld-rohingya-01-twpg-promo/23int-theworld-rohingya-01-twpg-promo-mediumSquareAt3X.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Toxic contamination covers 99 percent of Gaza, study finds</h3><p class="dek">Heavy metals and explosive residues threaten health and the environment for decades.</p>
+        <details><summary>Read</summary><div class="body"><p>Israel&#x27;s war has turned nearly all of Gaza into a toxic wasteland, leaving almost no land untouched. A new study finds that heavy metals, explosive residues, and biological hazards now pollute 99 percent of the territory, or 99 out of every 100 parts of the ground. These poisons will linger, threatening Palestinians&#x27; health and their environment for decades.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>A new study found toxic contamination across 99 percent of Gaza&#x27;s territory.</li><li>The contamination includes heavy metals, explosive residues, and biological hazards.</li><li>The toxic hazards threaten Palestinians&#x27; health and environment for decades.</li></ul></aside></details>
+        <a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-turned-into-toxic-wasteland-by-israels-war-says-new-report?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Houthis say they hit Saudi oil refinery</h3><p class="dek">Damage at Rabigh remains unclear.</p>
+        <details><summary>Read</summary><div class="body"><p>The Houthis say they directly hit a Saudi oil refinery, but the damage remains unclear. A Saudi-led coalition separately says it destroyed a Houthi drone headed toward the country&#x27;s west, where Rabigh sits. Why does this claim matter beyond one refinery? The wider war has already disrupted the Strait of Hormuz, which carried one in five of the world&#x27;s crude shipments before the fighting.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Houthis say they hit the Rabigh refinery.</li><li>The extent of any damage is unclear.</li><li>A Saudi-led coalition says it destroyed a Houthi drone headed west.</li><li>The Strait of Hormuz carried a fifth of global crude shipments before the war.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQSjZLZW5ua05hQkRTLVhvZnNHZnpUM05mT3ZxNl9FUUoyMEhMN0gtTUVfT0Zhb0g2eUxaeHlvZWlIWXNTVGlSMlczMHdBUERvRjVsQVZVSW92MlFESWlmTGxVaWM2aXYwZ0NtUTlna3k4ZkV2S0k4YkhVOFRjaWRrcmhZeWg5NHpQaW9pRGIybUFpalV3U2lzdlZ5QzYteENUSWpWdm90SXNFWVU4OWxBaGx3?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Xi&#x27;s Trump hug helped his image at home, analyst says</h3><p class="dek">The welcome carried a message for viewers in China.</p>
+        <details><summary>Read</summary><div class="body"><p>Vladimir Putin has met Xi Jinping about 50 times, yet Donald Trump got the airport greeting and public hug at this summit. Why did that matter? Robert Daly, a scholar of US-China relations, says the warmth helped Xi appear to Chinese viewers as a confident world leader hosting a visiting president. In Daly&#x27;s reading, the hug gave Xi a picture to show at home.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Xi greeted Trump at the airport and hugged him in public.</li><li>Daly said Putin did not receive the same airport greeting or public hug.</li><li>Daly said Xi and Putin have met about 50 times.</li></ul></aside></details>
+        <a class="src" href="https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit" target="_blank" rel="noopener">feeds.npr.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Ukraine says it sank a Russian ship in a Libyan port</h3><p class="dek">Volodymyr Zelenskyy said Ukrainian forces targeted two Russian ships in a Libyan port.</p>
+        <details><summary>Read</summary><div class="body"><p>You do not expect Ukraine&#x27;s war to reach the coast of North Africa. President Volodymyr Zelenskyy said his forces struck two Russian vessels in a Libyan port over a thousand miles from Ukraine, sinking the Merkury and hitting a second craft allegedly used to transport weapons. That matters because it shows Ukraine is targeting Russian military supply lines far beyond its own borders.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Ukrainian President Volodymyr Zelenskyy claimed responsibility for an attack on Russian ships.</li><li>The attack sank the Russian ship Merkury in a Libyan port.</li><li>Ukraine also struck a second Russian vessel allegedly used to transport weapons.</li></ul></aside></details>
+        <a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/23/zelenskyy-says-ukraine-behind-attacks-on-russian-ships-near-libya?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Drone-hit Russian ship drifts into Finnish waters</h3><p class="dek">A strike at sea drew three countries into the response.</p>
+        <details><summary>Read</summary><div class="body"><p>A Russian cargo ship hit by a drone is being towed by a Russian rescue vessel with Finnish and Estonian support. How did they all become involved? The Sparta II was heading to Kaliningrad when the strike started a fire and the ship drifted into Finnish waters; one crew member suffered minor injuries, and Finnish defence forces say Ukraine was likely behind the attack, though Kyiv has not commented.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Sparta II was bound for Kaliningrad.</li><li>It drifted into Finnish waters after a drone strike.</li><li>One crew member suffered minor injuries.</li><li>Finnish defence forces say Ukraine was likely behind the strike; Kyiv has not commented.</li></ul></aside></details>
+        <a class="src" href="https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A U.N. court said Myanmar committed genocide. Now comes the hard part</h2>
+    <p class="dek accent">The International Court of Justice ruled 9 to 6 that Myanmar committed genocide against the Rohingya, but a ruling needs governments willing to act on it.</p>
+    <div class="body drop"><p>Nine judges said yes. Six said no. Switch just two votes and the answer flips.</p><p>That was the split at the International Court of Justice, the U.N. court that settles disputes between countries. On November 19 it ruled that Myanmar committed genocide against the Rohingya, a Muslim minority.</p><p>The ruling covers a 2017 military &quot;clearance operation&quot; in northern Rakhine State. The court found Myanmar&#x27;s security forces killed thousands of Rohingya civilians, carried out widespread sexual violence, committed extreme violence against children, and attacked people as they fled in large numbers to Bangladesh.</p><p>It also gave orders. Myanmar must pay reparations, allow the safe and dignified return of displaced Rohingya, reunite families, and take steps to prevent further violations of the Genocide Convention.</p><p>Here&#x27;s the catch. The court has no police force. Myanmar has already called the ruling &quot;unfair&quot; and a &quot;great disappointment,&quot; and enforcing it will depend on whether other governments can muster the political will.</p><p>So who is stepping up? The United Kingdom was the most outspoken. It ordered the Myanmar defense attache out and called urgently for a U.N. Security Council session. Australia, Norway and the European Union backed the ruling too, and the United States did so in a more restrained tone.</p><p>Myanmar&#x27;s neighbours were quieter. Only the Philippines and Malaysia had issued official statements, and Thailand had addressed it at length. Cambodia, Vietnam, Laos, Indonesia and several others had not responded.</p><p>Malaysia&#x27;s statement was the warmest. It said it &quot;respects&quot; the ruling. The case itself was brought in 2019 by The Gambia, on behalf of the Organization of Islamic Cooperation.</p><p>There may be a second reason Malaysia cares. South Africa brought a genocide case against Israel over Gaza in 2024, and much of the international response to the Myanmar ruling has concerned what it means for that one. The Diplomat suggests Malaysia&#x27;s stance may say more about Israel than about Myanmar.</p><p>Watch whether the Security Council meeting the U.K. asked for actually happens. If it does, we will learn whether a court&#x27;s verdict can turn into pressure.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The ICJ ruled 9 to 6 that Myanmar committed genocide against the Rohingya in a 2017 operation in northern Rakhine State.</li><li>The court ordered reparations and the safe return of displaced Rohingya; Myanmar called the ruling unfair.</li><li>The U.K. expelled Myanmar&#x27;s defense attache and called for a Security Council session.</li><li>Only the Philippines and Malaysia among ASEAN governments had issued official statements.</li></ul></aside><a class="src" href="https://www.nytimes.com/2026/11/22/world/genocide-myanmar-un-climate-talks.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://i.guim.co.uk/img/media/4c4701470b09edcfeba9cbda93c6910a248a274b/0_116_6218_4975/master/6218.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=635252dd42b880401caf9c475fc93266" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Officials describe a Chinese spy campaign for A.I. chips</h3><p class="dek">The effort predates the latest scrutiny of Nvidia chip sales.</p>
+        <details><summary>Read</summary><div class="body"><p>China&#x27;s spy agency was targeting advanced A.I. chips years before the latest Nvidia case, officials say. Its secret campaign aimed to help Chinese companies acquire chips and gather intelligence about the industry. Why are chip sales under scrutiny now? Separately, a U.S. investigation into possible export-rule violations by Singapore-based Megaspeed began in 2024, two years before this report. The two accounts do not establish a link between Megaspeed and the spy campaign.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Officials describe a secret Chinese intelligence campaign involving advanced A.I. chips.</li><li>The U.S. investigation into Megaspeed began in 2024.</li><li>Investigators are examining potential export-control violations.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html" target="_blank" rel="noopener">rss.nytimes.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Private capital firms turn to hybrid capital as buyouts slow</h3><p class="dek">Firms are using hybrid capital to seal deals and raise funds.</p>
+        <details><summary>Read</summary><div class="body"><p>The traditional buyout business is stuck in the doldrums, yet private capital firms are finding ways to seal deals. Their answer is hybrid capital, which they are also using to raise funds.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Traditional buyouts are struggling.</li><li>Firms are using hybrid capital to seal transactions.</li><li>Firms are using hybrid capital to raise funds.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/78b01bf4-3550-41cb-ac52-2f3426b58232?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>A claimed Riemann proof could take years to verify</h3><p class="dek">No human has read all 17 million lines of code.</p>
+        <details><summary>Read</summary><div class="body"><p>Seventeen million lines of code hold what Anthropic mathematician Levent Alpöge says is a proof of the Riemann hypothesis, and no human has read them all. So how close is this to a settled answer? Physicist Tony Padilla says verification could take years and that Alpöge should share how he got there.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Alpöge says he has proved the Riemann hypothesis.</li><li>The claimed proof runs to 17 million lines of code.</li><li>Padilla says verification could take years.</li></ul></aside></details>
+        <a class="src" href="https://www.france24.com/en/tv-shows/tech-24/20261122-it-can-take-years-why-the-ai-riemann-proof-is-far-from-settled" target="_blank" rel="noopener">france24.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>US stock futures bounce after an artificial intelligence market selloff</h3><p class="dek">American contracts rebound following a tech slide while Asian markets scramble to stem losses.</p>
+        <details><summary>Read</summary><div class="body"><p>US stock futures are bouncing back after a drop in artificial intelligence shares. The rebound follows a tech-driven correction that left Asian markets scrambling to slow the rout.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>US stock futures bounced back after an artificial intelligence-driven correction.</li><li>Asian markets scrambled to slow down a rout in artificial intelligence shares.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNR2c4ZVNmcHBzVFctOTBkRUd2d0VHTklseUhCcEtZT2VHbU1WbWprMUk2aDZSQ2tkZHNYVE9EWUgyaEkxeWtyN0M2V2NzR2ZCTHFmMEhvbHFDeExTNUdTeDF3WkxJZ2RSdmZ2cHBxWlFjTXdoa1hXdlZQRWtyTFFKVlJjMA?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Aevius raises $22 million for patient health AI</h3><p class="dek">Its models analyze medical records, imaging and other patient data.</p>
+        <details><summary>Read</summary><div class="body"><p>A $22 million seed round is backing Aevius, a Boston startup whose AI models analyze patient health using medical records, imaging and other data. Insight Partners led the round, CEO Rowland Pettit told Axios Pro.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Aevius is based in Boston.</li><li>It raised $22 million in seed funding.</li><li>Insight Partners led the round.</li></ul></aside></details>
+        <a class="src" href="https://www.techmeme.com/261123/p5#a261123p5" target="_blank" rel="noopener">techmeme.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A senator&#x27;s Helen of Troy joke points at a bigger question about Nvidia chips</h2>
+    <p class="dek accent">A US senator mocked Jensen Huang&#x27;s reported affair, then said the real issue is how China got advanced AI chips despite US export controls.</p>
+    <div class="body drop"><p>A US senator called a tech boss&#x27;s reported affair &quot;the most expensive sex since Helen of Troy.&quot; Then he said he was less interested in what the boss did.</p><p>That senator is John Kennedy, a Louisiana Republican, speaking on NBC&#x27;s Meet the Press on Sunday. In Greek myth, Helen was so desirable that she caused the Trojan war. Host Kristen Welker had asked whether the affair put US national security at risk.</p><p>Some background. Jensen Huang stepped down as Nvidia&#x27;s chief executive on 12 November after allegations of extramarital relationships with a suspected Chinese spy, Alice Huang, and two Nvidia employees. Nvidia&#x27;s chips sit at the front of the AI boom.</p><p>So why &quot;expensive&quot;? Alice Huang, also known as Huang Le, was executive director of Megaspeed International. Megaspeed facilitated about $12bn in chip sales in violation of US export controls, which are rules that bar selling certain technology to certain countries. The Trump administration has banned selling advanced AI chips to China.</p><p>Kennedy said he was less interested in what Huang did than in how China was evidently able to get around those controls. &quot;Mr Huang … did what he did,&quot; he said. &quot;I hope he had a good time.&quot;</p><p>Here&#x27;s the catch. He is not alone in worrying about the chips. National intelligence director Jay Clayton said he suspected China obtained Nvidia&#x27;s most advanced AI chips, and told Fox News: &quot;There are chips that have ended up in places that they should not.&quot;</p><p>Kennedy&#x27;s target is the commerce department. Its secretary, Howard Lutnick, has faced scrutiny over allegedly ignoring warnings that Megaspeed was smuggling chips to China. Other leaders, including Treasury Secretary Scott Bessent, wanted Megaspeed on a trade blacklist, but commerce stalled enforcement.</p><p>Kennedy said leaders there are either &quot;so incompetent you wouldn&#x27;t put them in charge of a food truck&quot; or &quot;they knowingly allowed this to happen.&quot; He wants Bessent and Lutnick under oath before a Senate committee to &quot;answer some hard questions.&quot;</p><p>Bessent, on CBS&#x27;s Face the Nation, said the administration has been in touch with Nvidia&#x27;s temporary management, lead directors and lawyers. It is trying to find out who was in charge of compliance. &quot;We want to know what the culture was,&quot; he said.</p><p>So the senator&#x27;s two options sit on the table, incompetence or knowing.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jensen Huang stepped down as Nvidia CEO on 12 November after allegations of affairs, including with suspected Chinese spy Alice Huang.</li><li>Alice Huang was executive director of Megaspeed International, which facilitated about $12bn in chip sales in violation of US export controls.</li><li>Senator John Kennedy wants Lutnick and Bessent under oath before a Senate committee.</li><li>Bessent says the administration is trying to find who ran compliance at Nvidia.</li></ul></aside><a class="src" href="https://www.theguardian.com/us-news/2026/nov/22/jensen-huang-nvidia-john-kennedy" target="_blank" rel="noopener">theguardian.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo nophoto"><span>Foreign inflows support the rupee and bonds as oil stays in </span></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Pizza chains face more competition for every order</h3><p class="dek">Pizza is still popular. Selling it has become harder.</p>
+        <details><summary>Read</summary><div class="body"><p>More than 9,600 U.S. pizzerias have closed since the August 2019 peak of 83,035, roughly one in nine. Yet total pizza servings are down only about 1% this year. So why the closures? Diners have more delivery choices and cheaper options, while GLP-1 use adds pressure. Pizza chains must work harder to win each order.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>More than 9,600 U.S. pizzerias had closed as of July 2026.</li><li>The August 2019 peak was 83,035 locations.</li><li>Total pizza servings are down about 1% this year.</li><li>Diners have more delivery options, and GLP-1 use weighs on pizza spending.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html" target="_blank" rel="noopener">cnbc.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Tech stocks tumble as investors rethink the AI trade</h3><p class="dek">A slide in tech stocks has opened a bigger question for markets.</p>
+        <details><summary>Read</summary><div class="body"><p>Tech stocks have tumbled, and investors are rethinking the AI trade. Is this the start of a new era for markets? The headline and summary leave that question open.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Tech stocks tumbled.</li><li>The headline says investors have shifted their approach to the AI trade.</li><li>The summary asks whether markets are entering a new era.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/77bfc0d6-e494-4e8c-86ec-b15c5cb79688?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Gupta says new data will sharpen RBI forecasts</h3><p class="dek">India&#x27;s new economic data series could help the central bank set policy more precisely.</p>
+        <details><summary>Read</summary><div class="body"><p>A new economic data series could help India&#x27;s central bank make better policy calls. Deputy Governor Poonam Gupta said Monday it would improve the Reserve Bank of India&#x27;s growth and inflation forecasts, helping it calibrate monetary policy.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>India has a new economic data series.</li><li>Poonam Gupta is a deputy governor of the Reserve Bank of India.</li><li>Gupta said the series would help forecast growth and inflation.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-23/india-s-new-data-series-to-improve-rbi-forecasts-gupta-says" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Foreign inflows support the rupee and bonds as oil stays in focus</h2>
+    <p class="dek accent">Equity inflows could lift the Indian rupee to 91.50 per dollar while oil stays in focus.</p>
+    <div class="body drop"><p>HDFC Bank&#x27;s treasury head says the Indian rupee could rise to 91.50 against the dollar on equity inflows. Foreign inflows lend support to both the rupee and bonds. Still, oil stays in focus as oil shock responses set emerging market bond winners and losers.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Foreign inflows lend support to the rupee and bonds.</li><li>HDFC Bank&#x27;s treasury head says the rupee could rise to 91.50 per dollar on equity inflows.</li><li>Oil shock responses set emerging market bond winners and losers.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNX3Q3UzZ0MVgtdGxvNFJSTlZEblpycG1QMDNHVWdKSktWTDNWUE1JLW9TTXgxT28tQ3RQUjBzbnFINHk5SGtuSk5zdHJ1OGVXNFg1ZkpDOVpPOHE4MHFCRW9oYmpGdVBqbzRVVE91RjZEdldCWVctUUdxVDM5RDFkcXdqZ1NQeTE0aUR6b29RN3pjMEFadjY1OEt6OU00c0U?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.arstechnica.net/wp-content/uploads/2025/04/agriculture-1152x648.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Black hole mergers reveal a curious mass gap</h3><p class="dek">The gap may hold a clue to how some massive stars die.</p>
+        <details><summary>Read</summary><div class="body"><p>A strange gap has appeared among merging black holes: those weighing 12 to 16 times as much as the Sun are scarce. In 257 mergers, black holes near 10 solar masses appeared in about three out of four, and their spins fell within a narrower range. Researchers think many may come from stars that collapsed without exploding, though that origin remains unconfirmed.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Researchers examined black hole masses in 257 mergers.</li><li>Black holes near 10 solar masses appeared in about three-quarters of the mergers.</li><li>Black holes between 12 and 16 solar masses were scarce.</li><li>No specific failed supernova has been confirmed.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261121221126.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Alzheimer&#x27;s risk gene helps brain cells contain plaques</h3><p class="dek">Mouse study points to a possible way to strengthen the brain&#x27;s defenses.</p>
+        <details><summary>Read</summary><div class="body"><p>The brain can limit harm from Alzheimer&#x27;s plaques by packing them tighter. A gene called CASS4 helps its immune cells do that job: when researchers disrupted it in mice, plaques grew faster, nearby nerve cells were damaged and thinking worsened. More than 6 million Americans live with Alzheimer&#x27;s, which can eventually leave people unable to recognize their own children; whether boosting CASS4 helps people remains untested.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>CASS4 helps microglia contain amyloid-beta plaques.</li><li>Disrupting CASS4 in mice increased plaque buildup and worsened cognitive function.</li><li>More than 6 million Americans live with Alzheimer&#x27;s.</li><li>A treatment that targets CASS4 has not been shown to work in humans.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261120075600.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>GLP-1 drugs could have a surprisingly large environmental payoff</h2>
+    <p class="dek accent">GLP-1 drugs could cut food demand enough to free farmland larger than Italy.</p>
+    <div class="body drop"><p>GLP-1 drugs could cut food demand enough to free farmland larger than Italy.</p></div><a class="src" href="https://arstechnica.com/health/2026/11/glp-1-drugs-could-have-a-surprisingly-large-environmental-payoff/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://substackcdn.com/image/fetch/$s_!R45g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9977e26a-a8b5-4668-8002-475d3213da27_1456x1116.webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Ghanaian lab&#x27;s AI produced 6,020 possible toxin designs</h3><p class="dek">A safety test raised a question about DNA orders.</p>
+        <details><summary>Read</summary><div class="body"><p>A drug-discovery AI returned 6,020 possible toxin designs when researchers in Ghana removed its guardrails and tested it in 2024. None was made; software predicted the designs were likely toxic, but they were not tested in a lab. The result left the researchers asking whether a company making DNA to order would stop someone who brought in such a design.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>MinoHealth researchers in Ghana tested their AI model in 2024.</li><li>It produced 1,020 protein designs and 5,000 small-molecule designs.</li><li>The researchers made none of the designs in a lab.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>Pew projects Muslims will outnumber Christians by 2035</h3><p class="dek">A younger population is the main reason.</p>
+        <details><summary>Read</summary><div class="body"><p>Pew projects Muslims will outnumber Christians by 2035, and conversion is not the main reason. By 2070, Muslims would make up 36% of the world, up from 26% in 2020, a move from about one in four people to more than one in three. Pew points to a younger Muslim population and higher birth rates, while stressing that these are projections.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Pew projects Muslims will outnumber Christians by 2035.</li><li>The projected Muslim share rises from 26% in 2020 to 36% in 2070.</li><li>Pew identifies age and birth rates as the main drivers of growth.</li></ul></aside></details>
+        <a class="src" href="https://5pillarsuk.com/2026/11/18/muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study" target="_blank" rel="noopener">5pillarsuk.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A child&#x27;s death exposed gaps in China&#x27;s gene-editing oversight</h3><p class="dek">A hospital approval did not catch the warnings.</p>
+        <details><summary>Read</summary><div class="body"><p>A four-year-old girl died after receiving a gene-editing treatment her parents paid $860,000 to develop. The consent form did not warn that she could die, and the hospital approved the treatment before monkey tests showed liver and kidney damage. Her case exposes a research route that let some Chinese trials proceed with hospital approval alone until new rules took effect in May.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Mei died within days of receiving the treatment in March 2025.</li><li>Her parents paid $860,000 to develop it.</li><li>The consent form did not warn of the possibility of death.</li><li>Until May, some researcher-led trials could proceed with hospital approval alone.</li></ul></aside></details>
+        <a class="src" href="https://www.noemamag.com/what-chinas-gene-editing-deaths-reveal-about-its-biotech-industry" target="_blank" rel="noopener">noemamag.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A game built without generative AI made $3.79 billion on day one</h2>
+    <p class="dek accent">Rockstar&#x27;s human-made Grand Theft Auto VI sold huge, and it hints that &quot;certified human&quot; could become the scarce thing in a world full of AI content.</p>
+    <div class="body drop"><p>Handmade things are supposed to lose. Machines win on price, and the craftsperson ends up selling to the rich.</p><p>So here is a fresh test. Rockstar&#x27;s 5,000 staff built Grand Theft Auto VI without generative AI. Reports say 30,000 unique characters in it were made by hand.</p><p>The game made $3.79 billion in sales by the end of its first day, preorders included. Split that across 5,000 people and it is roughly $758,000 each, in one day.</p><p>The old version of this story ended badly. In the 19th century, William Morris and the British Arts and Crafts movement resisted industrial machines. Handwork couldn&#x27;t compete on price, so only the well-off could afford it. Morris complained he spent his life serving &quot;the swinish luxury of the rich.&quot;</p><p>Here&#x27;s the catch for Morris: digital goods play by different rules. Make something carefully by hand once, and the cost spreads across millions of buyers. It becomes a mass-market product, not a rich person&#x27;s toy.</p><p>Why would buyers care who made it? Azeem Azhar, who writes the newsletter this comes from, argued back in 2017 that AI would make perfection cheap, and human imperfection would become the scarce part. One study found people rated AI-generated paintings more favorably when they were labeled human-made.</p><p>Now the oddest example. Mathematicians have been chasing a proof of the Riemann hypothesis for 167 years, and two arrived on the same day.</p><p>Levent Alpöge, a mathematician at Anthropic, says he and Claude may have proved it. The same day, Stanford&#x27;s Ravi Vakil rushed out a proof by Alessandro Masullo, which he called &quot;all human, with no AI.&quot;</p><p>That&#x27;s the clever bit. Alpöge&#x27;s proof runs to 17.4 million lines of Lean, a formal language that checks logical arguments. Masullo&#x27;s human proof is still being checked, so a team is translating it into Lean to verify it faster. Even the human work is leaning on a machine to be believed.</p><p>The risk is that a &quot;certified human&quot; tier gets drowned out by an ocean of synthetic filler. Azhar says his own Instagram feed has become one. So who will do the certifying?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Rockstar&#x27;s 5,000 staff built Grand Theft Auto VI without generative AI.</li><li>The game made $3.79 billion in sales by the end of day one, including preorders.</li><li>Two Riemann hypothesis proofs arrived the same day, one with Claude and one &#x27;all human, with no AI&#x27;.</li></ul></aside><a class="src" href="https://www.exponentialview.co/p/ev-611" target="_blank" rel="noopener">exponentialview.co ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://th-thumbnailer.cdn-si-edu.com/XJOU1GG1iCCn_BYL8xvcXon7-gs=/420x240/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/21/20/2120f494-9db1-4ab8-8f4b-5c284b3037c0/amy-poehler-dig.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>The dive that took Jacques Mayol to 100 metres</h3><p class="dek">A record dive revealed what happened to his heart underwater.</p>
+        <details><summary>Read</summary><div class="body"><p>Jacques Mayol&#x27;s heart slowed from 60 beats a minute to 27 during his 1976 dive. On 23 November that year, he became the first freediver to reach 100 metres, twice the 50-metre depth his friend and rival Enzo Maiorca had passed. Here&#x27;s the catch: in no-limits diving, a weighted sled takes divers down and an air balloon brings them back.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Mayol reached 100 metres on 23 November 1976.</li><li>The source describes his no-limits dive as reaching 101 metres.</li><li>His heart rate fell from 60 to 27 beats a minute during that dive.</li><li>No-limits divers may use weighted sleds and air balloons.</li></ul></aside></details>
+        <a class="src" href="https://en.wikipedia.org/wiki/Jacques_Mayol" target="_blank" rel="noopener">Wikipedia ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>An archaeologist watched the trailer for Amy Poehler&#x27;s &quot;Dig&quot; and noticed the shade</h2>
+    <p class="dek accent">Real archaeologists say Peacock&#x27;s &quot;Dig&quot; gets the unglamorous parts of a Greek excavation right, and the scenery wrong.</p>
+    <div class="body drop"><p>Maria Liston has taken part in digs in Greece since 1987. When she watched the trailer for Peacock&#x27;s new series &quot;Dig,&quot; what caught her eye was the shade canopies.</p><p>&quot;We never got shade,&quot; she says. Now it is standard, because insurance companies and university lawyers do not like it when people drop from heat exhaustion. So the show got right a detail that has nothing to do with buried treasure.</p><p>Here&#x27;s the setup. In &quot;Dig,&quot; Amy Poehler plays Elise, the second in command of a university-sponsored excavation in Greece, who is eager for her boss Neville (Hugh Laurie) to retire. Then she and three female colleagues uncover a generation-defining artifact and land in an international conspiracy.</p><p>So why does a comedy care about shade? Co-creator Michael Schur, who made &quot;Parks and Recreation&quot; with Poehler, sees archaeology as a lot like work in small-town municipal buildings. It is essential and often underappreciated. He calls it a discipline that &quot;isn&#x27;t very glamorous and doesn&#x27;t make people famous and rich.&quot;</p><p>To keep the show honest, the team hired Joseph Rife, a Vanderbilt classicist who has worked in Greece since 1990. He talked the producers through how a work site flows: some people push wheelbarrows, some sift dirt, some actually dig.</p><p>Liston says the undergraduates are the labor on a real dig. Greek workmen handle the more skilled and potentially more dangerous tasks.</p><p>Then there are the dogs. In the trailer, Elise says, &quot;Do not feed the dogs, ever.&quot; In real life, Liston says, Americans rarely listen to such warnings: Athens has lots of strays, and &quot;they all get named, and they do get fed.&quot;</p><p>Here&#x27;s the catch. The scenery is wrong. The show&#x27;s site sits in a vague spot, though Rife says it is in the Peloponnese, in southern Greece. Liston says it is &quot;way too green,&quot; with more rainfall than the real south and trees more like northern Greece. Most of it was filmed in California.</p><p>One more reality check: an American team cannot just set up a dig anywhere. Greece restricts foreign countries to three independent dig sites at a time, plus three run with local archaeologists.</p><p>So the detail that caught Liston&#x27;s eye says a lot about the world the show is set in. Archaeology is mostly sweat, students and sensible rules, and sometimes a lawyer&#x27;s idea of a canopy.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>&quot;Dig&quot; arrives on Peacock on November 23, with Amy Poehler as archaeologist Elise.</li><li>Historical consultant Joseph Rife helped the producers show how a real dig site works.</li><li>Maria Liston praised the shade canopies and trenches but said the greenery is wrong for southern Greece.</li><li>Greece limits foreign countries to three independent dig sites at a time, plus three collaborations.</li></ul></aside><a class="src" href="https://www.smithsonianmag.com/history/in-peacocks-dig-amy-poehler-plays-an-archaeologist-who-discovers-an-extraordinary-statue-in-greece-what-do-real-experts-think-of-the-tv-series-180989869/" target="_blank" rel="noopener">smithsonianmag.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://bigthink.com/wp-content/uploads/2026/11/10_Euclid_DR1_Images_ZoomInfography-8K4K.jpg?quality=85&amp;w=640" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Anthropic raises record US$81 billion in stock debut</h3><p class="dek">A huge listing leaves a bigger question open.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic raised US$81 billion in its stock market debut, US$6 billion more than the previous record set by SpaceX. So is that a vote for the whole AI industry? The company behind Claude ended its first trading day 17% above its offer price, but that tells you investors wanted Anthropic shares. It cannot tell you how they feel about every AI company.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Anthropic raised US$81 billion in its public listing.</li><li>SpaceX held the previous US$75 billion record.</li><li>Anthropic&#x27;s shares closed 17% above their offer price on the first day.</li></ul></aside></details>
+        <a class="src" href="https://theconversation.com/was-anthropics-record-us-81-billion-listing-a-vote-of-confidence-in-ai-and-whats-next-297151" target="_blank" rel="noopener">theconversation.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Europe&#x27;s Euclid telescope is mapping more than a third of the sky</h2>
+    <p class="dek accent">Euclid, a European Space Agency telescope launched in 2023, is now mapping 14,000 square degrees of sky.</p>
+    <div class="body drop"><p>One space telescope has taken on a huge job: imaging 14,000 square degrees of sky, which is more than a third of the whole sky.</p><p>That telescope is Euclid, run by the European Space Agency, or ESA. It launched on July 1, 2023, riding a Falcon 9 rocket.</p><p>Here&#x27;s the catch. Launching is only the start. After the rocket let it go, Euclid still had to be deployed, commissioned and calibrated, which is a careful way of saying it had to be switched on, checked and tuned before it could do real work.</p><p>Now that is done, and the mapping has begun. A map is the right word for it. Instead of staring hard at one famous object, Euclid is built to cover ground, patch after patch, until a big share of the sky has been imaged.</p><p>A square degree is a patch of sky, and 14,000 of them is a lot of patches. The whole sky, seen from all directions, is roughly three times that, which is why this counts as a third.</p><p>What I can say is the plan. Euclid is not hunting for one picture. It is building a survey, and surveys get their power from how much they cover.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Euclid launched on July 1, 2023, on a Falcon 9 rocket.</li><li>It is an ESA mission.</li><li>After deployment, commissioning and calibration, it has begun mapping the Universe.</li><li>It will image 14,000 square degrees of sky in total.</li></ul></aside><a class="src" href="https://bigthink.com/starts-with-a-bang/euclid-release-cosmic-treasure/" target="_blank" rel="noopener">bigthink.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Where the laws of physics break down</h2><p class="dek accent">Our two core theories explain the cosmos, but they collapse when forced into the same room.</p>
+  <div class="body drop"><p>You might assume that physics has already mapped out the basic machinery of reality. You drop a spoon, and gravity pulls it down; you warm a solid mug, and it holds heat. But the theories that explain how these everyday things behave are quietly split down the middle.</p><p>Think of a kitchen where two trusted recipe books give conflicting instructions for the exact same ingredient. In modern physics, the Standard Model rules the subatomic world, while general relativity governs gravity and space. Both work with great accuracy on their own, yet their mathematical frameworks contradict each other.</p><p>Here is the catch. When conditions become extreme, such as at the Big Bang or at the centers of black holes beyond their event horizons, both theories break down completely. Physicists also face major theoretical mysteries like dark matter, dark energy, and the unknown mass of neutrinos, where existing theories fail to explain what we observe.</p><p>So how fast do these puzzles get solved? In 1984, the mathematical physicist Barry Simon listed 15 open problems, and by 2000 researchers had solved 5 of them, clearing one third of the list in 16 years. Yet progress can also stall: when physicists at the Strings 2000 conference drew up 10 millennium problems, zero had been conclusively solved 25 years later in 2025.</p><p>This habit of cataloging our ignorance is as old as modern science. Back in 1704, Isaac Newton ended his book Opticks with 31 queries about light and matter, while Nobel laureate Vitaly Ginzburg later compiled 30 open problems, including the arrow of time and how life arises from physics alone. Every unsolved puzzle marks the exact edge where our map of the universe runs out.</p><p>Which brings us to the question for next time. If the rules of the subatomic world and the rules of gravity shatter when they meet at the center of a black hole, how can a single framework ever reconcile them?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Standard Model and general relativity mathematically contradict each other and break down at black hole centers and the Big Bang.</li><li>Barry Simon proposed 15 open problems on quantum operators in 1984, with about 5 solved by 2000.</li><li>None of the 10 millennium problems proposed at the Strings 2000 conference has been conclusively solved as of 2025.</li><li>Isaac Newton published a list of 31 open queries about light and matter in the 1704 edition of Opticks.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=bj3JTd-ezYg" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/bj3JTd-ezYg?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>AI news video lists math claims and new models</h3><p>The title spans math, AI models and real-time virtual characters.</p><span>AI Search ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=f3xHbkV3ZkA" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/f3xHbkV3ZkA?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video covers Iran war escalation across the Middle East</h3><p>The feed provides a title but no description.</p><span>Preston Stewart  ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=HbwWGZGckws" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/HbwWGZGckws?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video discusses a claim of two Russian ship losses</h3><p>Preston Stewart&#x27;s title says the losses happened within 48 hours.</p><span>Preston Stewart  ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=1APea4j471c" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/1APea4j471c?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A video says it trained an LLM on 1.1M YouTube videos</h3><p>Green Code&#x27;s title makes a large claim, but no description was provided.</p><span>Green Code ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://en.prothomalo.com/corporate/z1vifd8eej" target="_blank" rel="noopener">First-ever BCMEA Football Cup kicks off 27 November</a><span>en.prothomalo.com</span></li><li><a href="https://www.bbc.co.uk/sport/rugby-union/articles/ckr5gdpm1q5no?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">England will not get carried away by beating All Blacks</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.bbc.co.uk/sport/golf/articles/ckjwjvwexd12o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Thitikul wins third title in a row at LPGA finale</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.aljazeera.com/video/newsfeed/2026/11/23/pochettinos-nightmare-start-as-man-u-thrashed-by-liverpool?traffic_source=rss" target="_blank" rel="noopener">Pochettino’s nightmare start as Man U thrashed by Liverpool</a><span>aljazeera.com</span></li><li><a href="https://www.dhakatribune.com/business/banks/425424/al-arafah-islami-bank-platinum-sponsor-of-blue" target="_blank" rel="noopener">Al-Arafah Islami Bank platinum sponsor of Blue Star Team in BCB’s ‘D-3 Trophy’</a><span>dhakatribune.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The gap between a decision and a changed life</h2><p class="dek accent">Today&#x27;s news shows how much depends on who can make a rule hold.</p>
+  <div class="body drop"><p>A court can find genocide, and refugees can still be unable to go home. The ruling on Myanmar cannot, by itself, bring the Rohingya home. That gap between a public decision and a changed life runs through today&#x27;s news.</p><p>Rules depend on people who can carry them into the world. A climate draft can set an electricity goal while leaving out a fossil fuel commitment. Advanced AI chips can reach China despite US export controls. Writing a rule is one step. Who can enforce it, and who can get around it, decides what the rule does.</p><p>Trust faces a similar test. You can point to a process, a board, a negotiation or a ruling, but people judge it by what follows. Bangladesh&#x27;s garment factories faced damage from buyers leaving after an 18-day stoppage. Work can resume while the loss keeps moving through future orders.</p><p>A headline catches the moment something becomes visible: a vote, a deal, a strike, a court decision. Beneath it are slower changes in trust and dependence, and long arguments over who sets the terms. Those changes have no neat date, yet they often decide how long an event matters. When you read a headline, what was already happening underneath it, and who can make the outcome stick?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-22/index.html">← Yesterday</a><span>2026-11-23</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
