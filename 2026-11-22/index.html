@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://i.dawn.com/large/2026/11/21113342a3b81ed.webp')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Sunday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Nvidia posted a great quarter, then lost 13.8% in a day</h2>
+      <p class="dek">US stocks sank again on Friday as worries about AI spending beat good earnings, pushing the S&amp;P 500 and Dow into a correction.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>22 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://i.dawn.com/large/2026/11/21113342a3b81ed.webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Nvidia posted a great quarter, then lost 13.8% in a day</h2>
+    <p class="dek accent">US stocks sank again on Friday as worries about AI spending beat good earnings, pushing the S&amp;P 500 and Dow into a correction.</p>
+    <div class="body drop"><p>Nvidia&#x27;s shares tumbled 13.8 percent on Friday. One investor, Chuck Carlson of Horizon Investment Services, said the company had just reported what might have been one of the greatest quarters in corporate earnings history, and that &quot;they did everything right.&quot;</p><p>So why the plunge? Because the market was not really grading Nvidia&#x27;s profits. It was worrying about the risks of AI and the massive spending on it.</p><p>Here&#x27;s the scoreboard. A correction means a stock index has fallen more than 10 percent from its record high, and both the S&amp;P 500 and the Dow are now there. The S&amp;P 500 lost 3.70 percent on Friday, its seventh straight drop and its longest losing streak since February 2020.</p><p>The Nasdaq, which is packed with tech companies, fell 5.28 percent in a single day. That is about $5.28 gone from every $100. It is now down for the year, and its week was its worst since March 2020.</p><p>Where does Anthropic come in? It sold shares to the public for the first time on Thursday at $83 each, hoping to reach a market value of as much as $2 trillion. It closed 17.1 percent above that price, but enthusiasm faded as the session went on, and on Friday it fell 9.1 percent.</p><p>Carlson said many people, himself included, had looked to the debut as &quot;a clearing event,&quot; a moment to calm the nerves. &quot;It wasn&#x27;t.&quot;</p><p>Here&#x27;s the catch for anyone who bought the AI chip story. The Philadelphia semiconductor index was up as much as 106.6 percent for the year in mid-June. Now it is up 18.7 percent. Put in $100 on January 1 and you would have seen about $206.60 at the peak, and about $118.70 today.</p><p>The damage spread. Meta dropped 5.9 percent and Amazon 3.9 percent. The newer AI cloud firms CoreWeave and Nebius slid 12.1 and 16.1 percent. Wall Street&#x27;s &quot;fear gauge,&quot; the VIX, closed at its highest since April 7, 2025.</p><p>Bill Northey of US Bank Wealth Management put it simply. In the immediate term, he said, sentiment is the more powerful force, while fundamentals tend to win out over time.</p><p>Nvidia did everything right and still fell 13.8 percent. Friday, it turns out, was not over time.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The S&amp;P 500 and Dow closed more than 10 percent below their record highs, confirming corrections.</li><li>The S&amp;P 500 fell for a seventh straight day, its longest losing streak since February 2020.</li><li>Anthropic closed 17.1 percent above its $83 offer price on Thursday, then fell 9.1 percent Friday.</li><li>Nvidia fell 13.8 percent and the Nasdaq lost 5.28 percent on Friday.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01YzRiT09nYlU4eGlRUGtzSE1Jd1MyT1BpbUozZWxhNG95LTBqUnNwcTFlQURCcXY2ZTJ5RDd2YWhTR0J4RDhMcVM3ZHUyRGlOSU50TjRwbmk2eUZMNndFNF9hMDBYcVU?oc=5" target="_blank" rel="noopener">Reuters + 4 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?</h3><div class="body"><p>Mexican forces arrested Chapo Isidro in Sinaloa. He was on the FBI’s most wanted list and faces US drug charges.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 5 more ↗</a></li>
+    <li><h3>FBI reportedly investigates apparent breach of criminal database</h3><div class="body"><p>The FBI&#x27;s own criminal database may have been breached, US media report, citing two people briefed on the issue; why does this one matter? The FBI is investigating a system that federal agencies and local police use to share information on warrants and background checks.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>Indian man sentenced over plot to kill Sikh separatist</h3><div class="body"><p>The hitman presented to Nikhil Gupta was actually an undercover US officer, prosecutors said. Gupta was sentenced to 235 months, more than 19 years, for plotting to kill a Sikh separatist in the US; India denies prosecutors&#x27; allegation that an Indian official directed him.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a></li>
+    <li><h3>Israeli strike hits food aid vehicle in Gaza, killing three</h3><div class="body"><p>Three Palestinians were killed in an Israeli air attack on a vehicle carrying food.</p></div><a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-israel-targets-gaza-food-truck?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 3 more ↗</a></li>
+    <li><h3>Trump orders contractors to check with White House over any congressional inquiries</h3><div class="body"><p>Anticipating flood of Democratic requests, US president issues executive order in attempt to stymie oversight efforts Donald Trump is directing federal contractors and subcontractors to consult with h</p></div><a class="src" href="https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order" target="_blank" rel="noopener">theguardian.com + 2 more ↗</a></li>
+    <li><h3>Army, JSS armed members exchange fire in Sajek; no casualties reported</h3><div class="body"><p>The exchange of fire continued intermittently from this morning through noon in the 14 Kilometre area of Machalong.</p></div><a class="src" href="https://www.tbsnews.net/bangladesh/army-jss-armed-members-exchange-fire-sajek-no-casualties-reported-1609936" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a></li>
+    <li><h3>Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news</h3><div class="body"><p>Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news AP News</p></div><a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVlUcjlPZURmRnhmY2JJZVVBTkhfUEM2bmhqRDZfQkZJMTBEc2hQSDdRVFQ0N1BjTW1rMXNrSnM4R0R6SVcyZXJpWEVVU3hkU0dsX0otVk1HNV9abFFBTkVUeXMtdHk2WVFUcEVFOVVUVlZUeTFUdXBuVzVHMVFmeFdFVExwTWtJVC1sd0dEVDVSdXdHZUhVRDc4MU5rYU1laFBn?oc=5" target="_blank" rel="noopener">AP News + 1 more ↗</a></li>
+    <li><h3>Three Salvadoran soldiers die as Haiti mission widens</h3><div class="body"><p>Three Salvadoran soldiers died while handling explosives in Haiti, the first officially reported deaths among more than 2,000 troops sent after four Salvadoran airmen went missing in a gang ambush. That deployment has widened into an operation against gangs, and Haiti has agreed with El Salvador to build three new prisons.</p></div><a class="src" href="https://www.ft.com/content/53d9f3ef-e0cc-4605-8203-180a97d0d404?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a></li>
+    <li><h3>Eisenkot invites Netanyahu’s party to coalition talks</h3><div class="body"><p>Eisenkot has invited caretaker prime minister Benjamin Netanyahu’s Likud party to coalition talks starting Sunday, after October’s election left both blocs short of a majority. Neither won more than half the seats; Eisenkot has until next month to form a government, and his party says it wants the broadest one possible.</p></div><a class="src" href="https://www.france24.com/en/middle-east/20261121-eisenkot-invites-netanyahu-s-party-for-marathon-israeli-coalition-talks" target="_blank" rel="noopener">france24.com + 1 more ↗</a></li>
+    <li><h3>EU proposes tax on biggest digital companies to fund budget</h3><div class="body"><p>The EU&#x27;s new spending proposal is €204 billion ($224 billion) smaller than the European Commission&#x27;s original plan. European Council President Antonio Costa unveiled it alongside a proposal to tax the world&#x27;s biggest digital companies to help fund the bloc&#x27;s next budget, while member states remain divided over long-term funding.</p></div><a class="src" href="https://www.dawn.com/news/2046129/eu-proposes-tax-on-big-tech-to-boost-budget" target="_blank" rel="noopener">dawn.com + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://www.tbsnews.net/sites/default/files/styles/big_1/public/images/2026/05/06/bd_india_flag.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Court finds Myanmar committed genocide against Rohingya</h3><p class="dek">The ruling orders safe return, but war continues in Rakhine.</p>
+        <details><summary>Read</summary><div class="body"><p>A court has ordered Myanmar to allow Rohingya refugees to return safely, while war still grips the region many fled. The International Court of Justice found Myanmar committed genocide in 2016 and 2017; a UN-backed mission said about 10,000 people likely died. The order now faces its hardest test: enforcement rests with the UN Security Council.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The International Court of Justice ruled that Myanmar committed genocide against the Rohingya.</li><li>A UN-backed mission said about 10,000 people likely died.</li><li>The court ordered Myanmar to allow safe, voluntary return.</li><li>Enforcement of the court’s orders falls to the UN Security Council.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/world/asia/425339/myanmar-genocide-ruling-rohingya-say-struggle-for" target="_blank" rel="noopener">dhakatribune.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Over 50 houses, Awami League properties burnt in Bangladesh ahead of Hasina&#x27;s return</h3><p class="dek">Over 50 houses, Awami League properties burnt in Bangladesh ahead of Hasina&#x27;s return India Today</p>
+        <details><summary>Read</summary><div class="body"><p>Over 50 houses, Awami League properties burnt in Bangladesh ahead of Hasina&#x27;s return India Today</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPNS12UEpCV2w1bU5IUU9acFVXQlhtQ1NPQ3JlSTZEZFh0S1RBdE5RQzdsbFk0LWhBTFc1V1dvWk5rVTVxRVJ4bnZZV3J3VjBXdVY2alFpMEtGQnFfS3Qta29OWVZDWVZIVkwzQmVacUVXX1dhQTRZajNlODhsTzRvU0N6X1R1RnB1ODh3YzhQc0ZJakpIT0xnRVhYeEFWMVl1TjIwalFlUXloSGNKSEVXN2tiQnF0UXhab3p2ONIBwgFBVV95cUxORWxQWVE1aVRLQXNoMzg4LTBJeldWd3JDaDJYV1F4Z2ZQU2hqYkI5d3F4cDdOMUVIcnNobUYxUGdubl9tb0VFTmpZbGltZW5WVlI5NVdJaWdPa0FVS2xwak9pQUlZR2dsbUNNR2EwbFJCUTFmN0ZNYzBfQXNGX0U0UDNucWZ4Y0RjZzhlUVhHWGRrZ21sRy1EZnc5UEFaRWdfeldGdUpra01RVXV0aXhFMjlTdm5lTXpLNFVWTG5LLUtnZw?oc=5" target="_blank" rel="noopener">India Today + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>BNP-Jamaat rift widens as Rahman faces pressure</h3><p class="dek">The available summary gives no details of the dispute.</p>
+        <details><summary>Read</summary><div class="body"><p>The rift between BNP and Jamaat is widening while Prime Minister Rahman faces pressure, Tripuratimes reports. What is driving the split, and where is the pressure coming from? The available summary does not say.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Tripuratimes reports a widening BNP-Jamaat rift.</li><li>Its headline says Prime Minister Rahman faces pressure.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQb19mTkhvNWYwcVpDOGxLZzlOaEo4UzBWS0RIT1UtNFVobzlSRmVjSUhGU1ZnSFgtUEM0TWNNeThPU3l4THBqSzFseERSMmhjd0NSVmlZaFdDcEw4MERsYWFqaDBFcU13aXl1ZXVGcGlWTGR4Q25iejZLUjJQck5VUmdMYVRwUUs2bkpFZHZxRmFVMXhocVdZRDJsUXZucFZna09v?oc=5" target="_blank" rel="noopener">Tripuratimes ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bangladesh Bank allows loan defaulters with court stay orders to access Tk 60,000 crore stimulus</h3><p class="dek">Bangladesh Bank allows loan defaulters with court stay orders to access Tk 60,000 crore stimulus The Daily Star</p>
+        <details><summary>Read</summary><div class="body"><p>Bangladesh Bank allows loan defaulters with court stay orders to access Tk 60,000 crore stimulus The Daily Star</p></div></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQNlROSlpoWnVLZnpfVWFhRnBna3JnOFZXejljY0xibl9WUUZrVkVqLW44cmtBRTFNcGFsV1NQRkRraGxRcWRxZzA5MHM1ZnRQRnY0NzYzbnIxM0hkTG1hYVVBWUlFT2NCNzAxaHhOeFhPQnNFMU9ERXYxckwxbVZtbUxEYldiZ1dDVHV4Y000RHc4MktidTlDbkZSYnVkSVJLMmcyc2ZtdWMtOFJVUEdpOWVUVmhJQV9zaVVGSGczMzItbzR4b2VZVkFWS2t4Mlk?oc=5" target="_blank" rel="noopener">The Daily Star ↗</a>
+      </article>
+      <article class="more">
+        <h3>World Bank says reforms could lift Bangladesh&#x27;s GDP growth</h3><p class="dek">A growth forecast sits beside a question about fading momentum.</p>
+        <details><summary>Read</summary><div class="body"><p>The World Bank says tax and energy reforms could lift Bangladesh&#x27;s GDP growth to 5.7% by FY35. So why is growth losing momentum now? The available headlines ask that question but give no answer.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Daily Star asks why Bangladesh&#x27;s GDP growth is losing momentum.</li><li>The World Bank says tax and energy reforms could lift growth to 5.7% by FY35.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaHVsVktRa3llNmdoWHBJMTU5a25XeS0xT3FKNDg2QWhzZ1UyVm9ySzl3WEF2V1l4dXkzVEZ2VjBmSFFGdTNGWGVuZ2Q1QUNMdU9WOE95UVMybFA4NW0yOEhvVXJ5WF9Ia1E5TnNVU1JFdEdVcGRLNnNkejFjWVNtNGwzTDNFQ21IX3I0RUVMMGZuZEZQLWM0akZiMHVRWVU5X04weDh5RjFMM3M?oc=5" target="_blank" rel="noopener">The Daily Star + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>One river has a water deal between Bangladesh and India. It expires 12 December</h2>
+    <p class="dek accent">Bangladesh and India share 54 rivers, only the Ganges has a bilateral water deal, and officials meet today as it nears its end.</p>
+    <div class="body drop"><p>Bangladesh and India share 54 rivers. Only one of them is covered by a water-sharing agreement between the two countries, and that agreement runs out on 12 December.</p><p>The river is the Ganges. The treaty was signed on 12 December 1996, so it expires on its own anniversary.</p><p>On Sunday, 22 November, the two countries&#x27; Joint Rivers Commission meets in Dhaka. The Indian delegation is already there, and a senior official told UNB this is the last meeting under the current treaty.</p><p>Here&#x27;s the catch. Dhaka calls it a routine meeting. The committee&#x27;s job is to check that the existing treaty is being carried out, and renewing or extending it is not within its jurisdiction.</p><p>So what does Bangladesh actually want? Water Resources Minister Shahiduddin Chowdhury Anee says a new or revised agreement, not a simple renewal. His main priority, in his words, is to bring back the guarantee clause from the 1977 agreement.</p><p>Think of that clause as a floor under the tap. The 1977 deal, negotiated by the BNP&#x27;s founder Ziaur Rahman, said that if the Ganges flow at Farakka fell below the projected level in any 10-day period, Bangladesh&#x27;s release would not drop below 80% of its scheduled share. Of every 10 units it was due, at least 8 would still arrive.</p><p>Why does a floor matter so much? Dhaka says it wants its share of dry-season flows protected, because that is when there is least water to go around.</p><p>India&#x27;s line, from Foreign Ministry spokesperson Randhir Jaiswal, is that the commission is the established place to discuss all water issues, including the Ganga. He added that India stays committed to a constructive, forward-looking relationship while safeguarding its own interest.</p><p>Foreign Minister Dr Khalilur is thinking long. He said he wants a durable solution that wins public trust and lays the basis for the next 25 to 50 years.</p><p>As for whether the answer is renewal or replacement, State Minister for Foreign Affairs Humaiun Kobir would only say, &quot;Whatever is best for Bangladesh&#x27;s interest will be done.&quot; With the expiry date set and the choice unannounced, that is the question still hanging over the Ganges.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Ganges treaty was signed on 12 December 1996 and is due to expire on 12 December this year.</li><li>Bangladesh and India share 54 transboundary rivers, and only the Ganges has a bilateral water-sharing agreement.</li><li>Bangladesh wants a new or revised deal with a guarantee clause like the 1977 one, which set an 80% floor on its scheduled share.</li><li>The Joint Rivers Commission meeting on 22 November cannot decide renewal or extension.</li></ul></aside><a class="src" href="https://www.tbsnews.net/foreign-policy/dhaka-delhi-discuss-water-issues-sunday-1610011" target="_blank" rel="noopener">tbsnews.net + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6ce4/live/0cd0ed60-e3e9-11f1-a16c-7de3762c094b.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>India, China commanders meet again to try and calm Arunachal frontier</h3><p class="dek"></p>
+        <details><summary>Read</summary><div class="body"></div></details>
+        <a class="src" href="https://indianexpress.com/article/india/india-china-commanders-meet-again-to-try-and-calm-arunachal-frontier-10973140/" target="_blank" rel="noopener">indianexpress.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Manipur hooch deaths: Rahul Gandhi blames negligence of BJP government</h3><p class="dek">In a post, he says violence devastated hundreds of homes and now toxic liquor is wreaking havoc while the government remains asleep</p>
+        <details><summary>Read</summary><div class="body"><p>In a post, he says violence devastated hundreds of homes and now toxic liquor is wreaking havoc while the government remains asleep</p></div></details>
+        <a class="src" href="https://www.thehindu.com/news/national/manipur/manipur-hooch-deaths-rahul-gandhi-blames-negligence-of-bjp-government/article71728842.ece" target="_blank" rel="noopener">thehindu.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Nepal&#x27;s new PM promised not to travel abroad. He is flying to Delhi</h2>
+    <p class="dek accent">Balendra Shah pledged no foreign trips in his first year, but floods changed that, and his Delhi visit tests an old, uneven relationship.</p>
+    <div class="body drop"><p>Nepal&#x27;s Prime Minister Balendra Shah had pledged not to travel abroad during his first year in office. On Sunday he arrives in Delhi for a two-day visit.</p><p>So what changed? Flash floods in August killed more than 1,450 people in Nepal, and thousands remain missing. A reconstruction package is on the agenda, along with trade, energy and new air corridors.</p><p>Shah is 36 and a rapper-turned-politician. His Rastriya Swatantra Party swept to power in March, six months after a Gen Z uprising against corruption and nepotism toppled K P Sharma Oli&#x27;s government. In Delhi he meets Narendra Modi.</p><p>Why does this matter so much? Nepal is wedged between India and China, and its stability has direct implications for India&#x27;s security. Delhi and Beijing both compete for influence in Kathmandu.</p><p>Here&#x27;s the catch. The two countries share a largely open border of more than 1,750km, yet Nepal has long carried a &#x27;Big Brother&#x27; grievance about India. Bilateral trade exceeds $9bn and is heavily skewed in India&#x27;s favour.</p><p>Then there is the sky. Nepal wants India to open more air routes so large aircraft can fly in from the west to its new airports at Bhairahawa and Pokhara. Shorter flights cost less, and more flights could make those airports commercially viable.</p><p>Both airports have Chinese links. China&#x27;s Northwest Civil Aviation Airport built the Bhairahawa airport, and Pokhara&#x27;s was built with Chinese financial assistance.</p><p>Electricity is the easier story. India has approved projects to import up to 1,200MW from Nepal and wants more. India has the demand, and Nepal has the water and the mountains.</p><p>The hard one is the map. In 2019, India published a map that included areas Kathmandu claims, and Nepal then published its own. Analyst Kanak Mani Dixit hopes Shah raises it, saying talks should start even if there is no quick resolution.</p><p>Before leaving, Shah sent 20 party MPs to China for 11 days from 15 November. That looks like an effort to balance ties. Former Indian ambassador Ranjit Rae says &#x27;it&#x27;s an optimistic moment&#x27;.</p><p>Whether the map comes up in the room is the thing nobody can say yet.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Shah&#x27;s visit to Delhi is his first bilateral trip since his party took power in March.</li><li>August floods in Nepal killed more than 1,450 people.</li><li>India has approved imports of up to 1,200MW of electricity from Nepal.</li><li>Bilateral trade exceeds $9bn, heavily skewed in India&#x27;s favour.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/c6jre8xd83qgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://www.aljazeera.com/wp-content/uploads/2026/11/AP26325498278414-1795277500.jpg?resize=1200%2C630" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>U.S., China and Russia pledge more refined oil products</h3><p class="dek">The pledge comes as oil prices spike because of the Iran war.</p>
+        <details><summary>Read</summary><div class="body"><p>The United States, China and Russia made the same pledge at an APEC summit: increase the supply of refined petroleum products. Oil prices are spiking because of the Iran war, while oil shipped through Hormuz has fallen as Iranian strikes increase.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The three countries pledged to increase refined petroleum product supply at APEC.</li><li>Oil prices are spiking because of the Iran war.</li><li>Oil shipments through Hormuz have fallen as Iranian strikes increase.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html" target="_blank" rel="noopener">rss.nytimes.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Houthis deny threat to Saudi Arabia’s holy city of Mecca</h3><p class="dek">Houthis deny threat to Saudi Arabia’s holy city of Mecca Houthi military spokesman Yahya Saree said there was “no threat to Mecca” after Saudi Arabia issued a danger alert for the Mecca province and l</p>
+        <details><summary>Read</summary><div class="body"><p>Houthis deny threat to Saudi Arabia’s holy city of Mecca Houthi military spokesman Yahya Saree said there was “no threat to Mecca” after Saudi Arabia issued a danger alert for the Mecca province and l</p></div></details>
+        <a class="src" href="https://www.middleeasteye.net/live-blog/live-blog-update/houthis-deny-threat-saudi-arabias-holy-city-mecca" target="_blank" rel="noopener">middleeasteye.net + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>UN weapons talks continue to 2028 without binding pledge</h3><p class="dek">One country can hold up an agreement.</p>
+        <details><summary>Read</summary><div class="body"><p>One country can block an agreement in a UN weapons forum whose treaty has 128 members. How? Decisions require consensus, so every member must agree. That rule hangs over talks on AI-powered weapons that can kill without human control: countries agreed in Geneva to work toward a possible accord by 2028, but made no commitment to binding rules.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The forum&#x27;s treaty has been ratified by 128 countries.</li><li>Decisions in the forum require consensus.</li><li>Countries agreed to work toward a possible accord by 2028.</li><li>They made no commitment to binding rules.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZTFDeHY0QlBhU2dnNndMa1FhdmhtUDV2eF9HYmhHU0tzRlFoM0U1a0ZuaE8zbGduLUhoTU0tWWExeDkyOWYwRi1aXzVOd0NhRGszMlU5MWFyVmdLSUJOREtvaXNYY1p3YnRIaDR5X0RwZGVPTG1GeW5wZm1Hd0dlM0RoVDVBQlZ4WFV1bU9mM3YzcDJISEpEZkI5ekdsMy1xb1BkZ0JUYw?oc=5" target="_blank" rel="noopener">Reuters + 4 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Trump says he wants a permanent nuclear deal with Iran</h3><p class="dek">The aim is to prevent Iran from developing nuclear weapons.</p>
+        <details><summary>Read</summary><div class="body"><p>Donald Trump wants an agreement with Iran that does not expire. The US president says he wants a &quot;permanent&quot; deal to prevent Iran from developing nuclear weapons. That single word sets the scale of his goal: the agreement would need to last indefinitely, though the supplied summary gives no terms for how it would work.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump says he wants a permanent agreement with Iran.</li><li>He says its aim is to prevent Iran from developing nuclear weapons.</li></ul></aside></details>
+        <a class="src" href="https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-clip-trump-iran-permanent-nuclear-deal?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Russian missiles come down in Poland during military exercises</h3><p class="dek">Poland&#x27;s prime minister called the timing a likely provocation.</p>
+        <details><summary>Read</summary><div class="body"><p>Two Russian missiles and a suspected drone came down in Poland on Friday, during European military exercises there for a possible postwar mission in Ukraine. Prime Minister Donald Tusk said the timing was likely an &quot;intentional provocation&quot;.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Two Russian missiles came down in Poland.</li><li>A drone was suspected.</li><li>European military exercises were taking place in Poland.</li><li>Tusk called the timing a likely intentional provocation.</li></ul></aside></details>
+        <a class="src" href="https://www.france24.com/en/russia-tests-nato-s-eastern-defences" target="_blank" rel="noopener">france24.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Second strikes hit rescuers in Zelenskyy&#x27;s hometown, as missiles land in Poland</h2>
+    <p class="dek accent">A Russian attack on Kryvyi Rih killed two and wounded 60, while peace talks and a missile incident in Poland pull in other directions.</p>
+    <div class="body drop"><p>A seven-year-old boy and a 20-year-old woman were killed in Kryvyi Rih on Friday night. Sixty other people were wounded, six of them children, according to local officials.</p><p>Kryvyi Rih is a city in central Ukraine, and it is President Volodymyr Zelenskyy&#x27;s hometown. About 25 apartment buildings, a hospital, schools and businesses were damaged, said Oleksandr Vilkul, head of the city administration.</p><p>Here&#x27;s the detail that stands out. Vilkul said Russian forces launched more missiles after emergency workers arrived, hitting rescuers, medical personnel and utility crews. Footage from Ukraine&#x27;s emergency services appeared to show additional strikes during the rescue.</p><p>The violence was not limited to one city. Two people were killed in the southern Zaporizhia region, according to its governor. Russian authorities reported six deaths, including a child, from a Ukrainian attack on a residential area in Russian-controlled Luhansk.</p><p>Then there is Poland. On Friday, two Russian missiles and a suspected drone landed in the southeast of the country, which is a member of NATO, the military alliance linking the United States, Canada and European countries.</p><p>Polish Prime Minister Donald Tusk called it a deliberate provocation. He questioned the timing, since European countries were holding exercises to prepare for a possible post-war security mission in Ukraine. NATO chief Mark Rutte condemned the airspace violation and pledged that the alliance would defend Polish territory.</p><p>So where do the peace efforts stand? President Trump said on Friday, after talks with Vladimir Putin in China, that the Russian leader wanted to end the war diplomatically. Zelenskyy told reporters on Saturday that he was less convinced than Washington.</p><p>One demand is about land. Moscow demands that Ukraine withdraw from the entire eastern Donbas region, and Kyiv refuses.</p><p>Zelenskyy also reaffirmed that Ukraine wants to join NATO. Washington has discussed offering security guarantees resembling the alliance&#x27;s collective-defence commitments, and those remain under discussion.</p><p>Collective defence means members promise to defend one another. Ukraine is still negotiating for something like it, and the same week, a country that already has it had missiles land on its soil.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>A Russian attack on Kryvyi Rih killed two people, a seven-year-old boy and a 20-year-old woman, and wounded 60.</li><li>Vilkul said further missiles hit rescuers, medical staff and utility crews after they arrived.</li><li>Two Russian missiles and a suspected drone landed in southeastern Poland on Friday.</li><li>Moscow demands Ukrainian withdrawal from all of Donbas; Kyiv refuses.</li></ul></aside><a class="src" href="https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://images.thediplomat.com/v1/td-list-l-2/2026/11/thediplomat_2026-11-17-225520.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Amazon nears $7.5 billion deal for AI startup Decart</h3><p class="dek">The proposed acquisition would help AWS compete with Nvidia for computing power.</p>
+        <details><summary>Read</summary><div class="body"><p>Amazon is nearing a $7.5 billion deal to buy AI startup Decart, with talks at an advanced stage. A deal could come together as soon as next week and would help AWS compete with Nvidia in the race for computing power.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Amazon is nearing a deal to buy Decart.</li><li>The proposed deal is valued at $7.5 billion.</li><li>Talks are at an advanced stage.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Two groups verify mathematician’s claim that Claude helped prove mathematics problem</h3><p class="dek">Anthropic’s Levent Alpöge says it took six weeks for him using the AI tool to solve 19th-century Riemann hypothesis A mathematician at Anthropic has said that the San Francisco -based artificial intel</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic’s Levent Alpöge says it took six weeks for him using the AI tool to solve 19th-century Riemann hypothesis A mathematician at Anthropic has said that the San Francisco -based artificial intel</p></div></details>
+        <a class="src" href="https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai" target="_blank" rel="noopener">theguardian.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>NYU&#x27;s Tristan Buckmaster and Anthropic&#x27;s Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI&#x27;s solution (Peter Hall/Scientific American)</h3><p class="dek">Peter Hall / Scientific American : NYU&#x27;s Tristan Buckmaster and Anthropic&#x27;s Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI&#x27;s solution — Two mont</p>
+        <details><summary>Read</summary><div class="body"><p>Peter Hall / Scientific American : NYU&#x27;s Tristan Buckmaster and Anthropic&#x27;s Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI&#x27;s solution — Two mont</p></div></details>
+        <a class="src" href="https://www.techmeme.com/261121/p4#a261121p4" target="_blank" rel="noopener">techmeme.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips (Cheng Ting-Fang/Nikkei Asia)</h3><p class="dek">Cheng Ting-Fang / Nikkei Asia : Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips — TAIPEI — Ti</p>
+        <details><summary>Read</summary><div class="body"><p>Cheng Ting-Fang / Nikkei Asia : Industry insiders say new US export rules affect a broader range of chips, including SoCs used in consumer electronics, extending beyond advanced AI chips — TAIPEI — Ti</p></div></details>
+        <a class="src" href="https://www.techmeme.com/261121/p2#a261121p2" target="_blank" rel="noopener">techmeme.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Goldman Sachs and Apollo price $32 billion in SpaceX bonds</h3><p class="dek">The bonds are meant to fund AI chip purchases.</p>
+        <details><summary>Read</summary><div class="body"><p>SpaceX bonds are being used to fund $32 billion in AI chip purchases. Goldman Sachs and Apollo priced the bonds after Goldman Sachs spent more than a year working on a question for tech companies: how do you pay for AI chips without wrecking corporate balance sheets?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Goldman Sachs and Apollo priced $32 billion in SpaceX bonds.</li><li>The bonds are to fund AI chip purchases.</li><li>Goldman Sachs worked on the financing problem for more than a year.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-21/goldman-s-spacex-pitch-helps-solve-ai-debt-puzzle-credit-weekly" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A CEO&#x27;s affair became a debate about women and work</h2>
+    <p class="dek accent">Online chatter about Alice Huang turned her career into a dating story, with no evidence behind it.</p>
+    <div class="body drop"><p>On November 8, Jensen Huang admitted to infidelity and wrote: &quot;I take full responsibility.&quot; On November 12, he left his job as Nvidia CEO.</p><p>He did not name the woman. Reuters, citing two people familiar with the matter and internal correspondence, reported it was Chinese businesswoman Alice Huang, also known as Huang Le.</p><p>Then came the spy question. Media reports say U.S. intelligence officials believe she acted on behalf of Chinese intelligence. Beijing denies it, Reuters could not verify it, and she has not commented publicly.</p><p>Here&#x27;s the catch. The spy angle got the most attention, but The Diplomat noticed something else in the Chinese online reaction: the story became a magnet for gender takes. It looked at one Knews thread and one separate post, so this is not a survey of anyone&#x27;s opinion.</p><p>Some commenters treated the affair as a natural result of wealth. One called adultery &quot;standard fare for successful people.&quot; Others pushed back with sympathy for his wife, and one replied: &quot;If love fades, then get divorced.&quot;</p><p>Then the talk moved to her. Reuters found she worked in banking at HSBC and then CITIC, held a senior role at Shanghai Hexi Investment Management, and became controlling shareholder of Megaspeed International. Nvidia listed that Singapore-based cloud company as an official cloud partner.</p><p>One post, titled roughly &quot;Big Boss Huang&#x27;s woman&#x27;s WeChat Moments&quot;, claimed attractive women gravitate to booming industries, in careers and in love. That quietly folds a CV into a dating story. The post offered no evidence and claimed no personal knowledge of her.</p><p>Why does that matter? The Diplomat ties it to a wider habit of sexualising women at work, and gives one case.</p><p>Mu Qianwen is a Qingdao Porsche salesperson praised in the media for her sales totals. In February 2025 she went to police over fabricated sexual material that mixed her promotional images with unrelated explicit videos. She said she contemplated suicide after the harassment.</p><p>The man was sentenced in October 2025 to 10 days&#x27; administrative detention and a fine. On July 27, 2026, Mu filed a civil complaint seeking clarification and an apology. One of the videos had over 9 million views.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Jensen Huang admitted infidelity on November 8 and left as Nvidia CEO on November 12.</li><li>Reuters reported the affair partner was Alice Huang; Beijing denies reports that she acted for Chinese intelligence, and Reuters could not verify them.</li><li>A post claimed attractive women pick booming industries for work and love, with no evidence.</li><li>Mu Qianwen&#x27;s harasser got 10 days&#x27; detention; one fake video had over 9 million views.</li></ul></aside><a class="src" href="https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 3 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://static.dw.com/image/57193875_6.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Can Anthropic keep its culture through an IPO?</h3><p class="dek">A low-key company faces the glare of public markets.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic&#x27;s IPO puts a low-key company in the glare of public markets. Can it preserve its idiosyncratic culture under that attention?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The feed headline is about Anthropic&#x27;s IPO.</li><li>The summary describes Anthropic as low-key.</li><li>The summary asks whether its culture can survive public-market attention.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/149d497e-0567-4467-bcfb-269b8b8eb157?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Investors are being told to unlearn 20 years of lessons</h3><p class="dek">The Financial Times says the old lessons on inflation, bonds and stocks may no longer fit.</p>
+        <details><summary>Read</summary><div class="body"><p>What if the lessons investors learned over the past 20 years are the ones they need to unlearn? The Financial Times argues that inflation, bonds and stocks belong to a different world from the one that followed the financial crisis.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The summary calls for unlearning lessons from the past 20 years.</li><li>It names inflation, bonds and stocks.</li><li>It contrasts today&#x27;s markets with the period after the financial crisis.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/22b3765d-ff3d-4f07-8982-5a222dbb862e?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>History offers warnings for the AI boom, but no timetable</h3><p class="dek">Justin Fox says debt and investor sentiment are risks to watch, even if AI proves transformative.</p>
+        <details><summary>Read</summary><div class="body"><p>History can warn you about a financial bubble. It cannot tell you exactly when one will burst, says Bloomberg Opinion columnist Justin Fox, who points to debt and investor sentiment as risks to watch during the AI boom.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Justin Fox is a Bloomberg Opinion columnist.</li><li>Fox says history offers warning signs for financial bubbles.</li><li>Fox says history gives little reliable guidance on when bubbles burst.</li><li>Fox identifies debt and investor sentiment as risks to watch.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/videos/2026-11-21/is-ai-a-bubble-history-offers-some-clues-video" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>EU and Indonesia sign trade deal after almost 10 years of talks</h2>
+    <p class="dek accent">After almost a decade of haggling, the EU and Indonesia signed a trade deal, with palm oil among the major stumbling blocks.</p>
+    <div class="body drop"><p>Almost 10 years. That is how long the European Union and Indonesia negotiated before they signed a free trade deal on Saturday.</p><p>A free trade deal is an agreement to cut the taxes, called tariffs, that countries charge on each other&#x27;s goods. The idea is simple: make it cheaper to sell across borders. Getting there was not simple.</p><p>Here&#x27;s the catch. Palm oil and deforestation had been major stumbling blocks during the talks. Palm oil is one of Indonesia&#x27;s main exports to Europe.</p><p>So how did they settle it? The agreement includes a dedicated protocol on palm oil to address environmental concerns, plus ways for the two sides to cooperate on regulation and sustainability. Palm oil exports are part of the deal, but will be closely regulated.</p><p>Now the money. Tariffs on about 98% of EU exports to Indonesia are to be done away with. The EU estimates European companies could save more than €600 million a year, which works out to roughly €1.6 million every day.</p><p>Indonesia&#x27;s Minister of Economic Affairs, Airlangga Hartarto, called the benefits for exporters &quot;concrete and measurable&quot;. He said the deal would help Indonesia&#x27;s main exports to Europe, including palm oil, footwear and textiles.</p><p>So why now? The EU hopes to rely less on any single economic partner, as trade with both China and the US has become more difficult in recent years. Ursula von der Leyen, president of the European Commission, put it this way: &quot;in a time when others are closing their doors, we keep ours open.&quot;</p><p>She said the two sides together represent a market of 730 million people. A separate Investment Protection Agreement is meant to attract investment in areas such as electric vehicles, electronics and pharmaceuticals.</p><p>Signing is not the finish line. The EU parliament is expected to approve the deal, and Indonesian authorities still have to complete their own ratification. If both happen, the deal can enter into force in 2027.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The EU and Indonesia signed a free trade deal on Saturday after almost 10 years of negotiations.</li><li>Tariffs on about 98% of EU exports to Indonesia are to be removed.</li><li>Palm oil and deforestation were major stumbling blocks; the deal has a dedicated palm oil protocol.</li><li>The deal is expected to enter into force in 2027 after ratification.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxORXBKanhocjVnYXhZczc5TjhSZHBQMTcwOVRLekN0TzZzVTd6S3Rfc2gtVDNVVk5QOVIydlZzVTgtR3VObmplSVdlM2dVY3M3M19Ycy1wRUxLNnJ6RnlaN1dBQldDZlh5QnFBMjFNUHVuSk5zazlxRkh6VzlrQm83aFVXa2JQdTh1Z3RCQmZQZTgtejVRRnQ0dFNaUjZqVGpNck5haVVBN2NRZGxaZFktTlBn?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.arstechnica.net/wp-content/uploads/2026/11/image-2.png" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>NASA&#x27;s Moon plan takes shape as debate continues</h3><p class="dek">A plan is emerging, with a technical point still under discussion.</p>
+        <details><summary>Read</summary><div class="body"><p>NASA&#x27;s new Moon plan is taking shape while a technical point remains under debate. How can a plan take form before every question is settled? The supplied summary says technical discussion is common and that this point will keep being debated. For now, the plan is coming together, but the summary does not say what the disputed point is.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>NASA has a new Moon plan.</li><li>The plan is taking shape.</li><li>A technical point will continue to be debated.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/space/2026/11/nasas-new-moon-plan-is-taking-shape-but-some-big-questions-remain/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>After 8 years in space, a groundbreaking X-ray telescope finally opens its eyes</h3><p class="dek">After eight years and 10 billion kilometers in space, a groundbreaking X-ray telescope heading to Mercury has captured its first cosmic observations and is performing even better than scientists expec</p>
+        <details><summary>Read</summary><div class="body"><p>After eight years and 10 billion kilometers in space, a groundbreaking X-ray telescope heading to Mercury has captured its first cosmic observations and is performing even better than scientists expec</p></div></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261120075547.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Astronomers watched a giant star swallow its partner in about seven years</h2>
+    <p class="dek accent">In the Andromeda galaxy, a small star spiraled into a supergiant, and telescopes caught the whole merger.</p>
+    <div class="body drop"><p>For thousands of years, two stars in the neighboring Andromeda galaxy circled each other and never touched. Then, in about seven years, one of them vanished into the other.</p><p>Astronomers caught it, which is rare. Mergers are hard to predict, so they are hard to watch live. First author Viraj Karambelkar said the team noticed something unusual in 2023 and kept watching.</p><p>The big star, nicknamed Big Bao, was about seven times the Sun&#x27;s mass, with a radius 350 times larger. Lay 350 Suns in a row and you would just reach from its center to its surface. It shone with 18,000 times the Sun&#x27;s brightness.</p><p>Its partner, Little Bao, held about 70% of the Sun&#x27;s mass. In the data, one co-author said, the giant completely outshone it.</p><p>So how does a star swallow a star? Think of a spoon dragged through thick honey. Little Bao began brushing the giant&#x27;s huge outer atmosphere, the gas resisted, and the small star lost orbital energy and spiraled deeper. Astronomers call this common envelope evolution.</p><p>Here&#x27;s the catch. The first sign was a slow brightening, as the small star peeled gas off the giant. Then, in 2025, it erupted. Co-author Nadia Blagorodnova said they expected an outburst to take years, but the brightness started rising and peaked within a week.</p><p>NASA&#x27;s James Webb Space Telescope looked 47 days after the peak, which the team calls the earliest follow-up of an event like this. Its infrared measurements also revealed dust the giant had thrown off over hundreds of years.</p><p>Early simulations suggested Little Bao might have escaped. Further work said otherwise: it was dragged deep into the core, releasing an immense amount of energy. Once the contact began, it took seven more orbits. Mergers of smaller pairs had needed thousands.</p><p>Why does this matter? Sometimes both stars survive in tighter orbits, and pairs like that can go on to become neutron stars, black holes, supernovae, gravitational wave sources or millisecond pulsars. Bao shows the other ending, where the stars become one.</p><p>And what is left? A single star that researchers say may be rejuvenated, with a new lease on life after swallowing its partner.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Two stars in Andromeda orbited for thousands of years before merging after about seven more orbits (about seven years).</li><li>Big Bao was about 7 times the Sun&#x27;s mass, with a radius 350 times larger and 18,000 times the brightness.</li><li>Webb observed the system 47 days after the eruption peaked, the earliest follow-up of such an event.</li><li>Little Bao had about 0.7 solar masses and was dragged into the giant&#x27;s core.</li></ul></aside><a class="src" href="https://arstechnica.com/science/2026/11/astronomers-watched-a-star-spiral-to-its-death-inside-a-giant-companion/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108316819-1780585605520-Traders-Photo-20260604-KK-PRESS-020.jpg?v=1780585765&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Pew projects Muslims will outnumber Christians by 2035</h3><p class="dek">A younger population helps explain the projected shift.</p>
+        <details><summary>Read</summary><div class="body"><p>The world&#x27;s largest religious group could change by 2035 largely because one group is younger. Pew projects Muslims will outnumber Christians by then; in 2020, Muslims&#x27; median age was 24, compared with 33 for non-Muslims, and the report identifies births as the main driver. By 2070, it projects Muslims will make up 36% of humanity, more than one person in three, if recent patterns broadly continue.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Pew projects Muslims will outnumber Christians worldwide by 2035.</li><li>In 2020, Muslims&#x27; median age was 24, compared with 33 for non-Muslims.</li><li>Muslims are projected to make up 36% of the global population by 2070.</li></ul></aside></details>
+        <a class="src" href="https://5pillarsuk.com/2026/11/18/muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study" target="_blank" rel="noopener">5pillarsuk.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>The small African lab sounding the alarm on AI bioweapons</h3><p class="dek">MinoHealth researchers in Ghana jailbroke their own LLM as a test. What emerged were thousands of toxin recipes—and an urgent push for regulation.</p>
+        <details><summary>Read</summary><div class="body"><p>MinoHealth researchers in Ghana jailbroke their own LLM as a test. What emerged were thousands of toxin recipes—and an urgent push for regulation.</p></div></details>
+        <a class="src" href="https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>What China’s Gene-Editing Deaths Reveal About Its Biotech Industry</h3><p class="dek">The post What China’s Gene-Editing Deaths Reveal About Its Biotech Industry appeared first on NOEMA .</p>
+        <details><summary>Read</summary><div class="body"><p>The post What China’s Gene-Editing Deaths Reveal About Its Biotech Industry appeared first on NOEMA .</p></div></details>
+        <a class="src" href="https://www.noemamag.com/what-chinas-gene-editing-deaths-reveal-about-its-biotech-industry" target="_blank" rel="noopener">noemamag.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Prediction markets outlook for stocks in 2026 dims amid AI sell-off</h2>
+    <p class="dek accent">Odds that the S&amp;P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.</p>
+    <div class="body drop"><p>Odds that the S&amp;P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.</p></div><a class="src" href="https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Emblem_of_the_United_Nations.svg/960px-Emblem_of_the_United_Nations.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>A war crimes conviction tests the reach of international law</h3><p class="dek">A former president&#x27;s case shows what courts can do, and whom they reach.</p>
+        <details><summary>Read</summary><div class="body"><p>Can a former head of state be convicted for acts committed during war? Courts have wrestled with that question for the past century, and Kosovo&#x27;s former president Hashim Thaçi was convicted of war crimes in The Hague in September. Historian Devin Pendas says the case confirms that leaders can face prosecution, but leaders of powerful states are far less likely to face it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hashim Thaçi is a former president of Kosovo.</li><li>He was convicted of war crimes in The Hague in September.</li><li>Devin Pendas says prosecutions are applied unevenly.</li></ul></aside></details>
+        <a class="src" href="https://www.historyextra.com/membership/how-should-war-criminals-be-punished-we-asked-a-historian-for-their-view/" target="_blank" rel="noopener">historyextra.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>On this day in 1967: The United Nations Security Council unanimously adopted Resolution 242 in the aftermath of the Six-Day War between Israel and Egypt, Jordan, and Syria.</h2>
+    <p class="dek accent">The United Nations Security Council is one of the six principal organs of the United Nations, and is the United Nations&#x27; executive branch, having primary responsibility for the maintenance of internat</p>
+    <div class="body drop"><p>The United Nations Security Council is one of the six principal organs of the United Nations, and is the United Nations&#x27; executive branch, having primary responsibility for the maintenance of internat</p></div><a class="src" href="https://en.wikipedia.org/wiki/United_Nations_Security_Council" target="_blank" rel="noopener">Wikipedia ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://bigthink.com/wp-content/uploads/2026/11/1793829338344-2-2560.jpg?quality=85&amp;w=640" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Traces of home</h3><p class="dek">When war cut the link to my family in Iran, the smallest glimmer of their life became dear to me - by Elaheh Shabani Afarani Read on Psyche</p>
+        <details><summary>Read</summary><div class="body"><p>When war cut the link to my family in Iran, the smallest glimmer of their life became dear to me - by Elaheh Shabani Afarani Read on Psyche</p></div></details>
+        <a class="src" href="https://psyche.co/turning-points/a-screenshot-is-precious-when-my-family-in-iran-is-out-of-reach" target="_blank" rel="noopener">psyche.co ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Voyager 1 is now so far away that light takes a full day to reach it</h2>
+    <p class="dek accent">As of November 18, 2026, a signal sent at light speed toward Voyager 1 needs more than 24 hours to arrive.</p>
+    <div class="body drop"><p>How far away is something when the fastest thing in the universe needs a whole day to get there?</p><p>Voyager 1 is that far. As of November 18, 2026, a signal sent at the speed of light toward the spacecraft takes more than 24 hours to arrive. Voyager 1 is humanity&#x27;s most distant spacecraft.</p><p>Light is the fastest thing there is, so here&#x27;s the thing to hold onto. Light covers about 300,000 kilometers every second. Stretch that across a full day and you get a distance called a light-day.</p><p>Now the numbers. Voyager 1 is over 16 billion miles away, which is over 25.9 billion kilometers. Divide that by the seconds in a day and you land right around light&#x27;s speed, so the numbers check out.</p><p>That distance is more than three times the distance to Pluto. Pluto is the far-off world most of us think of as the edge of the neighborhood. Voyager 1 left it well behind.</p><p>Here&#x27;s a way to feel it. From Voyager 1, the Sun looks 30,000 times fainter than it does from Earth. It is still the Sun, just a much smaller light in a very dark sky.</p><p>So what does a distance like this do to a conversation? It stretches it. Any message you send has to cross that gap before anyone can even start to reply.</p><p>That is the clever, slightly dizzying part. Send a message to Voyager 1 today and it arrives after more than a day. Its answer then needs the same trip back, so the whole exchange takes more than two days.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>As of November 18, 2026, light takes more than a full day to reach Voyager 1.</li><li>Voyager 1 is over 16 billion miles (over 25.9 billion km) away.</li><li>That is more than three times the distance to Pluto.</li><li>The Sun looks 30,000 times fainter from there than from Earth.</li></ul></aside><a class="src" href="https://bigthink.com/starts-with-a-bang/voyager-1-one-light-day/" target="_blank" rel="noopener">bigthink.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Why physics still has open problems</h2><p class="dek accent">Some questions need a better explanation. Others need a way to test one.</p>
+  <div class="body drop"><p>Your to-do list gets shorter when you finish a task. Think of an open-problems list in physics as a list of questions that have yet to be answered. Why do some stay on it?</p><p>One reason is that a theory cannot yet explain something observed. Another is that physicists have a proposed explanation but face a challenge in building an experiment to test it. Those are different kinds of unfinished work.</p><p>Here&#x27;s a concrete count. In 1984, Barry Simon listed 15 open problems about quantum operators. About five had been solved by 2000. Subtract five from 15, and about ten were still open on that list.</p><p>A harder puzzle comes when two theories meet. The mathematical framework of the Standard Model is inconsistent with general relativity. Under extreme conditions, such as those associated with the Big Bang and the centers of black holes beyond their event horizons, both theories break down.</p><p>So an open problem can point to a gap in what a theory explains, a test we cannot yet carry out, or a clash between theories. The question that carries us into the next lesson is this: how could we test a proposed answer?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Open problems can be theoretical or experimental.</li><li>Simon listed 15 quantum-operator problems in 1984; about five had been solved by 2000.</li><li>The Standard Model&#x27;s mathematical framework is inconsistent with general relativity.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=81Jg17dQz1A" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/81Jg17dQz1A?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Anthropic’s Study Just Revealed How The Top 1% Uses AI differently</h3><p></p><span>Ben AI ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/xAye6TXz8y0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/xAye6TXz8y0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>What AI agent attacks mean for India&#x27;s cyberspace</h3><p>A video about AI agent attacks and India’s cyberspace.</p><span>Center for Strategic &amp; International Studies ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=hORDMRY_bZ0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/hORDMRY_bZ0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Welch Labs asks if Fei-Fei Li can reinvent AI</h3><p>The feed poses a question but provides no video description.</p><span>Welch Labs ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/biAXPx0hcd0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/biAXPx0hcd0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>What did China get from the Nvidia leak?</h3><p>The video asks what China may have gained from a leak involving Nvidia.</p><span>Council on Foreign Relations ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxONDJiTzFyd0M3YnlrV20wM19nVzBQZVlUb294N05tQjgxczMyV0dWRTNEOU1ZN2F3QkxBZVhpRWdaMzFlLU5lNmZ1OGhLeVptVTJIVm5seUZjeDRSM2o0aURIcnkta0Ywd0gxd3BxVm1qbHIxcnV6SlRoTko4MWszVDVkM2s0Nm43ODlXWVNHMFZfeVBPNGpBTzIzeHlhOWozU2JCTDgtNUFQSGV3ZW9haGNRZVQ4VVloalpJdTdSNTVRMlE?oc=5" target="_blank" rel="noopener">Bangladesh&#x27;s Mushfiqur ruled out of second South Africa test with groin injury</a><span>Reuters</span></li><li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOVlJzY0JTcm41WXdwall3LUR1WTAxMk5OTk1yaVdGb2wwbXlQRms0VGtKaEpUank0eFY2XzlCVExiYk4xeU9oM1lVNnhOVkFtQW9JYUFDN3Z3eVpRR3BwcUN1OFU1ZE1xeW1qdXlRa3lyZ3Z2dzI5UFE4VUE2VmtYWjF3amhfeHVnOEpicDhCMFJhYWUySWNz?oc=5" target="_blank" rel="noopener">Alcaraz digs deep to beat Shelton, will face world number one Zverev in final</a><span>Reuters</span></li><li><a href="https://www.aljazeera.com/sports/2026/11/21/chelsea-beaten-4-1-by-leeds-united-at-home-in-the-premier-league?traffic_source=rss" target="_blank" rel="noopener">Chelsea beaten 4-1 by Leeds to suffer third loss in four in Premier League</a><span>aljazeera.com</span></li><li><a href="https://www.bbc.co.uk/sport/rugby-union/articles/c3zxv4e5g5g5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">France secure Nations Championship final with Springboks</a><span>feeds.bbci.co.uk</span></li><li><a href="https://www.dhakatribune.com/sport/football/425300/bangladesh-eliminated-from-afc-u17-asian-cup" target="_blank" rel="noopener">Bangladesh eliminated from AFC U17 Asian Cup qualifiers</a><span>dhakatribune.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The slow story behind the headlines</h2><p class="dek accent">The day’s sharpest events point to trust, fragile expectations and agreements that take years to hold.</p>
+  <div class="body drop"><p>The Rohingya ruling orders safe return while war continues. That sentence holds a puzzle: what changes when an institution makes a decision, but the conditions for carrying it out are still missing? Across today’s news, decisions arrive in a moment. Making them work takes longer.</p><p>Trust is one piece. A shared criminal database is facing an investigation into an apparent breach. The immediate event is the investigation; the slower question is how people keep relying on a system once its protection comes into doubt. Institutions run on rules, and on the expectation that others will follow them tomorrow. That expectation is hard to see until it wobbles.</p><p>Fragility is another. Nvidia posted a strong quarter, then its shares fell 13.8% in a day. A good result cannot settle every question about future spending. The long view matters for agreements, too: the only river deal between Bangladesh and India expires on 12 December. A date can be clear even when what follows it is not.</p><p>Each morning gives us visible moments: a breach investigation, a market move, a ruling, an expiry. Underneath them are slower processes: earning trust, testing expectations, making agreements hold. News shows us when a process becomes hard to ignore. The more interesting story may be how it got there. What slow process made this headline possible?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-21/index.html">← Yesterday</a><span>2026-11-22</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
