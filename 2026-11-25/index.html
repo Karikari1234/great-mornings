@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://5pillarsuk.com/wp-content/uploads/2025/08/AA-20250823-38905988-38905966-ROHINGYA_MUSLIMS_FLEE_TO_BANGLADESH_AMID_MYANMAR_ARMY_OPERATIONS_ARCHIVE.jpg')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Wednesday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>The UN&#x27;s highest court says Myanmar committed genocide against the Rohingya</h2>
+      <p class="dek">The International Court of Justice ruled, by nine votes to six, that Myanmar&#x27;s 2017 campaign in Rakhine State was genocide, and ordered it to investigate, compensate and allow return.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>25 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">World &amp; Geopolitics</a></li><li><a href="#p4">AI &amp; Technology</a></li><li><a href="#p5">Money &amp; Markets</a></li><li><a href="#p6">Science</a></li><li><a href="#p7">The Future</a></li><li><a href="#p8">History</a></li><li><a href="#p9">Ideas</a></li><li><a href="#p10">Learn</a></li><li><a href="#p11">Watch &amp; Listen</a></li><li><a href="#p12">Sport</a></li><li><a href="#p13">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://5pillarsuk.com/wp-content/uploads/2025/08/AA-20250823-38905988-38905966-ROHINGYA_MUSLIMS_FLEE_TO_BANGLADESH_AMID_MYANMAR_ARMY_OPERATIONS_ARCHIVE.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>The UN&#x27;s highest court says Myanmar committed genocide against the Rohingya</h2>
+    <p class="dek accent">The International Court of Justice ruled, by nine votes to six, that Myanmar&#x27;s 2017 campaign in Rakhine State was genocide, and ordered it to investigate, compensate and allow return.</p>
+    <div class="body drop"><p>How do you prove that a country meant to destroy a people, rather than just hurt them? That was the question facing the International Court of Justice, the United Nations&#x27; highest court, in a case about Myanmar and the Rohingya.</p><p>Its answer, by nine votes to six, was yes. The court declared that Myanmar &quot;has committed genocide against the Rohingya group in northern Rakhine State&quot;, breaking the 1948 Genocide Convention.</p><p>Here&#x27;s why that is hard. Genocide is not simply a word for terrible violence. It needs a specific intent: to destroy a group, or a substantial part of it. So the judges had to decide whether Myanmar&#x27;s actions showed that intent, or amounted to other serious crimes.</p><p>Myanmar said they did not. It argued that its 2017 operations were counter-terrorism against ARSA, an armed Rohingya group. Even if troops used excessive force, it said, that did not prove genocidal intent.</p><p>The court rejected that central defence. It found that systematic killing of civilians, widespread sexual violence, attacks on children and the destruction of villages could not reasonably be explained as counter-terrorism. In paragraph 468, the judges said they were &quot;fully convinced&quot; of the intent.</p><p>The scale is hard to hold. The court cited Medecins Sans Frontieres estimating that between 6,700 and 9,867 Rohingya were violently killed in the first month alone. It examined evidence of at least 1,834 victims of rape.</p><p>More than 700,000 Rohingya fled across the border into Bangladesh, and many remain in refugee camps nearly a decade later.</p><p>Who brought the case? The Gambia, a Muslim-majority West African nation, which accused Myanmar of mass killings, sexual violence and destruction. It took seven years.</p><p>Now the orders. Myanmar must investigate people reasonably suspected of involvement and, where warranted, prosecute them. It must compensate victims, help displaced Rohingya return safely and voluntarily, and return or replace lost property.</p><p>The Gambia did not win everything. The court did not uphold its separate claim that Myanmar publicly incited private individuals to commit genocide.</p><p>So what comes next? The amount and arrangements for compensation will be decided in later proceedings, and Myanmar must report to the court within two years. That report is the next thing to watch.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The ICJ ruled by nine votes to six that Myanmar committed genocide against the Rohingya in northern Rakhine State.</li><li>More than 700,000 Rohingya fled into Bangladesh, and many remain in camps nearly a decade later.</li><li>Myanmar must investigate suspects, compensate victims and facilitate safe return; it must report to the court within two years.</li><li>The case was brought by The Gambia after a seven-year legal battle.</li></ul></aside><a class="src" href="https://5pillarsuk.com/2026/11/19/un-court-rules-myanmar-committed-genocide-against-rohingya-muslims/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=un-court-rules-myanmar-committed-genocide-against-rohingya-muslims&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=un-court-rules-myanmar-committed-genocide-against-rohingya-muslims" target="_blank" rel="noopener">5pillarsuk.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>NASA may get a $2 billion boost to speed up Artemis</h3><div class="body"><p>NASA may get a $2 billion boost, because the White House wants to speed up Artemis, the program meant to return astronauts to the Moon. That is 2,000 million dollars, and the warning is plain: without this funding, activities would be delayed.</p></div><a class="src" href="https://arstechnica.com/space/2026/11/nasa-may-get-2-billion-boost-as-white-house-seeks-to-accelerate-artemis/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a></li>
+    <li><h3>Could the scientific method be emergent in AI?</h3><div class="body"><p>Jack Clark&#x27;s Import AI newsletter this week covers three things: Huawei kernel benchmarks, airborne drone detection, and a national lab&#x27;s benchmark for AI doing science. The issue&#x27;s tagline asks a big question: could the scientific method be emergent, meaning it appears on its own once AI gets capable enough?</p></div><a class="src" href="https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks" target="_blank" rel="noopener">importai.substack.com + 1 more ↗</a></li>
+    <li><h3>Science papers rarely say who ran which experiment</h3><div class="body"><p>Between 2000 and 2020, the average number of authors on a PubMed paper rose from 3.99 to 6.25, and now the question &quot;who did figure 3?&quot; often has no answer. Biochemist Tito Calì argues that vague credits like &quot;investigation&quot; hide who holds a technique&#x27;s know-how, so reviewers and young researchers lose out.
+</p></div><a class="src" href="https://www.nature.com/articles/d41586-026-03542-w" target="_blank" rel="noopener">nature.com + 1 more ↗</a></li>
+    <li><h3>AI agents improved quantum circuits, then proved they work</h3><div class="body"><p>Giant quantum circuits can&#x27;t be tested on ordinary computers or today&#x27;s small quantum chips, so Google DeepMind had teams of Gemini agents improve them and prove each result in Lean, a program that checks proofs. The teams met every four hours, six times a day, to swap ideas, and the cost kept falling.</p></div><a class="src" href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" target="_blank" rel="noopener">deepmind.google ↗</a></li>
+    <li><h3>A tick bite can make you allergic to red meat</h3><div class="body"><p>A tick bite can leave you allergic to red meat, and the reaction often hits hours after you eat it. The US CDC estimates up to 450,000 people may have been affected since 2010, which is a packed football stadium several times over. Doctors are still working out why it happens at all.</p></div><a class="src" href="https://nautil.us/the-quest-to-understand-a-tick-borne-allergy-to-red-meat-1286918/" target="_blank" rel="noopener">nautil.us + 1 more ↗</a></li>
+    <li><h3>Junk food may change young brains&#x27; taste reward signal</h3><div class="body"><p>After two weeks of getting 81 percent of their calories from ultraprocessed food, seven young adults aged 18 to 21 showed a drop in signal from a brain region that processes taste rewards. With only seven people it is preliminary, but it hints that younger brains may be more sensitive.</p></div><a class="src" href="https://nautil.us/does-junk-food-alter-brain-function-more-in-younger-people-1287005/" target="_blank" rel="noopener">nautil.us ↗</a></li>
+    <li><h3>A two-sentence letter nearly sank Thatcher&#x27;s budget vote</h3><div class="body"><p>The letter that rattled Margaret Thatcher in November 1981 was just two sentences long, and the rest of the page was signatures. Twenty-one of her own Conservative MPs vowed to vote against her Autumn Statement, which could have wiped out a 45-seat majority, but when the vote came on 8 December none voted against, though 12 abstained.</p></div><a class="src" href="https://en.wikipedia.org/wiki/Gang_of_25" target="_blank" rel="noopener">Wikipedia + 2 more ↗</a></li>
+    <li><h3>In 1947, ten Hollywood writers and filmmakers were cited for contempt of Congress</h3><div class="body"><p>In 1947, a group of writers, producers, and directors known as the &quot;Hollywood 10&quot; was cited for contempt of Congress, which makes ten people who refused to answer questions about alleged Communist influence in the film industry. Think of it as ten careers put on the line over one question they would not answer.</p></div><a class="src" href="https://lithub.com/lit-hub-daily-november-24-2026/" target="_blank" rel="noopener">lithub.com + 1 more ↗</a></li>
+    <li><h3>When war cut her link to Iran, a liked cooking video became precious</h3><div class="body"><p>After war began in Iran on 28 February, Elaheh Shabani Afarani lost contact with her family, who had spoken with her every day for 10 years of her life in India. Then she found a cooking video her mother had liked before the silence, and she screenshotted the recipe like a keepsake. When the calls stop, even a tiny trace of someone can feel like news from home.</p></div><a class="src" href="https://psyche.co/turning-points/a-screenshot-is-precious-when-my-family-in-iran-is-out-of-reach" target="_blank" rel="noopener">psyche.co ↗</a></li>
+    <li><h3>AI agents may create 450% more network traffic than people</h3><div class="body"><p>Here&#x27;s a number to chew on: tasks done by AI agents generate an estimated 450% more network traffic than the same tasks done by human workers. That is the claim in a piece from MIT Technology Review, and it comes with a warning that enterprise networks are already under severe strain. As companies rush to deploy AI, it is quickly becoming the biggest source of demand on the network, and agentic AI is adding to the load.</p></div><a class="src" href="https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/" target="_blank" rel="noopener">technologyreview.com ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo nophoto"><span>Bloomberg columnist: with Khamenei dead, escalation in Iran </span></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Russia says Estonia&#x27;s border closing is on the verge of open war</h3><p class="dek">Closing road crossings has set off a loud fight between Moscow and Tallinn.</p>
+        <details><summary>Read</summary><div class="body"><p>Russia&#x27;s Foreign Ministry says Estonia is &quot;on the verge of unleashing open war&quot; with it, and the trigger is road crossings. Estonia will close its crossings on the 294-kilometer border from Dec. 1, after blaming Moscow for an attempted sabotage of a defense company, which the Kremlin denies. Estonia says Russia is trying to distract from its own efforts to undermine European security.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Estonia will close its road border crossings with Russia from Dec. 1.</li><li>Russia&#x27;s Foreign Ministry said the actions are on the verge of unleashing open war.</li><li>Estonia blames Moscow for an attempted sabotage of a defense company; the Kremlin denies it.</li><li>Estonia shares a 294-kilometer border with Russia.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Jensen Huang&#x27;s allies pulled in Trump and Vance to get him back at Nvidia</h3><p class="dek">A report says pressure on the board came from the very top of US politics.</p>
+        <details><summary>Read</summary><div class="body"><p>Here is the odd part: according to Ars Technica, the push to bring Jensen Huang back at Nvidia went through the White House. Huang&#x27;s allies enlisted Donald Trump and JD Vance to pressure Nvidia&#x27;s board into taking him back.</p><p>That is a lot of political weight to throw at one company&#x27;s board. The Atlantic, covering the same story, asks it plainly in its headline: why did Trump rescue Jensen Huang? The full article wasn&#x27;t available to me, so the details of how it played out aren&#x27;t something I can tell you.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Ars Technica reports Huang&#x27;s allies enlisted Trump and Vance.</li><li>The goal was to pressure Nvidia&#x27;s board into taking Huang back.</li><li>The Atlantic covers the story under the headline &#x27;Why Trump Rescued Jensen Huang&#x27;.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/" target="_blank" rel="noopener">feeds.arstechnica.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Ukraine says its war at sea now reaches from the Mediterranean to the Baltic</h3><p class="dek">A Russian missile corvette is the latest ship hit, and cargo ships are being struck too.</p>
+        <details><summary>Read</summary><div class="body"><p>Ukraine has sunk a Russian missile corvette, a small, fast warship built to carry missiles. It has also struck cargo ships in waters from the Mediterranean to the Baltic, which are seas far apart. The corvette is the latest Russian ship to be lost as Ukraine strikes back in the war at sea.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Ukraine sank a Russian missile corvette.</li><li>Cargo ships were struck from the Mediterranean to the Baltic.</li><li>The corvette is described as the latest casualty in the war at sea.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/gadgets/2026/11/ukraines-sea-drones-blow-up-russian-warship-in-benghazi-operation/" target="_blank" rel="noopener">feeds.arstechnica.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Bessent talked tough on Nvidia&#x27;s CEO, then Trump overruled the hawks</h3><p class="dek">For about a week and a half, the Treasury chief led a harder line. Then he softened.</p>
+        <details><summary>Read</summary><div class="body"><p>For about a week and a half, Treasury Secretary Scott Bessent was the face of a tougher stance on Nvidia, over what CEO Jensen Huang&#x27;s romantic relationship with a woman reported to be a Chinese intelligence asset might mean for national security. Then Trump wanted Huang back, and Bessent softened. Nvidia&#x27;s board reappointed Huang as CEO, and Trump said he stepped in because the stock market was plummeting, putting the loss at $5 trillion, which is the one number here that&#x27;s his, not CNBC&#x27;s. The lesson: in this White House, how hard anyone can push on China has a ceiling, and the president sets it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bessent said on Nov. 15 that Nvidia&#x27;s board should go outside the company for a new leader.</li><li>By Sunday he had softened, and Nvidia&#x27;s board reappointed Jensen Huang as CEO at Trump&#x27;s urging.</li><li>Trump said he got involved because the stock market was plummeting, and he said the country lost $5 trillion.</li><li>Sen. Tom Cotton, a Republican, said the damage should be cataloged.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Bloomberg columnist: with Khamenei dead, escalation in Iran becomes the default</h2>
+    <p class="dek accent">A Bloomberg Opinion argument about who can still say yes to a deal.</p>
+    <div class="body drop"><p>Here&#x27;s the argument from Bloomberg Opinion columnist Marc Champion: the US and Israel assassinated Supreme Leader Ali Khamenei, and he was the only man with the authority to force an unpalatable compromise, like a deal with Washington, on regime hardliners. With him gone, Champion says, nobody is left who can make hardliners swallow a deal. That leaves escalation as the default.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bloomberg Opinion columnist Marc Champion wrote the piece.</li><li>The summary says the US and Israel assassinated Supreme Leader Ali Khamenei.</li><li>Champion says Khamenei was the only man who could force a deal with Washington on hardliners.</li><li>His conclusion: escalation is now the default.</li></ul></aside><a class="src" href="https://www.bloomberg.com/news/videos/2026-11-24/opinion-escalation-in-iran-appears-as-the-default-video" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://media.nature.com/lw1200/magazine-assets/d41586-026-03836-z/d41586-026-03836-z_54015654.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Two AI labs posted proofs of the same maths problem on one day</h3><p class="dek">Anthropic and OpenAI both tackled VP versus VNP, a stepping stone toward a $1 million puzzle.</p>
+        <details><summary>Read</summary><div class="body"><p>Two rival AI labs just posted proofs of the same hard maths problem on the same day, about 6 hours apart. Anthropic says its Claude model wrote its proof, and no human mathematician has checked it yet. The problem, VP versus VNP, is a stepping stone toward P versus NP, a $1 million prize puzzle, and one Cambridge researcher calls it &quot;decades of progress in days.&quot;</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Anthropic and OpenAI both posted proofs of VP versus VNP on GitHub on the same day.</li><li>Timestamps suggest Anthropic was about 6 hours ahead.</li><li>Anthropic said Claude wrote its proof and that no human mathematician has checked it.</li><li>VP versus VNP is a stepping stone toward P versus NP, a $1 million Millennium Prize problem.</li></ul></aside></details>
+        <a class="src" href="https://www.newscientist.com/article/2600542-two-ai-companies-reveal-earth-shattering-solutions-to-major-maths-problem/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Amazon says hackers&#x27; AI agents exploited a 0-day with little human input</h3><p class="dek">A framework called Cairn is helping both the people defending systems and the people attacking them.</p>
+        <details><summary>Read</summary><div class="body"><p>Amazon says hackers used AI agents to find and exploit a 0-day, which is a security hole the software&#x27;s makers do not yet know about, with little human input. The tool involved is an AI framework called Cairn. Ars Technica describes it as a boon for defenders and attackers alike, so the same trick that helps one side can help the other.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Amazon says hackers&#x27; AI agents found and exploited a 0-day.</li><li>The agents needed little human input.</li><li>The framework involved is called Cairn.</li><li>It is described as helping both defenders and attackers.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/" target="_blank" rel="noopener">feeds.arstechnica.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>China tells the US it is keeping its side of the trade truce</h3><p class="dek">After a week of chaos over Nvidia and new US chip curbs, Beijing chose a calm reply.</p>
+        <details><summary>Read</summary><div class="body"><p>After a week of whiplash over the future of Nvidia&#x27;s Jensen Huang and new US chip curbs, Beijing sent Washington a clear message. China, it said, is holding up its side of the trade truce. Then came the catch: for now.</p><p>That small phrase is the story. Rather than hit back over the chip limits, China appears to be playing a longer game, keeping the truce alive while leaving itself room to change course.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The past week brought whiplash over Jensen Huang&#x27;s future and new US chip curbs.</li><li>Beijing told Washington it is holding up its side of the trade truce.</li><li>The message came with a qualifier: for now.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-24/china-halts-critical-minerals-ban-to-maintain-truce-with-us" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A famous philosopher called Anthropic&#x27;s AI-consciousness worry &quot;completely idiotic&quot;</h3><p class="dek">Thomas Nagel, the bat philosopher, says the people taking AI welfare seriously have it wrong.</p>
+        <details><summary>Read</summary><div class="body"><p>Thomas Nagel, famous for a 1974 essay about what it is like to be a bat, says some of the smartest people on the planet are being &quot;completely idiotic&quot; about AI. He was talking to Wired just after winning the one-million-dollar Berggruen Prize, and he meant Anthropic and others who worry that AI models might deserve protection. His point is that copying what a brain does is not the same as copying what a brain experiences, and that matters because Anthropic told investors that taking AI sentience seriously could mean extra rules that hurt its business.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Before going public, Anthropic listed the possibility of conscious AI as an investor risk factor.</li><li>Thomas Nagel, known for a 1974 essay about a bat, called people caring about AI welfare &quot;completely idiotic&quot; in a Wired interview.</li><li>Nagel had just won the one-million-dollar Berggruen Prize for Philosophy &amp; Culture.</li><li>Nagel argues that reproducing what a brain does is not the same as reproducing what it experiences.</li></ul></aside></details>
+        <a class="src" href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" target="_blank" rel="noopener">technologyreview.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>An AI turned a dull game fun in 12 hours</h3><p class="dek">A developer thought fun was a human-only skill. One prompt changed their mind.</p>
+        <details><summary>Read</summary><div class="body"><p>A developer told an audience in September that making a fun game was still a uniquely human job. Then they told Claude Opus 5.5 to make theirs &quot;a LOT more fun,&quot; and after 12 hours of playtesting and rebalancing, their dull strategy game was deeply entertaining overnight. That is one of three big jumps the developer sees in AI coding this year.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The developer said in a September talk that designing a fun game seemed uniquely human.</li><li>They prompted Claude Opus 5.5: &quot;This game isn&#x27;t fun enough yet. Make it a LOT more fun.&quot;</li><li>Opus spent 12 hours playtesting new features and rebalancing the game.</li><li>The post argues there were three major inflection points in LLM coding ability in twelve months.</li></ul></aside></details>
+        <a class="src" href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" target="_blank" rel="noopener">simonwillison.net ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>General-purpose AI is learning to design proteins, and scientists are arguing about how</h2>
+    <p class="dek accent">Chatbot-style language models from OpenAI and Anthropic are doing protein tasks once left to specialist AI, and nobody agrees yet on whether they understand biology or are repeating what they saw.</p>
+    <div class="body drop"><p>Around 11% of the protein designs came back from the lab doing their job. That is roughly one in nine. What makes it odd is who did the designing: a general-purpose language model, not a specialist biology tool.</p><p>Proteins are the tiny molecular machines that do work inside cells. Since Google DeepMind released AlphaFold2 in 2020, specialist AI has been the way to predict and design them, and there is now a huge ecosystem of such software.</p><p>So what changed? On 24 November, OpenAI announced that its latest models had designed new proteins. Its team asked a model called GPT-6.2 to design 3D structures that could bind five biological targets, including proteins implicated in cancer and immune disorders. A specialist tool then worked out the matching genetic sequences, and lab tests showed about 11% of the designs bound their target.</p><p>Here&#x27;s the catch. In some tasks the model matched specialist tools, but at predicting 3D protein structure it was far off. Joy Jiao, who leads life-sciences research at OpenAI, calls it a proof of principle and says specialist tools were still needed for key steps.</p><p>A second jolt came earlier this month. Xinming Tu, a researcher at the AI biology company Phylo, asked models from OpenAI, Anthropic and Google to predict the sequences of obscure bacterial proteins, then left the analysis running overnight.</p><p>He woke up shocked. The latest Claude models had beaten the other language models, and also the specialized protein language models built for exactly this job. Tu and Leo Chen of Harvard Medical School shared the result in a 16 November blogpost, and computational biologists rushed to try more.</p><p>Some now expect general models to win in the end. OpenAI researcher Masatoshi Uehara says he believes a large language model &quot;can technically beat every specialized model in even each capability&quot;.</p><p>Others are not so sure. Martin Pačesa, a structural biologist at the University of Zurich, says that for a given task a specialist will usually beat a generalist.</p><p>Then there is the doubt about what is going on inside. Think of a student who learned the chemistry versus one who memorised the answer key. Some researchers suggest part of what these models do could be regurgitated training data.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>About 11% of GPT-6.2&#x27;s protein designs bound their targets in lab tests.</li><li>Claude models beat specialized protein language models at predicting obscure bacterial protein sequences in Xinming Tu&#x27;s test.</li><li>OpenAI&#x27;s model was far off at predicting 3D protein structure.</li><li>Some researchers suspect the models may be regurgitating training data.</li></ul></aside><a class="src" href="https://www.nature.com/articles/d41586-026-03836-z" target="_blank" rel="noopener">nature.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108229868-1763741665578-108229868-1763730430401-gettyimages-2233025951-WILLIAMS_ECNY.jpeg?v=1772548607&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bond traders are betting the Fed may have to U-turn</h3><p class="dek">Rate hikes and a sliding stock market are making some investors plan for a slower US economy.</p>
+        <details><summary>Read</summary><div class="body"><p>Here&#x27;s a strange thing: while the Federal Reserve is still raising interest rates, bond traders are already hedging against the day it has to stop. They are racing to protect themselves from the risk that the hikes, plus a slide in the stock market, slow the US economy significantly. If that happens, the central bank could be forced back to easing policy as soon as late next year.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bond traders are hedging against a sharp US slowdown.</li><li>The Fed has been raising interest rates and stocks have slid.</li><li>The Fed could return to easing as soon as late next year.</li></ul></aside></details>
+        <a class="src" href="https://www.bloomberg.com/news/articles/2026-11-24/bond-traders-rush-to-hedge-risk-of-fed-hikes-stalling-economy" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Anthropic stock fell below its IPO price in four days</h3><p class="dek">Shares opened at $111.50 and are now under $76.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic stock opened at $111.50 on Nov. 19, and by Tuesday it was trading under $76. A 13% drop that day pushed it below the $83 IPO price after just four days, where SpaceX took 21 trading days. Anyone who bought at the IPO price is now down about 8.5%, and traders are split on what comes next.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Shares opened at $111.50 on the Nasdaq on Nov. 19.</li><li>The stock fell 13% on Tuesday and traded under $76, about 8.5% below the IPO price.</li><li>It fell below its offering price in four days; SpaceX took 21 trading days.</li><li>Options traders are divided on what happens next.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html" target="_blank" rel="noopener">cnbc.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Americans got more upbeat about the economy, even with prices still stinging</h3><p class="dek">A key confidence survey jumped after the midterms, but inflation worries have not gone away.</p>
+        <details><summary>Read</summary><div class="body"><p>Here&#x27;s an odd mix: people are fed up with high prices and more hopeful about the economy at the same time. The Conference Board&#x27;s November confidence index jumped 11.4 points to 103.3, far above the 92.2 economists expected. Confidence rose among Democrats and independents and slipped slightly among Republicans, yet inflation expectations for the next year still sit at 5.7%.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Conference Board confidence index rose 11.4 points to 103.3 in November.</li><li>The Dow Jones consensus forecast was 92.2.</li><li>Inflation expectations for 12 months ahead fell for the second straight month but stayed high at 5.7%.</li><li>Confidence rose among Democrats and independents and fell slightly among Republicans.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>BOJ Likely to Lift Rate to 2% by Mid-2027, Ex-Board Member Says</h2>
+    <p class="dek accent">The Bank of Japan will likely raise its benchmark interest rate three more times to 2% through the middle of next year, taking it to a level not seen since 1993, according to a former BOJ board member</p>
+    <div class="body drop"><p>The Bank of Japan will likely raise its benchmark interest rate three more times to 2% through the middle of next year, taking it to a level not seen since 1993, according to a former BOJ board member</p></div><a class="src" href="https://www.bloomberg.com/news/articles/2026-11-24/boj-likely-to-lift-rate-to-2-by-mid-2027-ex-board-member-says" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://media.nature.com/lw1200/magazine-assets/d41586-026-03821-6/d41586-026-03821-6_54015070.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Your DNA takes up to 100,000 hits a day in some cells</h3><p class="dek">Damage is the default, and gene editing leans on the cell&#x27;s repair crew.</p>
+        <details><summary>Read</summary><div class="body"><p>Some cells endure up to 100,000 DNA damage events every day, says molecular biologist Björn Schumacher. That is roughly one hit per second, all day and night. Cells cope because they carry repair tools that fix faulty DNA quickly, and gene editing relies on those same tools to insert, delete or change genes. Think of DNA as a cookbook in constant use: it gets splashed, so it needs wiping.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Some cells face up to 100,000 DNA damage events a day, per Björn Schumacher.</li><li>Cells have native mechanisms that recognize and replace faulty DNA.</li><li>Gene editing relies on DNA&#x27;s natural repair tools to insert, delete or mutate genes.</li></ul></aside></details>
+        <a class="src" href="https://www.quantamagazine.org/the-incredible-elegant-dna-repair-system-makes-gene-editing-work-20261123/" target="_blank" rel="noopener">api.quantamagazine.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>The EU walked away from a climate deal instead of signing a weak one</h3><p class="dek">COP31 ended in Turkey with no main agreement, and the reason is one missing phrase.</p>
+        <details><summary>Read</summary><div class="body"><p>Usually the EU backs down at the end of a climate summit. This time, at COP31 in Turkey, it didn&#x27;t. The UK, the EU and some small island nations refused a draft deal that never mentioned fossil fuels, even though countries had agreed three years earlier at COP28 to &quot;transition away&quot; from them. The talks ended in disarray on 22 November, and it matters because every nation holds a veto.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>COP31 in Antalya, Turkey ended in disarray on 22 November with no main agreement.</li><li>The UK, the EU and some small island nations rejected a draft that omitted all mention of fossil fuels.</li><li>COP28 three years earlier agreed to &quot;transition away from fossil fuels&quot;.</li><li>Joanna Depledge said the EU usually backs down at the end but this time played hardball.</li></ul></aside></details>
+        <a class="src" href="https://www.newscientist.com/article/2600331-cop31-collapse-has-shattered-the-pretense-of-a-global-climate-consensus/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Trauma in adulthood leaves a mark on the brain, even without PTSD</h2>
+    <p class="dek accent">A post-mortem study of over 300 brains found that adult trauma was linked to fewer insulating cells, whether or not the person had PTSD.</p>
+    <div class="body drop"><p>Here&#x27;s a result that surprised me. In a study of donated brains, one cell change tracked with trauma itself, whether or not the person was ever diagnosed with a disorder.</p><p>The study, in Cell Reports, used brain tissue and medical records donated by 302 people. That is 101 with post-traumatic stress disorder (PTSD), 101 with depression and 100 with no mental-health condition.</p><p>Why look at brains at all? Many earlier studies of PTSD and epigenetics used DNA from blood or saliva. As study co-author Frances Champagne put it, &quot;What we really want to understand is what&#x27;s going on in the brain.&quot;</p><p>First, a quick word on epigenetics. Think of your DNA as a recipe book. Epigenetic marks are chemical tags added on top, which can change how genes get used without changing the recipe&#x27;s text. The team looked at one such tag, called DNA methylation.</p><p>They checked more than 850,000 regions of the genome in three brain areas. The amygdala, hippocampus and prefrontal cortex handle emotion, memory and cognitive control.</p><p>Here&#x27;s the catch. Comparing the PTSD group with the controls, distinct methylation patterns turned up in four DNA regions in the prefrontal cortex. None showed up in the amygdala or hippocampus. One affected gene had not been linked to PTSD before, but has a key role in memory.</p><p>Then came the cell-level finding. The amygdala, which is central to fear responses, had significantly fewer oligodendrocytes in people with PTSD. These cells wrap the connections between neurons in an insulating sheath and help them communicate.</p><p>So is that just a PTSD thing? No. Oligodendrocytes were reduced across all three regions in 58 people who had experienced trauma as adults, diagnosed with a disorder or not. Champagne said the drop seems linked particularly to adult trauma exposure.</p><p>The twist: the researchers did not see that pattern in 97 donors who experienced childhood trauma.</p><p>Alicia Smith of Emory University, who studies the epigenetics of PTSD, said the work gives the most comprehensive look at cell type differences in these brain regions. The hope is that it helps explain why people differ in their symptoms and in how they respond to treatment. Why childhood trauma looks different here is not explained in the report.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Post-mortem study of 101 PTSD, 101 depression and 100 control donors, published in Cell Reports.</li><li>Four DNA regions in the prefrontal cortex showed distinct methylation in PTSD.</li><li>Oligodendrocytes were reduced across all three regions in 58 people with adult trauma, diagnosed or not.</li><li>The pattern was not seen in 97 donors with childhood trauma.</li></ul></aside><a class="src" href="https://www.nature.com/articles/d41586-026-03821-6" target="_blank" rel="noopener">nature.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://noemamag.imgix.net/2026/11/GettyImages-2305167190-scaled.jpg?fm=pjpg&amp;ixlib=php-3.3.1&amp;s=366199949c56982fd209a8ebf28d2c6a" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Why Islam is projected to grow almost three times faster than the world</h3><p class="dek">Pew&#x27;s new forecast points to age more than belief.</p>
+        <details><summary>Read</summary><div class="body"><p>Why would one religion grow almost three times faster than the world? Pew Research Center says mostly age: in 2020 the median Muslim was 24, against 33 for non-Muslims, so more are entering their childbearing years. Pew projects Muslims at 36% of humanity by 2070, up from 26%, though it calls these projections, not certainties.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Pew projects Muslims at 36% of the world&#x27;s population by 2070, up from 26% in 2020.</li><li>Median age of Muslims in 2020 was 24, against 33 for non-Muslims.</li><li>The Muslim population is projected to grow 80% while the world grows 29%.</li><li>Pew calls its findings projections based on demographic modelling, not inevitable outcomes.</li></ul></aside></details>
+        <a class="src" href="https://5pillarsuk.com/2026/11/18/muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=muslims-to-outnumber-christians-worldwide-by-2035-says-pew-study" target="_blank" rel="noopener">5pillarsuk.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A CRISPR drug that edits genes inside the body awaits FDA approval</h3><p class="dek">One four-hour infusion, aimed at the liver, to quiet a swelling disorder.</p>
+        <details><summary>Read</summary><div class="body"><p>What if a gene fix took one four-hour infusion? Intellia has asked the FDA to approve lonvo-z, which sends CRISPR to the liver to switch off a gene behind painful, dangerous swelling. Across pooled trials, attacks fell from over three a month to under 0.5 for four years. If approved, it would be the first CRISPR medicine delivered inside the body.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Intellia has asked the FDA to approve lonvo-z for a form of hereditary angioedema</li><li>The infusion takes four hours and edits a gene in the liver</li><li>Pooled trial attacks fell from over three a month to under 0.5, held for four years</li><li>It would be the first CRISPR medicine delivered directly into the body</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/24/fda-set-to-approve-first-crispr-therapy-that-edits-genes-inside-the-body/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A cardiologist can earn $180 an hour training AI. A Swahili speaker gets $12.50</h3><p class="dek">Same platform, same kind of job, very different pay, and the terms let the company cut it off.</p>
+        <details><summary>Read</summary><div class="body"><p>Outlier, a recruiting platform run by Scale AI, advertises up to $180 an hour for US physicians to review AI-generated reports. For similar work, it offers up to $7.50 an hour in Tagalog in the Philippines and $12.50 in Swahili in Tanzania. Researcher Julián Posada says the pattern is old: pay well to build a workforce, then cut rates. Outlier&#x27;s terms let it deactivate accounts &quot;immediately without prior notice for any reason.&quot;</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Outlier, run by Scale AI, advertises up to $180 an hour for US physicians.</li><li>The same platform offers up to $7.50 an hour for Tagalog work in the Philippines and $12.50 for Swahili in Tanzania.</li><li>Outlier&#x27;s terms allow deactivating accounts immediately without prior notice for any reason.</li><li>Remotasks, also run by Scale AI, discontinued operations in Kenya, Nigeria and Pakistan in March 2024.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Shenzhen went from 30,000 people to 20 million, and a summit landed there</h2>
+    <p class="dek accent">A writer who first saw Shenzhen in 1986 says the city&#x27;s rise explains why a summit held there was more than a photo-op.</p>
+    <div class="body drop"><p>Not long before 1986, Shenzhen was a fishing village of 30,000 people. Today it is a city of 20 million, more than 600 times as many.</p><p>Nathan Gardels, editor-in-chief of Noema Magazine, walked across the border from Hong Kong in 1986. He remembers barely any bustle, no crowds or traffic, a couple of tall buildings at most, and a gardener clipping grass with a pair of scissors.</p><p>Then came the tour. With former California governor Jerry Brown, he was shown what the hosts proudly called a tech hub. The &quot;data centers&quot; were cavernous, nearly empty warehouses with scores of desktop computers gathering dust. None were even plugged in.</p><p>Here&#x27;s the twist. Forty years later, Shenzhen is home to Huawei, Tencent, DJI and BYD, and Gardels calls it the center of gravity of China&#x27;s AI battle with the United States.</p><p>So why does that matter for a summit? Gardels says pundits who waved off the Shenzhen summit as a photo-op missed the point. In his view, the symbolism was the substance: a world where the rules-based order has given way to spheres of influence accommodating each other.</p><p>The roles flipped along the way. In 1980, Xi Zhongxun, the father of China&#x27;s current leader, came to California looking for investment in Shenzhen. He toured Silicon Valley and shook hands with Mickey Mouse at Disneyland.</p><p>In 2012, his son Xi Jinping visited California, then as vice-president. Brown asked whether China might help finance California&#x27;s bullet train, already in the works for nearly 20 years.</p><p>A Chinese delegation met with the governor in Beverly Hills. Nothing came of it. Those who had once come cup in hand, Gardels writes, now offered financing terms too tough to abide.</p><p>Here&#x27;s the last number. By 2026, China had built a 30,000-mile network of bullet trains. California and the U.S. still have yet to build one.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Shenzhen was a fishing village of 30,000 before becoming a special economic zone; it now has 20 million people.</li><li>In 1986 its &quot;data centers&quot; were empty warehouses of unplugged desktop computers.</li><li>Gardels argues the summit&#x27;s symbolism showed spheres of influence replacing the rules-based order.</li><li>By 2026 China had a 30,000-mile bullet train network; the U.S. has none.</li></ul></aside><a class="src" href="https://www.noemamag.com/the-shenzhen-summit-supplants-yalta" target="_blank" rel="noopener">noemamag.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Chosin.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>The Union veteran who said he lost his arm &quot;in vain&quot;</h3><p class="dek">After the Civil War, the soldiers who won found that much of the country wanted to move on.</p>
+        <details><summary>Read</summary><div class="body"><p>One Union veteran who lost an arm said it was &quot;in vain,&quot; because Jefferson Davis, the Confederacy&#x27;s president, was &quot;today a hero.&quot; After the war, many white northerners wanted to move on, and veterans got praise but little material support. The Grand Army of the Republic, founded in 1866, quickly reached 2,000 posts, lobbying for benefits.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>A Massachusetts Union veteran said he lost an arm &quot;in vain&quot; because Jefferson Davis was &quot;today a hero.&quot;</li><li>Returning veterans were hailed as heroes but often got little material support.</li><li>The Grand Army of the Republic was founded in 1866 and quickly reached 2,000 posts.</li></ul></aside></details>
+        <a class="src" href="https://daily.jstor.org/union-veterans-and-the-bitter-aftermath-of-the-civil-war/" target="_blank" rel="noopener">daily.jstor.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>42 days of fighting, then the attackers gave up</h2>
+    <p class="dek accent">In 1952, American and South Korean units ended a 42-day battle by abandoning their try at the &quot;Iron Triangle&quot;, in a war that had stopped moving.</p>
+    <div class="body drop"><p>Forty-two days of fighting, and then the attackers walked away. That is how the Battle of Triangle Hill ended in 1952, when American and South Korean units abandoned their attempt to capture the &quot;Iron Triangle&quot;.</p><p>I can&#x27;t walk you through the hills, because the material I have doesn&#x27;t. What it does explain is why a battle like this could happen at all.</p><p>Start with the war. The Korean War began on 25 June 1950, when North Korea invaded South Korea. North Korea was backed by China and the Soviet Union. South Korea was backed by the United Nations, led by the United States.</p><p>The first year was a seesaw. Seoul fell to North Korea within three days. By early August, South Korea and its allies held only a corner in the southeast. Then UN forces landed at Inchon in September and pushed into North Korea, until China entered the war on 19 October.</p><p>Here&#x27;s the catch. After China&#x27;s failed spring offensive, UN forces had retaken territory up to about the 38th parallel, the line that had split Korea in 1945. The two sides were back near where they started.</p><p>So the fighting changed shape. Armistice talks began in July 1951 but dragged on, and the war became one of attrition. That means wearing the other side down, not winning ground.</p><p>That is the world Triangle Hill belongs to. Weeks of effort, and the attempt ended with the attackers giving it up.</p><p>The talks did finish. On 27 July 1953, the Korean Armistice Agreement ended combat and created a Demilitarized Zone four kilometres wide. The war had caused around one million military deaths and an estimated 1.5 million to 3 million civilian deaths.</p><p>Now the odd part. An armistice is a pause in fighting, not a peace deal, and no peace treaty has ever been signed. Technically, the Korean conflict is still frozen in place.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Battle of Triangle Hill ended after 42 days when American and South Korean units abandoned their attempt to capture the Iron Triangle.</li><li>Armistice talks began in July 1951 and dragged on as the war became one of attrition.</li><li>Combat ended on 27 July 1953 with the Korean Armistice Agreement.</li><li>No peace treaty has been signed.</li></ul></aside><a class="src" href="https://en.wikipedia.org/wiki/Korean_War" target="_blank" rel="noopener">Wikipedia + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://bigthink.com/wp-content/uploads/2026/11/Screenshot-2026-11-19-at-4.56.26-PM.png?quality=80&amp;w=640" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Nvidia&#x27;s sales doubled, yet The Atlantic says the AI bubble is leaking</h3><p class="dek">The numbers look great. The headline says the mood is shifting anyway.</p>
+        <details><summary>Read</summary><div class="body"><p>This should be a happy moment for AI investors, and by the numbers it is. Nvidia, which designs most of the chips behind the AI boom, just reported that its sales and profits doubled from a year ago, and it expects to grow another 75 percent next year. The industry, it said, has a backlog of $2.5 trillion in future orders. So why is The Atlantic writing that air is easing out of the bubble? The full piece wasn&#x27;t available to me, so that part of the story is still a puzzle.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia reported sales and profits doubled year over year.</li><li>Nvidia says it is on pace to grow another 75 percent next year.</li><li>Nvidia says the industry has a $2.5 trillion backlog of future orders.</li><li>The Atlantic&#x27;s headline says air is easing out of the AI bubble.</li></ul></aside></details>
+        <a class="src" href="https://www.theatlantic.com/ideas/2026/11/ai-bubble-returns-timeline/689504/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>The man who found black holes while calculating artillery shots</h2>
+    <p class="dek accent">In 1915 an astronomer on the Russian front solved Einstein&#x27;s equations first, and the math he found describes objects Einstein insisted could not exist.</p>
+    <div class="body drop"><p>In 1915, Karl Schwarzschild was an astronomer stationed on the Russian front. His job was to calculate artillery trajectories.</p><p>Instead, he solved Einstein&#x27;s brand-new equations of general relativity. He did it before Einstein himself could.</p><p>Think about that for a second. The author of the theory had not yet cracked his own equations, and a man with a war-time job got there first.</p><p>Here&#x27;s the catch. Hidden in Schwarzschild&#x27;s solution was the math of black holes.</p><p>Einstein insisted such objects could not exist. His own equations kept pointing at them anyway.</p><p>So why does this still matter? Because black holes have become a test of what we really know about reality. That is how physicist Brian Greene, author of The Elegant Universe, frames them in a Big Think video on the black hole information paradox.</p><p>The source gives only a glimpse of that paradox, so here is the general idea. Our best physics says information about what exists should never be truly erased, yet a black hole seems to swallow things whole. Those two ideas collide, and that collision is the puzzle.</p><p>That&#x27;s the clever bit about this story. The same equations that Einstein doubted ended up creating a puzzle that physicists still use to check their understanding of the universe.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1915 Karl Schwarzschild, an astronomer on the Russian front, was supposed to be calculating artillery trajectories.</li><li>He solved Einstein&#x27;s general relativity equations before Einstein did.</li><li>His solution revealed the math of black holes, which Einstein insisted could not exist.</li><li>Physicist Brian Greene explains how black holes test what we really know about reality.</li></ul></aside><a class="src" href="https://bigthink.com/series/full-interview/black-holes-greene/" target="_blank" rel="noopener">bigthink.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p10" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Open problems: how physics keeps a list of what it cannot explain</h2><p class="dek accent">The last lesson is about the questions physicists have written down and cannot yet answer, and how those lists work.</p>
+  <div class="body drop"><p>Lord Kelvin gave a speech in 1900 that did something odd for a famous scientist. He pointed at what physics could not explain. He said classical physics, the physics of that time, had &quot;two clouds&quot; hanging over the new century.</p><p>Here is the everyday version. You have a drawer of tools, and almost everything fits. Then one job keeps failing. You could ignore it, or you could write it down. Physicists write it down, and the written-down failures are called open problems.</p><p>Kelvin&#x27;s two clouds were these. Nobody could find evidence for the luminiferous aether, a supposed invisible substance that light was thought to travel through. And a rule called the equipartition theorem failed to predict how much heat solids soak up.</p><p>Now the clever bit. Both clouds were cleared within a decade. The first fell to special relativity, the second to quantum mechanics. So two small failures in 1900 were the start of two big new theories. A problem that will not fit is not a nuisance. It is a signpost.</p><p>Today&#x27;s lists are longer, and the arithmetic is sobering. In 1984, Barry Simon listed 15 open problems about quantum operators, and about 5 were solved by 2000. That leaves about 10 still open at that point. Roger Penrose&#x27;s 1982 list on general relativity had about 14 problems still unsolved in 2017. And at a 2000 conference called Strings 2000, members proposed 10 big problems in theoretical physics. As of 2025, none has been conclusively solved.</p><p>Here&#x27;s the catch. Some of the biggest gaps are not on one person&#x27;s list at all. The Standard Model, our best map of particles and forces, is mathematically inconsistent with general relativity, our best account of gravity. Both break down in extreme places, such as the Big Bang and the centers of black holes. Add dark matter, dark energy, and why there is more matter than antimatter, and you can see why the lists keep growing. So here is the question to carry out the door: which of today&#x27;s clouds will turn out to be the next new theory?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1900 Lord Kelvin named two clouds over physics: the aether and the equipartition theorem. Both were solved within a decade.</li><li>Barry Simon&#x27;s 1984 list had 15 problems, and about 5 were solved by 2000.</li><li>The Standard Model is inconsistent with general relativity, and both break down at singularities like the Big Bang and inside black holes.</li><li>The 10 problems proposed at Strings 2000 had none conclusively solved as of 2025.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p11" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=BcEMv9aH5B0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/BcEMv9aH5B0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Why Jensen Huang&#x27;s return is making headlines at Nvidia</h3><p>The details are thin, but the coverage points to one thing: Nvidia&#x27;s chief is back.</p><span>South China Morning Post ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=5biEo7RnCaw" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/5biEo7RnCaw?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A CSIS video links China&#x27;s repression to Syria&#x27;s civil war</h3><p>All we have is the title, and it makes a big claim.</p><span>Center for Strategic &amp; International Studies ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=vu8EJ31AWcA" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/vu8EJ31AWcA?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A debate asks if a U.S.-Saudi nuclear deal is good for America</h3><p>The video&#x27;s title poses the question. The description we have is empty, so this note stays short.</p><span>Council on Foreign Relations ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=BMLt3k9M5TA" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/BMLt3k9M5TA?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Malaysia&#x27;s Anwar says China is easier to deal with than the US on tech</h3><p>A short report from the South China Morning Post, with few details available.</p><span>South China Morning Post ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p12" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking" target="_blank" rel="noopener">How will the CFP committee judge the Big Ten in its fourth ranking?</a><span>espn.com</span></li><li><a href="https://www.espn.com/soccer/story/_/id/50585622/leaked-fifa-documents-96-year-world-cup-selloff" target="_blank" rel="noopener">Leaked FIFA documents show 96-year plan for stakes in WC sell-off</a><span>espn.com</span></li><li><a href="https://marginalrevolution.com/marginalrevolution/2026/11/tuesday-assorted-links-596.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tuesday-assorted-links-596" target="_blank" rel="noopener">Tuesday assorted links</a><span>marginalrevolution.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p13" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">The news is the spike. The world is the slow part underneath.</h2><p class="dek accent">Who gets to say yes, what keeps getting repaired, and how long things have been building.</p>
+  <div class="body drop"><p>Under today&#x27;s headlines, one question keeps turning up: who gets to say yes? Treasury chief Bessent led a harder line on Nvidia&#x27;s CEO for about a week and a half, then Trump overruled the hawks. Rules look like they come from process. Often they come from one chair.</p><p>Here&#x27;s the second pattern. Damage is the default, and what matters is repair. Your DNA takes up to 100,000 hits a day in some cells, and you carry on because a repair crew keeps working. Most of what looks solid around us is the same kind of arrangement, quiet until the crew falls behind.</p><p>The third is about the news itself. A headline is an event, but the world runs on slow processes. The International Court of Justice ruled, by nine votes to six, that Myanmar&#x27;s 2017 campaign against the Rohingya was genocide. The ruling is the spike. The long wait before it is the story.</p><p>Same with the pay gap. A cardiologist can earn $180 an hour training AI, a Swahili speaker $12.50, and the terms let the company cut it off. That gap didn&#x27;t appear this morning. It was written into a contract somebody drafted earlier.</p><p>So here is the question to carry out the door: for any headline, who decides here, what is quietly being repaired, and how long has this been building?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-24/index.html">← Yesterday</a><span>2026-11-25</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
