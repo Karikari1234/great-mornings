@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/7d7a2613-26cc-4104-b745-70582edd68d1_3b0f464c.jpg?itok=2i_u85R7&amp;v=1795608712')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Thursday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Bangladesh sets garment minimum wage at Tk17,000 after a 12-hour meeting and a 4-2 vote</h2>
+      <p class="dek">Bangladesh&#x27;s wage board raised the garment minimum by 36% to Tk17,000 by majority vote, Tk1,000 below what workers&#x27; representatives finally asked for.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>26 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">Bangladesh</a></li><li><a href="#p4">South Asia</a></li><li><a href="#p5">World &amp; Geopolitics</a></li><li><a href="#p6">AI &amp; Technology</a></li><li><a href="#p7">Money &amp; Markets</a></li><li><a href="#p8">Science</a></li><li><a href="#p9">The Future</a></li><li><a href="#p10">History</a></li><li><a href="#p11">Ideas</a></li><li><a href="#p12">Learn</a></li><li><a href="#p13">Watch &amp; Listen</a></li><li><a href="#p14">Sport</a></li><li><a href="#p15">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/7d7a2613-26cc-4104-b745-70582edd68d1_3b0f464c.jpg?itok=2i_u85R7&amp;v=1795608712" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Bangladesh sets garment minimum wage at Tk17,000 after a 12-hour meeting and a 4-2 vote</h2>
+    <p class="dek accent">Bangladesh&#x27;s wage board raised the garment minimum by 36% to Tk17,000 by majority vote, Tk1,000 below what workers&#x27; representatives finally asked for.</p>
+    <div class="body drop"><p>Twelve hours of talks, and the two sides still ended up Tk1,000 apart. Workers&#x27; representatives wanted a minimum of Tk18,000 a month. Factory owners had agreed to Tk17,000 and would not go higher.</p><p>So the board did what any stuck committee does. It voted.</p><p>The meeting at the Minimum Wage Board office in Segunbagicha began at 2pm on Tuesday and ended around 2am on Wednesday. Babul Akhter, the workers&#x27; representative on the six-member board, said four members backed Tk17,000 and two backed the workers&#x27; Tk18,000.</p><p>A minimum wage board is the body that sets the lowest legal monthly pay for an industry. Here, that means the ready-made garment sector.</p><p>Here&#x27;s what changed. The floor for fourth-grade workers is now Tk17,000, up Tk4,500 from Tk12,500, which is the 36% rise. Third-grade workers get at least Tk19,200, second-grade Tk20,000 and first-grade Tk21,500.</p><p>Now look at how far the workers&#x27; side travelled. It opened by proposing Tk32,000, dropped to Tk22,000, then to Tk18,000. The final number sits Tk15,000 under that first ask.</p><p>So why now? The decision follows weeks of labour unrest across major industrial belts, with workers demanding more pay as living costs rise. The old Tk12,500 minimum was announced in November 2023 and took effect that December.</p><p>Watch January. The new structure is expected to take effect from December 1, and workers are due to receive their revised salaries in January, in line with an earlier agreement between the two sides.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The minimum wage for fourth-grade garment workers rises 36% from Tk12,500 to Tk17,000.</li><li>The six-member board voted 4-2 for Tk17,000 over the workers&#x27; Tk18,000 after a 12-hour meeting.</li><li>Workers&#x27; representatives began by proposing Tk32,000, then Tk22,000, then Tk18,000.</li><li>The new wage is expected to take effect from December 1, with revised pay arriving in January.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNX25GRDZCYm1IVFNncXVSenBCSUFwYTVUbEZYU1JvQktGWTNZa0FsNzl5bXQyazNzeXF1ODl1VXJBa1hYZkdZc0s2dUFPRi1JS3V1SXFnTjQ3M0hRTEtQaE1GaF9lVm9KNUc2amhiYkFudk5WT0M4RXpUMWJNRzVvQzFneHp6TUF5Vng2YWd2UUJFRlBmU2pxc3RidmZ3SlUzLXViTmw4VmhtclBDVUFxSDdhNFlfTTFEcVZyYm5KRkU?oc=5" target="_blank" rel="noopener">Reuters + 8 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Thomas Markle faces two charges over child sex abuse images</h3><div class="body"><p>A Los Angeles storage unit Thomas Markle allegedly rented for almost two decades, nearly a quarter of his 82 years, has led to two federal charges after agents found child sexual abuse material there. Markle, Meghan&#x27;s father, denies possessing the images; if convicted, he faces up to 20 years in prison on each count.</p></div><a class="src" href="https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 5 more ↗</a></li>
+    <li><h3>The explosive is gone. The lead remains.</h3><div class="body"><p>The US Army detonated 68 drums of lead azide in Iowa, averaging about 66kg per drum, and said preliminary EPA air monitors detected no lead. Here&#x27;s the catch: the blast can break down the explosive, but it cannot destroy the lead, leaving questions about where it settled and what else needs testing.</p></div><a class="src" href="https://www.aljazeera.com/news/2026/11/25/us-army-declares-iowa-lead-azide-detonation-tremendously-successful?traffic_source=rss" target="_blank" rel="noopener">aljazeera.com + 4 more ↗</a></li>
+    <li><h3>Solomon Islands makes Australia its main security partner</h3><div class="body"><p>Four years after signing a security deal with China, the Solomon Islands signed a pact making Australia its main defense partner and keeping ports, airports, energy and telecom sites free from militarization. Australia must be consulted before certain future deals, though the Solomon Islands has not said whether its China pact is over.</p></div><a class="src" href="https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a></li>
+    <li><h3>Hong Kong fire survivors still struggle with loss a year later</h3><div class="body"><p>A year after a deadly fire in Hong Kong, survivors are still struggling with loss and a lingering sense of injustice. The available summary does not say what happened in the fire or what survivors believe was unjust.</p></div><a class="src" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQa3B6MmRMTWJzRXQtb2d5YjFDWWt2eW1ERDhJWXQ1VzU3WFgwdk1XZHVOcW5ySy1wMmg5VnZPYnJ2cDU4MzRNOUZBd3VrVEdUT2N2cERrNzk2Y3BoOGpscTdiZWtZU1lCYVMwX2tpdFMwYXNUdzBCWldGOG4tYkpZRWZKTnZ2aXRqcnc1dzlVZFYtS3duVl84YnFCcWVfQUpB?oc=5" target="_blank" rel="noopener">AP News + 2 more ↗</a></li>
+    <li><h3>West Bengal chief minister gives police different instructions for Bangladesh arrivals</h3><div class="body"><p>West Bengal&#x27;s chief minister told police to trace &quot;one by one&quot; Muslims he said had entered Cooch Behar illegally from Bangladesh, then send them back. He said Hindus coming from Bangladesh were refugees who should receive shelter, making religion the dividing line in his instructions.</p></div><a class="src" href="https://www.tbsnews.net/world/south-asia/west-bengal-cm-suvendu-orders-police-trace-deport-illegal-muslim-immigrants-1614216" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a></li>
+    <li><h3>Spanish defence group Indra joins Europe&#x27;s sovereign AI push</h3><div class="body"><p>A Spanish defence giant has joined Europe&#x27;s push for &quot;sovereign AI&quot;. Indra is state-backed, and its move responds to growing concern about the continent&#x27;s dependence on US technology.</p></div><a class="src" href="https://www.ft.com/content/05d6c6b6-80ce-4331-9bed-5835991fba2e?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a></li>
+    <li><h3>Puigdemont plans return after court closes his case</h3><div class="body"><p>Puigdemont says he will return to Barcelona on December 12, nearly a decade after fleeing Spain over Catalonia&#x27;s failed independence bid, now that the Supreme Court has closed his criminal case under a 2024 amnesty. He also plans a renewed independence proposal on December 17, so the legal case ends while the political fight continues.</p></div><a class="src" href="https://www.france24.com/en/video/20261125-top-spanish-court-closes-case-against-catalan-separatist-leader" target="_blank" rel="noopener">france24.com + 1 more ↗</a></li>
+    <li><h3>One Iranian twin faces death penalty, the other 25 years</h3><div class="body"><p>One twin faces the death penalty; the other has been sentenced to 25 years in prison. Taraneh and Romina Rahimi were arrested in Iran in January 2026, aged 19, for taking part in protests against the regime. Their family is campaigning for their release.</p></div><a class="src" href="https://www.france24.com/en/video/20261125-iranian-family-seeks-release-of-twin-sisters-facing-death-penalty-and-25-years-in-prison" target="_blank" rel="noopener">france24.com + 1 more ↗</a></li>
+    <li><h3>Nvidia CEO returns as Gomez announces his resignation</h3><div class="body"><p>Nvidia shares rose more than 30%, over $3 for every $10 of earlier value, when its board restored Jensen Huang as CEO two weeks after his resignation. Rep. Jimmy Gomez, meanwhile, said he will resign on Dec. 1 after a House inquiry found substantial evidence of alleged sexual misconduct toward a staffer.</p></div><a class="src" href="https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez" target="_blank" rel="noopener">feeds.npr.org + 1 more ↗</a></li>
+    <li><h3>Duran Duran guitarist Andy Taylor dies at 65</h3><div class="body"><p>Andy Taylor disclosed his stage four prostate cancer diagnosis four years after receiving it, as Duran Duran prepared to enter the Rock and Roll Hall of Fame in 2022. The guitarist has died at 65; his playing helped drive the songs that made the band a 1980s chart force.</p></div><a class="src" href="https://www.theguardian.com/music/2026/nov/25/andy-taylor-duran-duran-guitarist-dead" target="_blank" rel="noopener">theguardian.com + 4 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#0b6e4f">
+  <div class="half left">
+    <div class="photo"><img src="https://ecdn.dhakatribune.net/contents/cache/images/300x300x1/uploads/media/2026/11/25/09991b8dde425fad8165561d8b72f4c9-6b06f5cfada5e.png?jadewits_media_id=78297" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Bangladesh</p>
+    <div class="others">
+      <article class="more">
+        <h3>Gopalganj has more than half of 108 BGB platoons</h3><p class="dek">Headquarters is watching the deployment through live footage.</p>
+        <details><summary>Read</summary><div class="body"><p>Gopalganj has 56 of the 108 Border Guard Bangladesh platoons in this security operation, more than half the total. How does headquarters keep track of a force spread across Dhaka and seven other districts? A monitoring cell watches live footage from drones and body-worn cameras around the clock, while personnel work with district administrations and other law enforcement agencies to maintain public security.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>108 BGB platoons are assigned to the operation.</li><li>56 platoons are stationed in Gopalganj.</li><li>Four platoons are on standby.</li><li>Headquarters monitors live drone and body-camera footage around the clock.</li></ul></aside></details>
+        <a class="src" href="https://www.dhakatribune.com/bangladesh/425699/108-bgb-platoons-deployed-in-dhaka-7-other" target="_blank" rel="noopener">dhakatribune.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Jamaat to stage nationwide protests tomorrow against AL violence</h3><p class="dek">Jamaat Secretary General Mia Golam Porwar urges people to join Thursday&#x27;s rallies to protest alleged violence and arson and press for the 11-party alliance&#x27;s seven-point demand</p>
+        <details><summary>Read</summary><div class="body"><p>Jamaat Secretary General Mia Golam Porwar urges people to join Thursday&#x27;s rallies to protest alleged violence and arson and press for the 11-party alliance&#x27;s seven-point demand</p></div></details>
+        <a class="src" href="https://www.tbsnews.net/bangladesh/politics/jamaat-stage-nationwide-protests-tomorrow-against-al-violence-1614116" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>US proposes tariffs of up to 18% on Bangladeshi goods</h3><p class="dek">The proposal is tied to a capacity probe, but the available headlines give few details.</p>
+        <details><summary>Read</summary><div class="body"><p>Goods from Bangladesh could face a US tariff of up to 18% under a proposal tied to a capacity probe. The available headlines do not say which goods it would cover or what happens next.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The US has proposed tariffs on goods from Bangladesh.</li><li>The proposed rate is up to 18%.</li><li>The feed links the proposal to a capacity probe.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcmFLQzBrU2lxRmRWRTVRYWlmZWpmNXRlaTI1QnZ3XzZTMm91VUVKZk5OcnRGVFp4Q3pIT2h2YjlKTEVtQzN2QXBqM2ltSFNLb2tGSy0waTczTWktQzNocEZSdm13R291Ujh6STNOMGw4X2NhWFdEUlh5OHFncWx5eFRjOENJWjZHNFdWWlpEMUxYZlREYTh1RUlPWWtndUhxYUgtTmpVcW1Idw?oc=5" target="_blank" rel="noopener">New Age BD + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Hindu and Jewish groups protest Bangladesh Jamaat chief&#x27;s visit</h3><p class="dek">The available headline does not say why the groups object.</p>
+        <details><summary>Read</summary><div class="body"><p>Hindu and Jewish groups in Australia are protesting a visit by Bangladesh&#x27;s Jamaat chief. Why? The available headline and summary do not give their reasons.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hindu and Jewish groups in Australia are protesting.</li><li>The protest concerns a visit by Bangladesh&#x27;s Jamaat chief.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM0NkVEJLS2tTRzVBcmNROHR1dFc3WFAzNl9iOFdpZ1NETjJfeHRBWTZWYTNucDlLVFdDa0Vjbll3TlZJaVpDOWVYV05IendMXzlpNmpVQVc1aGk1bWE5QUdBUE1Fc3BTSE5aelJYTDNWbi05bGgyYVJNM0YxWExlTHdBdW5yRHp4bmtIdk5HM1ZGRWRYaW0yLTJWdEVpYUtsVHY3T2RRejJId0lBdzBRb0FhT0dVeXk5R3JpM09scjdLYXVVN1FOeWI4MWVqZE9Iajh3d01mZW5pM3ZRYk4ybVVCV0xrb1pfNVhsTnA2d1JYS3VT0gH6AUFVX3lxTFBaUkZ3NXBuenpheWhZLVEzZXhvTUVIME5IYWNWcUcxeC1MMllEVExHR08ydEdpNTlrY0pUQWpvX2FhYUZ2b1EtZXppVC1lU05Uc1Roc05WcUR6UVk2WWNhYkp5LW9qMWlpck5CRU1DdUF2TkhERllyVTFPczZ0RXZ4TFRLU2F4LTJWcXBpU1h6d1FLcE1faTU0Vl9wRjBLWHRBWHRPWi1QM0otcmJMQUJ6czcxb0JwLWdnX1YxNXVNZ3RGQ1RGZWRFMXcxeXZscUx2V1dfRWNkY2ctSFV4bjktZFFGM1hJbHg5elhkUmVTT2h0amg2OVZjd3c?oc=5" target="_blank" rel="noopener">The Times of India ↗</a>
+      </article>
+      <article class="more">
+        <h3>Hajj final registration deadline is 10 December</h3><p class="dek">Pilgrims must pay the rest of their package fee by then.</p>
+        <details><summary>Read</summary><div class="body"><p>An initial Hajj registration can still be cancelled. The Ministry of Religious Affairs says every initially registered pilgrim, under government or private management, must pay the remaining cost of their chosen package and complete final registration by 10 December 2026. Miss the deadline, and the preliminary registration is cancelled.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The deadline is 10 December 2026.</li><li>It applies to initially registered pilgrims under government and private management.</li><li>Pilgrims must pay the remaining package fee.</li><li>Missing the deadline cancels preliminary registration.</li></ul></aside></details>
+        <a class="src" href="https://en.prothomalo.com/bangladesh/apicu43dry" target="_blank" rel="noopener">en.prothomalo.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>India says Hasina&#x27;s plan to return is separate from extradition</h2>
+    <p class="dek accent">India is examining Bangladesh&#x27;s request to hand over Sheikh Hasina, but says her own plan to fly home on December 16 is a separate matter.</p>
+    <div class="body drop"><p>A former prime minister under a death sentence says she wants to fly back to the country that sentenced her. The open question is who gets to decide how she goes.</p><p>A Reuters report on Tuesday quoted Syed Mozammel Ali, who calls himself Sheikh Hasina&#x27;s spokesperson. He said she wants to return on December 16, Victory Day. She has asked the government to arrange a Biman aircraft to bring her home.</p><p>Hasina has spent more than two years in exile in India since she was ousted in August 2024. In November 2025 the International Crimes Tribunal sentenced her to death in absentia for crimes against humanity over the crackdown on the 2024 protests. She has rejected the charges.</p><p>Here&#x27;s the puzzle. Bangladesh has also formally asked India to hand her over. If she can simply board a plane, what happens to that request?</p><p>India answered on Wednesday. At the foreign ministry&#x27;s weekly briefing, spokesperson Randhir Jaiswal treated them as two separate questions.</p><p>&quot;The extradition request is being examined according to our established procedure,&quot; he said. &quot;However, the matter of any citizen who wishes to return to their country voluntarily, including with travel documents, is separate from the extradition request.&quot;</p><p>So what&#x27;s the difference? Extradition is one government formally handing a person to another under a legal process. The 2013 treaty between India and Bangladesh has exceptions that can let the country being asked say no. A voluntary return is a person deciding to go home on their own.</p><p>On the December 16 plan itself, Jaiswal kept it short: &quot;This is a matter between the former prime minister and the Bangladesh government. We have nothing more to say about it.&quot;</p><p>He did add one thing. India is &quot;concerned about incidents of violence against minorities in Bangladesh,&quot; he said, and urged the government to investigate them thoroughly and bring the people responsible to justice.</p><p>That leaves plenty unanswered. Nobody has said how long India&#x27;s review will take, or what it will decide. It&#x27;s also unclear whether Dhaka will send the plane she asked for.</p><p>And Dhaka may not see the two questions as separate at all. A headline from Anadolu Agency reports a Bangladeshi minister saying her return depends on the extradition treaty with India. If that holds, India&#x27;s two separate questions may turn out to be one.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>India&#x27;s foreign ministry says Bangladesh&#x27;s extradition request for Hasina is being examined under established procedure.</li><li>Spokesperson Randhir Jaiswal said a voluntary return is separate from the extradition request.</li><li>Hasina&#x27;s self-described spokesperson says she wants to return on December 16 and has asked for a Biman aircraft.</li><li>Hasina was sentenced to death for crimes against humanity and has been in exile in India for more than two years.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ3l2N19iQWhBMUdzUWZZbkFhb0VoWEpNS2xSOTE3bVJSLUVYbjF4RXdyYzJGZnlET3pmMnlCaWpROWd5dHZRa3d6b2Q1cndBWkZVUFAzaEVMQ1BDdGh5OGRlYkZ2V2tjSWo3SjMyeHZmTFk2S29oODVhcUkxY3NFTWhnVHVqVmdFSmNWalF6Q05SR242SmlPWGFQNkJVZUhXRUVxUlpnc3B3NVF5YUk1U0RYQ0VTMU1ZcmxJeDVKZkZUZjQ?oc=5" target="_blank" rel="noopener">Reuters + 9 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#b45309">
+  <div class="half left">
+    <div class="photo"><img src="https://i.guim.co.uk/img/media/5b3f61e3ae43b66936a59bd1fded59309335e537/478_69_4441_3552/master/4441.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=a7b4f32e67c909fd55ae36b20de71237" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">South Asia</p>
+    <div class="others">
+      <article class="more">
+        <h3>Nepal&#x27;s prime minister makes India his first foreign stop</h3><p class="dek">An earlier diplomatic rift gives the visit its weight.</p>
+        <details><summary>Read</summary><div class="body"><p>Balendra Shah declined to meet India&#x27;s foreign secretary, and New Delhi called off the official&#x27;s planned visit. Yet India became the Nepali prime minister&#x27;s first foreign stop. During Shah&#x27;s two-day visit, Indian Prime Minister Narendra Modi announced $1.6 billion in assistance, more than half of it for rebuilding after August&#x27;s floods. The money helps explain why this relationship matters so much to Nepal.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Shah declined to meet India&#x27;s foreign secretary; New Delhi called off the planned visit.</li><li>India was Shah&#x27;s first foreign trip as prime minister.</li><li>Modi announced $1.6 billion in assistance, most for flood reconstruction.</li></ul></aside></details>
+        <a class="src" href="https://foreignpolicy.com/2026/11/25/bangladesh-india-china-modi-shah-visit-flood-reconstruction-aid/" target="_blank" rel="noopener">foreignpolicy.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>India builds satellites, but most of the parts come from abroad</h3><p class="dek">A new report says the private space industry is mostly assembling, not making.</p>
+        <details><summary>Read</summary><div class="body"><p>India wants its space economy to grow from nearly $9 billion to $40-45 billion within a decade, yet its own space regulator says the satellite supply chain is &quot;highly dependent&quot; on imports. Its report lists 53 Indian suppliers against 162 foreign ones, and nearly 60% of a satellite&#x27;s cost goes on electronics and specialised materials, many imported. Waiting for critical parts often takes 12-16 months, which is why delays pile up.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>IN-SPACe report says India&#x27;s satellite supply chain is highly dependent on imports for critical components</li><li>It lists 53 Indian suppliers and 162 foreign suppliers</li><li>Nearly 60% of satellite costs are electronic, electrical and electromechanical components and specialised materials</li><li>Critical components often take 12-16 months to procure</li></ul></aside></details>
+        <a class="src" href="https://www.thehindu.com/sci-tech/science/indias-satellite-supply-chain-highly-dependent-on-imports-says-space-body/article71743312.ece" target="_blank" rel="noopener">thehindu.com + 2 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>A protest leader was stopped at the airport over an email he says he didn&#x27;t see until he got there</h2>
+    <p class="dek accent">Saurav Das, a face of India&#x27;s youth-led Cockroach movement, was stopped from flying to the UK and has asked the Delhi high court to let him go.</p>
+    <div class="body drop"><p>Saurav Das says an email told him not to use his passport, and it arrived five hours before his flight. He says he didn&#x27;t see it until he got to Delhi airport.</p><p>Das is 27 and one of the main faces of India&#x27;s Cockroach movement. Immigration officials stopped him boarding a flight to Britain early on Tuesday morning, and he has now asked the Delhi high court for permission to fly.</p><p>So who is he? The movement appeared in May with street protests against the Narendra Modi government. In July it forced the education minister to resign over exam leaks, and it has since worked as a pressure group.</p><p>Why was he flying? Students invited him. The Oxford Union Society wanted a &quot;fireside chat&quot; on the movement, and Indian student groups at Edinburgh, Cambridge, Queen Mary University of London and the London School of Economics asked him to speak too. Das says students want to know how the movement succeeded without violence.</p><p>Here&#x27;s the catch. Indian media reports allege he was told well in advance that his passport had discrepancies. Das says none of that is true. The email, he says, gave no reason, and he has travelled on this passport before, since it was issued in 2019.</p><p>He has his own guess. He suspects the government is using a case filed in Chennai, which disputes his citizenship, as a pretext. He thinks someone hostile to the movement filed it. That is his suspicion, and the source gives no official reason.</p><p>He also says the point is a message. &quot;It&#x27;s a chilling signal to young Indians,&quot; he told the Guardian.</p><p>He is not the only one. The Guardian notes that in recent years the government has stopped foreign speakers and academics from entering India, including several from the UK. Last year Francesca Orsini, a professor at Soas University of London, was deported from Delhi airport despite a valid visa.</p><p>There is a hint of how this can go. Earlier this week the Delhi high court ruled in a separate case, brought by the journalist Amrit Wilson, that the government gave no concrete details of what it meant by &quot;anti-India activities&quot;. It gave the government a week to issue a fresh notice with specific reasons.</p><p>Das&#x27;s own hearing is on Thursday morning. His lawyer asked for speed because he has already missed some of his UK events, and the rest of his itinerary depends on how soon he can leave.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Saurav Das, 27, was stopped from boarding a UK flight at Delhi airport early on Tuesday.</li><li>He says he got an email five hours before the flight telling him not to use his passport, with no reason given.</li><li>The Delhi high court is set to hear his case on Thursday morning.</li><li>Earlier this week the same court said the government gave no concrete details of &#x27;anti-India activities&#x27; in Amrit Wilson&#x27;s case.</li></ul></aside><a class="src" href="https://www.theguardian.com/world/2026/nov/25/indian-cockroach-movement-leader-asks-court-for-permission-to-fly-to-uk" target="_blank" rel="noopener">theguardian.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo"><img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/b4ee/live/fcd47260-e8fc-11f1-99b6-a35a62fa4264.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>A US-led group is set to buy Lukoil&#x27;s assets outside Russia</h3><p class="dek">Refineries, fuel stations and oil assets across several continents are changing hands, pending final approval.</p>
+        <details><summary>Read</summary><div class="body"><p>One of Russia&#x27;s biggest oil companies is about to lose almost everything it owns abroad. Investors led by US billionaire Todd Boehly&#x27;s firm Eldridge have struck a deal for Lukoil&#x27;s assets outside Russia, sources told CNBC, covering refineries in Bulgaria and Romania, plus fuel stations in the US, Europe and Asia. The assets come with about 350,000 barrels a day of production, and the US sanctions office still has to give final approval, which matters because Europe could then buy diesel from this group instead of from Russia.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Investors led by Todd Boehly&#x27;s Eldridge struck a deal to buy Lukoil&#x27;s assets outside Russia, per sources.</li><li>The US International Development Finance Corporation and UAE-based Catena Investments are also parties.</li><li>The assets give about 350,000 barrels per day of production.</li><li>The US sanctions office is expected to sign off, but final approval is still needed.</li></ul></aside></details>
+        <a class="src" href="https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html" target="_blank" rel="noopener">rss.nytimes.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Poland proposes a no-fly zone along its Ukraine border</h3><p class="dek">After repeated Russian airspace incursions, Warsaw wants a strip of its own sky off limits.</p>
+        <details><summary>Read</summary><div class="body"><p>Poland wants to close part of its own sky. After repeated Russian airspace incursions, it is proposing a no-fly zone, an area where aircraft are banned, along the Ukraine border, covering several dozen kilometers of Polish territory. It has also urged NATO allies to stay vigilant at their own borders.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Poland proposes a no-fly zone along its border with Ukraine.</li><li>It would cover several dozen kilometers of Polish territory.</li><li>The move follows repeated Russian airspace incursions.</li><li>Poland urged NATO allies to be vigilant at their borders.</li></ul></aside></details>
+        <a class="src" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNUmw1Z0s5cGRwRDQ5NDRBY3JzQ2x2a0dXUlFUNXdkRFNqd0VhMFJvdnVDUExHUVVZNC10Yzd1OFJoZmlXT2I4MVppSFQ1RHA1SjB1Z2ZRUzZuN2FKNG1vejBFdlpGWlJBQmgwYnhDSzVlVGplNVQ1NmhHU0E1Ui1uQlU5UjFvcXZRc0x0Wklwa1B1eGxTbTBFdlNKNUpSS3NwV3hJTEFnQlJNU3FWOHBidTJzMDA0cVZ3aWxrZ0NB?oc=5" target="_blank" rel="noopener">Reuters + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>China investigates Shanghai&#x27;s party chief, a man tipped for the very top</h3><p class="dek">Chen Jining is the fourth politburo member probed since 2025.</p>
+        <details><summary>Read</summary><div class="body"><p>The man who runs Shanghai, and who many saw heading for the very top, is now under investigation. China&#x27;s anti-graft watchdog is looking into Chen Jining for &quot;suspected severe violations of discipline and laws&quot;, a common euphemism for corruption. He is the fourth member of the 24-seat politburo to be probed since 2025, so roughly one in six seats has now been hit. For officials of his rank, a public announcement like this generally signals eventual political downfall, and it suggests President Xi Jinping&#x27;s anti-graft drive is not slowing.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>China&#x27;s anti-graft watchdog is investigating Shanghai party chief Chen Jining for &quot;suspected severe violations of discipline and laws&quot;.</li><li>He is the fourth politburo member probed since 2025, after He Weidong, Zhang Youxia and Ma Xingrui.</li><li>Chen, 62, had been seen as a plausible contender for higher national office.</li><li>The hashtag about the probe had about 240m views on Weibo by Wednesday morning.</li></ul></aside></details>
+        <a class="src" href="https://www.theguardian.com/world/2026/nov/25/china-investigates-politburo-chen-jining-xi-jinping-purge" target="_blank" rel="noopener">theguardian.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>A nuclear risk pledge with no plan yet</h3><p class="dek">Trump, Putin and Xi agreed to talk, but offered no next step.</p>
+        <details><summary>Read</summary><div class="body"><p>Three presidents promised to discuss reducing nuclear risks, yet their declaration names no timetable, delegation or specific measure. Trump, Putin and Xi made that promise at the Shenzhen summit after New START expired in February, leaving U.S. and Russian deployed strategic nuclear forces without legally binding limits. Talks matter because steps such as missile launch notifications could reduce the danger of miscalculation, even without a treaty.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump, Putin and Xi promised dialogue on nuclear risks.</li><li>The declaration gives no timetable, delegation or specific measures.</li><li>New START expired in February.</li><li>Missile launch notifications can be pursued without a treaty.</li></ul></aside></details>
+        <a class="src" href="https://foreignpolicy.com/2026/11/25/shenzhen-summit-trump-xi-putin-nuclear/" target="_blank" rel="noopener">foreignpolicy.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>US proposes tariffs on Bangladesh and 13 other economies</h3><p class="dek">The proposed duties could reach 20 per cent.</p>
+        <details><summary>Read</summary><div class="body"><p>Washington has put Bangladesh and 13 other economies on a tariff list, but nobody pays the new duties yet. The US proposed rates of up to 20 per cent after a probe into alleged excess production: at that rate, each $1 of covered imports would face 20 cents in duty. Public comments come first; if adopted, the charges could reach US shoppers through higher prices.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bangladesh is among 14 economies named.</li><li>The proposed duties reach up to 20 per cent.</li><li>Public comments are required before the tariffs take effect.</li></ul></aside></details>
+        <a class="src" href="https://www.dawn.com/news/2047008/us-unveils-proposed-tariffs-on-major-partners-including-eu-china-and-india" target="_blank" rel="noopener">dawn.com + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>North Korea gives Swiss diplomat 48 hours to leave, weeks after office reopened</h2>
+    <p class="dek accent">Switzerland reopened its Pyongyang office after six years and sanctioned a children&#x27;s camp, and North Korea ordered its envoy out.</p>
+    <div class="body drop"><p>Switzerland&#x27;s office in Pyongyang sat shut for six years. It reopened, and weeks later its head was told to be gone within 48 hours.</p><p>Here&#x27;s how that happened. Swiss foreign minister Ignazio Cassis made a rare visit to North Korea, officially reopened the office and discussed normalising relations. He was greeted at Pyongyang Airport on 29 October.</p><p>Now the sanctions. Switzerland targeted the Songdowon international children&#x27;s camp in the eastern city of Wonsan, which is attended by Russian and Chinese children among other nationalities. The camp has been accused of involvement in transferring children from Russian-occupied areas of Ukraine.</p><p>North Korea&#x27;s state news agency, KCNA, called the sanctions &quot;a blatant hostile act&quot;. It declared the head of the Swiss office persona non grata, which is the formal way for a host country to say a diplomat is no longer welcome. It also called for the office to close.</p><p>So did Switzerland think it could do both? Yes, and it says so. Its foreign affairs department &quot;distinguishes between its sanctions policy and its commitment to maintaining dialogue with all countries&quot;.</p><p>It added that reopening the office did not affect its enforcement of UN sanctions over North Korea&#x27;s nuclear programme, or EU sanctions tied to Russia&#x27;s war against Ukraine.</p><p>Here&#x27;s the catch. Switzerland is one of the few Western nations that keeps talking with Pyongyang, and it treats talking and sanctioning as two separate tracks. North Korea answered a move on one track by closing the other.</p><p>The line is not fully cut. Swiss authorities said relations will run through North Korea&#x27;s embassy in Bern and the Swiss embassy in Beijing.</p><p>The backdrop is the war. Thousands of North Korean soldiers have been deployed to support Russia, and in August Ukraine&#x27;s President Volodymyr Zelensky accused Moscow of using North Korean missiles.</p><p>Diplomatic links date to 1974, and the Pyongyang office opened in 1997. After six years shut, the door stood open for a few weeks. For now, the talking runs through two other buildings.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>North Korea ordered Switzerland&#x27;s diplomatic representative to leave within 48 hours and called for the office to close.</li><li>The row followed Swiss sanctions on the Songdowon children&#x27;s camp in Wonsan, accused of involvement in transferring children from Russian-occupied Ukraine.</li><li>Foreign minister Ignazio Cassis reopened the Pyongyang office weeks earlier.</li><li>Relations will continue through North Korea&#x27;s embassy in Bern and Switzerland&#x27;s embassy in Beijing.</li></ul></aside><a class="src" href="https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">feeds.bbci.co.uk + 4 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108558280-1795524153938-gettyimages-2306090565-NVIDIA_HQ.jpeg?v=1795524192&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bets on OpenAI&#x27;s IPO announcement move later</h3><p class="dek">Anthropic&#x27;s rough debut may be shifting expectations.</p>
+        <details><summary>Read</summary><div class="body"><p>Anthropic&#x27;s shares closed below their $83 IPO price just a week after debut. Meanwhile, Kalshi traders put the chance of rival OpenAI officially announcing an IPO by June 2027 at roughly 28%, down from above 50% earlier this month. Those odds measure traders&#x27; bets about an announcement, and Anthropic&#x27;s shaky start may be making an earlier one look less likely.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Anthropic debuted on public markets last week.</li><li>Its shares closed Tuesday below the $83 IPO price.</li><li>Kalshi put the chance of an OpenAI IPO announcement by June 2027 at roughly 28%, down from above 50% earlier this month.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/1c62dcfe-826f-4638-a9ee-c3b3009bc45d" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>The US FCC authorizes SpaceX to deploy its &quot;Starmind&quot; constellation of 1M satellites for data centers in space (David Shepardson/Reuters)</h3><p class="dek">David Shepardson / Reuters : The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space — The Federal Communications Commission on Wednesday said it</p>
+        <details><summary>Read</summary><div class="body"><p>David Shepardson / Reuters : The US FCC authorizes SpaceX to deploy its “Starmind” constellation of 1M satellites for data centers in space — The Federal Communications Commission on Wednesday said it</p></div></details>
+        <a class="src" href="https://www.techmeme.com/261125/p27#a261125p27" target="_blank" rel="noopener">techmeme.com + 3 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Huawei sets up chip and AI patent teams</h3><p class="dek">The teams are part of its push to build a computing ecosystem overseas that could rival Nvidia&#x27;s.</p>
+        <details><summary>Read</summary><div class="body"><p>Huawei wants to build a computing ecosystem overseas to rival Nvidia&#x27;s. So why set up patent teams? Its new teams for semiconductors and AI extend an intellectual property operation rooted in telecommunications.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Huawei has established dedicated semiconductor and AI patent teams.</li><li>The company is based in Shenzhen.</li><li>Huawei seeks an overseas foothold for a computing ecosystem to rival Nvidia&#x27;s.</li></ul></aside></details>
+        <a class="src" href="https://www.scmp.com/tech/big-tech/article/3375756/huawei-forms-patent-teams-chips-and-ai-eyeing-ecosystem-rival-nvidia" target="_blank" rel="noopener">scmp.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>AI&#x27;s stock rally leaves a funding question</h3><p class="dek">Big Tech&#x27;s AI spending is testing its cash and its lenders.</p>
+        <details><summary>Read</summary><div class="body"><p>Nvidia shares jumped more than 31% on Monday. So why are investors asking harder questions about the AI build-out? Microsoft, Amazon, Meta and Alphabet are on track to spend more on capital projects than their businesses generate in cash in both 2026 and 2027. Bond lenders are growing pickier about funding that spending, leaving a question a stock rally cannot answer: who will pay the bill?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia shares rose more than 31% on Monday.</li><li>Four major tech companies are on track to spend more on capital projects than they generate in cash in 2026 and 2027.</li><li>Lenders are becoming pickier about corporate bonds.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>A coding agent made a dull game fun, its creator says</h3><p class="dek">One writer traces three changes in coding AI over a year.</p>
+        <details><summary>Read</summary><div class="body"><p>A coding agent spent 12 hours playtesting a dull game, and its creator says the result was fun. How did it get from fixing code to improving a game? Writer Simon Willison sees three shifts over the past year: coding agents became reliable for his daily work, grew more proactive with tricky problems, and began making useful judgments about what makes a game enjoyable.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Willison describes three shifts in LLM and coding agent abilities over the past year.</li><li>He found Claude Opus 4.5 reliable for most of his daily coding problems.</li><li>He says Claude Opus 5.5 spent 12 hours playtesting and improving his game.</li></ul></aside></details>
+        <a class="src" href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/" target="_blank" rel="noopener">simonwillison.net ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Nvidia&#x27;s AI chips are still reaching China despite the rules</h2>
+    <p class="dek accent">Reuters asks how, and another report points to a surge of used-looking supply on the market.</p>
+    <div class="body drop"><p>Here&#x27;s the puzzle: the US has rules meant to keep Nvidia&#x27;s top AI chips out of China, yet Reuters is asking how China got access to them anyway. One report, citing sources, says an unusually high volume of Nvidia GPUs, including thousands of B300s, hit the market after the US curbed Chinese companies&#x27; remote access to AI chips. Reuters also ties the fight in Washington over China&#x27;s chip access to Jensen Huang&#x27;s return to Nvidia, but the full story isn&#x27;t available, so the details of how it happened are not here.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Reuters asks how China got access to Nvidia&#x27;s AI chips despite rules meant to stop it.</li><li>Sources told CNBC an unusually high volume of Nvidia GPUs, including thousands of B300s, hit the market.</li><li>That followed US curbs on Chinese companies&#x27; remote access to AI chips.</li><li>Reuters links a Washington fight over China&#x27;s chip access to Jensen Huang&#x27;s return to Nvidia.</li></ul></aside><a class="src" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPU05FY1hvQmJod19oM3p3aTZQaS1CdktCWEZsSnk0TmVWREE1a0tmVW5kVnBxdG5VNU1TX2FmWnZ1aTc1UEQyblFkSklCZ3NlcU1XQUZQVDUwTXZ6R3BoVjlRb1RPY0pTNGdmUUdNZkw0Zi1oanJOcXFieGlBdzRTN05pa3FsaVhUWVk0UWpzc0hkN2kySGF6bGRpU1Y1a2IyNi1iaUFQZThLNVZON0E?oc=5" target="_blank" rel="noopener">Reuters + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo nophoto"><span>Opec+ heavyweights head for a fight over how much oil they c</span></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>US growth upgrade keeps December rate rise in play</h3><p class="dek">The third-quarter growth estimate rose from 3.4% to 4.3%.</p>
+        <details><summary>Read</summary><div class="body"><p>The US economy grew faster than first reported in the third quarter: 4.3% at an annualised rate, up from an initial estimate of 3.4%, the Bureau of Economic Analysis said. That upgrade keeps a December rate rise in play for the Fed; another headline says US PCE inflation also points toward more tightening.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Third-quarter US growth was revised to 4.3% annualised.</li><li>The initial estimate was 3.4%.</li><li>The growth upgrade keeps a December Fed rate rise in play.</li></ul></aside></details>
+        <a class="src" href="https://www.ft.com/content/a1aaf5be-176c-4c4c-99d6-00875f6933f3?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Sanko and DBL plan $300m denim plant in Moulvibazar</h3><p class="dek">The planned factory would make yarn and denim together.</p>
+        <details><summary>Read</summary><div class="body"><p>Ten million metres of denim a month, enough to stretch about a quarter of the way around Earth: that is the target for Turkish Sanko and local DBL&#x27;s planned $300 million Moulvibazar plant, which is expected to create about 4,400 jobs. Why make yarn there too? Its spinning unit would produce yarn alongside fabric, giving garment exporters another local source of material.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Sanko Holding and DBL Group plan to invest $300 million.</li><li>The Moulvibazar plant targets around 10 million metres of denim a month.</li><li>The project is expected to create about 4,400 direct jobs.</li><li>Commercial operations are expected in the first quarter of 2028.</li></ul></aside></details>
+        <a class="src" href="https://www.tbsnews.net/economy/turkish-sanko-local-dbl-invest-300m-denim-plant-create-4400-jobs-1613841" target="_blank" rel="noopener">tbsnews.net + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Copper shows the pitfalls of betting on AI</h3><p class="dek">A metal has become a way to bet on a technological revolution.</p>
+        <details><summary>Read</summary><div class="body"><p>Copper has become a way to bet on AI. Here&#x27;s the catch: using one market as a stand-in for a technological revolution brings pitfalls of its own.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The story concerns copper and AI.</li><li>The summary describes a proxy bet on a technological revolution.</li></ul></aside></details>
+        <a class="src" href="https://www.economist.com/finance-and-economics/2026/11/24/copper-shows-how-ai-is-messing-with-markets" target="_blank" rel="noopener">economist.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Opec+ heavyweights head for a fight over how much oil they could pump</h2>
+    <p class="dek accent">Big Opec+ members are clashing over production capacity estimates, and Kazakhstan wants a higher number too.</p>
+    <div class="body drop"><p>Money is at stake in Opec+, and the fight is over a number that sounds dull: how much oil each country could pump if it really tried.</p><p>Quick background. Opec+ is the oil producers&#x27; club of OPEC plus Russia and several other countries, including Kazakhstan. Members agree on how much oil each one pumps, and Saudi Arabia and Russia lead the group in practice.</p><p>So why does a guess about capacity matter? A country&#x27;s quota, its allowed output, is tied to estimates like these. Raise the estimate and you can make the case for a bigger quota, which means more barrels to sell.</p><p>Think of a shared pizza where each slice is cut to match how hungry each person says they are. Everyone has a reason to say they&#x27;re starving.</p><p>That&#x27;s why the group&#x27;s largest members are heading for a clash over production estimates, the Financial Times reports.</p><p>Here&#x27;s the catch. A cartel&#x27;s quotas exist to hold output back, so a fight over who gets to claim a bigger number pulls the other way.</p><p>Kazakhstan has joined in. Sources told Reuters it wants a higher estimate of its own output capacity ahead of a debate over 2027 quotas. Kazakhstan has long pumped more oil than its quota allows, so a higher official number would close some of that gap on paper.</p><p>A note on what isn&#x27;t known yet: the reports available here don&#x27;t say which large members are arguing or what figures they want.</p><p>Watch the 2027 quota debate. If the members settle on capacity numbers, the 2027 quotas will be built on them. If they can&#x27;t agree, the group will head into that debate still fighting over who deserves to pump more.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The FT reports that Opec+&#x27;s largest members are heading for a clash over oil production estimates.</li><li>Kazakhstan is also seeking a higher output capacity estimate ahead of a 2027 OPEC+ quota debate, sources told Reuters.</li></ul></aside><a class="src" href="https://www.ft.com/content/b24d5c8c-4c9b-48f0-b4a8-5f83eee2d3e9?syn-25a6b1a6=1" target="_blank" rel="noopener">ft.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://media.nature.com/lw1200/magazine-assets/d41586-026-03853-y/d41586-026-03853-y_54015642.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>A tiny magnet joins the hunt for dark matter</h3><p class="dek">Scientists are testing new ways to find the unseen.</p>
+        <details><summary>Read</summary><div class="body"><p>A magnet smaller than a millimeter could help hunt for something detectors have never caught: dark matter. In a vacuum, a bump from ultralight dark matter would amplify the magnet&#x27;s natural sway. Scientists are trying new approaches because earlier searches have come up empty, while gravity still tells us that unseen matter is there.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The magnet is less than a millimeter wide.</li><li>A bump from ultralight dark matter would amplify its swaying.</li><li>Earlier dark matter detectors have found no clear signal.</li></ul></aside></details>
+        <a class="src" href="https://www.quantamagazine.org/novel-experiments-expand-the-hunt-for-ultralight-dark-matter-20261125/" target="_blank" rel="noopener">api.quantamagazine.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>An atom-sized black hole could destroy a star</h3><p class="dek">A simulation shows how a tiny black hole might trigger a stellar explosion.</p>
+        <details><summary>Read</summary><div class="body"><p>A black hole no larger than an atom could carry an asteroid&#x27;s mass and destroy a star from within. MIT researchers found in simulations that, after millions of years feeding inside a fast-spinning star, a disk could form around the growing black hole and power jets that explode the star within a few dozen seconds. Spotting such a blast could help test whether these ancient black holes exist and account for some dark matter.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The study used theoretical calculations and three-dimensional simulations.</li><li>The proposed black holes could be atom-sized yet have the mass of an asteroid.</li><li>Jets could explode a star within a few dozen seconds once a disk forms.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261122060332.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Two proofs of the Riemann hypothesis, one by AI, now need checking</h2>
+    <p class="dek accent">Nature reports two proofs of a famous prime-number conjecture, one AI-written and one human-written, and both need careful checking.</p>
+    <div class="body drop"><p>What do mathematicians do when one of their most famous unsolved puzzles gets two answers at once?</p><p>They get stunned, apparently. Nature&#x27;s podcast on 25 November reports proofs of the Riemann hypothesis, one written by an AI and one by humans. Both will need careful checking.</p><p>First, the puzzle. Prime numbers are the ones divisible only by 1 and themselves: 2, 3, 5, 7, 11 and so on. They look scattered with no tidy rule, yet they are not random either.</p><p>The Riemann hypothesis is a claim about the hidden pattern in them. Nature&#x27;s guide calls it the famed conjecture that rules prime numbers. A conjecture is a claim that people suspect is true but nobody has proved.</p><p>Here&#x27;s the catch. A proof is only a claim until other experts have gone through it, step by step, and found no hole. That is what &quot;careful checking&quot; means, and it can take a while.</p><p>So why the excitement now? One of the two proofs was written by an AI. Nature has also run a piece on how AI shocks are rattling the next generation of mathematicians, and an essay arguing the field will survive OpenAI&#x27;s disruption.</p><p>Notice what the source does not say. It does not say either proof is correct. It says mathematicians are astounded, and that the work now has to earn its place.</p><p>That is the whole lesson in how this corner of the world works. In mathematics, a brilliant argument and a verified one are two different things, and only the second counts.</p><p>Which leaves the question nobody can answer yet: when the checking is done, will either proof still be standing?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nature&#x27;s podcast of 25 November 2026 reports AI-written and human-written proofs of the Riemann hypothesis.</li><li>Mathematicians are described as stunned.</li><li>Both proofs will need careful checking.</li></ul></aside><a class="src" href="https://www.nature.com/articles/d41586-026-03853-y" target="_blank" rel="noopener">nature.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://singularityhub.com/uploads/2026/11/lighted-spherical-networks-and-nodes.jpeg?auto=webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Gene therapy cuts seizures in three men in early trial</h3><p class="dek">A gene gave a drug a new way to quiet seizures.</p>
+        <details><summary>Read</summary><div class="body"><p>A drug quieted seizures only after gene therapy gave it something to switch on. In a trial of three men whose epilepsy resisted medication, doctors delivered a gene to the brain region where seizures began; with regular drug doses, average monthly seizures fell from about four to nearly zero after five months. The early result suggests doctors may someday calm that region without removing it.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The trial enrolled three men with drug-resistant epilepsy.</li><li>Their average monthly seizures fell from roughly four to nearly zero after five months.</li><li>The treatment used a gene delivered to the seizure-producing region and a drug to activate its effect.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/19/novel-gene-therapy-nearly-erases-drug-resistant-seizures/" target="_blank" rel="noopener">singularityhub.com + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>AI gig platforms offer high rates with little security</h3><p class="dek">A big hourly offer can disappear quickly.</p>
+        <details><summary>Read</summary><div class="body"><p>Outlier advertises up to $180 an hour for U.S. physicians to check AI work. How secure is that offer when its terms allow immediate account deactivation without notice, and one designer&#x27;s video-tagging job for Meta reappeared at $16 an hour after ending at $21? A high advertised rate gives workers little control over what happens next.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Outlier advertises up to $180 an hour for U.S. physicians.</li><li>Its terms allow immediate account deactivation without notice.</li><li>A designer&#x27;s $21-an-hour video-tagging job reappeared at $16 an hour.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>Grand Theft Auto VI was built without generative AI</h3><p class="dek">A handmade game can still reach a mass audience.</p>
+        <details><summary>Read</summary><div class="body"><p>Grand Theft Auto VI was built without generative AI, according to Exponential View. Rockstar&#x27;s 5,000 staff worked on the game, and reports cited by the newsletter say its 30,000 unique characters were made by hand. That&#x27;s six characters for every staff member, as a way to grasp the scale. The larger idea: digital work can be made once by people and sold to millions.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Exponential View says Rockstar&#x27;s 5,000 staff built Grand Theft Auto VI without generative AI.</li><li>Reports cited by the newsletter say 30,000 unique characters were made by hand.</li><li>The newsletter says the game made $3.79 billion by the end of its first day, including preorders.</li></ul></aside></details>
+        <a class="src" href="https://www.exponentialview.co/p/ev-611" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>An AI fixed another AI by editing 0.016 percent of its numbers</h2>
+    <p class="dek accent">MIT researchers had OpenAI&#x27;s GPT-6 Astra read and edit another model&#x27;s raw weights, and it repaired faults without retraining.</p>
+    <div class="body drop"><p>Astra changed 0.016 percent of a small AI model&#x27;s weights, and the model&#x27;s score on a math test jumped from 7.9 percent to 48.1 percent. That is roughly one weight in every 6,250.</p><p>Weights are the numbers inside a neural network that set how strongly its units connect. Normally a model gets its weights through training: it makes a mistake, its weights shift, and this repeats on a vast scale. It is a costly, energy-hungry slog, and the result is a pile of numbers nobody can read.</p><p>Here&#x27;s the twist. Researchers at MIT, in a preprint, handed those raw numbers to GPT-6 Astra, a large language model from OpenAI, and asked it to figure them out. No new training of the target model was needed.</p><p>So what was wrong with the math model? It was called Qwen, and on tough problems it got stuck in repetitive loops. The fix gave it no new math skill. It just stopped it from reasoning in circles.</p><p>The car test is even more fun. A network steering a virtual car had to back up before jumping a ramp, and it failed 256 attempts. After Astra edited about 3.5 percent of its weights, it nailed the move in all 1,024 trials that followed.</p><p>Astra could also read the weights of small networks and tell which arcade game each had learned, such as Pong or Pac-Man. And when asked to write code for Atari games and Go, it produced working models.</p><p>Think of a seasoned mechanic with an unfamiliar engine. They can find the fault without knowing what every nut and bolt does. Astra is the same: it cannot pinpoint the role of every part in a model.</p><p>Is it hype? The MIT team released complete logs of every experiment. Scientists at The Alan Turing Institute replicated and extended the results, and called it &quot;a promising but early tool&quot; for interpretability.</p><p>Separately, Chandan Singh of Voyage AI led a team that used Anthropic&#x27;s Claude to write small transformers from scratch. They solved basic math problems with nearly perfect accuracy within three attempts.</p><p>The big question is how far this goes. If a model can fix what it only partly understands, how much of an AI&#x27;s inner workings do we still need to understand?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Astra edited 0.016 percent of Qwen&#x27;s weights and lifted its MATH-500 accuracy from 7.9 to 48.1 percent.</li><li>A virtual car controller failed 256 attempts, then succeeded in all 1,024 after about 3.5 percent of its weights were edited.</li><li>The Alan Turing Institute replicated and extended the results, calling it a promising but early tool.</li><li>The MIT team released complete logs of every reported experiment.</li></ul></aside><a class="src" href="https://singularityhub.com/2026/11/25/this-ai-tweaks-llm-neural-networks-like-a-gene-editor/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p10" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/MSL_cruise_stage_configuration_%28PIA14831%29.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Why the idea of Rome keeps changing</h3><p class="dek">An ancient empire still shapes how people talk about power.</p>
+        <details><summary>Read</summary><div class="body"><p>The Roman empire is ancient, but the idea of Rome keeps finding new uses. In a HistoryExtra conversation, historian Rhiannon Garth Jones follows that idea from the empire into modern politics and pop culture, where people have reshaped it into a symbol of authority, identity and influence. The puzzle is why later generations keep reaching for Rome when they want to explain their own world.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>HistoryExtra spoke with historian Rhiannon Garth Jones.</li><li>The conversation discusses her book All Roads Lead to Rome.</li><li>It explores Rome&#x27;s use in modern politics and pop culture.</li></ul></aside></details>
+        <a class="src" href="https://www.historyextra.com/membership/why-were-still-thinking-about-the-roman-empire/" target="_blank" rel="noopener">historyextra.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>On this day in 2011: Mars Science Laboratory, a NASA mission carrying the rover Curiosity (pictured) on board, was launched from Cape Canaveral.</h2>
+    <p class="dek accent">Mars Science Laboratory (MSL) is a robotic space probe mission to Mars launched by NASA on November 26, 2011, which successfully landed Curiosity, a Mars rover, in Gale Crater on August 6, 2012. The o</p>
+    <div class="body drop"><p>Mars Science Laboratory (MSL) is a robotic space probe mission to Mars launched by NASA on November 26, 2011, which successfully landed Curiosity, a Mars rover, in Gale Crater on August 6, 2012. The o</p></div><a class="src" href="https://en.wikipedia.org/wiki/Mars_Science_Laboratory" target="_blank" rel="noopener">Wikipedia + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p11" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.theatlantic.com/thumbor/aT0GI7aNjFqTkutu6_VRtC7GJGc=/media/img/mt/2026/11/2026_11_18_The_AI_Revolution_Will_Be_Slower_Than_You_Think/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Every telescope sees into the past</h3><p class="dek">Every look up is a look back.</p>
+        <details><summary>Read</summary><div class="body"><p>The sunlight reaching you left the Sun eight minutes ago. Astronomer Michelle Thaller explains why this delay makes every look at the sky a look into the past: light from Andromeda began its trip 2.5 million years ago, and today&#x27;s telescopes can see the universe as it was more than 12 billion years ago. The farther the light travels, the older the view.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Sunlight takes eight minutes to reach us.</li><li>Light from Andromeda takes 2.5 million years to reach us.</li><li>Today&#x27;s telescopes can see the universe as it was more than 12 billion years ago.</li></ul></aside></details>
+        <a class="src" href="https://bigthink.com/series/the-big-think-interview/telescopes-universe-past/" target="_blank" rel="noopener">bigthink.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Nvidia&#x27;s sales doubled, yet The Atlantic says air is leaking from AI</h2>
+    <p class="dek accent">Great numbers on paper, and a headline that hints at trouble anyway.</p>
+    <div class="body drop"><p>Here&#x27;s the odd part: Nvidia, which designs most of the chips behind the AI boom, just reported that its sales and profits doubled from a year earlier. It also said it is on pace to grow another 75 percent next year, with a backlog of $2.5 trillion in future orders. That should be a happy moment for investors, yet The Atlantic&#x27;s headline says air is easing out of the AI bubble, and the rest of the piece wasn&#x27;t available to explain why.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Nvidia reported sales and profits doubled year over year.</li><li>Nvidia says it is on pace to grow another 75 percent next year.</li><li>Nvidia cited a $2.5 trillion backlog of future orders for the industry.</li><li>The Atlantic&#x27;s headline says air is easing out of the AI bubble.</li></ul></aside><a class="src" href="https://www.theatlantic.com/ideas/2026/11/ai-bubble-returns-timeline/689504/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p12" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Open problems: how physics keeps a list of what it cannot explain</h2><p class="dek accent">The last lesson is about the questions physics has not answered, and how scientists keep track of them.</p>
+  <div class="body drop"><p>Every to-do list you have ever written had something stuck at the bottom. The easy jobs get done and the odd, awkward one stays. Physics works the same way, and this last lesson is about its awkward jobs.</p><p>Physicists call them open problems. Some are theoretical: our best theories cannot explain something we have actually observed. Others are experimental: we have an idea, but nobody has worked out how to build a test for it.</p><p>Here is the big one. The Standard Model, our mathematical framework for the particles and forces we know, does not fit with general relativity, the theory of gravity. Where both are needed at once, such as at the Big Bang or inside a black hole, both theories break down. Beyond the Standard Model, the list also includes the absolute mass of neutrinos, why matter outweighs antimatter, and what dark matter and dark energy are.</p><p>Keeping such lists is an old habit. Isaac Newton ended his book Opticks, first published in 1704, with 31 open questions about light and matter. In 1900 Lord Kelvin gave a speech naming just two problems, which he called &quot;two clouds&quot; over classical physics: no evidence for the luminiferous aether, and a failure to predict how solids hold heat. Here&#x27;s the twist. Both clouds were cleared within a decade, by special relativity and quantum mechanics. Two small problems, two whole new theories.</p><p>So how fast do lists shrink? Try the numbers. In 1984 the mathematical physicist Barry Simon listed 15 open problems about quantum operators. By 2000 about 5 were solved, which is one in three after sixteen years. He then released a second list of 15, and at least 3 of those were solved.</p><p>Some lists barely move. In 1982 Roger Penrose posed problems about general relativity, and about 14 were still unsolved in 2017. Vitaly Ginzburg compiled 30 problems between 1971 and 2005, plus three great ones: the arrow of time, how to interpret quantum mechanics, and whether life can arise from physics alone. And a list of 10 problems from the Strings 2000 conference had none conclusively solved as of 2025. So which item on today&#x27;s list is a Kelvin cloud, small to look at but big enough to rewrite physics once someone pulls on it? That is the question you leave this course with.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>In 1900 Lord Kelvin named two &quot;clouds&quot; over physics; both were solved within a decade by special relativity and quantum mechanics.</li><li>Barry Simon&#x27;s 1984 list had 15 problems; about 5 were solved by 2000.</li><li>The Standard Model is inconsistent with general relativity, and both break down at singularities like the Big Bang.</li><li>The 10 problems proposed at Strings 2000 had none conclusively solved as of 2025.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p13" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=BcEMv9aH5B0" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/BcEMv9aH5B0?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Why Jensen Huang matters to AI</h3><p>The video’s title promises an explanation, but no description was provided.</p><span>South China Morning Post ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=sYApr6nU9IQ" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/sYApr6nU9IQ?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>AI Founders titles its video around five leagues of Claude</h3><p>The title promises an explanation of AI through &quot;The 5 Leagues of Claude.&quot;</p><span>AI Founders ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/f_dixN9qtNk" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/f_dixN9qtNk?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>China parks nearly 300 warplanes at 11 remote airbases</h3><p>A video asks why China placed warplanes across remote airbases.</p><span>South China Morning Post ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=hnsJdsdmdHQ" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/hnsJdsdmdHQ?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Video title says Russia&#x27;s offensive has hit a breaking point</h3><p>The feed provides a title, but no description.</p><span>Preston Stewart  ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p14" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSElHNEozY1dCNFVyYUc1VWs3VmpramRCZTZMMFdnbGpVLWdCR0J3VUdESTlRNW0tay1DbDhmOE83TnFGbVBaRFFET3ZVQW9OaHJZUVVacjFDcDVTY29SWkdDYTFLeUZGdWxHSVJDTkhRSUtmWXVhRUc4NXg1VGZoTDdqZEEtLWs3TDVQSVZSVjh3VlNwalNuczNGenpEd1RxODB2X1R3STk0Q0k2d0VlM0lfc1BZUQ?oc=5" target="_blank" rel="noopener">Spain thought it had the 2030 World Cup final. Morocco had other plans.</a><span>Reuters</span></li><li><a href="https://www.aljazeera.com/sports/2026/11/25/malen-and-roma-deny-injury-hit-psg-in-champions-league-draw?traffic_source=rss" target="_blank" rel="noopener">Malen and Roma deny injury-hit PSG in Champions League draw</a><span>aljazeera.com</span></li><li><a href="https://www.dhakatribune.com/sport/cricket/425705/sooryavanshi-smashes-204-off-53-balls-to-rewrite" target="_blank" rel="noopener">Sooryavanshi smashes 204 off 53 balls to rewrite record books</a><span>dhakatribune.com</span></li><li><a href="https://www.theguardian.com/sport/live/2026/nov/24/chess-world-championship-gukesh-sindarov-game-1-updates" target="_blank" rel="noopener">World Chess Championship 2026 Game 1: Gukesh Dommaraju and Javokhir Sindarov play to 38-move draw – as it happened</a><span>theguardian.com</span></li><li><a href="https://www.dhakatribune.com/sport/football/425702/bellingham-beauty-in-real-win-as-arsenal-city" target="_blank" rel="noopener">Bellingham beauty in Real win as Arsenal, City held in Champions League</a><span>dhakatribune.com</span></li></ul></div>
+</section>
+<section class="page plain" id="p15" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">A decision is only part of the story</h2><p class="dek accent">The news captures moments. The forces that give those moments meaning move more slowly.</p>
+  <div class="body drop"><p>A court can close a case while the fight behind it keeps going. That is the odd rhythm of this page: decisions appear as clean moments, while the world that made them stays messy. Puigdemont&#x27;s case closed while the independence dispute continues. So what does a headline really tell you when it says something has been settled?</p><p>One pattern is the distance between authority and agreement. Someone gets to put a number on a page, draw a line, or declare a result. The result has force. It does not make the people living with it agree. Bangladesh&#x27;s garment wage rose by majority vote, below the workers&#x27; final ask. That gap matters because a decision also shows who had the power to make it.</p><p>Another pattern is the distance between a rule and what happens after it is written. Nvidia&#x27;s AI chips still reach China despite the rules. A rule&#x27;s meaning is tested by the routes things take and by the people trying to enforce it. The news catches that test in motion, usually before anyone can say how it ends.</p><p>Then there is the question of what deserves belief. Two proofs of the Riemann hypothesis, one written by AI, still need checking. A claim can be exciting and unfinished at once. Headlines are good at showing the moment a thing becomes visible: a ruling, a vote, a discovery. The slow work underneath is harder to fit on a page: bargaining, enforcement, verification. When any headline says something happened, what process will decide what that event actually changes?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-25/index.html">← Yesterday</a><span>2026-11-26</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
