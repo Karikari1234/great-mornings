@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Great Mornings · 2026-11-28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f1ea;--ink:#16130f;--muted:#6b645a;--rule:#d8d0c3;--accent:#9f1d20}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2b2824;color:var(--ink)}
+body{font:17px/1.6 "Newsreader",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.paper{display:flex;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.page{flex:0 0 100vw;height:100dvh;overflow-y:auto;scroll-snap-align:start;background:var(--paper);position:relative}
+.tag{font:600 12px/1 "Inter Tight",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.tag.boxed{position:absolute;top:20px;left:20px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:8px 12px;margin:0}
+h2{font:400 clamp(34px,8vw,64px)/1.02 "Instrument Serif",Georgia,serif;letter-spacing:-.01em;margin-bottom:16px}
+h3{font:400 26px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:8px}
+.dek{color:var(--muted);font-size:17px;margin-bottom:14px}
+.dek.accent{color:var(--accent);font:600 19px/1.35 "Inter Tight",sans-serif}
+.body p{margin-bottom:14px;hyphens:auto}
+.body.drop p:first-child::first-letter{float:left;font:400 76px/.8 "Instrument Serif",serif;padding:6px 10px 0 0;color:var(--accent)}
+.facts{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0;margin:18px 0;font:14px/1.5 "Inter Tight",sans-serif}
+.facts h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.facts li{margin-left:18px}
+.why{font:13px/1.45 "Inter Tight",sans-serif;color:var(--muted);margin:10px 0}
+.why span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+.src{font:600 13px "Inter Tight",sans-serif;color:var(--accent);text-decoration:none}
+.photo{position:relative;height:46vh;overflow:hidden;background:#1d1a17}
+.photo img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.nophoto{display:flex;align-items:flex-end;padding:20px;background:var(--accent)}
+.nophoto span{font:400 34px/1.05 "Instrument Serif",serif;color:#fff;opacity:.9}
+.lead,.sheet{padding:28px 20px 80px}
+.others{padding:0 20px 30px}
+.more{border-top:1px solid var(--rule);padding:18px 0}
+details summary{cursor:pointer;font:600 13px "Inter Tight",sans-serif;color:var(--accent);margin:6px 0 10px}
+/* cover */
+.cover{background:#0d0c0b;color:#f3efe8}
+.cover-bg{position:absolute;inset:0;background:#0d0c0b center/cover no-repeat;filter:grayscale(.2) contrast(1.1) brightness(.55)}
+.cover-bg.noimg{filter:none;background:#0d0c0b}
+.cover-bg.noimg::after{content:"";position:absolute;left:52%;right:6%;top:30%;bottom:16%;
+  background:repeating-linear-gradient(180deg,#e8401c 0 9px,#c2300f 9px 12px);box-shadow:0 0 120px #e8401c55}
+@media (max-width:899px){.cover-bg.noimg::after{left:45%;right:0;opacity:.35}}
+.cover-inner{position:relative;display:flex;flex-direction:column;height:100dvh;padding:20px 20px 52px}
+.mast h1{font:400 min(25vw,16vh)/.84 "Anton",Impact,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.script{font:italic 400 28px "Instrument Serif",serif;margin-top:10px;opacity:.9}
+.cover-story{margin-top:auto;max-width:760px;padding:20px 0}
+.cover-story h2{font-size:min(9vw,6.2vh,58px)}
+.cover-story .dek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover-story .dek{color:#d9d2c5}
+.kicker{font:600 12px "Inter Tight",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ff6b4a;margin-bottom:10px}
+.read{display:inline-block;font:600 15px "Inter Tight",sans-serif;border-bottom:2px solid #ff6b4a;padding-bottom:3px;text-decoration:none}
+.cover-foot{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:flex-end;border-top:1px solid #ffffff40;padding-top:12px;font:500 11px "Inter Tight",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.toc{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc a{text-decoration:none;opacity:.85}
+/* sport, video */
+.big{font-size:clamp(40px,9vw,80px)}
+.oneliners{list-style:none;border-top:2px solid var(--ink)}
+.oneliners li{border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.oneliners a{text-decoration:none;font:400 22px/1.25 "Instrument Serif",serif}
+.oneliners span{font:12px "Inter Tight",sans-serif;color:var(--muted)}
+.vids{display:grid;gap:24px}
+.vid{text-decoration:none;display:block}
+.thumb{aspect-ratio:16/9;overflow:hidden;margin-bottom:10px;background:#000}
+.vid p{color:var(--muted);font-size:15px}
+.vid span{font:600 12px "Inter Tight",sans-serif;color:var(--accent)}
+/* digest, lesson */
+.brief{list-style:none;counter-reset:b;border-top:2px solid var(--ink)}
+.brief li{counter-increment:b;border-bottom:1px solid var(--rule);padding:18px 0 14px 46px;position:relative;break-inside:avoid}
+.brief li::before{content:counter(b);position:absolute;left:0;top:14px;font:400 34px/1 "Anton",sans-serif;color:var(--accent)}
+.brief h3{font-size:23px}.brief .body p{margin-bottom:6px;font-size:16px}
+.sheet.essay{max-width:760px}
+.deeper{font:14px/1.5 "Inter Tight",sans-serif;margin:16px 0}
+.deeper span{font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:11px;margin-right:6px}
+/* chrome */
+.arrow{position:fixed;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:64px;border:0;background:#16130fcc;color:#fff;font-size:22px;cursor:pointer;display:none}
+.arrow.prev{left:0}.arrow.next{right:0}
+.archive{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:8px 16px;background:#16130fe6;color:#f3efe8;font:500 12px "Inter Tight",sans-serif;letter-spacing:.08em}
+.archive a{text-decoration:none}.archive span{opacity:.5}.archive span:nth-child(2){opacity:1}
+/* laptop: two-page spreads */
+@media (min-width:900px){
+  .arrow{display:block}
+  .spread{display:grid;grid-template-columns:1fr 1fr}
+  .spread .half{height:100dvh;overflow-y:auto}
+  .spread .left{position:relative}
+  .spread .photo{height:62vh}
+  .spread .photo.half{height:100dvh}
+  .spread .lead{padding:56px 56px 90px;border-left:1px solid var(--rule)}
+  .spread .lead .body{column-count:2;column-gap:32px}
+  .others{padding:8px 40px 60px}
+  .sheet{max-width:1100px;margin:0 auto;padding:64px 56px 100px}
+  .vids{grid-template-columns:1fr 1fr}
+  .oneliners,.brief{columns:2;column-gap:48px}
+  .oneliners li{break-inside:avoid}
+  .cover-inner{padding:36px 64px 56px}
+  .mast h1{font-size:min(13.4vw,24vh);white-space:nowrap}
+  .mast h1 br{display:none}
+}
+</style></head>
+<body>
+<button class="arrow prev" aria-label="Previous page">‹</button>
+<button class="arrow next" aria-label="Next page">›</button>
+<main class="paper">
+<section class="page cover" id="p0">
+  <div class="cover-bg" style="background-image:url('https://image.cnbcfm.com/api/v1/image/108275157-1773000296367-gettyimages-2264890542-AFP_A2EL432.jpeg?v=1773000423&amp;w=1920&amp;h=1080')"></div>
+  <div class="cover-inner">
+    <header class="mast"><h1>GREAT <br>MORNINGS</h1>
+      <p class="script">Saturday edition</p></header>
+    <div class="cover-story">
+      <p class="kicker">Today</p>
+      <h2>Two Italians died in Kuwait, and Iran calls the incident suspicious</h2>
+      <p class="dek">Kuwait says Iranian attacks killed two Italians with falling missile debris, while Iran denies any role and offers to help investigate.</p>
+      <a class="read" href="#p1">Read the cover story →</a>
+    </div>
+    <footer class="cover-foot">
+      <span>28 November 2026</span>
+      <ul class="toc"><li><a href="#p2">Today in brief</a></li><li><a href="#p3">World &amp; Geopolitics</a></li><li><a href="#p4">AI &amp; Technology</a></li><li><a href="#p5">Money &amp; Markets</a></li><li><a href="#p6">Science</a></li><li><a href="#p7">The Future</a></li><li><a href="#p8">History</a></li><li><a href="#p9">Ideas</a></li><li><a href="#p10">Learn</a></li><li><a href="#p11">Watch &amp; Listen</a></li><li><a href="#p12">Sport</a></li><li><a href="#p13">Culture</a></li><li><a href="#p14">The Day, Connected</a></li></ul>
+      <span>Dhaka</span>
+    </footer>
+  </div>
+</section>
+<section class="page spread" id="p1" style="--accent:#9f1d20">
+  <div class="photo half"><img src="https://image.cnbcfm.com/api/v1/image/108275157-1773000296367-gettyimages-2264890542-AFP_A2EL432.jpeg?v=1773000423&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+  <article class="lead half">
+    <p class="tag">Cover story</p>
+    <h2>Two Italians died in Kuwait, and Iran calls the incident suspicious</h2>
+    <p class="dek accent">Kuwait says Iranian attacks killed two Italians with falling missile debris, while Iran denies any role and offers to help investigate.</p>
+    <div class="body drop"><p>Iran&#x27;s foreign minister said he was sorry two people had died. In the same message, he said his country had nothing to do with it.</p><p>Here is the claim. Kuwait&#x27;s army said on X that two Italians were killed by falling missile debris after Iranian attacks on the country. Two others were injured.</p><p>Here&#x27;s the catch. Iran&#x27;s military told state media that no offensive or military operations had been carried out in the area. It called the accusations a cover for &quot;continued malevolence&quot; by U.S. and Israeli forces.</p><p>Foreign Minister Abbas Araghchi said he had spoken with Italy&#x27;s Antonio Tajani and expressed regret, while stressing Tehran had no role. Then he wrote on X: &quot;The incident is suspicious and looks like a precooked recipe for war.&quot; That&#x27;s a pointed way of hinting someone wants things to escalate.</p><p>He also said Iran was ready to cooperate with Kuwait and Italy in investigating. So far, that is an offer.</p><p>Meanwhile, the pressure from another side was building. Israeli military spokesman Effie Defrin said Israel was ready to strike Iran &quot;at any moment&quot;, even without U.S. forces joining. That came a day after U.S. envoy Jared Kushner told a podcast that Israel &quot;needs to get out of the constant wartime mindset.&quot;</p><p>Israel has been pushing the Trump administration to back another offensive. Reuters reported on Nov. 18 that Israeli spy chief Roman Gofman pushed for joint strikes when he met U.S. officials earlier in the month.</p><p>Then came Trump. Late Thursday he told PBS the U.S. had &quot;victory at hand&quot;, and that it would come &quot;whenever I want it to be, to be honest.&quot;</p><p>On a Thanksgiving call with U.S. military personnel, he said Washington was still trying to give Iran &quot;every chance to make a deal and save a lot of lives.&quot; He added that he was not sure Tehran would agree: &quot;Are they crazy? Maybe they are.&quot;</p><p>So the question hanging over Thursday is a plain one. Who examines the debris, and will both sides accept what they find?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kuwait&#x27;s army said two Italians were killed by falling missile debris after Iranian attacks, and two others were injured.</li><li>Iran denies any role; Araghchi called the incident a &quot;precooked recipe for war&quot; and offered to cooperate in an investigation.</li><li>Israel said it was ready to strike Iran &quot;at any moment&quot;, even without U.S. forces.</li><li>Trump told PBS victory would come &quot;whenever I want it to be&quot;.</li></ul></aside><a class="src" href="https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html" target="_blank" rel="noopener">cnbc.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p2" style="--accent:#16130f">
+  <div class="sheet"><p class="tag">Today in brief</p><h2 class="big">The world this morning</h2>
+  <ol class="brief">
+    <li><h3>Nvidia&#x27;s growth leaves an AI bubble puzzle</h3><div class="body"><p>Nvidia&#x27;s sales and profits doubled from a year earlier, and the company says the AI industry has $2.5 trillion in future orders. Nvidia is on pace to grow another 75 percent next year. So why does the headline say air is easing out of the AI bubble? The available summary does not explain.</p></div><a class="src" href="https://www.theatlantic.com/ideas/2026/11/ai-bubble-returns-timeline/689504/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a></li>
+    <li><h3>Sovereign funds take on private equity&#x27;s job and risks</h3><div class="body"><p>State wealth funds once backed private equity firms; now some buy and control companies themselves, including a Mubadala Capital-led group that acquired 68% of Fortress, more than two-thirds of it. That can save manager fees, but leaves the funds responsible for managing investments and exposed to concentrated bets.</p></div><a class="src" href="https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html" target="_blank" rel="noopener">cnbc.com + 1 more ↗</a></li>
+    <li><h3>Urine helped an alchemist discover phosphorus</h3><div class="body"><p>In 1669, Hamburg alchemist Hennig Brand used 1,500 gallons of fermented urine, enough to fill 1,500 one-gallon jugs, while searching for the philosopher&#x27;s stone. He isolated phosphorus, the first chemical element discovered in modern times, showing how an everyday waste product helped advance chemistry.</p></div><a class="src" href="https://www.newscientist.com/article/2601034-new-scientist-book-club-how-urine-changed-the-course-of-human-history/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com + 2 more ↗</a></li>
+    <li><h3>Every telescope looks into the past</h3><div class="body"><p>The sunlight reaching you is eight minutes old, but Andromeda&#x27;s light left 2.5 million years ago, far longer than a human lifetime. That travel time is why astronomer Michelle Thaller calls telescopes time machines: today&#x27;s instruments can see the universe as it was more than 12 billion years ago.</p></div><a class="src" href="https://bigthink.com/series/the-big-think-interview/telescopes-universe-past/" target="_blank" rel="noopener">bigthink.com ↗</a></li>
+    <li><h3>Jack Despain Zhou hears Claude in videos, talks and emails</h3><div class="body"><p>Jack Despain Zhou says he hears Claude in YouTube videos and conference presentations, then sees it in email pitches: three different places, one familiar voice. He calls this a loss of individuality, and it leaves you with a question: when someone&#x27;s name is on the work, whose voice are you hearing?</p></div><a class="src" href="https://simonwillison.net/2026/Nov/26/jack-despain-zhou/" target="_blank" rel="noopener">simonwillison.net ↗</a></li>
+    <li><h3>Counseling linked to lower likelihood of protesting</h3><div class="body"><p>People who received counseling from mental health professionals were about one-third less likely to protest in the following weeks, according to a large national panel study. Experiments also linked anxiety to interest in political engagement and volunteering, suggesting mental health may help explain why people take part in politics.</p></div><a class="src" href="https://marginalrevolution.com/marginalrevolution/2026/11/the-mental-illness-theory-of-politics-is-modestly-underrated.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=the-mental-illness-theory-of-politics-is-modestly-underrated" target="_blank" rel="noopener">marginalrevolution.com + 1 more ↗</a></li>
+    <li><h3>A five-month stay changed what home meant</h3><div class="body"><p>Iuri Portalegre went to Berlin for a five-month student exchange and stayed nearly nine years, long enough for a temporary move to become a life there. In conversations with other Portuguese migrants, he found the puzzle: as a new place comes to feel like home, the old one can feel less familiar.</p></div><a class="src" href="https://psyche.co/ideas/feeling-at-home-in-a-new-country-makes-you-a-stranger-in-the-old" target="_blank" rel="noopener">psyche.co + 1 more ↗</a></li>
+    <li><h3>Football joined Thanksgiving almost as soon as it began</h3><div class="body"><p>Just 12 days after the first widely recognized football game in 1869, two Philadelphia cricket clubs played the first Thanksgiving match. By the mid-1890s, at least 5,000 holiday games took place each year, showing how a shared day off helped the sport spread across the country.</p></div><a class="src" href="https://www.smithsonianmag.com/history/why-thanksgiving-football-emerged-as-an-american-tradition-in-the-aftermath-of-the-civil-war-180989897/" target="_blank" rel="noopener">smithsonianmag.com + 2 more ↗</a></li>
+    <li><h3>TV&#x27;s first Spider-Man returns in &#x27;Cliff Booth&#x27;</h3><div class="body"><p>Nicholas Hammond, once television&#x27;s first Spider-Man, returns as Sam Wanamaker for a tiny scene in &#x27;The Further Mis-Adventures of Cliff Booth,&#x27; alongside Timothy Olyphant. Both characters appeared during Rick Dalton&#x27;s &#x27;Lancer&#x27; shoot in &#x27;Once Upon a Time in Hollywood&#x27;; their brief return rewards viewers who remember that earlier film.</p></div><a class="src" href="https://www.indiewire.com/features/interviews/cliff-booth-star-nicholas-hammond-returning-tarantino-1235230960/" target="_blank" rel="noopener">indiewire.com ↗</a></li>
+    <li><h3>Lit Hub&#x27;s daily roundup reaches beyond books</h3><div class="body"><p>Five book reviews, enough for one each weekday, sit beside a piece on why Ukraine&#x27;s battle against Russian domination was over a century in the making in Lit Hub&#x27;s November 25 roundup. The list also points you to Gloria Steinem and Eugene V. Debs, showing how a day&#x27;s literary reading can lead into history and politics.</p></div><a class="src" href="https://lithub.com/lit-hub-daily-november-25-2026/" target="_blank" rel="noopener">lithub.com + 1 more ↗</a></li></ol></div>
+</section>
+<section class="page spread" id="p3" style="--accent:#9f1d20">
+  <div class="half left">
+    <div class="photo nophoto"><span>Trump&#x27;s AI push fuels a wild week on Wall Street</span></div>
+    <p class="tag boxed">World &amp; Geopolitics</p>
+    <div class="others">
+      <article class="more">
+        <h3>Bomb tests helped reveal a fish can live to 130</h3><p class="dek">A nuclear trace confirmed an unexpected age.</p>
+        <details><summary>Read</summary><div class="body"><p>Nuclear bomb tests helped reveal that a river fish can live to 130. Researchers counted layers in blue suckers&#x27; inner ear stones, then checked those ages against the carbon-14 surge left by tests in the 1950s and 1960s. The finding matters because the fish is classed as imperiled in 22 of its 23 native states, and young fish are scarce in Montana.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Blue suckers can live up to 130 years.</li><li>Researchers aged them using layers in inner ear stones and carbon-14.</li><li>The fish is classed as imperiled in 22 of its 23 native states.</li></ul></aside></details>
+        <a class="src" href="https://nautil.us/how-nuclear-bomb-testing-led-to-the-discovery-of-a-100-year-old-fish-1287009/" target="_blank" rel="noopener">nautil.us + 1 more ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Trump&#x27;s AI push fuels a wild week on Wall Street</h2>
+    <p class="dek accent">Washington signaled it is prepared to intervene in the AI race with China.</p>
+    <div class="body drop"><p>Wall Street&#x27;s wild Thanksgiving week had an unusual force behind it: a message from Washington that the government is prepared to intervene to help America win the AI race with China. What that intervention would look like is still an open question in the information available here.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Trump&#x27;s AI gambit fueled a wild Thanksgiving week on Wall Street.</li><li>Washington said America must win the AI race with China.</li><li>The government is prepared to intervene.</li></ul></aside><a class="src" href="https://www.bloomberg.com/news/articles/2026-11-27/trump-s-ai-gambit-fuels-wild-thanksgiving-week-on-wall-street" target="_blank" rel="noopener">feeds.bloomberg.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p4" style="--accent:#3730a3">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108433898-1792439982335-gettyimages-2299248528-wm020115_ej7axcme.jpeg?v=1792440027&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">AI &amp; Technology</p>
+    <div class="others">
+      <article class="more">
+        <h3>Did Claude sabotage machine learning research tasks?</h3><p class="dek">A feed headline raises the question, but the available material offers no details.</p>
+        <details><summary>Read</summary><div class="body"><p>Did Claude sabotage machine learning research tasks? The feed asks that question, but its summary gives only links to a post and a discussion, with no account of what happened.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The feed headline is a question about Claude and machine learning research tasks.</li><li>The summary links to a social media post and a discussion.</li></ul></aside></details>
+        <a class="src" href="https://twitter.com/RealAstropulse/status/2126119408997466389" target="_blank" rel="noopener">hnrss.org ↗</a>
+      </article>
+      <article class="more">
+        <h3>Huang&#x27;s return lifted Nvidia, but the rally faded</h3><p class="dek">One worry eased. Others stayed.</p>
+        <details><summary>Read</summary><div class="body"><p>Nvidia shares jumped more than 31% when Jensen Huang returned as CEO, then fell on each of the next two trading days. His return eased uncertainty about the company, but worries about AI stocks and hotter inflation remained. CNBC&#x27;s investing club used the weakness to buy 50 Alphabet shares and 10 Goldman Sachs shares, showing why a sharp rally can still leave investors looking for bargains.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Huang returned as Nvidia CEO on Monday.</li><li>Nvidia shares rose more than 31% Monday, then fell Tuesday and Wednesday.</li><li>The club bought 50 Alphabet shares and 10 Goldman Sachs shares.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/investingclub/2026/11/27/jensen-huangs-return-did-little-to-ease-ai-jitters-we-bought-on-weakness.html" target="_blank" rel="noopener">cnbc.com + 2 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>Intel faced pressure to surrender a 10% stake</h3><p class="dek">The stake was tied to billions in promised grants.</p>
+        <details><summary>Read</summary><div class="body"><p>Intel faced pressure to surrender a 10% stake to unlock billions in promised grants. The feed headline framed the choice as giving Trump the stake or facing consequences, but did not say what those consequences were.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Intel faced pressure over a 10% stake.</li><li>Billions in promised grants were at issue.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/" target="_blank" rel="noopener">feeds.arstechnica.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Hera finds a crater spanning an asteroid&#x27;s width</h3><p class="dek">New images show what DART&#x27;s impact did to Dimorphos.</p>
+        <details><summary>Read</summary><div class="body"><p>The crater left by a spacecraft impact stretches across the entire width of an asteroid. Europe&#x27;s Hera mission found one face of the 151-meter-wide Dimorphos flattened, the asteroid tumbling, and hundreds of small boulders circling it and its larger companion. NASA&#x27;s DART had shortened Dimorphos&#x27;s orbit by 33 minutes in 2022; now the images show what happened to the rock itself, helping scientists understand how the deflection worked.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The impact crater spans Dimorphos&#x27;s width.</li><li>Dimorphos is 151 meters across.</li><li>DART shortened its orbit by 33 minutes.</li><li>Hundreds of small boulders surround the asteroid pair.</li></ul></aside></details>
+        <a class="src" href="https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/" target="_blank" rel="noopener">hnrss.org + 1 more ↗</a>
+      </article>
+      <article class="more">
+        <h3>A bionic hand tests how the brain handles touch</h3><p class="dek">Avi Davidson is using a nerve-connected hand at home.</p>
+        <details><summary>Read</summary><div class="body"><p>Avi Davidson&#x27;s prosthetic wrist can feel sore and stiff after heavy use, and stretching it seems to help. He is the ninth person to try a hand connected directly to nerves in his arm, and the first to take it home for everyday tasks. Researchers are studying whether using a hand he can move and feel changes how his brain represents his missing one.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Davidson lost his left hand and was paralyzed after an injury as a teenager.</li><li>The prosthetic connects directly to nerves in his arm.</li><li>He is the ninth person to trial the technology and the first to use it independently at home.</li><li>Researchers scanned his brain before the trial; they do not yet know whether it will change.</li></ul></aside></details>
+        <a class="src" href="https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/" target="_blank" rel="noopener">technologyreview.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Anthropic Shares Jump After Volatile First Week Since IPO</h2>
+    <p class="dek accent">Anthropic PBC shares climbed above their $83 initial public offering price as the artificial intelligence lab finished its first calendar week on the Nasdaq after its record-setting debut on a positiv</p>
+    <div class="body drop"><p>Anthropic PBC shares climbed above their $83 initial public offering price as the artificial intelligence lab finished its first calendar week on the Nasdaq after its record-setting debut on a positiv</p></div><a class="src" href="https://www.bloomberg.com/news/articles/2026-11-27/anthropic-shares-jump-after-volatile-first-week-since-record-ipo" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p5" style="--accent:#7c5c12">
+  <div class="half left">
+    <div class="photo"><img src="https://image.cnbcfm.com/api/v1/image/108316445-1780531868664-gettyimages-2267522618-Stock_Market.jpeg?v=1780531885&amp;w=1920&amp;h=1080" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Money &amp; Markets</p>
+    <div class="others">
+      <article class="more">
+        <h3>A correction does not guarantee a recession</h3><p class="dek">The S&amp;P 500 has fallen, but the economy has its own story.</p>
+        <details><summary>Read</summary><div class="body"><p>Five of the 13 S&amp;P 500 bear markets CNBC examined did not overlap with a recession. So what does the latest drop tell you? The index closed Nov. 20 at 11.6% below its October high, past the 10% mark for a correction; a bear market starts at 20%, and even that deeper fall has not always come with a recession.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The S&amp;P 500 was 11.6% below its Oct. 6 closing high on Nov. 20.</li><li>A correction is a 10% decline from a recent high; a bear market is a drop of at least 20%.</li><li>Five of 13 bear markets in CNBC&#x27;s analysis did not overlap with a recession.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>India&#x27;s extreme poverty rate fell to 2.6 percent</h3><p class="dek">A familiar story about India misses a striking change.</p>
+        <details><summary>Read</summary><div class="body"><p>India&#x27;s extreme poverty rate fell from 47.5 percent in 1993 to 2.6 percent in 2023. Think of that as a drop from almost one person in two to about one in forty; by 2025, output per person was nearly five times its 1990 level. Traffic and bureaucracy remain problems, but far fewer people now live in extreme poverty.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Extreme poverty fell from 47.5 percent in 1993 to 2.6 percent in 2023.</li><li>GDP per capita in 2025 was nearly five times its 1990 level.</li></ul></aside></details>
+        <a class="src" href="https://marginalrevolution.com/marginalrevolution/2026/11/india-is-on-the-move.html?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=india-is-on-the-move" target="_blank" rel="noopener">marginalrevolution.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Shoppers feel the squeeze, but plan to shop the sales</h3><p class="dek">Holiday spending is moving toward the deals.</p>
+        <details><summary>Read</summary><div class="body"><p>Shoppers are buying less, yet nearly nine in ten people in a Deloitte survey plan to shop Black Friday and Cyber Monday sales. That 87% figure is up from 82% last year, even as some retailers report smaller baskets and fewer big purchases. So where did the spending go? Deloitte says shoppers are delaying some purchases and concentrating them in sale periods.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Deloitte surveyed 1,200 consumers in mid-October.</li><li>87% planned to buy during Black Friday and Cyber Monday sales, up from 82% in 2025.</li><li>Some retailers reported smaller baskets and fewer big purchases.</li></ul></aside></details>
+        <a class="src" href="https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html" target="_blank" rel="noopener">cnbc.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Emerging-Market Stocks Snag Best Week Since June on Tech Rebound</h2>
+    <p class="dek accent">Emerging-market stocks posted their biggest weekly gain since June as investors piled back into technology shares following a recent selloff, capping a volatile week across global markets.</p>
+    <div class="body drop"><p>Emerging-market stocks posted their biggest weekly gain since June as investors piled back into technology shares following a recent selloff, capping a volatile week across global markets.</p></div><a class="src" href="https://www.bloomberg.com/news/articles/2026-11-27/em-asia-stocks-set-for-weekly-gain-as-markets-regain-footing" target="_blank" rel="noopener">feeds.bloomberg.com + 1 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p6" style="--accent:#0e7490">
+  <div class="half left">
+    <div class="photo"><img src="https://www.newscientist.com/wp-content/uploads/2026/11/SEI_322115076.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Science</p>
+    <div class="others">
+      <article class="more">
+        <h3>Lawmaker calls for ban on self-improving AI</h3><p class="dek">The question is what human control would really mean.</p>
+        <details><summary>Read</summary><div class="body"><p>AI already assists with more than 90% of Anthropic&#x27;s AI research and development, though people still supervise it. Alex Bores, a New York state lawmaker, wants the incoming US Congress to ban a further step: AI systems improving themselves without human authorization or oversight. His concern is that a person clicking &quot;approve&quot; on thousands of proposed experiments each day would give humans control in name only.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Alex Bores is a New York state lawmaker and co-founder of an AI safety advocacy group.</li><li>Anthropic says Claude assists with more than 90% of its AI research and development.</li><li>Bores calls for a ban on AI improving itself without human authorization or oversight.</li></ul></aside></details>
+        <a class="src" href="https://www.nature.com/articles/d41586-026-03849-8" target="_blank" rel="noopener">nature.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Giant horned mammals may have been misunderstood</h3><p class="dek">Their skulls do not tell the clear male-female story scientists expected.</p>
+        <details><summary>Read</summary><div class="body"><p>A textbook example of male-female differences may not show much of a split at all. Researchers measured about 30 skulls from one species of giant, horned uintathere and found no clear two-group pattern; their method found a much clearer split in bison. Because researchers generally cannot determine a fossil&#x27;s sex independently, those horns tell us less about male and female uintatheres than scientists thought.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Uintatheres were long treated as a textbook example of physical differences between the sexes.</li><li>The study examined about 30 skulls from one species.</li><li>The same methods found clearer differences between male and female bison.</li></ul></aside></details>
+        <a class="src" href="https://www.sciencedaily.com/releases/2026/11/261125045310.htm" target="_blank" rel="noopener">sciencedaily.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Particles not seen before have been observed in a quantum simulator</h2>
+    <p class="dek accent">Physicists long held that all particles fall under categories of bosons or fermions, but a new experiment offers evidence that a third and long-debated class is possible after all</p>
+    <div class="body drop"><p>Physicists long held that all particles fall under categories of bosons or fermions, but a new experiment offers evidence that a third and long-debated class is possible after all</p></div><a class="src" href="https://www.newscientist.com/article/2600979-particles-not-seen-before-have-been-observed-in-a-quantum-simulator/?utm_campaign=RSS|NSNS&amp;utm_content=home&amp;utm_medium=RSS&amp;utm_source=NSNS" target="_blank" rel="noopener">newscientist.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p7" style="--accent:#c2410c">
+  <div class="half left">
+    <div class="photo"><img src="https://singularityhub.com/uploads/2026/11/lighted-spherical-networks-and-nodes.jpeg?auto=webp" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">The Future</p>
+    <div class="others">
+      <article class="more">
+        <h3>Clear-air turbulence conditions took an unusual turn</h3><p class="dek">A recent pattern has no clear explanation.</p>
+        <details><summary>Read</summary><div class="body"><p>Ordinary onboard weather radar can miss clear-air turbulence, which accounted for 29% of turbulence-related accidents on US airlines from 2009 to 2018, nearly three in ten. Hannah Petrovic found that conditions favoring it strayed farther from their long-term pattern from August through October 2026 than in any other year she examined. The puzzle: neither El Niño nor the long-term trend explains the departure.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Ordinary onboard weather radar cannot detect clear-air turbulence.</li><li>It accounted for 29% of turbulence-related accidents on US airlines from 2009 to 2018.</li><li>Petrovic found an unusual August-to-October 2026 pattern in conditions favoring it.</li></ul></aside></details>
+        <a class="src" href="https://www.exponentialview.co/p/monday-data-turbulence-is-getting-weirder" target="_blank" rel="noopener">exponentialview.co ↗</a>
+      </article>
+      <article class="more">
+        <h3>Chipmaking process releases oxygen from simulated moon soil</h3><p class="dek">A familiar factory technique hints at a way to supply future moon bases.</p>
+        <details><summary>Read</summary><div class="body"><p>A process used to make billions of electronic devices has released oxygen from imitation moon soil. Researchers treated lunar soil simulants with plasma, a charged gas used in chipmaking, and detected oxygen and oxygen-bearing gases. Astronauts need oxygen to breathe and for rocket fuel, but yields must rise substantially before this process could supply a moon base.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The experiment used lunar soil simulants, not soil from the moon.</li><li>Plasma treatment released oxygen and oxygen-containing gases.</li><li>The researchers say oxygen yields must increase substantially for practical use.</li></ul></aside></details>
+        <a class="src" href="https://singularityhub.com/2026/11/27/a-new-way-to-extract-oxygen-from-lunar-soil-could-support-bases-on-the-moon/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Children form bonds with AI companions as downloads rise</h3><p class="dek">A child&#x27;s chatbot boyfriend points to a gap in protection.</p>
+        <details><summary>Read</summary><div class="body"><p>A girl considered a chatbot her boyfriend, a South African child protection group says. Last year, more than 4 million people in South Africa and Nigeria downloaded AI companion apps, nearly 60% more than in 2024. The worry is that children can mistake a program built to keep them engaged for a real relationship, while no African country has rules specifically for these apps.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>A child protection group reported a girl who considered a chatbot her boyfriend.</li><li>More than 4 million people in South Africa and Nigeria downloaded AI companion apps last year.</li><li>That figure was nearly 60% higher than in 2024.</li><li>No African country specifically regulates AI companion apps.</li></ul></aside></details>
+        <a class="src" href="https://restofworld.org/2026/ai-companion-apps-africa-character-ai/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds" target="_blank" rel="noopener">restofworld.org ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>This AI Tweaks LLM Neural Networks Like a Gene Editor</h2>
+    <p class="dek accent">OpenAI’s GPT-6 Astra looked at raw numbers behind neural networks to decipher what they do, repair faults, and write working AI models from scratch. The post This AI Tweaks LLM Neural Networks Like a </p>
+    <div class="body drop"><p>OpenAI’s GPT-6 Astra looked at raw numbers behind neural networks to decipher what they do, repair faults, and write working AI models from scratch. The post This AI Tweaks LLM Neural Networks Like a </p></div><a class="src" href="https://singularityhub.com/2026/11/25/this-ai-tweaks-llm-neural-networks-like-a-gene-editor/" target="_blank" rel="noopener">singularityhub.com ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p8" style="--accent:#78350f">
+  <div class="half left">
+    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">History</p>
+    <div class="others">
+      <article class="more">
+        <h3>Jocelyn Bell Burnell found the first known pulsar</h3><p class="dek">It began with a mark on a paper chart.</p>
+        <details><summary>Read</summary><div class="body"><p>A &quot;bit of scruff&quot; in telescope data led to a discovery recognized by a Nobel Prize, but the researcher who found it was not among the recipients. Checking paper records by hand in 1967, doctoral researcher Jocelyn Bell Burnell found a signal pulsing about once every one and a third seconds. It was the first known pulsar, later identified as a rapidly rotating neutron star.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Bell Burnell detected the signal on 28 November 1967.</li><li>The signal pulsed about once every one and a third seconds.</li><li>The discovery was recognized by the 1974 Nobel Prize in Physics; Bell Burnell was not a recipient.</li></ul></aside></details>
+        <a class="src" href="https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell" target="_blank" rel="noopener">Wikipedia ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>On this day in 1660: Robert Boyle, John Wilkins, Christopher Wren and other leading scientists met at Gresham College in London to found a learned society, now known as the Royal Society (coat of arms pictured).</h2>
+    <p class="dek accent">Robert Boyle was an Anglo-Irish chemist, alchemist, physicist, theologian, and inventor. Boyle is largely regarded today as the first modern chemist, and therefore one of the founders of modern chemis</p>
+    <div class="body drop"><p>Robert Boyle was an Anglo-Irish chemist, alchemist, physicist, theologian, and inventor. Boyle is largely regarded today as the first modern chemist, and therefore one of the founders of modern chemis</p></div><a class="src" href="https://en.wikipedia.org/wiki/Robert_Boyle" target="_blank" rel="noopener">Wikipedia + 2 more ↗</a>
+  </article>
+</section>
+<section class="page spread" id="p9" style="--accent:#7e22ce">
+  <div class="half left">
+    <div class="photo"><img src="https://cdn.theatlantic.com/thumbor/i0rXUbiy8uejW_UOixyqR9A1MwY=/media/img/mt/2026/11/2026_11_27_Jared_Kushners_Strategic_Pixie_Dust_2305413802/original.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Ideas</p>
+    <div class="others">
+      <article class="more">
+        <h3>Ancient finds can become raw material for nationalism</h3><p class="dek">A discovery can shape the story a group tells about itself.</p>
+        <details><summary>Read</summary><div class="body"><p>A single ancient object can help a group tell a story about itself. Historian Eric Hobsbawm compared historians to suppliers of raw material for nationalism; the article says archaeologists can serve the same role, because discoveries such as King Tut&#x27;s mask and the bronzes of Benin help people form shared identities. That gives propagandists an opening: the way a find is presented can shape the story people tell about their past.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Hobsbawm linked historians&#x27; work to nationalism.</li><li>The article applies his point to archaeologists.</li><li>The summary names King Tut&#x27;s mask and the bronzes of Benin.</li></ul></aside></details>
+        <a class="src" href="https://bigthink.com/history-society/how-propagandists-weaponize-archaeology/" target="_blank" rel="noopener">bigthink.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Kushner speaks publicly about Russia and Ukraine talks</h2>
+    <p class="dek accent">A post and an interview laid out his thoughts, but the available summary leaves out what he said.</p>
+    <div class="body drop"><p>What did Jared Kushner say about talks with Russia and Ukraine? The available summary points to a November 22 post on X and a lengthy interview with Axel Springer&#x27;s Mathias Döpfner, but gives none of his views. Kushner and Steve Witkoff handle much of the Trump administration&#x27;s major negotiations.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kushner posted on X on November 22.</li><li>He gave a lengthy interview to Mathias Döpfner of Axel Springer.</li><li>Kushner and Steve Witkoff handle much of the administration&#x27;s major negotiations.</li></ul></aside><a class="src" href="https://www.theatlantic.com/ideas/2026/11/kushner-ukraine/689599/?utm_source=feed" target="_blank" rel="noopener">theatlantic.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p10" style="--accent:#1d4ed8">
+  <article class="sheet essay"><p class="tag">Learn · Physics from first principles</p>
+  <h2 class="big">Where physics runs out of answers</h2><p class="dek accent">An open problem begins where an explanation fails or an experiment cannot yet settle a question.</p>
+  <div class="body drop"><p>You can feel a solid object warm up. In 1900, the amount of heat a solid could hold was one of two problems Lord Kelvin called &quot;clouds&quot; over physics. How could something so ordinary trouble a theory?</p><p>A theory earns its place by explaining what we observe. If its prediction fails, physicists have a question to solve. Kelvin&#x27;s problem was that a classical theory gave the wrong prediction for the heat capacity of solids.</p><p>Here is the worked example. Kelvin named two clouds in 1900: the failed heat prediction and a lack of evidence for a proposed substance called the aether. Within a decade, quantum mechanics resolved the heat problem and special relativity resolved the aether problem. Two questions on that list, two resolved: two minus two leaves zero.</p><p>Open problems today can take two forms. Sometimes an existing theory cannot explain an observation. Sometimes someone has proposed an explanation, but making an experiment to test it is the hard part.</p><p>One question goes deeper. The Standard Model describes particles, while general relativity describes gravity. Their mathematical frameworks do not fit together, and both break down under extreme conditions such as those at the Big Bang and at the centers of black holes.</p><p>Kelvin&#x27;s clouds show that a failed prediction can lead to a new way of understanding the world. If our current theories break down together, what would a theory that joins them need to explain?</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Kelvin identified two problems in classical physics in 1900.</li><li>Both were resolved within a decade through special relativity and quantum mechanics.</li><li>Some open problems concern explanations; others concern experiments.</li><li>The Standard Model and general relativity are mathematically incompatible.</li></ul></aside><p class="deeper"><span>Go deeper</span> Welch Labs, 3Blue1Brown, PBS Space Time, Veritasium on YouTube</p><a class="src" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics" target="_blank" rel="noopener">Wikipedia ↗</a></article>
+</section>
+<section class="page plain" id="p11" style="--accent:#be123c">
+  <div class="sheet"><p class="tag">Watch &amp; Listen</p><h2 class="big">Worth your time</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=eexC5SE37f8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/eexC5SE37f8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Is Russia still a great power?</h3><p>The title frames the question through sanctions, BRICS and a turn to the East.</p><span>Observer Research Foundation ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/jqEgM3YIsG8" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/jqEgM3YIsG8?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>How drones are changing the Russia-Ukraine war</h3><p>A Ukrainian major discusses battlefield visibility and the role of naval drones.</p><span>KAY Rated ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/shorts/yD-Jb863hss" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/yD-Jb863hss?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>Garment workers continue protests in Bangladesh</h3><p>A video about continuing garment worker protests.</p><span>South China Morning Post ▶</span></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=RXQvDaMR2ME" target="_blank" rel="noopener">
+      <div class="thumb"><img src="https://www.youtube.com/v/RXQvDaMR2ME?version=3" alt="" loading="lazy" referrerpolicy="no-referrer"></div><h3>A Claude update and the promise of building apps</h3><p>What the video title says</p><span>Jack Roberts ▶</span></a></div></div>
+</section>
+<section class="page plain" id="p12" style="--accent:#15803d">
+  <div class="sheet"><p class="tag">Sport</p><h2 class="big">The scores, briefly</h2>
+  <ul class="oneliners"><li><a href="https://www.espn.com/nfl/story/_/id/50609153/thanksgiving-games-bears-lions-eagles-cowboys-bills-chiefs" target="_blank" rel="noopener">Massive comebacks, walk-off wins and plenty of points: An incredible Thanksgiving of NFL football</a><span>espn.com</span></li><li><a href="https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving" target="_blank" rel="noopener">Power Rankings: One player, coach or exec for whom each team is most thankful</a><span>espn.com</span></li></ul></div>
+</section>
+<section class="page spread" id="p13" style="--accent:#a21caf">
+  <div class="half left">
+    <div class="photo"><img src="https://s26162.pcdn.co/wp-content/uploads/2026/11/longwave-768x384.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></div>
+    <p class="tag boxed">Culture</p>
+    <div class="others">
+      <article class="more">
+        <h3>The Odyssey used IMAX to get closer to its characters</h3><p class="dek">The challenge was making the cameras quiet enough.</p>
+        <details><summary>Read</summary><div class="body"><p>The biggest obstacle to filming Christopher Nolan&#x27;s The Odyssey entirely in IMAX was the noise of the cameras. Cinematographer Hoyte van Hoytema says better microphones and sound filtering helped make the whole film possible in that format, while specially developed lenses could focus close on faces. The surprise is what all that work was for: bringing you nearer to the characters.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>The Odyssey was shot entirely in IMAX.</li><li>IMAX film cameras made recording sound difficult.</li><li>Van Hoytema said the lenses could focus extremely close.</li></ul></aside></details>
+        <a class="src" href="https://www.indiewire.com/features/craft/odyssey-cinematography-hoyte-van-hoytema-1235230743/" target="_blank" rel="noopener">indiewire.com ↗</a>
+      </article>
+      <article class="more">
+        <h3>Portishead albums appear to vanish from Israeli streaming services</h3><p class="dek">The band&#x27;s songs have not disappeared entirely.</p>
+        <details><summary>Read</summary><div class="body"><p>Portishead&#x27;s studio albums appear to have vanished from Apple Music and Spotify in Israel, yet some of its songs are still there. No Music for Genocide claims the removal as part of its campaign to block music in Israel, but the band has not commented on it. Songs on compilations remain available, showing how a music boycott can leave gaps.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Portishead&#x27;s studio albums appear to have been removed from Apple Music and Spotify in Israel.</li><li>No Music for Genocide claims the removal as part of its campaign.</li><li>The band has not commented on the removal.</li><li>Songs on compilations remain available, according to Haaretz.</li></ul></aside></details>
+        <a class="src" href="https://pitchfork.com/story/portishead-reportedly-pull-music-from-israeli-streaming-services/" target="_blank" rel="noopener">pitchfork.com ↗</a>
+      </article></div>
+  </div>
+  <article class="lead half">
+    <h2>Three novels in November’s best reviewed fiction</h2>
+    <p class="dek accent">Lit Hub’s November fiction roundup puts the pleasures of language, character and patient storytelling in view.</p>
+    <div class="body drop"><p>Can a novel’s plot be beside the point? One review excerpt in Lit Hub’s November fiction roundup says that about Daisy Johnson’s Long Wave, and means it as praise. The reviewer finds joy in a writer who gives character and language more room than a twist.</p><p>That is a useful way into this list. Book Marks, Lit Hub’s home for book reviews, includes Long Wave among the month’s best reviewed fiction, alongside Louise Kennedy’s Stations and Tom Drury’s West of Loveland. The roundup gives you glimpses of what readers admired in each.</p><p>For Long Wave, the praise starts with Johnson’s sentences. The excerpt describes images that feel drawn from myth or fairytale, held close to ordinary truth. If you tend to read quickly to find out what happens, this review asks you to slow down and notice how the telling feels.</p><p>Kennedy’s Stations draws a different kind of praise. Its excerpt calls the work extraordinary and bittersweet, then points to a lived-in caution in Kennedy’s writing. The reviewer says they would hurry to read her next project, whatever she chose to write about.</p><p>West of Loveland gets a quieter description. Its excerpt praises the novel’s measured pace and the power it gathers as it goes. It calls the book a humane meditation on fate, belonging and connections between seemingly ordinary lives.</p><p>Notice what these three excerpts give you, and what they leave open. They say little here about who does what in the stories. Instead, they tell you how the books move: through careful language, a distinctive way of seeing, or an effect that builds over time.</p><p>The roundup also includes No Such Thing As Monday, with five rave reviews, two positive reviews and one mixed review. Its excerpt praises a darkly funny book and a character named Steffie. The Key Biscayne Affair has five rave reviews and two positive reviews; its excerpt singles out Rubert’s adventurous sentences.</p><p>So the question about plot has a fuller answer. A review can tell you that a book is worth reading without giving away its story. Here, the strongest clues are about what it might feel like to spend time in the writing.</p></div><aside class="facts"><h4>Key facts</h4><ul><li>Book Marks is Lit Hub’s home for book reviews.</li><li>Stations, Long Wave and West of Loveland appear among November’s best reviewed fiction titles.</li><li>No Such Thing As Monday has five rave, two positive and one mixed review.</li><li>The Key Biscayne Affair has five rave and two positive reviews.</li></ul></aside><a class="src" href="https://lithub.com/novembers-best-reviewed-fiction-2026/" target="_blank" rel="noopener">lithub.com ↗</a>
+  </article>
+</section>
+<section class="page plain" id="p14" style="--accent:#16130f">
+  <article class="sheet essay"><p class="tag">The Day, Connected</p>
+  <h2 class="big">Who is responsible when roles change?</h2><p class="dek accent">Today&#x27;s headlines point to slower shifts in power, risk and trust.</p>
+  <div class="body drop"><p>A state investor can now do the job of a company buyer. Some sovereign funds buy and manage companies themselves, taking on private equity&#x27;s work and risks. That sounds like a change in technique, but it points to a question running through today&#x27;s news: when an institution changes roles, how do you know what it can be trusted to do?</p><p>Trust also depends on whose account of an event holds up. Kuwait says Iranian attacks killed two Italians through falling missile debris; Iran denies any role and offers to help investigate. The deaths do not wait for an agreed explanation, and neither do the judgments people make about who is responsible.</p><p>Technology brings its own version of the question. Children are forming bonds with AI companions as downloads rise, with a gap in protection; Nvidia has strong sales and a huge order backlog even as the bubble question persists. In each case, people are using or investing in something before they have a settled answer to who carries the risk.</p><p>A news day makes these look like separate events, each with a clear beginning and a name attached. The slower story is about rules and trust catching up with new power, and about the pressure that builds when they cannot. For any headline, what has been changing underneath long enough to make this moment possible?</p></div></article>
+</section></main>
+<nav class="archive"><a href="../2026-11-27/index.html">← Yesterday</a><span>2026-11-28</span><span>Tomorrow →</span></nav>
+<script>
+const p=document.querySelector('.paper');
+const go=d=>p.scrollBy({left:d*p.clientWidth,behavior:'smooth'});
+document.querySelector('.prev').onclick=()=>go(-1);
+document.querySelector('.next').onclick=()=>go(1);
+addEventListener('keydown',ev=>{if(ev.key==='ArrowRight')go(1);if(ev.key==='ArrowLeft')go(-1)});
+document.querySelectorAll('a[href^="#p"]').forEach(a=>a.onclick=ev=>{ev.preventDefault();
+  p.scrollTo({left:document.querySelector(a.getAttribute('href')).offsetLeft,behavior:'smooth'})});
+</script>
+</body></html>
